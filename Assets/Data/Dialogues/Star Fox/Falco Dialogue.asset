@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e51595e8dc8887e46999c615ceab51e3, type: 3}
+  m_Name: Falco Dialogue
+  m_EditorClassIdentifier: 
+  conversationBlock:
+  - "TAGS:\n<speed=30>\n<pause=.1>\n<emotion=angry> , suprised, lookaround, \n<action=shake>\n<size=50><size=30>\n<u></u>..."
+  - <emotion=lookaround><speed=30> This is <speed=15>horrible...
+  - <speed=30>Fox! Get the ones behind me!!
+  - <speed=30>I could use some help here, Fox!
+  - <speed=30>Something's wrong with the G-Diffuser.
+  - <speed=30>I guess I sould be thankful.
+  - Pretty smooth flying, Fox.
+  - Follow me, Fox!
+  - I've found the target, try to keep up!
+  - <speed=30>Let's go!
+  - <speed=30>Move it Fox! He's right behind you!
+  audioBlock:
+  - {fileID: 8300000, guid: a5dbddf2cd8ba144bba2f872f91ca3eb, type: 3}
+  - {fileID: 8300000, guid: 61c0d8193a0b4c647b9931e113754c81, type: 3}
+  - {fileID: 8300000, guid: bfdcf072f6a679f479838d704471addf, type: 3}
+  - {fileID: 8300000, guid: a5914215068d6244394cd40540fb7367, type: 3}
+  - {fileID: 8300000, guid: b8e8d6a78313ef1469b175cf6600821b, type: 3}
+  - {fileID: 8300000, guid: d7855533c159e5247bbed4694437f96c, type: 3}
+  - {fileID: 8300000, guid: cbec4297f3007ec44aaa244b96093e19, type: 3}
+  - {fileID: 8300000, guid: 95de31a5c4074864ca0dfb9c0b165762, type: 3}
+  - {fileID: 8300000, guid: 3a225103c0b397741a72de9be2093ded, type: 3}
+  - {fileID: 8300000, guid: cb0a2e6bb2e39a94db36e9614b9f37ac, type: 3}
+  - {fileID: 8300000, guid: 8acae415f9af0724abb7a363469338f6, type: 3}

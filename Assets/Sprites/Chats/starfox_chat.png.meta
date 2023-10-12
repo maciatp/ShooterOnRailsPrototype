@@ -1,0 +1,3386 @@
+fileFormatVersion: 2
+guid: 099ae2ba33819c849a3a1b4f20f88dc2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5690378849133985068
+    second: starfox_chat_0
+  - first:
+      213: 4429365948237255683
+    second: starfox_chat_1
+  - first:
+      213: 8458752334593529613
+    second: starfox_chat_2
+  - first:
+      213: 2772391733306991379
+    second: starfox_chat_3
+  - first:
+      213: 5686870581840407940
+    second: starfox_chat_4
+  - first:
+      213: 8359786851773515149
+    second: starfox_chat_5
+  - first:
+      213: 8301455806734871155
+    second: starfox_chat_6
+  - first:
+      213: -2117644592592177162
+    second: starfox_chat_7
+  - first:
+      213: 629059502528281438
+    second: starfox_chat_8
+  - first:
+      213: 2861945078170880977
+    second: starfox_chat_9
+  - first:
+      213: -256678555458776717
+    second: starfox_chat_10
+  - first:
+      213: 1322756524579257669
+    second: starfox_chat_11
+  - first:
+      213: 5968858998678924258
+    second: starfox_chat_12
+  - first:
+      213: 5577176743675574126
+    second: starfox_chat_13
+  - first:
+      213: 5282537691016545254
+    second: starfox_chat_14
+  - first:
+      213: 4006008529781756214
+    second: starfox_chat_15
+  - first:
+      213: -113836866342397692
+    second: starfox_chat_16
+  - first:
+      213: 6539260252781319860
+    second: starfox_chat_17
+  - first:
+      213: 2197220581661572731
+    second: starfox_chat_18
+  - first:
+      213: 5575898273472742763
+    second: starfox_chat_19
+  - first:
+      213: 6726334621405335331
+    second: starfox_chat_20
+  - first:
+      213: 2495643020038642490
+    second: starfox_chat_21
+  - first:
+      213: 5135224065050834703
+    second: starfox_chat_22
+  - first:
+      213: 8664070413423913956
+    second: starfox_chat_23
+  - first:
+      213: -6364207506008537773
+    second: starfox_chat_24
+  - first:
+      213: -683014638697901070
+    second: starfox_chat_25
+  - first:
+      213: -6681515068991197503
+    second: starfox_chat_26
+  - first:
+      213: -3477372346806572445
+    second: starfox_chat_27
+  - first:
+      213: 2704488012389740301
+    second: starfox_chat_28
+  - first:
+      213: 6862783835029570167
+    second: starfox_chat_29
+  - first:
+      213: -2868538015148531537
+    second: starfox_chat_30
+  - first:
+      213: 4055096431931721547
+    second: starfox_chat_31
+  - first:
+      213: 8565121181098185001
+    second: starfox_chat_32
+  - first:
+      213: 8136258634584872919
+    second: starfox_chat_33
+  - first:
+      213: 8621271581089201083
+    second: starfox_chat_34
+  - first:
+      213: 7003272343854412054
+    second: starfox_chat_35
+  - first:
+      213: -1883341506661533440
+    second: starfox_chat_36
+  - first:
+      213: 9123581010501091496
+    second: starfox_chat_37
+  - first:
+      213: 5781494478873180715
+    second: starfox_chat_38
+  - first:
+      213: 1403604489339431858
+    second: starfox_chat_39
+  - first:
+      213: 614185443532655431
+    second: starfox_chat_40
+  - first:
+      213: -6965891446551594625
+    second: starfox_chat_41
+  - first:
+      213: -5351650547116060923
+    second: starfox_chat_42
+  - first:
+      213: 7847116982425824263
+    second: starfox_chat_43
+  - first:
+      213: -4300485379629062128
+    second: starfox_chat_44
+  - first:
+      213: -6945089685500241019
+    second: starfox_chat_45
+  - first:
+      213: 1494716993780049062
+    second: starfox_chat_46
+  - first:
+      213: -552963215175535253
+    second: starfox_chat_47
+  - first:
+      213: 7473276030317826631
+    second: starfox_chat_48
+  - first:
+      213: -2864143922915158404
+    second: starfox_chat_49
+  - first:
+      213: -2195553513237462217
+    second: starfox_chat_50
+  - first:
+      213: 5774739044045668725
+    second: starfox_chat_51
+  - first:
+      213: 3115448436937305999
+    second: starfox_chat_52
+  - first:
+      213: 3150660200003051162
+    second: starfox_chat_53
+  - first:
+      213: -5739418383140258254
+    second: starfox_chat_54
+  - first:
+      213: 2282616525407106286
+    second: starfox_chat_55
+  - first:
+      213: -1569820267938119173
+    second: starfox_chat_56
+  - first:
+      213: -3871753033205866332
+    second: starfox_chat_57
+  - first:
+      213: 4272373210160265824
+    second: starfox_chat_58
+  - first:
+      213: -8696366647102821557
+    second: starfox_chat_59
+  - first:
+      213: -1238397411437788567
+    second: starfox_chat_60
+  - first:
+      213: -3356146020063808976
+    second: starfox_chat_61
+  - first:
+      213: -5525797235959186388
+    second: starfox_chat_62
+  - first:
+      213: 7436596951257053283
+    second: starfox_chat_63
+  - first:
+      213: -2651503913999918565
+    second: starfox_chat_64
+  - first:
+      213: -9070401513124068292
+    second: starfox_chat_65
+  - first:
+      213: 7778526031214066290
+    second: starfox_chat_66
+  - first:
+      213: 2111853146901393373
+    second: starfox_chat_67
+  - first:
+      213: 504674681486806879
+    second: starfox_chat_68
+  - first:
+      213: -4938184876994997874
+    second: starfox_chat_69
+  - first:
+      213: 785647955495501563
+    second: starfox_chat_70
+  - first:
+      213: -1001765025503332419
+    second: starfox_chat_71
+  - first:
+      213: 6093164521320649599
+    second: starfox_chat_72
+  - first:
+      213: -3781760526768463533
+    second: starfox_chat_73
+  - first:
+      213: 7062218190147915443
+    second: starfox_chat_74
+  - first:
+      213: 8019024262396173130
+    second: starfox_chat_75
+  - first:
+      213: 7954593639124839939
+    second: starfox_chat_76
+  - first:
+      213: 3803751439063815558
+    second: starfox_chat_77
+  - first:
+      213: -9158639463616462713
+    second: starfox_chat_78
+  - first:
+      213: 3664824922844589930
+    second: starfox_chat_79
+  - first:
+      213: -899429633906815454
+    second: starfox_chat_80
+  - first:
+      213: 7406130771983613813
+    second: starfox_chat_81
+  - first:
+      213: 5360744631242107097
+    second: starfox_chat_82
+  - first:
+      213: 447399327345819661
+    second: starfox_chat_83
+  - first:
+      213: 3925168883337278510
+    second: starfox_chat_84
+  - first:
+      213: -1194255272535945816
+    second: starfox_chat_85
+  - first:
+      213: 5874799497446137031
+    second: starfox_chat_86
+  - first:
+      213: 5639077716592005314
+    second: starfox_chat_87
+  - first:
+      213: 1573235380422235962
+    second: starfox_chat_88
+  - first:
+      213: -8728869917517534052
+    second: starfox_chat_89
+  - first:
+      213: 3054989195346084417
+    second: starfox_chat_90
+  - first:
+      213: -1762915313993219850
+    second: starfox_chat_91
+  - first:
+      213: 7094038846806312599
+    second: starfox_chat_92
+  - first:
+      213: 1110545694656996323
+    second: starfox_chat_93
+  - first:
+      213: 2171928572492701985
+    second: starfox_chat_94
+  - first:
+      213: 7231881356078112709
+    second: starfox_chat_95
+  - first:
+      213: 4532564737698185773
+    second: starfox_chat_96
+  - first:
+      213: 2482799163779476356
+    second: starfox_chat_97
+  - first:
+      213: 4452533489460631640
+    second: starfox_chat_98
+  - first:
+      213: -2207374127622282959
+    second: starfox_chat_99
+  - first:
+      213: -745640277924587896
+    second: starfox_chat_100
+  - first:
+      213: 8577297712251628071
+    second: starfox_chat_101
+  - first:
+      213: 2289455263934287022
+    second: starfox_chat_102
+  - first:
+      213: 2338413796982360031
+    second: starfox_chat_103
+  - first:
+      213: 3478712671024828933
+    second: starfox_chat_104
+  - first:
+      213: 6568208252567218376
+    second: starfox_chat_105
+  - first:
+      213: -4207608002750380405
+    second: starfox_chat_106
+  - first:
+      213: -1309759684144840447
+    second: starfox_chat_107
+  - first:
+      213: 6278368791987054613
+    second: starfox_chat_108
+  - first:
+      213: 865888740524082934
+    second: starfox_chat_109
+  - first:
+      213: -7430419161067878807
+    second: starfox_chat_110
+  - first:
+      213: 2488177612886404144
+    second: starfox_chat_111
+  - first:
+      213: 2262692520924979196
+    second: starfox_chat_112
+  - first:
+      213: 6628640986778547446
+    second: starfox_chat_113
+  - first:
+      213: 3934301458552932864
+    second: starfox_chat_114
+  - first:
+      213: -1969946745504756550
+    second: starfox_chat_115
+  - first:
+      213: -5290734079694067109
+    second: starfox_chat_116
+  - first:
+      213: -8249690516262332343
+    second: starfox_chat_117
+  - first:
+      213: 7816830422986689480
+    second: starfox_chat_118
+  - first:
+      213: -271180251556091183
+    second: starfox_chat_119
+  - first:
+      213: -3131931169353414490
+    second: starfox_chat_120
+  - first:
+      213: -5693326468914086916
+    second: starfox_chat_121
+  - first:
+      213: 5333519364592337368
+    second: starfox_chat_0
+  - first:
+      213: -1086659823666481044
+    second: starfox_chat_1
+  - first:
+      213: -8721410182461205291
+    second: starfox_chat_2
+  - first:
+      213: -5640567176371851821
+    second: starfox_chat_3
+  - first:
+      213: 7652843330690057124
+    second: starfox_chat_4
+  - first:
+      213: -1803549794018914250
+    second: starfox_chat_5
+  - first:
+      213: -7363838985764351139
+    second: starfox_chat_6
+  - first:
+      213: -7204646862740137556
+    second: starfox_chat_7
+  - first:
+      213: -8418998552153606837
+    second: starfox_chat_8
+  - first:
+      213: -1320502519213350982
+    second: starfox_chat_9
+  - first:
+      213: 534413038539019864
+    second: starfox_chat_10
+  - first:
+      213: 1468385135263976679
+    second: starfox_chat_11
+  - first:
+      213: -1740706332394167623
+    second: starfox_chat_12
+  - first:
+      213: -4710195680018760081
+    second: starfox_chat_13
+  - first:
+      213: -1137454861579296561
+    second: starfox_chat_14
+  - first:
+      213: 5026860656209169260
+    second: starfox_chat_15
+  - first:
+      213: -3550458098444017814
+    second: starfox_chat_16
+  - first:
+      213: 2606857838105907607
+    second: starfox_chat_17
+  - first:
+      213: -8759861625903162475
+    second: starfox_chat_18
+  - first:
+      213: 3515366299493377132
+    second: starfox_chat_19
+  - first:
+      213: 3760420499004020301
+    second: starfox_chat_20
+  - first:
+      213: -5768167964929318178
+    second: starfox_chat_21
+  - first:
+      213: 2325020924451563659
+    second: starfox_chat_22
+  - first:
+      213: -5291692853195691407
+    second: starfox_chat_23
+  - first:
+      213: -1705082160464425642
+    second: starfox_chat_24
+  - first:
+      213: 1258855815782056081
+    second: starfox_chat_25
+  - first:
+      213: -3223520371080950937
+    second: starfox_chat_26
+  - first:
+      213: 8246510946964327951
+    second: starfox_chat_27
+  - first:
+      213: -7400507428164093284
+    second: starfox_chat_28
+  - first:
+      213: 921770647409118158
+    second: starfox_chat_29
+  - first:
+      213: -7854059159008806340
+    second: starfox_chat_30
+  - first:
+      213: -1587734543632854378
+    second: starfox_chat_31
+  - first:
+      213: 1024426978100964376
+    second: starfox_chat_32
+  - first:
+      213: 354696873738366328
+    second: starfox_chat_33
+  - first:
+      213: -92618116661725635
+    second: starfox_chat_34
+  - first:
+      213: 4899415843035361470
+    second: starfox_chat_35
+  - first:
+      213: 4037942929285286236
+    second: starfox_chat_36
+  - first:
+      213: 3886895906815742526
+    second: starfox_chat_37
+  - first:
+      213: -7099825867909430078
+    second: starfox_chat_38
+  - first:
+      213: 2960984488483931830
+    second: starfox_chat_39
+  - first:
+      213: 8510094454521166429
+    second: starfox_chat_40
+  - first:
+      213: 8495528879913158924
+    second: starfox_chat_41
+  - first:
+      213: -5398241547472669186
+    second: starfox_chat_42
+  - first:
+      213: -6471556817647694061
+    second: starfox_chat_43
+  - first:
+      213: -7907492043749018313
+    second: starfox_chat_44
+  - first:
+      213: -7076601807743759394
+    second: starfox_chat_45
+  - first:
+      213: -6198981769842770689
+    second: starfox_chat_46
+  - first:
+      213: -484611376863283554
+    second: starfox_chat_47
+  - first:
+      213: -6319888228664065717
+    second: starfox_chat_48
+  - first:
+      213: 8763957514749891667
+    second: starfox_chat_49
+  - first:
+      213: 3030572207727475310
+    second: starfox_chat_50
+  - first:
+      213: -3299403517317910362
+    second: starfox_chat_51
+  - first:
+      213: -5210951152399739269
+    second: starfox_chat_52
+  - first:
+      213: -5863172211497113591
+    second: starfox_chat_53
+  - first:
+      213: -1751978892299160687
+    second: starfox_chat_54
+  - first:
+      213: -4700886847758980969
+    second: starfox_chat_55
+  - first:
+      213: 1521886614196683292
+    second: starfox_chat_56
+  - first:
+      213: -8691969834811004742
+    second: starfox_chat_57
+  - first:
+      213: 6692399615668910300
+    second: starfox_chat_58
+  - first:
+      213: -4593602179580486340
+    second: starfox_chat_59
+  - first:
+      213: -4617445998696407450
+    second: starfox_chat_60
+  - first:
+      213: 5586564076811314647
+    second: starfox_chat_61
+  - first:
+      213: 1961179452945372370
+    second: starfox_chat_62
+  - first:
+      213: 2626435056627734596
+    second: starfox_chat_63
+  - first:
+      213: 1376869185739158505
+    second: starfox_chat_64
+  - first:
+      213: 3488658798104248202
+    second: starfox_chat_65
+  - first:
+      213: -2109824425838510346
+    second: starfox_chat_66
+  - first:
+      213: -6020114528732385366
+    second: starfox_chat_67
+  - first:
+      213: 9059361001292893202
+    second: starfox_chat_68
+  - first:
+      213: 944947720313257898
+    second: starfox_chat_69
+  - first:
+      213: -3991650802361766478
+    second: starfox_chat_70
+  - first:
+      213: -7073672893235933206
+    second: starfox_chat_71
+  - first:
+      213: -7552962859967116039
+    second: starfox_chat_72
+  - first:
+      213: -6848711709058024329
+    second: starfox_chat_73
+  - first:
+      213: 2537400465467314865
+    second: starfox_chat_74
+  - first:
+      213: -4418778462354849744
+    second: starfox_chat_75
+  - first:
+      213: -5452757264191612756
+    second: starfox_chat_76
+  - first:
+      213: 5625125552570595836
+    second: starfox_chat_77
+  - first:
+      213: -105825606161364327
+    second: starfox_chat_78
+  - first:
+      213: -4574115630922379782
+    second: starfox_chat_79
+  - first:
+      213: -971509677845158050
+    second: starfox_chat_80
+  - first:
+      213: -2879824161217797642
+    second: starfox_chat_81
+  - first:
+      213: 9008875017140508002
+    second: starfox_chat_82
+  - first:
+      213: 3821175529754595433
+    second: starfox_chat_83
+  - first:
+      213: 2197595944327767294
+    second: starfox_chat_84
+  - first:
+      213: 5048267234939501343
+    second: starfox_chat_85
+  - first:
+      213: 2496938758704396549
+    second: starfox_chat_86
+  - first:
+      213: -492567746828730347
+    second: starfox_chat_87
+  - first:
+      213: 7825314785307060544
+    second: starfox_chat_88
+  - first:
+      213: -5010358192838623140
+    second: starfox_chat_89
+  - first:
+      213: -7835182491932798899
+    second: starfox_chat_90
+  - first:
+      213: -4952955500589850471
+    second: starfox_chat_91
+  - first:
+      213: 7816860922477374164
+    second: starfox_chat_92
+  - first:
+      213: 5549771080156245934
+    second: starfox_chat_93
+  - first:
+      213: 6928315564616911362
+    second: starfox_chat_94
+  - first:
+      213: -9152984646270681027
+    second: starfox_chat_95
+  - first:
+      213: 2496780729033407406
+    second: starfox_chat_96
+  - first:
+      213: 1636286809571251750
+    second: starfox_chat_97
+  - first:
+      213: 5153750462289817805
+    second: starfox_chat_98
+  - first:
+      213: -515733501192402212
+    second: starfox_chat_99
+  - first:
+      213: 6474491902240820655
+    second: starfox_chat_100
+  - first:
+      213: -3155931414044674785
+    second: starfox_chat_101
+  - first:
+      213: -7455843412365408975
+    second: starfox_chat_102
+  - first:
+      213: 1135638703258748016
+    second: starfox_chat_103
+  - first:
+      213: -7411698250496858744
+    second: starfox_chat_104
+  - first:
+      213: 4194554711260111567
+    second: starfox_chat_105
+  - first:
+      213: 5693774119213116799
+    second: starfox_chat_106
+  - first:
+      213: 338936211752662237
+    second: starfox_chat_107
+  - first:
+      213: -2156402069104620911
+    second: starfox_chat_108
+  - first:
+      213: 4233464322086123598
+    second: starfox_chat_109
+  - first:
+      213: 4253091831681024340
+    second: starfox_chat_110
+  - first:
+      213: -8575509220797582595
+    second: starfox_chat_111
+  - first:
+      213: -5342289883643412097
+    second: starfox_chat_112
+  - first:
+      213: -948387889876309284
+    second: starfox_chat_113
+  - first:
+      213: 3028522603856481961
+    second: starfox_chat_114
+  - first:
+      213: -1036227054514923280
+    second: starfox_chat_115
+  - first:
+      213: -4013647564929259913
+    second: starfox_chat_116
+  - first:
+      213: -6758583109870847233
+    second: starfox_chat_117
+  - first:
+      213: -608635842781796907
+    second: starfox_chat_118
+  - first:
+      213: 966657762007884939
+    second: starfox_chat_119
+  - first:
+      213: -9188712986364113090
+    second: starfox_chat_120
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: starfox_chat_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1671
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d181399a97740a40800000000000000
+      internalID: 5333519364592337368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_1
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 1671
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c68bba2d5a86be0f0800000000000000
+      internalID: -1086659823666481044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_2
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 1671
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d4dce5a5a357f680800000000000000
+      internalID: -8721410182461205291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_3
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 1671
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dda0a0c90ea8b1b0800000000000000
+      internalID: -5640567176371851821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_4
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 1671
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a38f77767c543a60800000000000000
+      internalID: 7652843330690057124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_5
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 1671
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63016c8940188f6e0800000000000000
+      internalID: -1803549794018914250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_6
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 1671
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d53d75e25736ec990800000000000000
+      internalID: -7363838985764351139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_7
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 1671
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca9dd36a9d3f30c90800000000000000
+      internalID: -7204646862740137556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_8
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 1671
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b453b5e2c65b92b80800000000000000
+      internalID: -8418998552153606837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_9
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 1671
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abf974184f1acade0800000000000000
+      internalID: -1320502519213350982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_10
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 1671
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 856947db3dd9a6700800000000000000
+      internalID: 534413038539019864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_11
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1504
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ec8fdc2080c06410800000000000000
+      internalID: 1468385135263976679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_12
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 1504
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b26f5730d4c7d7e0800000000000000
+      internalID: -1740706332394167623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_13
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 1504
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6ef6e51cf502aeb0800000000000000
+      internalID: -4710195680018760081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_14
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 1504
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc0668374d2f630f0800000000000000
+      internalID: -1137454861579296561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_15
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 1504
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6b0cb4222ff2c540800000000000000
+      internalID: 5026860656209169260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_16
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 1504
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6fd55cab2d3abec0800000000000000
+      internalID: -3550458098444017814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_17
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 1504
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 791de3c546b6d2420800000000000000
+      internalID: 2606857838105907607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_18
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 1504
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59b57725348be6680800000000000000
+      internalID: -8759861625903162475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_19
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 1504
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c64aea0360719c030800000000000000
+      internalID: 3515366299493377132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_20
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 1504
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d465b313582bf2430800000000000000
+      internalID: 3760420499004020301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_21
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 1504
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed2a9950cc953ffa0800000000000000
+      internalID: -5768167964929318178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_22
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1337
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8829495632244020800000000000000
+      internalID: 2325020924451563659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_23
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 1337
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17a2cc8f2612096b0800000000000000
+      internalID: -5291692853195691407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_24
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 1337
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65d89a81fc45658e0800000000000000
+      internalID: -1705082160464425642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_25
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 1337
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 190cf1bd1ba587110800000000000000
+      internalID: 1258855815782056081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_26
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 1337
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76b0c7b2d41c343d0800000000000000
+      internalID: -3223520371080950937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_27
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 1337
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0ecd2ea30e717270800000000000000
+      internalID: 8246510946964327951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_28
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 1337
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9ab3a224bd1c4990800000000000000
+      internalID: -7400507428164093284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_29
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 1337
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecbc3332589cacc00800000000000000
+      internalID: 921770647409118158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_30
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 1337
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3a7066bec6c00390800000000000000
+      internalID: -7854059159008806340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_31
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 1337
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 692952148db37f9e0800000000000000
+      internalID: -1587734543632854378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_32
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 1337
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81ce800b8ee773e00800000000000000
+      internalID: 1024426978100964376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_33
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1170
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87ded1a6de22ce400800000000000000
+      internalID: 354696873738366328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_34
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 1170
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d36bc984054f6bef0800000000000000
+      internalID: -92618116661725635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_35
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 1170
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb03b0340c83ef340800000000000000
+      internalID: 4899415843035361470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_36
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 1170
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c59895343b7a90830800000000000000
+      internalID: 4037942929285286236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_37
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 1170
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e321caccb3701f530800000000000000
+      internalID: 3886895906815742526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_38
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 1170
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c401285df9587d90800000000000000
+      internalID: -7099825867909430078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_39
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 1170
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b6c68d44b7871920800000000000000
+      internalID: 2960984488483931830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_40
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 1170
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a71c661dde91670800000000000000
+      internalID: 8510094454521166429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_41
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 1170
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c09cb4a418e26e570800000000000000
+      internalID: 8495528879913158924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_42
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 1170
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef5f227e9e79515b0800000000000000
+      internalID: -5398241547472669186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_43
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 1170
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f0a54bc596036a0800000000000000
+      internalID: -6471556817647694061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_44
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1003
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 735bc14c1e1f24290800000000000000
+      internalID: -7907492043749018313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_45
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 1003
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edbcb88362cdacd90800000000000000
+      internalID: -7076601807743759394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_46
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 1003
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffc36678ceac8f9a0800000000000000
+      internalID: -6198981769842770689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_47
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 1003
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9673f335805649f0800000000000000
+      internalID: -484611376863283554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_48
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 1003
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b414e46e32f3b48a0800000000000000
+      internalID: -6319888228664065717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_49
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 1003
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 354584d1de4df9970800000000000000
+      internalID: 8763957514749891667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_50
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 1003
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6a74c3cd51ce0a20800000000000000
+      internalID: 3030572207727475310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_51
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 1003
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a077936bf92632d0800000000000000
+      internalID: -3299403517317910362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_52
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 1003
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b761d43298bfea7b0800000000000000
+      internalID: -5210951152399739269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_53
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 1003
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 908e5c420f3d1aea0800000000000000
+      internalID: -5863172211497113591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_54
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 1003
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 193b686da78bfa7e0800000000000000
+      internalID: -1751978892299160687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_55
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 836
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 798250e715813ceb0800000000000000
+      internalID: -4700886847758980969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_56
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 836
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c128d93ffc3de1510800000000000000
+      internalID: 1521886614196683292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_57
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 836
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab8edadbc7bef5780800000000000000
+      internalID: -8691969834811004742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_58
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 836
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd8f7ea1efd20ec50800000000000000
+      internalID: 6692399615668910300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_59
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 836
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3d15a6d72f3040c0800000000000000
+      internalID: -4593602179580486340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_60
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 836
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66ed62614598befb0800000000000000
+      internalID: -4617445998696407450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_61
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 836
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d5eb41dd66778d40800000000000000
+      internalID: 5586564076811314647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_62
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 836
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d49a995252873b10800000000000000
+      internalID: 1961179452945372370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_63
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 836
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 448ddefb4c8f27420800000000000000
+      internalID: 2626435056627734596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_64
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 836
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e3f92eba3f9b1310800000000000000
+      internalID: 1376869185739158505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_65
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 836
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8f7b8371b43a6030800000000000000
+      internalID: 3488658798104248202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_66
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 669
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fef37fecd568b2e0800000000000000
+      internalID: -2109824425838510346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_67
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 669
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aafecb76bb1447ca0800000000000000
+      internalID: -6020114528732385366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_68
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 669
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21c071605d059bd70800000000000000
+      internalID: 9059361001292893202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_69
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 669
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaf3690f1f02d1d00800000000000000
+      internalID: 944947720313257898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_70
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 669
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bde2d17ebeca98c0800000000000000
+      internalID: -3991650802361766478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_71
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 669
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aefcc554bf345dd90800000000000000
+      internalID: -7073672893235933206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_72
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 669
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fc01f1db4c7e2790800000000000000
+      internalID: -7552962859967116039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_73
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 669
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77cb9849cfc74f0a0800000000000000
+      internalID: -6848711709058024329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_74
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 669
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b217159748a63320800000000000000
+      internalID: 2537400465467314865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_75
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 669
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 030413276685da2c0800000000000000
+      internalID: -4418778462354849744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_76
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 669
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca89d6d782ae354b0800000000000000
+      internalID: -5452757264191612756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_77
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 502
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf971f903e5701e40800000000000000
+      internalID: 5625125552570595836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_78
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 502
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99a8c900c28088ef0800000000000000
+      internalID: -105825606161364327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_79
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 502
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afd4f41811a7580c0800000000000000
+      internalID: -4574115630922379782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_80
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 502
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e576f2468118482f0800000000000000
+      internalID: -971509677845158050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_81
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 502
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f1a60fee2fc808d0800000000000000
+      internalID: -2879824161217797642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_82
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 502
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2651d86d814f50d70800000000000000
+      internalID: 9008875017140508002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_83
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 502
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 960107b16ea870530800000000000000
+      internalID: 3821175529754595433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_84
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 502
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef4ee753edd6f7e10800000000000000
+      internalID: 2197595944327767294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_85
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 502
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1bffc5ad4c0f0640800000000000000
+      internalID: 5048267234939501343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_86
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 502
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 509fa7a5298e6a220800000000000000
+      internalID: 2496938758704396549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_87
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 502
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51085767e3c0a29f0800000000000000
+      internalID: -492567746828730347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_88
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 335
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 049e6d1465a199c60800000000000000
+      internalID: 7825314785307060544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_89
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 335
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c50c26605c1a77ab0800000000000000
+      internalID: -5010358192838623140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_90
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 335
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d405cf14907d34390800000000000000
+      internalID: -7835182491932798899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_91
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 335
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 990660fc631934bb0800000000000000
+      internalID: -4952955500589850471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_92
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 335
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4da65eee7911b7c60800000000000000
+      internalID: 7816860922477374164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_93
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 335
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eafe279b46fb40d40800000000000000
+      internalID: 5549771080156245934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_94
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 335
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20a0dc85c42562060800000000000000
+      internalID: 6928315564616911362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_95
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 335
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d308e6475f01af080800000000000000
+      internalID: -9152984646270681027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_96
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 335
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eabb31438d856a220800000000000000
+      internalID: 2496780729033407406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_97
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 335
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 626d6231f2245b610800000000000000
+      internalID: 1636286809571251750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_98
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 335
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc03acd5dbcc58740800000000000000
+      internalID: 5153750462289817805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_99
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 168
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cda88a6fc1fb7d8f0800000000000000
+      internalID: -515733501192402212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_100
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 168
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fad053ee4140ad950800000000000000
+      internalID: 6474491902240820655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_101
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 168
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f15fe5a8911e334d0800000000000000
+      internalID: -3155931414044674785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_102
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 168
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13506015be5878890800000000000000
+      internalID: -7455843412365408975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_103
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 168
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0744cec326992cf00800000000000000
+      internalID: 1135638703258748016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_104
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 168
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88520c4c5bb542990800000000000000
+      internalID: -7411698250496858744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_105
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 168
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc2a993494d063a30800000000000000
+      internalID: 4194554711260111567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_106
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 168
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7da20ff469540f40800000000000000
+      internalID: 5693774119213116799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_107
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 168
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd4b80750b424b400800000000000000
+      internalID: 338936211752662237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_108
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 168
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19a0a164ebbe212e0800000000000000
+      internalID: -2156402069104620911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_109
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 168
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e48bb3ffe5940ca30800000000000000
+      internalID: 4233464322086123598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_110
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4518670bc74060b30800000000000000
+      internalID: 4253091831681024340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_111
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 1
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df2f5467ccbadf880800000000000000
+      internalID: -8575509220797582595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_112
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 1
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f71854ec7af5cd5b0800000000000000
+      internalID: -5342289883643412097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_113
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 1
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdae3aa2d36a6d2f0800000000000000
+      internalID: -948387889876309284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_114
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 1
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ae4b1d2349770a20800000000000000
+      internalID: 3028522603856481961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_115
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 1
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f81dfcebf49e91f0800000000000000
+      internalID: -1036227054514923280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_116
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 1
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 776a7ce0ec8ac48c0800000000000000
+      internalID: -4013647564929259913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_117
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 1
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffa71375870b432a0800000000000000
+      internalID: -6758583109870847233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_118
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 1
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d5ab69fce0bd87f0800000000000000
+      internalID: -608635842781796907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_119
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 1
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b84aadbec124a6d00800000000000000
+      internalID: 966657762007884939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starfox_chat_120
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 1
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3f8fb809322b7080800000000000000
+      internalID: -9188712986364113090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e2e5cf9d10abb248be2dbba3e15a21b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

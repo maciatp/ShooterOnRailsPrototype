@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e51595e8dc8887e46999c615ceab51e3, type: 3}
+  m_Name: Fox Dialogue
+  m_EditorClassIdentifier: 
+  conversationBlock:
+  - "TAGS:\n<speed=30>\n<pause=.1>\n<emotion=angry> , suprised, lookaround, \n<action=shake>\n<size=50><size=30>\n<u></u>..."
+  - '<emotion=angry>I see ''em up ahead.<speed=3>  <speed=40>
+
+    Let''s <speed=45><b><size=60>Rock''n''Roll<speed=40>!</b></size>'
+  - <speed=30>We're entering Corneria City now.
+  - <speed=30>Falco! Where are you going??
+  - <speed=30>We are Star Fox!!
+  - "<speed=30>We're heading out, \nall aircraft report!"
+  audioBlock:
+  - {fileID: 8300000, guid: ca077bbb070cd614bb9b0e02d66b51b0, type: 3}
+  - {fileID: 8300000, guid: dd3ed14bafc3eeb46b4651435fd0ee0f, type: 3}
+  - {fileID: 8300000, guid: 51b84f38570004141904b11a9ce1d152, type: 3}
+  - {fileID: 8300000, guid: 275651a48df42e84d9076b07512f3b18, type: 3}
+  - {fileID: 8300000, guid: 43f41b2a8aa925b46b67c0b8e98fef5c, type: 3}
+  - {fileID: 8300000, guid: 8be966ab3f758a7439b90a887de90be0, type: 3}

@@ -1,0 +1,1016 @@
+fileFormatVersion: 2
+guid: d016a43d3e3803f4bb04cdb7e0d4333a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4203743422557977213
+    second: Fox_Rob_Chat_Large_0
+  - first:
+      213: -2628060437747649220
+    second: Fox_Rob_Chat_Large_1
+  - first:
+      213: -3396503893986259379
+    second: Fox_Rob_Chat_Large_2
+  - first:
+      213: -4423864611576391466
+    second: Fox_Rob_Chat_Large_3
+  - first:
+      213: 740425319930914034
+    second: Fox_Rob_Chat_Large_4
+  - first:
+      213: 1341527302996708226
+    second: Fox_Rob_Chat_Large_5
+  - first:
+      213: -1955198327275399574
+    second: Fox_Rob_Chat_Large_6
+  - first:
+      213: 3284836619506810139
+    second: Fox_Rob_Chat_Large_7
+  - first:
+      213: -410392807317874064
+    second: Fox_Rob_Chat_Large_8
+  - first:
+      213: -6955586399734092640
+    second: Fox_Rob_Chat_Large_9
+  - first:
+      213: 919231881055506329
+    second: Fox_Rob_Chat_Large_10
+  - first:
+      213: 5003943996612194724
+    second: Fox_Rob_Chat_Large_11
+  - first:
+      213: -4354853726314120446
+    second: Fox_Rob_Chat_Large_12
+  - first:
+      213: 2508445226755398494
+    second: Fox_Rob_Chat_Large_13
+  - first:
+      213: 5111151858154807471
+    second: Fox_Rob_Chat_Large_14
+  - first:
+      213: 4268300969383310992
+    second: Fox_Rob_Chat_Large_15
+  - first:
+      213: 3385514615995293059
+    second: Fox_Rob_Chat_Large_16
+  - first:
+      213: -1600326378513824676
+    second: Fox_Rob_Chat_Large_17
+  - first:
+      213: -8377696450234473195
+    second: Fox_Rob_Chat_Large_18
+  - first:
+      213: -7173671992436673313
+    second: Fox_Rob_Chat_Large_19
+  - first:
+      213: 2683875026844992276
+    second: Fox_Rob_Chat_Large_20
+  - first:
+      213: -3745724022784587764
+    second: Fox_Rob_Chat_Large_21
+  - first:
+      213: 3109278913360067475
+    second: Fox_Rob_Chat_Large_22
+  - first:
+      213: -1678179374997147410
+    second: Fox_Rob_Chat_Large_23
+  - first:
+      213: 575196661537549167
+    second: Fox_Rob_Chat_Large_24
+  - first:
+      213: -3023380536609111437
+    second: Fox_Rob_Chat_Large_25
+  - first:
+      213: 8442945001147192646
+    second: Fox_Rob_Chat_Large_26
+  - first:
+      213: -5907211298584481295
+    second: Fox_Rob_Chat_Large_27
+  - first:
+      213: 3388855404009414676
+    second: Fox_Rob_Chat_Large_28
+  - first:
+      213: -2506600089860172612
+    second: Fox_Rob_Chat_Large_29
+  - first:
+      213: -486110838438164386
+    second: Fox_Rob_Chat_Large_30
+  - first:
+      213: 5557578221200802588
+    second: Fox_Rob_Chat_Large_31
+  - first:
+      213: 154362864955155712
+    second: Fox_Rob_Chat_Large_32
+  - first:
+      213: 9121214159309388783
+    second: Fox_Rob_Chat_Large_33
+  - first:
+      213: 4180468568256089898
+    second: Fox_Rob_Chat_Large_34
+  - first:
+      213: 6203431808591050060
+    second: Fox_Rob_Chat_Large_35
+  - first:
+      213: 4415865740590218593
+    second: Fox_Rob_Chat_Large_36
+  - first:
+      213: 7677125768368634829
+    second: Fox_Rob_Chat_Large_37
+  - first:
+      213: 5819094478363103358
+    second: Fox_Rob_Chat_Large_38
+  - first:
+      213: -5116925398033966124
+    second: Fox_Rob_Chat_Large_39
+  - first:
+      213: -7301062403789462223
+    second: Fox_Rob_Chat_Large_40
+  - first:
+      213: 7903360906711622056
+    second: Fox_Rob_Chat_Large_41
+  - first:
+      213: -496033722114177889
+    second: Fox_Rob_Chat_Large_42
+  - first:
+      213: -3067811040943264687
+    second: Fox_Rob_Chat_Large_43
+  - first:
+      213: -418202754489106369
+    second: Fox_Rob_Chat_Large_44
+  - first:
+      213: 1989977932615867811
+    second: Fox_Rob_Chat_Large_45
+  - first:
+      213: -97320930632119217
+    second: Fox_Rob_Chat_Large_46
+  - first:
+      213: -5141428053207332410
+    second: Fox_Rob_Chat_Large_47
+  - first:
+      213: 9142808159975011399
+    second: Fox_Rob_Chat_Large_48
+  - first:
+      213: 886115807171879923
+    second: Fox_Rob_Chat_Large_49
+  - first:
+      213: -5029994540374741881
+    second: Fox_Rob_Chat_Large_50
+  - first:
+      213: -3052811199089968827
+    second: Fox_Rob_Chat_Large_51
+  - first:
+      213: -6574370461821015246
+    second: Fox_Rob_Chat_Large_52
+  - first:
+      213: 1844640649253081585
+    second: Fox_Rob_Chat_Large_53
+  - first:
+      213: -1474612709865790787
+    second: Fox_Rob_Chat_Large_54
+  - first:
+      213: -4812037340894685371
+    second: Fox_Rob_Chat_Large_55
+  - first:
+      213: -1944834096140511331
+    second: Fox_Rob_Chat_Large_56
+  - first:
+      213: 5242129828470631089
+    second: Fox_Rob_Chat_Large_57
+  - first:
+      213: -1021156195098590679
+    second: Fox_Rob_Chat_Large_58
+  - first:
+      213: -5834204749620175926
+    second: Fox_Rob_Chat_Large_59
+  - first:
+      213: -8596470737008549084
+    second: Fox_Rob_Chat_Large_60
+  - first:
+      213: -641956033220378809
+    second: Fox_Rob_Chat_Large_61
+  - first:
+      213: 6248625994416766168
+    second: Fox_Rob_Chat_Large_62
+  - first:
+      213: 5677918907790862851
+    second: Fox_Rob_Chat_Large_63
+  - first:
+      213: 3493723723304881328
+    second: Fox_Rob_Chat_Large_64
+  - first:
+      213: -8425798554609101043
+    second: Fox_Rob_Chat_Large_65
+  - first:
+      213: -656552990874159592
+    second: Fox_Rob_Chat_Large_66
+  - first:
+      213: 8405341546508321197
+    second: Fox_Rob_Chat_Large_67
+  - first:
+      213: -1837066698475765087
+    second: Fox_Rob_Chat_Large_68
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Fox_Rob_Chat_Large_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 515
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3850c8b21ad49a5c0800000000000000
+      internalID: -4203743422557977213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Rob_Chat_Large_1
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 515
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c353bc7b4f0478bd0800000000000000
+      internalID: -2628060437747649220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Rob_Chat_Large_2
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 515
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4ec7b034b13dd0d0800000000000000
+      internalID: -3396503893986259379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Rob_Chat_Large_3
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 515
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d8519c03964b92c0800000000000000
+      internalID: -4423864611576391466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Rob_Chat_Large_4
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 515
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f4ef21d7e4864a00800000000000000
+      internalID: 740425319930914034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Rob_Chat_Large_5
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 515
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28b4b9f69ff0e9210800000000000000
+      internalID: 1341527302996708226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Rob_Chat_Large_6
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 515
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a66df4dfa7dbdd4e0800000000000000
+      internalID: -1955198327275399574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Rob_Chat_Large_7
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 515
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1df5ea6085169d20800000000000000
+      internalID: 3284836619506810139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Rob_Chat_Large_8
+      rect:
+        serializedVersion: 2
+        x: 2057
+        y: 515
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07a51758aedfd4af0800000000000000
+      internalID: -410392807317874064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Rob_Chat_Large_9
+      rect:
+        serializedVersion: 2
+        x: 2314
+        y: 515
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0acaf4f850bc87f90800000000000000
+      internalID: -6955586399734092640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Rob_Chat_Large_10
+      rect:
+        serializedVersion: 2
+        x: 2571
+        y: 515
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99f07888684c1cc00800000000000000
+      internalID: 919231881055506329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Rob_Chat_Large_11
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 258
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a1b40a8d84917540800000000000000
+      internalID: 5003943996612194724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Rob_Chat_Large_12
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 258
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20bb242eb937093c0800000000000000
+      internalID: -4354853726314120446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Rob_Chat_Large_13
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 258
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5b9747b4a9cfc220800000000000000
+      internalID: 2508445226755398494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Rob_Chat_Large_14
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 258
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa02562f8857ee640800000000000000
+      internalID: 5111151858154807471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Rob_Chat_Large_15
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 258
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0963c820e1d0c3b30800000000000000
+      internalID: 4268300969383310992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Rob_Chat_Large_16
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 258
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38dda442b93cbfe20800000000000000
+      internalID: 3385514615995293059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Rob_Chat_Large_17
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 258
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c540ffb33af7ac9e0800000000000000
+      internalID: -1600326378513824676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Rob_Chat_Large_18
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 258
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51529b727717cbb80800000000000000
+      internalID: -8377696450234473195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Rob_Chat_Large_19
+      rect:
+        serializedVersion: 2
+        x: 2057
+        y: 258
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd4b4a3a45ff17c90800000000000000
+      internalID: -7173671992436673313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Rob_Chat_Large_20
+      rect:
+        serializedVersion: 2
+        x: 2314
+        y: 258
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41343acfd1a0f3520800000000000000
+      internalID: 2683875026844992276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Rob_Chat_Large_21
+      rect:
+        serializedVersion: 2
+        x: 2571
+        y: 258
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c080743d8d3840cc0800000000000000
+      internalID: -3745724022784587764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Rob_Chat_Large_22
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39b7072b2b0662b20800000000000000
+      internalID: 3109278913360067475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Rob_Chat_Large_23
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 1
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee078e3ffb8e5b8e0800000000000000
+      internalID: -1678179374997147410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Rob_Chat_Large_24
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 1
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6bafeee0528bf700800000000000000
+      internalID: 575196661537549167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Rob_Chat_Large_25
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 1
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3728596ab6bca06d0800000000000000
+      internalID: -3023380536609111437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Rob_Chat_Large_26
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 1
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 645d983febd5b2570800000000000000
+      internalID: 8442945001147192646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Rob_Chat_Large_27
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 1
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f1b2b62f9e550ea0800000000000000
+      internalID: -5907211298584481295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Rob_Chat_Large_28
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 1
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 410e427f802a70f20800000000000000
+      internalID: 3388855404009414676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Rob_Chat_Large_29
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb41ce1bf74c63dd0800000000000000
+      internalID: -2506600089860172612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Rob_Chat_Large_30
+      rect:
+        serializedVersion: 2
+        x: 2057
+        y: 1
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e580d6994ccf049f0800000000000000
+      internalID: -486110838438164386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Rob_Chat_Large_31
+      rect:
+        serializedVersion: 2
+        x: 2314
+        y: 1
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c130f1662fb702d40800000000000000
+      internalID: 5557578221200802588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Rob_Chat_Large_32
+      rect:
+        serializedVersion: 2
+        x: 2571
+        y: 1
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 005e9243538642200800000000000000
+      internalID: 154362864955155712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 28b200d699b54164c8a9a1ab65c56500
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

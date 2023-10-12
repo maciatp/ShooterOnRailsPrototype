@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Gold_Ring_UI
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 8
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 47eb03dd3a1d3de4593e2672a76c562e, type: 3}
+    - {fileID: 2800000, guid: 5fa1cbcd2d716344d87d6d5be187bc76, type: 3}
+    - {fileID: 2800000, guid: 2c87a49e703d6614391a947a77106ff5, type: 3}
+    - {fileID: 2800000, guid: 8ffed4da6f354354fb683c24343bb9aa, type: 3}
+    - {fileID: 2800000, guid: 1641a5049ace4e54388e984b00756e6d, type: 3}
+    - {fileID: 2800000, guid: 6d82faa08191365478fe6d5dbf66779f, type: 3}
+    - {fileID: 2800000, guid: d14ebf88b731da141a11328b01ae0e2a, type: 3}
+    - {fileID: 2800000, guid: 8e7ab1607b1a96a4881919f3eac6c7f5, type: 3}
+    - {fileID: 2800000, guid: 87ccdaf389b8a3d469a33f16527c8a45, type: 3}
+    - {fileID: 2800000, guid: 8f1cbcb0e1d08394fb37fa07ee2346ff, type: 3}
+    - {fileID: 2800000, guid: 144e9c532d93e604e982288cd759969d, type: 3}
+    - {fileID: 2800000, guid: 842b1522bd6bd3a4f9064cb4ed61b6a2, type: 3}
+    - {fileID: 2800000, guid: 5e4bfbd88eb65a343889f8125e2f25b6, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 8e7ab1607b1a96a4881919f3eac6c7f5, type: 3}
+  - {fileID: 21300000, guid: 6d82faa08191365478fe6d5dbf66779f, type: 3}
+  - {fileID: 21300000, guid: 8f1cbcb0e1d08394fb37fa07ee2346ff, type: 3}
+  - {fileID: 21300000, guid: 842b1522bd6bd3a4f9064cb4ed61b6a2, type: 3}
+  - {fileID: 21300000, guid: 144e9c532d93e604e982288cd759969d, type: 3}
+  - {fileID: 21300000, guid: 87ccdaf389b8a3d469a33f16527c8a45, type: 3}
+  - {fileID: 21300000, guid: 1641a5049ace4e54388e984b00756e6d, type: 3}
+  - {fileID: 21300000, guid: d14ebf88b731da141a11328b01ae0e2a, type: 3}
+  - {fileID: 21300000, guid: 5e4bfbd88eb65a343889f8125e2f25b6, type: 3}
+  - {fileID: 21300000, guid: 8ffed4da6f354354fb683c24343bb9aa, type: 3}
+  - {fileID: 21300000, guid: 5fa1cbcd2d716344d87d6d5be187bc76, type: 3}
+  - {fileID: 21300000, guid: 47eb03dd3a1d3de4593e2672a76c562e, type: 3}
+  - {fileID: 21300000, guid: 2c87a49e703d6614391a947a77106ff5, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - goldring_0014
+  - goldring_0010
+  - goldring_0018
+  - goldring_0022
+  - goldring_0020
+  - goldring_0016
+  - goldring_0008
+  - goldring_0012
+  - goldring_0024
+  - goldring_0006
+  - goldring_0002
+  - goldring_0000
+  - goldring_0004
+  m_Tag: Gold_Ring_UI
+  m_IsVariant: 0

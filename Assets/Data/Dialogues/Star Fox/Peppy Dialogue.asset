@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e51595e8dc8887e46999c615ceab51e3, type: 3}
+  m_Name: Peppy Dialogue
+  m_EditorClassIdentifier: 
+  conversationBlock:
+  - "TAGS:\n<speed=30>\n<pause=.1>\n<emotion=angry> , suprised, lookaround, \n<action=shake>\n<size=50><size=30>\n<u></u>..."
+  - <speed=30>Quit dinging around Slip!
+  - "<speed=30>Slippy watch out! \nBoogey on your tail!"
+  - Don't be doing anything foolish.
+  - Do a Barrel Roll!!<speed =100> (Aileron Roll) (Press Left or Right Bumper TWICE).
+  - <speed=45>You've an enemy on your tail!
+  - Use the Brake!<speed =100>  (Left Trigger)
+  - Aim for its back!!
+  - "Incoming enemy from the rear! <speed=3>\n <speed=40>Drop altitude!"
+  - Aim for the open spot!
+  - '<speed=35>It''s quiet<speed=7>...
+
+    <speed=35><size=45><b>TOO <size=40><speed=35>quiet...'
+  - <speed=45>Be careful,<b> IT'S A TRAP</b>!
+  - <speed=35> Just <speed=40><b>shoot</b><speed=35> them,<speed=3> <speed=35>Fox!
+  audioBlock:
+  - {fileID: 0}
+  - {fileID: 8300000, guid: 9cff9e6f8447e044d83e414cdaccae30, type: 3}
+  - {fileID: 8300000, guid: e00ade7526aea534cbc215a265b53f2a, type: 3}
+  - {fileID: 8300000, guid: a0a20c60d53f91e40b8eeb4a3131b189, type: 3}
+  - {fileID: 8300000, guid: d7ddad7572bc4d04894f7992743ca92c, type: 3}
+  - {fileID: 8300000, guid: 1f91b3b4909e87a44ac2ffd10575c16a, type: 3}
+  - {fileID: 8300000, guid: c608479694095ea448871ad56c86e5dd, type: 3}
+  - {fileID: 8300000, guid: cd6fbaab71f41c946a8cd35d467e7fa1, type: 3}
+  - {fileID: 8300000, guid: a14450c8153a7cf4d9eabf0a52633021, type: 3}
+  - {fileID: 8300000, guid: 8944108eb722e74498bf25e751a3ecc4, type: 3}
+  - {fileID: 8300000, guid: 51bccaea6bc83a34293d2cff7729690c, type: 3}
+  - {fileID: 8300000, guid: 75108e3077143154d820094f2b68563e, type: 3}
+  - {fileID: 8300000, guid: e24992b593d9ddf449891f323fe861e3, type: 3}

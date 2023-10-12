@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: c267700f3d4445b48a262a22d19b0a7e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - doorHouseAnimator: {instanceID: 0}
+  - leftDoorCollider: {instanceID: 0}
+  - rightDoorCollider: {instanceID: 0}
+  - objectSpawnLocation: {instanceID: 0}
+  - laserPowerUp: {fileID: 6668084681518276238, guid: f0a34c0d10431454d8e8b306fa1ca838,
+      type: 3}
+  - bombPowerUp: {fileID: 4023359822053111147, guid: fed7c46af92db034fb5690900bcc6758,
+      type: 3}
+  - silverRing: {fileID: 7712929463795313759, guid: 2a5501992591f1448a265bd3b6308e1a,
+      type: 3}
+  - goldRing: {fileID: 3115591544607233126, guid: 636ed8f744525c248a8fa0c0f1784d21,
+      type: 3}
+  - button_Script_: {instanceID: 0}
+  - bombSprite: {instanceID: 0}
+  - scoreManager_Script_: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

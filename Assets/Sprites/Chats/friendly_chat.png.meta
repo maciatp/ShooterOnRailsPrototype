@@ -1,0 +1,1964 @@
+fileFormatVersion: 2
+guid: 7cb5014248538f747a8876d0fc7074f3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6877709732282224288
+    second: friendly_chat_0
+  - first:
+      213: 3909847322995849357
+    second: friendly_chat_1
+  - first:
+      213: -9193201942881291941
+    second: friendly_chat_2
+  - first:
+      213: 5238402332548008373
+    second: friendly_chat_3
+  - first:
+      213: 6208983580278371687
+    second: friendly_chat_4
+  - first:
+      213: 4296804753106837985
+    second: friendly_chat_5
+  - first:
+      213: 8645402566733827923
+    second: friendly_chat_6
+  - first:
+      213: 7503152118996407534
+    second: friendly_chat_7
+  - first:
+      213: -6137474926437641818
+    second: friendly_chat_8
+  - first:
+      213: -1232930669727458698
+    second: friendly_chat_9
+  - first:
+      213: -2285812019386795766
+    second: friendly_chat_10
+  - first:
+      213: 3387272039260456769
+    second: friendly_chat_11
+  - first:
+      213: -595204533634118562
+    second: friendly_chat_12
+  - first:
+      213: 4483962207870149991
+    second: friendly_chat_13
+  - first:
+      213: 6209042394588653422
+    second: friendly_chat_14
+  - first:
+      213: -8642249593902959154
+    second: friendly_chat_15
+  - first:
+      213: -8846989310601183137
+    second: friendly_chat_16
+  - first:
+      213: -3258575910124166176
+    second: friendly_chat_17
+  - first:
+      213: 6383368139532351416
+    second: friendly_chat_18
+  - first:
+      213: 5956909210815895664
+    second: friendly_chat_19
+  - first:
+      213: -7199088391202311503
+    second: friendly_chat_20
+  - first:
+      213: -5411125558442711867
+    second: friendly_chat_21
+  - first:
+      213: -6290214964700654638
+    second: friendly_chat_22
+  - first:
+      213: 2081255740653176885
+    second: friendly_chat_23
+  - first:
+      213: 979115654137452171
+    second: friendly_chat_24
+  - first:
+      213: 540041989823989902
+    second: friendly_chat_25
+  - first:
+      213: 5973086463729118208
+    second: friendly_chat_26
+  - first:
+      213: -6763776039525777514
+    second: friendly_chat_27
+  - first:
+      213: 5649380369490803857
+    second: friendly_chat_28
+  - first:
+      213: 2829974370141482208
+    second: friendly_chat_29
+  - first:
+      213: -4436604971097906626
+    second: friendly_chat_30
+  - first:
+      213: -7457974695659441902
+    second: friendly_chat_31
+  - first:
+      213: 7220471280018581719
+    second: friendly_chat_32
+  - first:
+      213: -1233329555361332609
+    second: friendly_chat_33
+  - first:
+      213: -8734943534395401613
+    second: friendly_chat_34
+  - first:
+      213: -296191111509367181
+    second: friendly_chat_35
+  - first:
+      213: -6750058712597254266
+    second: friendly_chat_36
+  - first:
+      213: -2809097429022327711
+    second: friendly_chat_37
+  - first:
+      213: -1952780687599894322
+    second: friendly_chat_38
+  - first:
+      213: -5674376832354689113
+    second: friendly_chat_39
+  - first:
+      213: 5423409007120245367
+    second: friendly_chat_40
+  - first:
+      213: -1432211386309162274
+    second: friendly_chat_41
+  - first:
+      213: -2466385966440441574
+    second: friendly_chat_42
+  - first:
+      213: 5634929278292964611
+    second: friendly_chat_43
+  - first:
+      213: -2312183589042858011
+    second: friendly_chat_44
+  - first:
+      213: 820086530989958073
+    second: friendly_chat_45
+  - first:
+      213: 6873888060314055415
+    second: friendly_chat_46
+  - first:
+      213: 7908663121594555091
+    second: friendly_chat_47
+  - first:
+      213: -8207573700190098765
+    second: friendly_chat_48
+  - first:
+      213: -5686267424314061825
+    second: friendly_chat_49
+  - first:
+      213: -2943560589774347059
+    second: friendly_chat_50
+  - first:
+      213: 8274003765484412399
+    second: friendly_chat_51
+  - first:
+      213: -8191859545575674623
+    second: friendly_chat_52
+  - first:
+      213: -5438265610522458816
+    second: friendly_chat_53
+  - first:
+      213: 7393190154425084302
+    second: friendly_chat_54
+  - first:
+      213: 9108784864886001640
+    second: friendly_chat_55
+  - first:
+      213: 6349551288713162637
+    second: friendly_chat_56
+  - first:
+      213: 7874091379604763811
+    second: friendly_chat_57
+  - first:
+      213: 8186778522196479676
+    second: friendly_chat_58
+  - first:
+      213: 5634117407210369134
+    second: friendly_chat_59
+  - first:
+      213: 2145767193923152502
+    second: friendly_chat_60
+  - first:
+      213: -2557541398575594584
+    second: friendly_chat_61
+  - first:
+      213: 1423327703920618065
+    second: friendly_chat_62
+  - first:
+      213: 5927068681043413516
+    second: friendly_chat_63
+  - first:
+      213: -5484301882321088315
+    second: friendly_chat_64
+  - first:
+      213: 2604295467390065080
+    second: friendly_chat_65
+  - first:
+      213: -1154549134539272624
+    second: friendly_chat_66
+  - first:
+      213: 5296274446812629076
+    second: friendly_chat_67
+  - first:
+      213: -3523699840309315763
+    second: friendly_chat_68
+  - first:
+      213: -972306978891345487
+    second: friendly_chat_69
+  - first:
+      213: -1644429921740390943
+    second: friendly_chat_70
+  - first:
+      213: -5055330239237166285
+    second: friendly_chat_71
+  - first:
+      213: -5495160024395966159
+    second: friendly_chat_72
+  - first:
+      213: -9061808194856111075
+    second: friendly_chat_73
+  - first:
+      213: -8818185952128035605
+    second: friendly_chat_74
+  - first:
+      213: -8292858344958774501
+    second: friendly_chat_75
+  - first:
+      213: -130044541499998913
+    second: friendly_chat_76
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: friendly_chat_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1002
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aecde4df88827f50800000000000000
+      internalID: 6877709732282224288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_1
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 1002
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d88fd2dcc61924630800000000000000
+      internalID: 3909847322995849357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_2
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 1002
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5131266a8f2b6080800000000000000
+      internalID: -9193201942881291941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_3
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 1002
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b90a1eca2b82b840800000000000000
+      internalID: 5238402332548008373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_4
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 1002
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 765b9be6badba2650800000000000000
+      internalID: 6208983580278371687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_5
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 1002
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e1a422582151ab30800000000000000
+      internalID: 4296804753106837985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_6
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 1002
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35f8b6244d3aaf770800000000000000
+      internalID: 8645402566733827923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_7
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 1002
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee4108c491d802860800000000000000
+      internalID: 7503152118996407534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_8
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 1002
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a151d7721f43daa0800000000000000
+      internalID: -6137474926437641818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_9
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 1002
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67ad5369610c3eee0800000000000000
+      internalID: -1232930669727458698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_10
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 1002
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a09b121441a2740e0800000000000000
+      internalID: -2285812019386795766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_11
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 835
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1478bb129f1020f20800000000000000
+      internalID: 3387272039260456769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_12
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 835
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5c490451a86db7f0800000000000000
+      internalID: -595204533634118562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_13
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 835
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 765606afedb3a3e30800000000000000
+      internalID: 4483962207870149991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_14
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 835
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e672cc43923fa2650800000000000000
+      internalID: 6209042394588653422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_15
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 835
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec5762f68cf801880800000000000000
+      internalID: -8642249593902959154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_16
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 835
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5040f9681e293580800000000000000
+      internalID: -8846989310601183137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_17
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 835
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e36763797637c2d0800000000000000
+      internalID: -3258575910124166176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_18
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 835
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b73f5b9087469850800000000000000
+      internalID: 6383368139532351416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_19
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 835
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0781fedbd513ba250800000000000000
+      internalID: 5956909210815895664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_20
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 835
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b27fb72043b71c90800000000000000
+      internalID: -7199088391202311503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_21
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 835
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c42cf559f1d7e4b0800000000000000
+      internalID: -5411125558442711867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_22
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 668
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d3db2c01daa4b8a0800000000000000
+      internalID: -6290214964700654638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_23
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 668
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5380064b11b12ec10800000000000000
+      internalID: 2081255740653176885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_24
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 668
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8613e6ff74869d00800000000000000
+      internalID: 979115654137452171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_25
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 668
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e880147145d9e7700800000000000000
+      internalID: 540041989823989902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_26
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 668
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00ca443fd7aa4e250800000000000000
+      internalID: 5973086463729118208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_27
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 668
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69f74cf278d3222a0800000000000000
+      internalID: -6763776039525777514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_28
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 668
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19c709ca381a66e40800000000000000
+      internalID: 5649380369490803857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_29
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 668
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ec2ebf12b6164720800000000000000
+      internalID: 2829974370141482208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_30
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 668
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e322af0f8430e62c0800000000000000
+      internalID: -4436604971097906626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_31
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 668
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 211fd514783ff7890800000000000000
+      internalID: -7457974695659441902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_32
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 668
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d8ea6c9f54443460800000000000000
+      internalID: 7220471280018581719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_33
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 501
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7282b9cd4552eee0800000000000000
+      internalID: -1233329555361332609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_34
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 501
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37a544b922f37c680800000000000000
+      internalID: -8734943534395401613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_35
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 501
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3762bdcd0c7b3ebf0800000000000000
+      internalID: -296191111509367181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_36
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 501
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68f2c9e3d59f252a0800000000000000
+      internalID: -6750058712597254266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_37
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 501
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16c39a385c41409d0800000000000000
+      internalID: -2809097429022327711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_38
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 501
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec08d579f4456e4e0800000000000000
+      internalID: -1952780687599894322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_39
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 501
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7afdac9c5509041b0800000000000000
+      internalID: -5674376832354689113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_40
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 501
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7726e0de1c1d34b40800000000000000
+      internalID: 5423409007120245367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_41
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 501
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edac5c31553cf1ce0800000000000000
+      internalID: -1432211386309162274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_42
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 501
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a191f4fe703a5cdd0800000000000000
+      internalID: -2466385966440441574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_43
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 501
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 305b91fc25a433e40800000000000000
+      internalID: 5634929278292964611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_44
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 334
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e7dc97b64979efd0800000000000000
+      internalID: -2312183589042858011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_45
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 334
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b32dbcda58816b00800000000000000
+      internalID: 820086530989958073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_46
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 334
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f271dc75c4f46f50800000000000000
+      internalID: 6873888060314055415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_47
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 334
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3da10ea053731cd60800000000000000
+      internalID: 7908663121594555091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_48
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 334
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3baa45c8437d81e80800000000000000
+      internalID: -8207573700190098765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_49
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 334
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffb82eb97e15611b0800000000000000
+      internalID: -5686267424314061825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_50
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 334
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc429af3d3f5627d0800000000000000
+      internalID: -2943560589774347059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_51
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 334
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fed51ff469a23d270800000000000000
+      internalID: 8274003765484412399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_52
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 334
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10da118452ba05e80800000000000000
+      internalID: -8191859545575674623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_53
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 334
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 045069a8d366784b0800000000000000
+      internalID: -5438265610522458816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_54
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 334
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e892c6f4643e99660800000000000000
+      internalID: 7393190154425084302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_55
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 167
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ef0cfef297e86e70800000000000000
+      internalID: 9108784864886001640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_56
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 167
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8f2fd671432e1850800000000000000
+      internalID: 6349551288713162637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_57
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 167
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a4be4a1464664d60800000000000000
+      internalID: 7874091379604763811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_58
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 167
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbe8156c0b74d9170800000000000000
+      internalID: 8186778522196479676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_59
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 167
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e607e975ee7603e40800000000000000
+      internalID: 5634117407210369134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_60
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 167
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67ae974e4eb47cd10800000000000000
+      internalID: 2145767193923152502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_61
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 167
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a3cb8ff5a9c18cd0800000000000000
+      internalID: -2557541398575594584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_62
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 167
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15a292f610da0c310800000000000000
+      internalID: 1423327703920618065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_63
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 167
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a8fecff8d214250800000000000000
+      internalID: 5927068681043413516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_64
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 167
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c0de3fbe78d3e3b0800000000000000
+      internalID: -5484301882321088315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_65
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 167
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b9d1ffede0542420800000000000000
+      internalID: 2604295467390065080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_66
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05e4d00eda73affe0800000000000000
+      internalID: -1154549134539272624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_67
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 0
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 458ce3b6c85208940800000000000000
+      internalID: 5296274446812629076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_68
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 0
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4733432aad491fc0800000000000000
+      internalID: -3523699840309315763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_69
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 0
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b15c8644fba182f0800000000000000
+      internalID: -972306978891345487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_70
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 0
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1edf3a0e2bfcd29e0800000000000000
+      internalID: -1644429921740390943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_71
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 0
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33b6af38eebd7d9b0800000000000000
+      internalID: -5055330239237166285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_72
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 0
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13993f982154db3b0800000000000000
+      internalID: -5495160024395966159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_73
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 0
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d14b0e2557dfd3280800000000000000
+      internalID: -9061808194856111075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_74
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 0
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be49118e8928f9580800000000000000
+      internalID: -8818185952128035605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_75
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 0
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b133910d549d9ec80800000000000000
+      internalID: -8292858344958774501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: friendly_chat_76
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 0
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3df9e2bd2df13ef0800000000000000
+      internalID: -130044541499998913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

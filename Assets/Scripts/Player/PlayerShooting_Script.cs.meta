@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: cd1ec8194c2be9e49b369ff91d67fa05
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - leftLaserSpawn: {instanceID: 0}
+  - rightLaserSpawn: {instanceID: 0}
+  - chargedLaser_Spawn: {instanceID: 0}
+  - centerLaser_Spawn: {instanceID: 0}
+  - chargedLaser_Script_: {instanceID: 0}
+  - bomb_Script_: {instanceID: 0}
+  - laserBeam_GO: {instanceID: 0}
+  - laserAdvancedBeam_GO: {instanceID: 0}
+  - chargedLaser_GO: {instanceID: 0}
+  - chargedLaserInScene: {instanceID: 0}
+  - chargingLaserFX: {instanceID: 0}
+  - chargingLaserFX_INSCENE: {instanceID: 0}
+  - bomb_GO: {instanceID: 0}
+  - bombINSCENE: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

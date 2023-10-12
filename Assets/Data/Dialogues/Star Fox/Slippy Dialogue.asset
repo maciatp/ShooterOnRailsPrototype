@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e51595e8dc8887e46999c615ceab51e3, type: 3}
+  m_Name: Slippy Dialogue
+  m_EditorClassIdentifier: 
+  conversationBlock:
+  - "TAGS:\n<speed=30>\n<pause=.1>\n<emotion=angry> , suprised, lookaround, \n<action=shake>\n<size=50><size=30>\n<u></u>..."
+  - '<speed=30>Sleepy here.
+
+    I''m OK.'
+  - "<speed=30>Wooooah! \nHelp me!"
+  - '<speed=30>Thanks Fox!!
+
+    I thought they had me.'
+  - <speed=30>Enemy robot dead ahead.
+  - <speed=30>Enemy shield analyzed!
+  - <speed=30>You did it! I was worried for a moment.
+  - There you go!
+  audioBlock:
+  - {fileID: 0}
+  - {fileID: 8300000, guid: 581f7779e14294f4bbe6093d91bb5acc, type: 3}
+  - {fileID: 8300000, guid: f384881b664a93148a77b25304e54250, type: 3}
+  - {fileID: 8300000, guid: eda49320fe09da9499b8278965073e75, type: 3}
+  - {fileID: 8300000, guid: c22c8737ff862664e862d8064f1e6130, type: 3}
+  - {fileID: 8300000, guid: a1effb9d7db930848a5a0a1cd8ccd445, type: 3}
+  - {fileID: 8300000, guid: 4ccaafd7153e89443a04e2eacd2a2387, type: 3}
+  - {fileID: 8300000, guid: 2f2922226bd8ced48bde88aae80761b3, type: 3}

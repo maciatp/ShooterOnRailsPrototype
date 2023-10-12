@@ -1,0 +1,3020 @@
+fileFormatVersion: 2
+guid: a38bfbc237e373045be1d875e8e950ba
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4406128380173051715
+    second: starwolf_chat_0
+  - first:
+      213: 1787140261502418454
+    second: starwolf_chat_1
+  - first:
+      213: 2814892272088690272
+    second: starwolf_chat_2
+  - first:
+      213: 2258455588775614104
+    second: starwolf_chat_3
+  - first:
+      213: -8703624893961862021
+    second: starwolf_chat_4
+  - first:
+      213: -2106153951867116740
+    second: starwolf_chat_5
+  - first:
+      213: -506177132114985796
+    second: starwolf_chat_6
+  - first:
+      213: 4908194429543731626
+    second: starwolf_chat_7
+  - first:
+      213: -3820360366471861729
+    second: starwolf_chat_8
+  - first:
+      213: 7966699218026977539
+    second: starwolf_chat_9
+  - first:
+      213: 5300346955274684384
+    second: starwolf_chat_10
+  - first:
+      213: -8745985727011872937
+    second: starwolf_chat_11
+  - first:
+      213: -3538307491060273799
+    second: starwolf_chat_12
+  - first:
+      213: 5664068509969858157
+    second: starwolf_chat_13
+  - first:
+      213: -9221251366369907542
+    second: starwolf_chat_14
+  - first:
+      213: -3920193116042932707
+    second: starwolf_chat_15
+  - first:
+      213: -2725126259730646574
+    second: starwolf_chat_16
+  - first:
+      213: -4663771067312251137
+    second: starwolf_chat_17
+  - first:
+      213: 1340196450738045415
+    second: starwolf_chat_18
+  - first:
+      213: -429381641459700139
+    second: starwolf_chat_19
+  - first:
+      213: -3495820007878038394
+    second: starwolf_chat_20
+  - first:
+      213: 7707604613387731466
+    second: starwolf_chat_21
+  - first:
+      213: -6126576071326657694
+    second: starwolf_chat_22
+  - first:
+      213: -2225856943182632757
+    second: starwolf_chat_23
+  - first:
+      213: 3562146562596939167
+    second: starwolf_chat_24
+  - first:
+      213: -8067785251390592277
+    second: starwolf_chat_25
+  - first:
+      213: -1536153834970508227
+    second: starwolf_chat_26
+  - first:
+      213: 6591148212396123223
+    second: starwolf_chat_27
+  - first:
+      213: -1297756746627945568
+    second: starwolf_chat_28
+  - first:
+      213: -8439848715114734650
+    second: starwolf_chat_29
+  - first:
+      213: 1393720501324079129
+    second: starwolf_chat_30
+  - first:
+      213: 828476006319498009
+    second: starwolf_chat_31
+  - first:
+      213: 5985471678540946902
+    second: starwolf_chat_32
+  - first:
+      213: 4149660037886724232
+    second: starwolf_chat_33
+  - first:
+      213: 3276841608822409514
+    second: starwolf_chat_34
+  - first:
+      213: 1234520549543433234
+    second: starwolf_chat_35
+  - first:
+      213: 5165517178806227209
+    second: starwolf_chat_36
+  - first:
+      213: -3151718170887981682
+    second: starwolf_chat_37
+  - first:
+      213: 7776529314539765244
+    second: starwolf_chat_38
+  - first:
+      213: -1207087359577339105
+    second: starwolf_chat_39
+  - first:
+      213: -5853873902621294284
+    second: starwolf_chat_40
+  - first:
+      213: 4131260411340214427
+    second: starwolf_chat_41
+  - first:
+      213: 4392584626493292374
+    second: starwolf_chat_42
+  - first:
+      213: 1588260403502144530
+    second: starwolf_chat_43
+  - first:
+      213: 2468380231911187668
+    second: starwolf_chat_44
+  - first:
+      213: -4493666681950088013
+    second: starwolf_chat_45
+  - first:
+      213: -6657586206215776096
+    second: starwolf_chat_46
+  - first:
+      213: -2289697628173484265
+    second: starwolf_chat_47
+  - first:
+      213: 5246756955972260332
+    second: starwolf_chat_48
+  - first:
+      213: 1351271027148074023
+    second: starwolf_chat_49
+  - first:
+      213: 6392162021333478562
+    second: starwolf_chat_50
+  - first:
+      213: -256129457325517214
+    second: starwolf_chat_51
+  - first:
+      213: -5695681797895768295
+    second: starwolf_chat_52
+  - first:
+      213: -7606195615453081853
+    second: starwolf_chat_53
+  - first:
+      213: 1045903009774178062
+    second: starwolf_chat_54
+  - first:
+      213: -2500754190208246504
+    second: starwolf_chat_55
+  - first:
+      213: 1366659914992550428
+    second: starwolf_chat_56
+  - first:
+      213: -3364383455133875862
+    second: starwolf_chat_57
+  - first:
+      213: -7443542748009186054
+    second: starwolf_chat_58
+  - first:
+      213: 1145611159277089672
+    second: starwolf_chat_59
+  - first:
+      213: -1204736042407202785
+    second: starwolf_chat_60
+  - first:
+      213: -7654593038974914104
+    second: starwolf_chat_61
+  - first:
+      213: 5906048902287398128
+    second: starwolf_chat_62
+  - first:
+      213: -5703620696418596665
+    second: starwolf_chat_63
+  - first:
+      213: 9208327386413703047
+    second: starwolf_chat_64
+  - first:
+      213: -4223404686927450996
+    second: starwolf_chat_65
+  - first:
+      213: 5436322436294751324
+    second: starwolf_chat_66
+  - first:
+      213: 7717572834499853583
+    second: starwolf_chat_67
+  - first:
+      213: 913809246290638320
+    second: starwolf_chat_68
+  - first:
+      213: 2379407889013008104
+    second: starwolf_chat_69
+  - first:
+      213: 1195689335192263780
+    second: starwolf_chat_70
+  - first:
+      213: 826774263298845718
+    second: starwolf_chat_71
+  - first:
+      213: -8962527349142951406
+    second: starwolf_chat_72
+  - first:
+      213: -1135068759913940528
+    second: starwolf_chat_73
+  - first:
+      213: -4265719269821712159
+    second: starwolf_chat_74
+  - first:
+      213: 6208384651718946070
+    second: starwolf_chat_75
+  - first:
+      213: 1971837373387099600
+    second: starwolf_chat_76
+  - first:
+      213: -865736737156006124
+    second: starwolf_chat_77
+  - first:
+      213: -8988760698979661654
+    second: starwolf_chat_78
+  - first:
+      213: -986108407289558905
+    second: starwolf_chat_79
+  - first:
+      213: 330180762591757352
+    second: starwolf_chat_80
+  - first:
+      213: -1507460320353292694
+    second: starwolf_chat_81
+  - first:
+      213: -8341178006807479977
+    second: starwolf_chat_82
+  - first:
+      213: -1631796339959468454
+    second: starwolf_chat_83
+  - first:
+      213: 300884553675673413
+    second: starwolf_chat_84
+  - first:
+      213: -6037150701043158211
+    second: starwolf_chat_85
+  - first:
+      213: 1803281819210257652
+    second: starwolf_chat_86
+  - first:
+      213: -7356426801528021802
+    second: starwolf_chat_87
+  - first:
+      213: 4533165093646336020
+    second: starwolf_chat_88
+  - first:
+      213: 64978104524989426
+    second: starwolf_chat_89
+  - first:
+      213: 25921138878354061
+    second: starwolf_chat_90
+  - first:
+      213: 8075103777566268065
+    second: starwolf_chat_91
+  - first:
+      213: 2386175034997175142
+    second: starwolf_chat_92
+  - first:
+      213: -127324584433351351
+    second: starwolf_chat_93
+  - first:
+      213: 5104203546844832356
+    second: starwolf_chat_94
+  - first:
+      213: -5257612564740412198
+    second: starwolf_chat_95
+  - first:
+      213: 2786423005734605759
+    second: starwolf_chat_96
+  - first:
+      213: 4986430634732346714
+    second: starwolf_chat_97
+  - first:
+      213: 3112142650904110023
+    second: starwolf_chat_98
+  - first:
+      213: -5868345116941687005
+    second: starwolf_chat_99
+  - first:
+      213: 7848253171920861944
+    second: starwolf_chat_100
+  - first:
+      213: 2945816983303084108
+    second: starwolf_chat_101
+  - first:
+      213: 1826837701556837372
+    second: starwolf_chat_102
+  - first:
+      213: -1161917069638668231
+    second: starwolf_chat_103
+  - first:
+      213: 3694879144466504650
+    second: starwolf_chat_104
+  - first:
+      213: 7859205783760764368
+    second: starwolf_chat_105
+  - first:
+      213: 8427696429497056356
+    second: starwolf_chat_106
+  - first:
+      213: 1895392785088166060
+    second: starwolf_chat_107
+  - first:
+      213: -471620811599228752
+    second: starwolf_chat_108
+  - first:
+      213: -475705200988166583
+    second: starwolf_chat_109
+  - first:
+      213: -3112785644964780082
+    second: starwolf_chat_110
+  - first:
+      213: 9154149268906022669
+    second: starwolf_chat_111
+  - first:
+      213: 9099904772667799422
+    second: starwolf_chat_112
+  - first:
+      213: -8069384149411742721
+    second: starwolf_chat_113
+  - first:
+      213: 5408640135243371220
+    second: starwolf_chat_114
+  - first:
+      213: -6822064955429106770
+    second: starwolf_chat_115
+  - first:
+      213: 6656262091299129707
+    second: starwolf_chat_116
+  - first:
+      213: 7744395130048343291
+    second: starwolf_chat_117
+  - first:
+      213: -7523704645739137066
+    second: starwolf_chat_118
+  - first:
+      213: 6175253320497982356
+    second: starwolf_chat_119
+  - first:
+      213: 6819279005882808593
+    second: starwolf_chat_120
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: starwolf_chat_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1769
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3476bf6ca66b52d30800000000000000
+      internalID: 4406128380173051715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_1
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 1769
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61e76a269923dc810800000000000000
+      internalID: 1787140261502418454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_2
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 1769
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06ea6d68b91801720800000000000000
+      internalID: 2814892272088690272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_3
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 1769
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89657f56465a75f10800000000000000
+      internalID: 2258455588775614104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_4
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 1769
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b740821d543863780800000000000000
+      internalID: -8703624893961862021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_5
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 1769
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c33eca0c32075c2e0800000000000000
+      internalID: -2106153951867116740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_6
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 1769
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbc3cd68492b9f8f0800000000000000
+      internalID: -506177132114985796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_7
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 1769
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa1518534d86d1440800000000000000
+      internalID: 4908194429543731626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_8
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 1769
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1aa672ec7a5bfac0800000000000000
+      internalID: -3820360366471861729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_9
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 1769
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30951eabab66f8e60800000000000000
+      internalID: 7966699218026977539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_10
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 1769
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e7887f297d9e8940800000000000000
+      internalID: 5300346955274684384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_11
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1602
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75f12dac15400a680800000000000000
+      internalID: -8745985727011872937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_12
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 1602
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97daf39651865eec0800000000000000
+      internalID: -3538307491060273799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_13
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 1602
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6eba30ec40da9e40800000000000000
+      internalID: 5664068509969858157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_14
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 1602
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aacafe21db8870080800000000000000
+      internalID: -9221251366369907542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_15
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 1602
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1e445b812da899c0800000000000000
+      internalID: -3920193116042932707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_16
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 1602
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d97aa8ea186e2ad0800000000000000
+      internalID: -2725126259730646574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_17
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 1602
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffedb1b8ce4f64fb0800000000000000
+      internalID: -4663771067312251137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_18
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 1602
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e10b7f3295599210800000000000000
+      internalID: 1340196450738045415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_19
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 1602
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55e68bb0ca78a0af0800000000000000
+      internalID: -429381641459700139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_20
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 1602
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68ce9b7793a5c7fc0800000000000000
+      internalID: -3495820007878038394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_21
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 1602
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a02432a2f89e6fa60800000000000000
+      internalID: 7707604613387731466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_22
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1435
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2639a2be5870afaa0800000000000000
+      internalID: -6126576071326657694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_23
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 1435
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc823cc37ea2c11e0800000000000000
+      internalID: -2225856943182632757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_24
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 1435
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f952875fc694f6130800000000000000
+      internalID: 3562146562596939167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_25
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 1435
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bea6abe0f08790090800000000000000
+      internalID: -8067785251390592277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_26
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 1435
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d349a3ad93c7eaae0800000000000000
+      internalID: -1536153834970508227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_27
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 1435
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75462d5b066787b50800000000000000
+      internalID: 6591148212396123223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_28
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 1435
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0abef506d117dfde0800000000000000
+      internalID: -1297756746627945568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_29
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 1435
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cb9c815f42afda80800000000000000
+      internalID: -8439848715114734650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_30
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 1435
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 910e995696d775310800000000000000
+      internalID: 1393720501324079129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_31
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 1435
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 913ab9dc9865f7b00800000000000000
+      internalID: 828476006319498009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_32
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 1435
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dd189c77caa01350800000000000000
+      internalID: 5985471678540946902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_33
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1268
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8884fd091dd869930800000000000000
+      internalID: 4149660037886724232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_34
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 1268
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a29441fe41ea97d20800000000000000
+      internalID: 3276841608822409514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_35
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 1268
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 214d47726e5e12110800000000000000
+      internalID: 1234520549543433234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_36
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 1268
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9015ceb818a9fa740800000000000000
+      internalID: 5165517178806227209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_37
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 1268
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e85f318a509d244d0800000000000000
+      internalID: -3151718170887981682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_38
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 1268
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfdfd82b538cbeb60800000000000000
+      internalID: 7776529314539765244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_39
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 1268
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1b478f11709f3fe0800000000000000
+      internalID: -1207087359577339105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_40
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 1268
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 431045263bcd2cea0800000000000000
+      internalID: -5853873902621294284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_41
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 1268
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b90519ca47f255930800000000000000
+      internalID: 4131260411340214427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_42
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 1268
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65f79f3e17895fc30800000000000000
+      internalID: 4392584626493292374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_43
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 1268
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21c50990c62aa0610800000000000000
+      internalID: 1588260403502144530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_44
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1101
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d4a9ad2eb2714220800000000000000
+      internalID: 2468380231911187668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_45
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 1101
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b45b5316f943a1c0800000000000000
+      internalID: -4493666681950088013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_46
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 1101
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a8d7fc6e908b93a0800000000000000
+      internalID: -6657586206215776096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_47
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 1101
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71f3aa5732c5930e0800000000000000
+      internalID: -2289697628173484265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_48
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 1101
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce1598727a930d840800000000000000
+      internalID: 5246756955972260332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_49
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 1101
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72c207007dda0c210800000000000000
+      internalID: 1351271027148074023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_50
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 1101
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ac2354cd7585b850800000000000000
+      internalID: 6392162021333478562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_51
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 1101
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26659979d9b027cf0800000000000000
+      internalID: -256129457325517214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_52
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 1101
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 917b3c2f49fd4f0b0800000000000000
+      internalID: -5695681797895768295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_53
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 1101
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f09c8136d517690800000000000000
+      internalID: -7606195615453081853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_54
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 1101
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0f0a17fe3bc38e00800000000000000
+      internalID: 1045903009774178062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_55
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 934
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81d511640598b4dd0800000000000000
+      internalID: -2500754190208246504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_56
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 934
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1285e9a3f957f210800000000000000
+      internalID: 1366659914992550428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_57
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 934
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a614b84a21f4f41d0800000000000000
+      internalID: -3364383455133875862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_58
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 934
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afc3a7aee4933b890800000000000000
+      internalID: -7443542748009186054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_59
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 934
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8833f67974706ef00800000000000000
+      internalID: 1145611159277089672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_60
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 934
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f107530d3fae74fe0800000000000000
+      internalID: -1204736042407202785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_61
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 934
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c1f8b3df2c65c590800000000000000
+      internalID: -7654593038974914104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_62
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 934
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f41dee5f2086f150800000000000000
+      internalID: 5906048902287398128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_63
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 934
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c84768123ba8d0b0800000000000000
+      internalID: -5703620696418596665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_64
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 934
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78f90ba58fc8acf70800000000000000
+      internalID: 9208327386413703047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_65
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 934
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8c28f450d37365c0800000000000000
+      internalID: -4223404686927450996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_66
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 767
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c54b5d3f372b17b40800000000000000
+      internalID: 5436322436294751324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_67
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 767
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0d71908a935a1b60800000000000000
+      internalID: 7717572834499853583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_68
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 767
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f5fe9dfaa08eac00800000000000000
+      internalID: 913809246290638320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_69
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 767
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e6e1605eda550120800000000000000
+      internalID: 2379407889013008104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_70
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 767
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46c9bd58d11f79010800000000000000
+      internalID: 1195689335192263780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_71
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 767
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61cec51efca497b00800000000000000
+      internalID: 826774263298845718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_72
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 767
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21a6c988cd4be9380800000000000000
+      internalID: -8962527349142951406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_73
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 767
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d9bfa90afc6f30f0800000000000000
+      internalID: -1135068759913940528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_74
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 767
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e8fcb2ccee1dc4c0800000000000000
+      internalID: -4265719269821712159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_75
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 767
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61de1b282fc982650800000000000000
+      internalID: 6208384651718946070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_76
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 767
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ddc393d4af5d5b10800000000000000
+      internalID: 1971837373387099600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_77
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 600
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41f7fc046094cf3f0800000000000000
+      internalID: -865736737156006124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_78
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 600
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa8435ec4c1814380800000000000000
+      internalID: -8988760698979661654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_79
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 600
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 788ca71d0a3a052f0800000000000000
+      internalID: -986108407289558905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_80
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 600
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82403f977a9059400800000000000000
+      internalID: 330180762591757352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_81
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 600
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e685453dc641be0800000000000000
+      internalID: -1507460320353292694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_82
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 600
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75970f7dbce2e3c80800000000000000
+      internalID: -8341178006807479977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_83
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 600
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5eeeeadfd1ba59e0800000000000000
+      internalID: -1631796339959468454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_84
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 600
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54f8d3c48e4fc2400800000000000000
+      internalID: 300884553675673413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_85
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 600
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3372d07c6bb73ca0800000000000000
+      internalID: -6037150701043158211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_86
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 600
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f492f7a24b860910800000000000000
+      internalID: 1803281819210257652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_87
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 600
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dc52ceccc8b8e990800000000000000
+      internalID: -7356426801528021802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_88
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 433
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4108dfa82a909ee30800000000000000
+      internalID: 4533165093646336020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_89
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 433
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f3e366ed39d6e000800000000000000
+      internalID: 64978104524989426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_90
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 433
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d82940373271c5000800000000000000
+      internalID: 25921138878354061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_91
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 433
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aa904a1a18801070800000000000000
+      internalID: 8075103777566268065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_92
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 433
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66379e44d856d1120800000000000000
+      internalID: 2386175034997175142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_93
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 433
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9450dad07f6ab3ef0800000000000000
+      internalID: -127324584433351351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_94
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 433
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 462a9f62516c5d640800000000000000
+      internalID: 5104203546844832356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_95
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 433
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adc64087a353907b0800000000000000
+      internalID: -5257612564740412198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_96
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 433
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb399cae5fc5ba620800000000000000
+      internalID: 2786423005734605759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_97
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 433
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5dd8583e3c533540800000000000000
+      internalID: 4986430634732346714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_98
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 433
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c36b7d804d803b20800000000000000
+      internalID: 3112142650904110023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_99
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 266
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 327ea4d35337f8ea0800000000000000
+      internalID: -5868345116941687005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_100
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 266
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fafca39da89aec60800000000000000
+      internalID: 7848253171920861944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_101
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 266
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c48d71f40f4a1e820800000000000000
+      internalID: 2945816983303084108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_102
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 266
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfb1697e53b3a5910800000000000000
+      internalID: 1826837701556837372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_103
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 266
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93079bdc49a00efe0800000000000000
+      internalID: -1161917069638668231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_104
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 266
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acbdced6109d64330800000000000000
+      internalID: 3694879144466504650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_105
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 266
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dd71cd3502811d60800000000000000
+      internalID: 7859205783760764368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_106
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 266
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46cfff2304135f470800000000000000
+      internalID: 8427696429497056356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_107
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 266
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca8b40122b9cd4a10800000000000000
+      internalID: 1895392785088166060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_108
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 266
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b052ffde577479f0800000000000000
+      internalID: -471620811599228752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_109
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 266
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9466b4dd3a4f569f0800000000000000
+      internalID: -475705200988166583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_110
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 99
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec760f9b2f92dc4d0800000000000000
+      internalID: -3112785644964780082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_111
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 99
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d079b0262421a0f70800000000000000
+      internalID: 9154149268906022669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_112
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 99
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e77feb86d2b594e70800000000000000
+      internalID: 9099904772667799422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_113
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 99
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffb352a9ed9c30090800000000000000
+      internalID: -8069384149411742721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_114
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 99
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d21a1bfb895f0b40800000000000000
+      internalID: 5408640135243371220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_115
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 99
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eabc10161182351a0800000000000000
+      internalID: -6822064955429106770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_116
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 99
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6988cb0b1bcf5c50800000000000000
+      internalID: 6656262091299129707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_117
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 99
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfcebc6d65e997b60800000000000000
+      internalID: 7744395130048343291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_118
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 99
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d733cbac7e669790800000000000000
+      internalID: -7523704645739137066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_119
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 99
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49b65565d28e2b550800000000000000
+      internalID: 6175253320497982356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starwolf_chat_120
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 99
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1197ce13022f2ae50800000000000000
+      internalID: 6819279005882808593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

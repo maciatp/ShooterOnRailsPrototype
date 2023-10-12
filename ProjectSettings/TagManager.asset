@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - LaserBeam
+  - Bomb
+  - Explosion
+  - Button
+  - Trigger
+  - Ring
+  - ChargingLaser
+  - Enemy
+  - PowerUp
+  - Obstacle
+  - BillBoard
+  - GuidedChargedTrigger
+  - SpecialBox
+  - ChargedLaserSphere
+  - Mirilla_Externa
+  - Scenario
+  - SmartBombExplosion
+  - EnemyLaserBeam
+  - ScoreManager
+  - TimeManager
+  - Water
+  - FxTemporaire
+  - Wall_BrokenObj
+  - Boss
+  - Wingman
+  - LightTrigger
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Post
+  - Player
+  - Lasers
+  - ChargedLaser
+  - Enemies
+  - PowerUps
+  - Scenario
+  - FX
+  - Bombs
+  - BombFXs
+  - SpecialBoxes
+  - EnemyLasers
+  - Buttons
+  - PlayerTriggers
+  - LaserTriggers
+  - HealthItems
+  - GuidedChargedTrigger
+  - Wall
+  - ChargedLaserExplosion
+  - Boss
+  - Wingmans
+  - LightTriggers
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
