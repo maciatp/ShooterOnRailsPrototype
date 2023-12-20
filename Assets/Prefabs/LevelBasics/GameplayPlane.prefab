@@ -16194,15 +16194,15 @@ MonoBehaviour:
   aimTarget: {fileID: 3173809264742986840}
   dolly: {fileID: 3173809264590528393}
   cameraParent: {fileID: 3173809264498424893}
-  arwing_Animator: {fileID: 0}
-  player_Animator: {fileID: 0}
-  playerInScene: {fileID: 0}
-  cineMachineVirtualCamera_script_: {fileID: 0}
-  mirilla_Lejos: {fileID: 0}
+  arwing_Animator: {fileID: 449781716894446396}
+  player_Animator: {fileID: 5324376001234827800}
+  playerInScene: {fileID: 3173809263980193739}
+  cineMachineVirtualCamera_script_: {fileID: 3173809264343331443}
+  mirilla_Lejos: {fileID: 8672205779671727611}
   chargedLaserSphere_Script_: {fileID: 0}
-  playerArwing: {fileID: 0}
-  leftTrail: {fileID: 0}
-  rightTrail: {fileID: 0}
+  playerArwing: {fileID: 6840026720279931989}
+  leftTrail: {fileID: 3851918089725574659}
+  rightTrail: {fileID: 4015676508168831769}
   isTrailsActive: 1
   trail: {fileID: 3173809264617881426}
   circle: {fileID: 3173809263438771414}
@@ -16345,7 +16345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e90e0c3671319f48890e784d905777a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  infiniteSlowMo: 0
+  infiniteSlowMo: 1
   isSlowMotionActivated: 0
   isMovingSlowMotion: 0
   isSlowMoAble: 0
@@ -26801,8 +26801,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9333b8357b74328449a9b34b92ded408, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vCamera_Animator: {fileID: 0}
-  playerMovement_Script_: {fileID: 0}
+  vCamera_Animator: {fileID: 659116463}
+  playerMovement_Script_: {fileID: 3173809263980193737}
 --- !u!1 &3173809264479733626
 GameObject:
   m_ObjectHideFlags: 0
@@ -31761,8 +31761,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraHolder: {fileID: 3173809264498424894}
-  cameraHolder_Animator: {fileID: 0}
-  playerMovement_Script_: {fileID: 0}
+  cameraHolder_Animator: {fileID: 3173809264498424891}
+  playerMovement_Script_: {fileID: 3173809263980193737}
 --- !u!95 &3173809264498424891
 Animator:
   serializedVersion: 3
@@ -31836,7 +31836,7 @@ MonoBehaviour:
   m_Path: {fileID: 0}
   m_UpdateMethod: 0
   m_PositionUnits: 1
-  m_Speed: 25
+  m_Speed: 0
   m_Position: 0
 --- !u!114 &3173809264590528392
 MonoBehaviour:
@@ -31853,13 +31853,9 @@ MonoBehaviour:
   currentTrack: 0
   tracks:
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  extraTracks:
-  - {fileID: 0}
+  extraTracks: []
   dolly: {fileID: 3173809264590528393}
-  playerMovement_Script_: {fileID: 0}
+  playerMovement_Script_: {fileID: 3173809263980193737}
   bifurcationTrigger_GO: {fileID: 1529978064855425578, guid: 855aca55b0238f848a9bc152c8a920b8,
     type: 3}
 --- !u!1 &3173809264617881429
