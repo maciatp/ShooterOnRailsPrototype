@@ -72,7 +72,7 @@ public class UIOverHeatingBar_Script : MonoBehaviour
     private void PaintYellow()
     {
         overHeatingBarImage.color = Color.yellow;
-        Debug.Log("he pasado a amarillo");
+       
     }
 
     public void IncreaseBarSize(float overHeatingAddedPoints)
