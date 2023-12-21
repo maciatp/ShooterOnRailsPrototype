@@ -16168,14 +16168,14 @@ MonoBehaviour:
   moveDirection: {x: 0, y: 0}
   xSpeed: 30
   ySpeed: 30
-  xyLookSpeed: 10000
-  chasingDistance: 0.9
-  forwardSpeed: 27
+  xyLookSpeed: 500000
+  chasingDistance: 0.525
+  forwardSpeed: 0
   originalXYLookSpeed: 0
   originalYSpeed: 0
   originalXSpeed: 0
   lerpTimeToHorizontalLean: 5
-  leanLimit: 50
+  leanLimit: 30
   quickspinTimeSpan: 0.5
   timeTiltingToComplete: 0.35
   velocityMultiplierWhenTiltingAndTurning: 1.2
@@ -31736,7 +31736,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3173809264498424894}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

@@ -124,13 +124,6 @@ public class PlayerMovement_Script : MonoBehaviour
 
     private void Awake()
     {
-        
-
-        leftTrail = GameObject.Find("Trail_Left").GetComponent<TrailRenderer>();
-        rightTrail = GameObject.Find("Trail_Right").GetComponent<TrailRenderer>();
-
-
-
         originalXYLookSpeed = xyLookSpeed;
         originalYSpeed = ySpeed;
         originalXSpeed = xSpeed;
@@ -655,13 +648,6 @@ public class PlayerMovement_Script : MonoBehaviour
 
         }
 
-
-
-
-
-
-
-
     }
 
     private void FixedUpdate()
@@ -849,8 +835,7 @@ public class PlayerMovement_Script : MonoBehaviour
         pos.x = Mathf.Clamp01(pos.x);
         pos.y = Mathf.Clamp01(pos.y);
        pos.z = Mathf.Clamp(pos.z,10,10);
-        //pos.z = 10; //  esto era para arreglar un fallo que venía por otro lado. Hacía que la nave estuviera a 10u de distancia cada frame. arreglado el fallo original, esto se anula. se queda aquí para aprender.
-
+       
 
         //Debug.Log(pos.x + "pos.x" + "." + pos.y + "pos.y");
         transform.position = Camera.main.ViewportToWorldPoint(pos);
@@ -860,15 +845,9 @@ public class PlayerMovement_Script : MonoBehaviour
     {
         aimTarget.parent.position =  Vector3.zero;
         aimTarget.localPosition = new Vector3(h, v, chasingDistance);
-       
-
-      
-
-
-
+           
         //ENCARGADO DEL CABECEO Y DE ROTAR LA NAVE HACIA LA POSICION DE APUNTADO (JOYSTICK H,V,1)
         transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(aimTarget.position), Mathf.Deg2Rad * xyLookSpeed * Time.unscaledDeltaTime); //AQUÍ ESTÁ LA GUISA DE LA PERSECUCIÓN: se rota a todo el player, no sólo al modelo
-        //transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(aimTarget.position), Mathf.Deg2Rad * lookSpeedCurve.Evaluate(lookSpeedCurveCompleted) * Time.deltaTime); 
     }
 
    
