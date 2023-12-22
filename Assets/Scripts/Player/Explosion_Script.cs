@@ -20,7 +20,9 @@ public class Explosion_Script : MonoBehaviour
     public Button_Script button_Script_;
     public DoorHouse_Script doorHouse_Script_;
 
-    public PlayerMovement_Script playerMovement_Script_;
+    [SerializeField] float explosionDuration = 0.5f;
+    float explosionCounter = 0;
+    
 
     public float maxSize;
     public float colliderIncreasingRate = 1.04f;
@@ -31,7 +33,6 @@ public class Explosion_Script : MonoBehaviour
     {
         explosionCollider = this.gameObject.GetComponent<BoxCollider>();
         explosionParticles = this.gameObject.GetComponent<ParticleSystem>();
-        playerMovement_Script_ = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement_Script>();
         
     }
     // Start is called before the first frame update
@@ -46,6 +47,7 @@ public class Explosion_Script : MonoBehaviour
 
 
             //float zoom = state ? -7 : 0;
+            PlayerMovement_Script playerMovement_Script_ = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement_Script>();
 
             DOVirtual.Float(origChrom, endChrom, 3, playerMovement_Script_.Chromatic);
 
@@ -60,9 +62,18 @@ public class Explosion_Script : MonoBehaviour
     {
         if (explosionCollider.size.x <= maxSize)
         {
-            explosionCollider.size = new Vector3((explosionCollider.size.x) * colliderIncreasingRate, (explosionCollider.size.y) * colliderIncreasingRate, (explosionCollider.size.z) * colliderIncreasingRate);
+            explosionCollider.size += new Vector3((explosionCollider.size.x * colliderIncreasingRate * Time.deltaTime) ,(explosionCollider.size.y * colliderIncreasingRate * Time.deltaTime) , (explosionCollider.size.z * colliderIncreasingRate * Time.deltaTime));
 
         }
+
+        explosionCounter += Time.deltaTime;
+        if(explosionCounter >= explosionDuration)
+        {
+            explosionCollider.enabled = false;
+            explosionCounter = 0;
+        }
+       
+
     }
 
     private void OnTriggerEnter(Collider other)

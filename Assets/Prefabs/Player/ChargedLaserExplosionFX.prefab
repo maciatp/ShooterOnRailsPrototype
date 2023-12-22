@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 2862447634316608794}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2, y: 1.2000003, z: 1.2000003}
+  m_LocalScale: {x: 6, y: 6, z: 6}
   m_Children: []
   m_Father: {fileID: 6259924497322431050}
   m_RootOrder: 3
@@ -139,7 +139,7 @@ Transform:
   m_GameObject: {fileID: 6253284929199700540}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 6259924497322431050}
   m_RootOrder: 2
@@ -396,7 +396,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 4
+      scalar: 0.5
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -1145,7 +1145,7 @@ ParticleSystem:
     curve:
       serializedVersion: 2
       minMaxState: 1
-      scalar: 2
+      scalar: 4
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -1153,21 +1153,21 @@ ParticleSystem:
         - serializedVersion: 3
           time: 0
           value: 0
-          inSlope: 2.221198
-          outSlope: 1.9098452
-          tangentMode: 5
-          weightedMode: 3
-          inWeight: 0.33333334
-          outWeight: 0.35892117
+          inSlope: 2
+          outSlope: 2
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
         - serializedVersion: 3
           time: 1
-          value: 0.6854819
-          inSlope: 0.48576814
-          outSlope: 0.48576814
+          value: 1
+          inSlope: 0
+          outSlope: 0
           tangentMode: 0
-          weightedMode: 3
-          inWeight: 0.01659751
-          outWeight: 0.33333334
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
@@ -5009,7 +5009,7 @@ Transform:
   m_GameObject: {fileID: 6253858634502229260}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 6259924497322431050}
   m_RootOrder: 1
@@ -5022,7 +5022,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6253858634502229260}
   serializedVersion: 6
-  lengthInSec: 3
+  lengthInSec: 1
   simulationSpeed: 1
   stopAction: 2
   cullingMode: 1
@@ -9883,7 +9883,7 @@ Transform:
   m_GameObject: {fileID: 6253891871589744810}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6259452526398698226}
   - {fileID: 6251022462077974664}
@@ -9900,7 +9900,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6253891871589744810}
   serializedVersion: 6
-  lengthInSec: 2
+  lengthInSec: 1
   simulationSpeed: 1
   stopAction: 2
   cullingMode: 3
@@ -10144,8 +10144,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 1.5
-      minScalar: 1
+      scalar: 7.5
+      minScalar: 5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -14768,7 +14768,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.2, y: 0.2, z: 0.2}
+  m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1593717525100976187
 MonoBehaviour:
@@ -14787,9 +14787,9 @@ MonoBehaviour:
   billboard_Script_: {fileID: 0}
   button_Script_: {fileID: 0}
   doorHouse_Script_: {fileID: 0}
-  playerMovement_Script_: {fileID: 0}
-  maxSize: 2
-  colliderIncreasingRate: 1.9
+  explosionDuration: 0.5
+  maxSize: 6
+  colliderIncreasingRate: 3
   hitCounter: 0
 --- !u!82 &1581414130781077266
 AudioSource:
@@ -14930,7 +14930,7 @@ Transform:
   m_GameObject: {fileID: 6254680982675468650}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children: []
   m_Father: {fileID: 6259924497322431050}
   m_RootOrder: 0
@@ -14943,7 +14943,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6254680982675468650}
   serializedVersion: 6
-  lengthInSec: 2
+  lengthInSec: 1
   simulationSpeed: 1
   stopAction: 2
   cullingMode: 3
