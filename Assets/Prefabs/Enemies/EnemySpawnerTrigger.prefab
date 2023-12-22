@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemies: {fileID: 11400000, guid: 2eb29d737d12a0247a5320201f8bc8e0, type: 2}
   enemySelector: 1
-  enemyType: {fileID: 572149687213516547, guid: e877be0ed37807143ac62ef6fbc5c71f,
+  enemyType: {fileID: 5036721736522474603, guid: bf3502f1a1d8aa740a2d829406571835,
     type: 3}
 --- !u!65 &8260748309300683186
 BoxCollider:
@@ -169,8 +169,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Resolution: 20
   m_Appearance:
-    pathColor: {r: 1, g: 0.045656387, b: 0, a: 1}
-    inactivePathColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    pathColor: {r: 0.9348426, g: 0, b: 1, a: 1}
+    inactivePathColor: {r: 1, g: 0, b: 0, a: 1}
     width: 4.6
   m_Looped: 0
   m_Waypoints:

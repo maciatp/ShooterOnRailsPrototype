@@ -391,8 +391,6 @@ MonoBehaviour:
   tankMovement_Script_: {fileID: 0}
   enemyShooting_Script_: {fileID: 4088959348067760687}
   cinemachineDollyCart_: {fileID: 316148206559401245}
-  scoreManager_Script_: {fileID: 0}
-  timeManager_Script_: {fileID: 0}
   vehicleExplosionFX: {fileID: 4347849765963406824, guid: 08375d2e43dcbd947a2f71503049782e,
     type: 3}
   vehicleExplosion_WaterFX: {fileID: 6119980302926117880, guid: fa3eadce07c777843bacf026deaa6aa4,
@@ -403,7 +401,6 @@ MonoBehaviour:
     type: 3}
   smokeFXAfterImpact: {fileID: 6853438778040423343, guid: c865b20fd30caba479a27d91f91a8638,
     type: 3}
-  smokeFXAfterImpact_InScene: {fileID: 0}
   tinyFlames: {fileID: 6245467494975978135, guid: 082297674573b2648a0a529bc8a77169,
     type: 3}
   objectSelector: 0
@@ -458,8 +455,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.4, y: 2.92, z: 5.79}
-  m_Center: {x: 0, y: 0.21, z: 0.83}
+  m_Size: {x: 2.270237, y: 1.729207, z: 2.9435616}
+  m_Center: {x: -0.026550293, y: 0.059529305, z: 0.49097633}
 --- !u!95 &5806253420279940312
 Animator:
   serializedVersion: 3
@@ -540,6 +537,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 71cc1683d56bbd04ba88be70c95aa92e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 71cc1683d56bbd04ba88be70c95aa92e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 71cc1683d56bbd04ba88be70c95aa92e,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 71cc1683d56bbd04ba88be70c95aa92e,
         type: 3}

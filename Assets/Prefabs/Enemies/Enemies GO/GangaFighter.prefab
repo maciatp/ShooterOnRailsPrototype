@@ -186,7 +186,7 @@ Transform:
   m_GameObject: {fileID: 3201831410861168695}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_Children:
   - {fileID: 1856691584611321779}
   - {fileID: 2781645442329846186}
@@ -564,8 +564,6 @@ MonoBehaviour:
   tankMovement_Script_: {fileID: 0}
   enemyShooting_Script_: {fileID: 0}
   cinemachineDollyCart_: {fileID: 362370376600871975}
-  scoreManager_Script_: {fileID: 0}
-  timeManager_Script_: {fileID: 0}
   vehicleExplosionFX: {fileID: 4347849765963406824, guid: 08375d2e43dcbd947a2f71503049782e,
     type: 3}
   vehicleExplosion_WaterFX: {fileID: 6119980302926117880, guid: fa3eadce07c777843bacf026deaa6aa4,
@@ -609,8 +607,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 6.59, y: 2.31, z: 4.6}
-  m_Center: {x: 0, y: 0.46, z: -0.41}
+  m_Size: {x: 2.5, y: 1.4181795, z: 2.5}
+  m_Center: {x: 0, y: 0.48267388, z: -0.21926975}
 --- !u!95 &7894738063426094510
 Animator:
   serializedVersion: 3
