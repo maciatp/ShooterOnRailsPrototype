@@ -16100,6 +16100,7 @@ GameObject:
   - component: {fileID: 192264896}
   - component: {fileID: 2024795249}
   - component: {fileID: 4965980985516315823}
+  - component: {fileID: 693398764024979878}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -16170,7 +16171,7 @@ MonoBehaviour:
   ySpeed: 30
   xyLookSpeed: 500000
   chasingDistance: 0.525
-  forwardSpeed: 0
+  forwardSpeed: 27
   originalXYLookSpeed: 0
   originalYSpeed: 0
   originalXSpeed: 0
@@ -16654,6 +16655,19 @@ MonoBehaviour:
   m_DefaultActionMap: Gameplay
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!65 &693398764024979878
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3173809263980193739}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.66, y: 0.47, z: 1.36}
+  m_Center: {x: 0, y: -0.07, z: 0}
 --- !u!1 &3173809264001358298
 GameObject:
   m_ObjectHideFlags: 0
@@ -38999,7 +39013,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7545765606602169926}
   - component: {fileID: 449781716894446396}
-  - component: {fileID: 5471189428788593998}
   m_Layer: 9
   m_Name: ArwingHD
   m_TagString: Player
@@ -39049,19 +39062,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!65 &5471189428788593998
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6840026720279931989}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 8.77242, y: 2.39, z: 7.07872}
-  m_Center: {x: -0.010127128, y: -0.37, z: 0.2507144}
 --- !u!1 &6857380946688225353
 GameObject:
   m_ObjectHideFlags: 0
