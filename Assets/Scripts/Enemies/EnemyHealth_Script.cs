@@ -32,7 +32,7 @@ public class EnemyHealth_Script : MonoBehaviour
     [Header("Public Script references")]
     public Beam_Script beam_Script_;
     public ChargedLaserSphere_Script chargedLaserSphere_Script_;
-    public EnemyMovement_Script enemyMovement_Script_;
+   
     public TankMovement_Script tankMovement_Script_;
     public EnemyShooting_Script enemyShooting_Script_;
     public Cinemachine.CinemachineDollyCart cinemachineDollyCart_;
@@ -45,8 +45,9 @@ public class EnemyHealth_Script : MonoBehaviour
     public GameObject vehicleExplosionFX;
     public GameObject vehicleExplosion_WaterFX;
     public GameObject waterSplash;
-    public GameObject smokeFX;
-    public GameObject smokeFX_GO;
+    [SerializeField] GameObject smokeTrailFX;
+    public GameObject smokeFXAfterImpact;
+    GameObject smokeFXAfterImpact_InScene;
     public GameObject tinyFlames;
 
     [Header("Object Selector")]
@@ -58,51 +59,42 @@ public class EnemyHealth_Script : MonoBehaviour
 
     private void Awake()
     {
-        enemyMovement_Script_ = this.GetComponent<EnemyMovement_Script>();
-        //enemyMaterial = this.GetComponent<MeshRenderer>();  
-        enemyRB = this.gameObject.GetComponent<Rigidbody>();
-        enemyBoxCollider = this.gameObject.GetComponent<BoxCollider>();
-        scoreManager_Script_ = GameObject.FindGameObjectWithTag("ScoreManager").GetComponent<ScoreManager_Script>();
-        // timeManager_Script_ = GameObject.FindGameObjectWithTag("TimeManager").GetComponent<TimeManager_Script>();
-        timeManager_Script_ = GameObject.Find("Player").GetComponent<TimeManager_Script>();
-        enemyAnimator = this.gameObject.GetComponent<Animator>(); //DESCOMENTAR CUANDO TODOS LOS ENEMIGOS TENGAN ANIMATOR
-        if(this.gameObject.GetComponent<EnemyShooting_Script>() != null) //Para los enemigos que no disparan
-        {
-            enemyShooting_Script_ = this.gameObject.GetComponent<EnemyShooting_Script>();
-        }
-
-        if(this.gameObject.GetComponent<Cinemachine.CinemachineDollyCart>() != null)
-        {
-            cinemachineDollyCart_ = this.gameObject.GetComponent<Cinemachine.CinemachineDollyCart>();
-        }
-
-        //ESTO SE PODRÍA QUITAR
-        if (this.gameObject.GetComponent<TankMovement_Script>() != null) //Para los enemigos que no disparan
-        {
-            tankMovement_Script_ = this.gameObject.GetComponent<TankMovement_Script>();
-        }
-
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
         
+       
+        enemyRB = gameObject.GetComponent<Rigidbody>();
+        enemyBoxCollider = gameObject.GetComponent<BoxCollider>();
+        scoreManager_Script_ = GameObject.FindGameObjectWithTag("ScoreManager").GetComponent<ScoreManager_Script>();
+       
+        timeManager_Script_ = GameObject.Find("Player").GetComponent<TimeManager_Script>();
+        enemyAnimator = gameObject.GetComponent<Animator>(); 
+
+        if(gameObject.GetComponent<EnemyShooting_Script>() != null) //Para los enemigos que no disparan
+        {
+            enemyShooting_Script_ = gameObject.GetComponent<EnemyShooting_Script>();
+        }
+
+        if(gameObject.GetComponent<Cinemachine.CinemachineDollyCart>() != null)
+        {
+            cinemachineDollyCart_ = gameObject.GetComponent<Cinemachine.CinemachineDollyCart>();
+        }
+
     }
+    
 
     // Update is called once per frame
     void Update()
     {
-        if(shootDownEnemy == true)
-        {
-            StartCoroutine("ShotDown");
-        }
+        //if(shootDownEnemy == true)
+        //{
+        //    StartCoroutine("ShotDown");
+        //}
 
-        if((healthPoints <= 0)&&(isShotDown == false))
-        {
+        //if((healthPoints <= 0)&&(isShotDown == false))
+        //{
 
-            StartCoroutine("ShotDown");
-            Debug.Log("He llamado a Shotdown");
-        }
+        //    StartCoroutine("ShotDown");
+        //    Debug.Log("He llamado a Shotdown");
+        //}
 
        if((isShotDown == true) && (explodeCounter <= timeToExplode))
         {
@@ -113,12 +105,10 @@ public class EnemyHealth_Script : MonoBehaviour
             explodeCounter += Time.deltaTime;
             if(explodeCounter >= timeToExplode)
             {
-                DestroyShipLogic();
-                //ExplodeShipModel();
+                ExplodeShipModel();
                 explodeCounter = 0;
             }
-        }
-        
+        }        
     }
 
 
@@ -126,7 +116,6 @@ public class EnemyHealth_Script : MonoBehaviour
     {
         if (objectSelector == 0) // EN 0 ES ALEATORIO
         {
-
             int i = Random.Range(1, 2);
             if (i == 1)
             {
@@ -144,64 +133,76 @@ public class EnemyHealth_Script : MonoBehaviour
         }
         else if (objectSelector == 1)
         {
-
             Instantiate(ring, this.transform.position, new Quaternion(0, 0, 0, 0), null);
-
-
         }
         else if (objectSelector == 2)
         {
-
             Instantiate(bomb, this.transform.position, new Quaternion(0, 0, 0, 0), null);
-
-
         }
         
     }
-
-    
-    //SE USABA PARA BORRAR LOS WAYPOINTS. SI NO HACE FALTA, MOVER LO INDISPENSABLE ENTRE SHOTDOWN Y EXPLODE
-    public void DestroyShipLogic()
+    private void HurtEnemyWithLaser(Collision collision)
     {
-        
-        SpawnPowerUp();
-        //Debug.Log("Voy a añadir puntos");
-        scoreManager_Script_.AddHits(numOfHitsWillAdd); //ASEGURARME DE QUE SOLO AÑADE UN PUNTO
-        timeManager_Script_.AddSlowMoPoints(slowMoPointsWillIncrease);
-       
-       
-       
-        ExplodeShipModel();
-
-        /*
-         *  if (enemyMovement_Script_.beginShootingLocation != null)
+        beam_Script_ = collision.gameObject.GetComponent<Beam_Script>();
+        healthPoints -= beam_Script_.damagePoints;
+        if (healthPoints > 0)
         {
-            enemyMovement_Script_.DestroyWayPoints();
+            RumbleUponReceivingDamage();
+            Instantiate(tinyFlames, transform, false);
+        }
+        else
+        {
+            StartCoroutine(ShotDown());
+        }
+    }
+
+    //ENEMIGO CAYENDO
+    public IEnumerator ShotDown()
+    {
+        isShotDown = true;
+        enemyRB.useGravity = true;
+        enemyRB.velocity = transform.forward * cinemachineDollyCart_.m_Speed/2; //  para que caiga al ser derribado
+        enemyAnimator.enabled = false;
+
+        if(cinemachineDollyCart_ != null)
+        {
+            cinemachineDollyCart_.enabled = false;
+        }
+        smokeTrailFX = Instantiate(smokeTrailFX, transform) as GameObject;
+       
+        GameObject flames_GO = Instantiate(tinyFlames, transform, false) as GameObject;
+
+        isInvulnerable = true;
+
+        if ((enemyShooting_Script_ != null) && (enemyShooting_Script_.enabled == true)) // DESACTIVO ENEMY  Shooting PARA QUE SE CAIGA Y NO mire al player
+        {
+            enemyShooting_Script_.enabled = false;
         }
 
-        Destroy(this.gameObject);
-         * */
+        yield return new WaitForSecondsRealtime(enemyShotDownInvulnerabilityTime); //ATENCIÓN: para que espere waitForSeconds hay que usar yield return new WaitForSeconds()
+
+        isInvulnerable = false;
+
+        yield return null;
 
     }
 
-    private void ExplodeShipModel()
+    public void ExplodeShipModel()
     {
-        if(smokeFX_GO != null)
-        {
-
-        smokeFX_GO.transform.parent = null;
-        }
+        smokeTrailFX.transform.SetParent(null);
+      
+        smokeFXAfterImpact_InScene = Instantiate(smokeFXAfterImpact, transform) as GameObject; //TODO CHECK ROTATION
+        smokeFXAfterImpact_InScene.transform.SetParent(null);
+        smokeFXAfterImpact_InScene.transform.rotation = Quaternion.identity;
+        
        
         if(surfaceCollided != null)
         {
-           
-
             //EXPLOSIONES DIFERENTES
             if (surfaceCollided.gameObject.layer == 4) //EXPLOSION ON WATER
             {
                 Instantiate(waterSplash, this.transform.position, this.transform.rotation);
                 Instantiate(vehicleExplosion_WaterFX, this.transform.position, this.transform.rotation);
-
             }
             else if (surfaceCollided.gameObject.layer == 14)  //EXPLOSION ON GROUND
             {
@@ -221,15 +222,13 @@ public class EnemyHealth_Script : MonoBehaviour
             Instantiate(vehicleExplosionFX, this.transform.position, this.transform.rotation);
             //DESTRUYO NAVE POR CONTADOR DE TIEMPO SIN CHOCAR CON NADA
         }
-        
 
-        //ESTO SE PODRÍA BORRAR
-        //if (enemyMovement_Script_ != null)
-        //{
-        //    enemyMovement_Script_.DestroyWayPoints();
-        //}
-        
-        Destroy(this.gameObject);
+        SpawnPowerUp();
+        scoreManager_Script_.AddHits(numOfHitsWillAdd);
+        timeManager_Script_.AddSlowMoPoints(slowMoPointsWillIncrease);
+
+        Destroy(transform.parent.gameObject);
+        Destroy(gameObject);
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -238,28 +237,23 @@ public class EnemyHealth_Script : MonoBehaviour
 
         if (((collision.gameObject.layer == 14) || (collision.gameObject.layer == 4)) && (isShotDown == true)) //14 es el num de LAYER que tiene el escenario, 4 es el agua
         {
-            
-            DestroyShipLogic();
+
+            ExplodeShipModel();
         }
        else if ((collision.gameObject.tag == "LaserBeam") && (isInvulnerable == false))
         {
-              if (isShotDown == true)//cuando le das con el láser cuando ya está shotdown
+            if (isShotDown == true)//cuando le das con el láser cuando ya está shotdown
             {
                 Instantiate(tinyFlames, this.transform, false);
-                DestroyShipLogic();
-                Debug.Log("HE DESTRUIDO LA LOGICA");
+                ExplodeShipModel();
             }
 
             else if (isShotDown == false)
             {
                 //HURT WITH LASER
-                HurtEnemyWithLaser(collision);
-                Debug.Log("HE HERIDO AL ENEMIGO");
-            }
-
-           
-
-            Destroy(collision.gameObject);
+                HurtEnemyWithLaser(collision);             
+            }          
+            Destroy(collision.gameObject); //TODO: Pasar gestión de destrucción de láseres a los láseres
         }
         else if ((collision.gameObject.tag == "ChargedLaserSphere")  && (isInvulnerable == false))
         {
@@ -267,53 +261,28 @@ public class EnemyHealth_Script : MonoBehaviour
             {
                 chargedLaserSphere_Script_ = collision.gameObject.GetComponent<ChargedLaserSphere_Script>();
                 healthPoints -= chargedLaserSphere_Script_.damagePoints;
-                //chargedLaserSphere_Script_.Explode();
                 if (healthPoints <= 0) // así ChargedLaserSphere no destruye directamente, así puedes quitarle vida y no matarlo de golpe.( por si hay enemigos más resistentes)
                 {
-                    // SelectRandomDestruction();
-                    DestroyShipLogic();
+                    ExplodeShipModel(); ;
                 }
-               // Debug.Log("He destruido con la esfera");
+              
                 RumbleUponReceivingDamage();
             }
             else //SHOT DOWN TRUE
             {
-                DestroyShipLogic();
+                ExplodeShipModel();
             }
 
            
         }
         else if ((collision.gameObject.tag == "Bomb")  && (isInvulnerable == false))
         {
-            DestroyShipLogic(); // EL ENEMIGO EXPLOTA CON LA BOMBA
+            ExplodeShipModel(); // EL ENEMIGO EXPLOTA CON LA BOMBA
         }
       
-      
-
-        
-       
-        
     }
 
-    private void HurtEnemyWithLaser(Collision collision)
-    {
-        beam_Script_ = collision.gameObject.GetComponent<Beam_Script>();
-        healthPoints -= beam_Script_.damagePoints;
-        // Debug.Log("He restado " + beam_Script_.damagePoints);
-        if (healthPoints > 0)
-        {
-            RumbleUponReceivingDamage();
-            Instantiate(tinyFlames, this.transform, false);
-            //enemyRB.AddExplosionForce(1000, this.transform.position, 100);
-        }
-
-        //else if (healthPoints <= 0)
-        //{
-        //    Debug.Log("VOY A EMPEZAR LA CORUTINA SHOTDOWN");
-        //    StartCoroutine("ShotDown");
-        //}
-        
-    }
+    
 
 
     private void OnTriggerEnter(Collider other)
@@ -324,30 +293,16 @@ public class EnemyHealth_Script : MonoBehaviour
             
             if(isShotDown == true)
             {
-                //ExplodeShipModel();
-               DestroyShipLogic();
+                ExplodeShipModel();
             }
             else
-            {
-                //StartCoroutine("ShotDown");
-                //RumbleUponReceivingDamage();
-                ////scoreManager_Script_.AddHits(1);
+            {                
                 SelectRandomDestruction();
             }
-
-            //Debug.Log("He recibido de la explosion");
-            // RumbleUponReceivingDamage();
-
-
           }
          if ((other.gameObject.tag == "SmartBombExplosion") && (isInvulnerable == false))
-        {
-
-            //DestroyShipLogic(); // EL ENEMIGO EXPLOTA CON LA BOMBA
-
+        {            
             SelectRandomDestruction();
-
-            //(OLD)StartCoroutine("ShotDown"); Si quieres que el enemigo sea derribado en lugar de explotar directamente.
         }
     }
 
@@ -356,65 +311,16 @@ public class EnemyHealth_Script : MonoBehaviour
         int i = Random.Range(0, 1);
         if (i == 0)
         {
-            StartCoroutine("ShotDown");
+            StartCoroutine(ShotDown());
         }
         else
         {
-            DestroyShipLogic();
+            ExplodeShipModel();
         }
-    }
-
-    //ENEMIGO CAYENDO
-    public IEnumerator ShotDown()
-    {
-        isShotDown = true;
-        enemyRB.useGravity = true;
-        //enemyRB.velocity = Vector3.forward * 100;
-        //Debug.Log(this.transform.localPosition);
-        cinemachineDollyCart_.enabled = false;
-        //Debug.Log(this.transform.localPosition);
-        //if(this.gameObject.GetComponent<EnemyPositionUpdate_Script>() != null)
-        //{
-        //this.gameObject.GetComponent<EnemyPositionUpdate_Script>().enabled = false;
-
-        //}
-        
-
-
-        smokeFX_GO = Instantiate(smokeFX, this.transform) as GameObject;
-        GameObject flames_GO = Instantiate(tinyFlames, this.transform, false)as GameObject;
-        //enemyBoxCollider.enabled = false;
-        isInvulnerable = true;
-
-        //Tengo destroy ship logic comentado porque se llama cuando está shotdown y le da a algo
-       // DestroyShipLogic();
-
-        if ((enemyShooting_Script_ != null) && (enemyShooting_Script_.enabled == true)) // DESACTIVO ENEMY  Shooting PARA QUE SE CAIGA Y NO mire al player
-        {
-            enemyShooting_Script_.enabled = false;
-        }
-
-
-       
-        //Debug.Log("NO olvides cambiar WaitForSeconds a RealTime cuando hayas arreglado el enemigo hits");
-        yield return new WaitForSecondsRealtime(enemyShotDownInvulnerabilityTime); //ATENCIÓN: para que espere waitForSeconds hay que usar yield return new WaitForSeconds()
-        
-
-        //enemyBoxCollider.enabled = true;
-        isInvulnerable = false;
-        
-        
-    
-
-
-        yield return null;
-       
-                
-    }
+    }   
 
     public void RumbleUponReceivingDamage()
-    {
-        // enemyRB.transform.eulerAngles = new Vector3(0, -20, 0);
+    {       
         enemyAnimator.Play("ReceiveDamage_Anim");
     }
 }

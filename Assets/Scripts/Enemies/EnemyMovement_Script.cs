@@ -8,6 +8,8 @@ public class EnemyMovement_Script : MonoBehaviour
 
     public Rigidbody enemyShip_RB;
 
+    [SerializeField] EnemyHealth_Script enemyHealth_Script;
+
     public float speed = 10;
 
     public float currentDistanceToNextCheckpoint = 1000;
@@ -23,53 +25,68 @@ public class EnemyMovement_Script : MonoBehaviour
     void Start()
     {
         currentCheckpointInRoute = 0;
-        enemyShip_RB = this.gameObject.GetComponent<Rigidbody>();
+        enemyShip_RB = gameObject.GetComponent<Rigidbody>();
         beginShootingLocation.transform.parent = null;
         lastChanceLocation.transform.parent = null;
         outOfViewLocation.transform.parent = null;
     }
 
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawLine(transform.position, beginShootingLocation.transform.position);
+        Gizmos.DrawLine(beginShootingLocation.transform.position, lastChanceLocation.transform.position);
+        Gizmos.DrawLine(lastChanceLocation.transform.position, outOfViewLocation.transform.position);
+        
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if(mustFollowRoute == true)
+        if(!enemyHealth_Script.isShotDown)
         {
-            if (currentCheckpointInRoute == 0)
+            if (mustFollowRoute == true)
             {
-                enemyShip_RB.transform.position += (beginShootingLocation.position - enemyShip_RB.transform.position).normalized * Time.deltaTime * speed;
-                currentDistanceToNextCheckpoint = (beginShootingLocation.position - enemyShip_RB.transform.position).magnitude;
-            }
+                if (currentCheckpointInRoute == 0)
+                {
+                    enemyShip_RB.transform.position += (beginShootingLocation.position - enemyShip_RB.transform.position).normalized * Time.deltaTime * speed;
+                    currentDistanceToNextCheckpoint = (beginShootingLocation.position - enemyShip_RB.transform.position).magnitude;
+                }
 
-            else if (currentCheckpointInRoute == 1)
-            {
-                enemyShip_RB.transform.position += (lastChanceLocation.position - enemyShip_RB.transform.position).normalized * Time.deltaTime * speed;
-                currentDistanceToNextCheckpoint = (lastChanceLocation.position - enemyShip_RB.transform.position).magnitude;
-            }
+                else if (currentCheckpointInRoute == 1)
+                {
+                    enemyShip_RB.transform.position += (lastChanceLocation.position - enemyShip_RB.transform.position).normalized * Time.deltaTime * speed;
+                    currentDistanceToNextCheckpoint = (lastChanceLocation.position - enemyShip_RB.transform.position).magnitude;
+                }
 
-            else if (currentCheckpointInRoute == 2)
-            {
-                enemyShip_RB.transform.position += (outOfViewLocation.position - enemyShip_RB.transform.position).normalized * Time.deltaTime * speed;
-                currentDistanceToNextCheckpoint = (outOfViewLocation.position - enemyShip_RB.transform.position).magnitude;
-            }
-            else if (currentCheckpointInRoute == 3)
-            {
-                DestroyWayPoints();
-                Destroy(gameObject);
-            }
+                else if (currentCheckpointInRoute == 2)
+                {
+                    enemyShip_RB.transform.position += (outOfViewLocation.position - enemyShip_RB.transform.position).normalized * Time.deltaTime * speed;
+                    currentDistanceToNextCheckpoint = (outOfViewLocation.position - enemyShip_RB.transform.position).magnitude;
+                }
+                else if (currentCheckpointInRoute == 3)
+                {
+                    DestroyWayPoints();
+                    Destroy(gameObject);
+                }
 
-            if (currentDistanceToNextCheckpoint <= 1)
-            {
-                currentCheckpointInRoute += 1;
-                // Debug.Log("He llegado a un checkpoint");
-            }
+                if (currentDistanceToNextCheckpoint <= 1)
+                {
+                    currentCheckpointInRoute += 1;
+                }
 
+            }
+            else //NO ROUTE
+            {
+                enemyShip_RB.transform.position += enemyShip_RB.transform.forward.normalized * speed * Time.deltaTime;
+            }
         }
-        else
+        else //SHOTDOWN
         {
-            enemyShip_RB.transform.position += enemyShip_RB.transform.forward.normalized * speed * Time.deltaTime; ;
+            enemyShip_RB.transform.position += enemyShip_RB.transform.forward.normalized * (20/3) * Time.deltaTime;
+            enemyShip_RB.mass *= 10;
         }
-
-
+        
     }
 
     public void DestroyWayPoints()

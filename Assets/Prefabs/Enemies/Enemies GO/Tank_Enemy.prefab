@@ -42,7 +42,6 @@ GameObject:
   - component: {fileID: 2754710764307902697}
   - component: {fileID: 2754710764307902702}
   - component: {fileID: 3132336736763423353}
-  - component: {fileID: 5191824854462840227}
   - component: {fileID: 7259734548760493054}
   - component: {fileID: 5303475509508015201}
   m_Layer: 12
@@ -117,18 +116,17 @@ MonoBehaviour:
   slowMoPointsWillIncrease: 25
   enemyShotDownInvulnerabilityTime: 0.17
   explodeCounter: 0
-  timeToExplode: 1.5
+  timeToExplode: 3
   rotationSpeed: 40
   enemyMaterial: {fileID: 0}
-  enemyRB: {fileID: 0}
-  enemyBoxCollider: {fileID: 0}
+  enemyRB: {fileID: 2754710764307902702}
+  enemyBoxCollider: {fileID: 2754710764307902697}
   surfaceCollided: {fileID: 0}
-  enemyAnimator: {fileID: 0}
+  enemyAnimator: {fileID: 5303475509508015201}
   beam_Script_: {fileID: 0}
   chargedLaserSphere_Script_: {fileID: 0}
-  enemyMovement_Script_: {fileID: 0}
   tankMovement_Script_: {fileID: 0}
-  enemyShooting_Script_: {fileID: 0}
+  enemyShooting_Script_: {fileID: 7259734548760493054}
   cinemachineDollyCart_: {fileID: 0}
   scoreManager_Script_: {fileID: 0}
   timeManager_Script_: {fileID: 0}
@@ -138,31 +136,16 @@ MonoBehaviour:
     type: 3}
   waterSplash: {fileID: 5060041645820739414, guid: eabe837701b9ec044af92cc06a7fc7b7,
     type: 3}
-  smokeFX: {fileID: 6853438778040423343, guid: c865b20fd30caba479a27d91f91a8638, type: 3}
-  smokeFX_GO: {fileID: 0}
+  smokeTrailFX: {fileID: 6853438778040423343, guid: ce587a7099eab06418942699d4290008,
+    type: 3}
+  smokeFXAfterImpact: {fileID: 6853438778040423343, guid: c865b20fd30caba479a27d91f91a8638,
+    type: 3}
   tinyFlames: {fileID: 6245467494975978135, guid: 082297674573b2648a0a529bc8a77169,
     type: 3}
   objectSelector: 2
   ring: {fileID: 7712929463795313759, guid: 2a5501992591f1448a265bd3b6308e1a, type: 3}
   bomb: {fileID: 4023359822053111147, guid: fed7c46af92db034fb5690900bcc6758, type: 3}
   shootDownEnemy: 0
---- !u!114 &5191824854462840227
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2754710764307902703}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf09c39ee38c4204f835085d695b4b43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb_Tank: {fileID: 0}
-  speed: 10
-  initialPoint: {fileID: 0}
-  goalPoint: {fileID: 0}
-  isGoingForward: 0
 --- !u!114 &7259734548760493054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2400,6 +2383,62 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
+  LifetimeByEmitterSpeedModule:
+    enabled: 0
+    m_Curve:
+      serializedVersion: 2
+      minMaxState: 1
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: -0.8
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 0.2
+          inSlope: -0.8
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    m_Range: {x: 0, y: 1}
   ForceModule:
     enabled: 0
     x:
@@ -4981,6 +5020,7 @@ ParticleSystemRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -5023,6 +5063,8 @@ ParticleSystemRenderer:
   m_EnableGPUInstancing: 1
   m_ApplyActiveColorSpace: 0
   m_AllowRoll: 1
+  m_FreeformStretching: 0
+  m_RotateWithStretchDirection: 1
   m_VertexStreams: 000103040508
   m_Mesh: {fileID: 0}
   m_Mesh1: {fileID: 0}
@@ -5036,6 +5078,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2754710764307902696}
     m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 00c63f881ac748e46b0b65593f45034d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 00c63f881ac748e46b0b65593f45034d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5053,6 +5100,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 00c63f881ac748e46b0b65593f45034d,
         type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 00c63f881ac748e46b0b65593f45034d,
+        type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
@@ -5065,16 +5117,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 00c63f881ac748e46b0b65593f45034d,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 00c63f881ac748e46b0b65593f45034d,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 00c63f881ac748e46b0b65593f45034d,
         type: 3}
