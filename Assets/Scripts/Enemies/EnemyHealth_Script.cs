@@ -38,9 +38,9 @@ public class EnemyHealth_Script : MonoBehaviour
     public Cinemachine.CinemachineDollyCart cinemachineDollyCart_;
 
    
-    public ScoreManager_Script scoreManager_Script_;
+    
 
-    public TimeManager_Script timeManager_Script_;
+    
 
     public GameObject vehicleExplosionFX;
     public GameObject vehicleExplosion_WaterFX;
@@ -58,14 +58,7 @@ public class EnemyHealth_Script : MonoBehaviour
     public bool shootDownEnemy = false;
 
     private void Awake()
-    {
-        
-       
-        enemyRB = gameObject.GetComponent<Rigidbody>();
-        enemyBoxCollider = gameObject.GetComponent<BoxCollider>();
-        scoreManager_Script_ = GameObject.FindGameObjectWithTag("ScoreManager").GetComponent<ScoreManager_Script>();
-       
-        timeManager_Script_ = GameObject.Find("Player").GetComponent<TimeManager_Script>();
+    {          
         enemyAnimator = gameObject.GetComponent<Animator>(); 
 
         if(gameObject.GetComponent<EnemyShooting_Script>() != null) //Para los enemigos que no disparan
@@ -84,22 +77,11 @@ public class EnemyHealth_Script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if(shootDownEnemy == true)
-        //{
-        //    StartCoroutine("ShotDown");
-        //}
-
-        //if((healthPoints <= 0)&&(isShotDown == false))
-        //{
-
-        //    StartCoroutine("ShotDown");
-        //    Debug.Log("He llamado a Shotdown");
-        //}
-
        if((isShotDown == true) && (explodeCounter <= timeToExplode))
         {
             //ROTACIÓN PARA CUANDO CAE
-            this.transform.Rotate(Vector3.forward, rotationSpeed * Time.deltaTime);
+            float finalRotationSpeed = Random.RandomRange(rotationSpeed / 2, rotationSpeed);
+            transform.Rotate(Vector3.forward, finalRotationSpeed * Time.deltaTime);
 
 
             explodeCounter += Time.deltaTime;
@@ -224,8 +206,8 @@ public class EnemyHealth_Script : MonoBehaviour
         }
 
         SpawnPowerUp();
-        scoreManager_Script_.AddHits(numOfHitsWillAdd);
-        timeManager_Script_.AddSlowMoPoints(slowMoPointsWillIncrease);
+        GameObject.FindGameObjectWithTag("ScoreManager").GetComponent<ScoreManager_Script>().AddHits(numOfHitsWillAdd);
+        GameObject.Find("Player").GetComponent<TimeManager_Script>().AddSlowMoPoints(slowMoPointsWillIncrease);
 
         Destroy(transform.parent.gameObject);
         Destroy(gameObject);
