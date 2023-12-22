@@ -14787,8 +14787,8 @@ MonoBehaviour:
   billboard_Script_: {fileID: 0}
   button_Script_: {fileID: 0}
   doorHouse_Script_: {fileID: 0}
-  explosionDuration: 0.5
-  maxSize: 6
+  explosionDuration: 1
+  maxSize: 8
   colliderIncreasingRate: 3
   hitCounter: 0
 --- !u!82 &1581414130781077266
