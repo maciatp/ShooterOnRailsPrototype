@@ -203,8 +203,7 @@ public class PlayerHealth_Script : MonoBehaviour
         {
                 //AÑADIR UNA VIDA
                 actualGoldRings = 0;
-            AddExtraLife();
-
+                AddExtraLife();
         }
     }
 
@@ -212,7 +211,6 @@ public class PlayerHealth_Script : MonoBehaviour
     {
         currentLives++;
         uILivesText_Script_.UpdateLivesText();
-
     }
 
     public void ActivateExtraHealth()
@@ -220,7 +218,7 @@ public class PlayerHealth_Script : MonoBehaviour
         isExtraHealthActivated = true;
         actualPlayerHealth *= maxPlayerHealth/100;
         totalPlayerHealth = maxPlayerHealth;
-        uIHealthBar_Script_.StartCoroutine("ActivateExtraHealthUI");
+        uIHealthBar_Script_.StartCoroutine("ActivateExtraHealthUI"); //TODO: crear método que inicie la corrutina
     }
 
     public void IncreaseHealth(float healthwillIncrease)
@@ -229,7 +227,7 @@ public class PlayerHealth_Script : MonoBehaviour
         {
             actualPlayerHealth += healthwillIncrease;
 
-            uIHealthBar_Script_.StartCoroutine("IncreaseBarSize", (healthwillIncrease)); //SE LO PASO A LA BARRA DE SALUD PARA QUE CREZCA
+            uIHealthBar_Script_.StartCoroutine("IncreaseBarSize", (healthwillIncrease)); //SE LO PASO A LA BARRA DE SALUD PARA QUE CREZCA //TODO: crear método que inicie la corrutina
 
             if (actualPlayerHealth > totalPlayerHealth)
             {
@@ -248,19 +246,19 @@ public class PlayerHealth_Script : MonoBehaviour
            
            cinemachineImpulse_.GenerateImpulse(); //CAMERA SHAKE!!
 
-            uIHealthBar_Script_.StartCoroutine("DecreaseBarSize", (-healthWillDecrease)); // SE LO PASO A LA BARRA PARA QUE DECREZCA
+            uIHealthBar_Script_.StartCoroutine("DecreaseBarSize", (-healthWillDecrease)); // SE LO PASO A LA BARRA PARA QUE DECREZCA  //TODO: crear método que inicie la corrutina
             ActivateCoolDownDamage();
 
-            // playerMovement_Script_.LocalMove(Random.Range(-5,5), 7, 10, 10); // éste sí funciona PARA MOVER AL PLAYER CUANDO SUFRE DAÑO
+           
             int rand = Random.Range(movedWhenDamagedDistance, -movedWhenDamagedDistance);
             if (rand < 0)
             {
-                playerMovement_Script_.LocalMove(-movedWhenDamagedDistance, movedWhenDamagedDistance, 10, 10, false); // éste sí funciona PARA MOVER AL PLAYER CUANDO SUFRE DAÑO
+                playerMovement_Script_.LocalMove(-movedWhenDamagedDistance, movedWhenDamagedDistance, 10, 10, false); //PARA MOVER AL PLAYER CUANDO SUFRE DAÑO
                 
             }
             else if (rand >= 0)
             {
-                playerMovement_Script_.LocalMove(movedWhenDamagedDistance, movedWhenDamagedDistance, 10, 10, false); // éste sí funciona PARA MOVER AL PLAYER CUANDO SUFRE DAÑO
+                playerMovement_Script_.LocalMove(movedWhenDamagedDistance, movedWhenDamagedDistance, 10, 10, false); //PARA MOVER AL PLAYER CUANDO SUFRE DAÑO
             }
            
 
@@ -270,20 +268,17 @@ public class PlayerHealth_Script : MonoBehaviour
         }
         
        else if (actualPlayerHealth <= 0)
-        {
+       {
             actualPlayerHealth = 0;
             //DIE
-           // Debug.Log("Una vida menos");
-        }
-        CheckHealth();
+          
+       }
+       CheckHealth();
     }
 
     public void ActivateCoolDownDamage()
     {
         isPlayerInvincible = true;
-        
-       
-        
     }
 
 
@@ -300,12 +295,9 @@ public class PlayerHealth_Script : MonoBehaviour
                     playerHitAudioSource.clip = arwingObstacleHit_Sound;
                     playerHitAudioSource.Play();
                 }
+                                             
+                enemyHealth_Script_.ExplodeShipModel(); // TODO: Pasar gestión de destrucción a nave enemiga. (cuando colisione con player)
                 
-                             
-                enemyHealth_Script_.DestroyShipLogic();
-                //Debug.Log("colision con " + collision.gameObject.name);
-
-
             }
             if ((collision.gameObject.tag == "EnemyLaserBeam"))
             {
@@ -316,7 +308,7 @@ public class PlayerHealth_Script : MonoBehaviour
                     DecreaseHealth(enemyBeam_.damagePointsToPlayer); //el daño ya se aplica en EnemyBeam_Script
                     playerHitAudioSource.clip = arwingHit_Sound;
                     playerHitAudioSource.Play();
-                    Destroy(enemyBeam_.gameObject);
+                    Destroy(enemyBeam_.gameObject); //TODO: Pasar gestión de destrucción a láser enemigo
                 }
                 else
                 {
@@ -328,18 +320,6 @@ public class PlayerHealth_Script : MonoBehaviour
                     enemyBeam_.gameObject.GetComponent<Rigidbody>().velocity = enemyBeam_.gameObject.transform.forward * -enemyBeam_.enemyBeam_Speed; //para que rebote el láser
                     enemyBeam_.gameObject.GetComponent<MeshRenderer>().material.color = Color.green;
                 }
-
-
-               
-               
-
-               
-               
-
-                
-                
-
-
             }
             
 
@@ -351,8 +331,6 @@ public class PlayerHealth_Script : MonoBehaviour
                 playerHitAudioSource.clip = arwingHit_Sound;
                 playerHitAudioSource.Play();
 
-               // playerMovement_Script_.LocalMove(Random.Range(-movedWhenDamagedDistance, movedWhenDamagedDistance), Random.Range(-movedWhenDamagedDistance, movedWhenDamagedDistance), 10, 10); // éste sí funciona PARA MOVER AL PLAYER CUANDO SUFRE DAÑO
-                //Debug.Log("colision1 con " + collision.gameObject.name);
             }
 
             if (collision.gameObject.tag == "Obstacle")
@@ -361,7 +339,6 @@ public class PlayerHealth_Script : MonoBehaviour
                
                 playerHitAudioSource.clip = arwingObstacleHit_Sound;
                 playerHitAudioSource.Play();
-                //Debug.Log("colision2 con " + collision.gameObject.name);
             }
 
           

@@ -7,18 +7,17 @@ public class Ring_Script : MonoBehaviour
 {
     public float rotationSpeed;
     public bool activated;
-    public bool isGoldRing = false;
+    [SerializeField] RingTypes ringType;
     public float healthWillRestore = 15;
-    public PlayerHealth_Script playerHealth_script_;
-    public GameObject playerInScene;
-    public GameObject gameplayPlane;
 
-    private void Awake()
+
+    enum RingTypes
     {
-        playerInScene = GameObject.FindGameObjectWithTag("Player");
-        playerHealth_script_ = playerInScene.GetComponent<PlayerHealth_Script>();
-        gameplayPlane = GameObject.Find("GameplayPlane");
+        Silver,
+        ExtraSilver,
+        Gold
     }
+
     // Update is called once per frame
     void Update()
     {
@@ -32,29 +31,22 @@ public class Ring_Script : MonoBehaviour
         {
             activated = true;
 
-
-            transform.position = other.transform.position;
             transform.parent = other.transform;
+            transform.localPosition = Vector3.zero;
             transform.localRotation = other.transform.localRotation;
 
-            Sequence s = DOTween.Sequence();
-
-            //s.Append(transform.DORotate(Vector3.zero, .2f));
+            Sequence s = DOTween.Sequence();                       
             s.Append(transform.DORotate(new Vector3(0, 0, -900), 3, RotateMode.LocalAxisAdd));
             s.Join(transform.DOScale(0, .5f).SetDelay(1f));
             s.AppendCallback(() => Destroy(gameObject));
-
-
-           
-
-
-            //transform.localPosition = transform.localPosition - new Vector3(0, 0, 1.3f);
             //ARREGLAR QUE SE COLOQUE EN EL CENTRO DE LA NAVE Y LA SIGA MIENTRAS GIRA Y DESPARECE
 
-            playerHealth_script_.IncreaseHealth(healthWillRestore);
-            if(isGoldRing == true)
+
+            PlayerHealth_Script playerHealth_Script = other.GetComponent<PlayerHealth_Script>();
+            playerHealth_Script.IncreaseHealth(healthWillRestore);
+            if(ringType == RingTypes.Gold)
             {
-                playerHealth_script_.AddGoldRing();
+                playerHealth_Script.AddGoldRing();
             }
         }
     }

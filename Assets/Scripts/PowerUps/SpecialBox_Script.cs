@@ -8,7 +8,7 @@ public class SpecialBox_Script : MonoBehaviour
 
     private Rigidbody rb_Box;
 
-    public GameObject randomItemGenerator;
+    //public GameObject randomItemGenerator; TODO
 
     public GameObject laserUpgrade_GO;
 
