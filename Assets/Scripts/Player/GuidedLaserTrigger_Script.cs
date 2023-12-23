@@ -6,7 +6,7 @@ public class GuidedLaserTrigger_Script : MonoBehaviour
 {
     [Header("Colliders")]
     public BoxCollider triggerCollidernear;
-    public SphereCollider triggerSphereCollider;
+    
     [Space]
     
 
@@ -35,16 +35,13 @@ public class GuidedLaserTrigger_Script : MonoBehaviour
 
 
 
-    //private Vector3 originalMirillaLejosLocalPosition;
-    //private Vector3 originalLocalScale;
-
 
     
 
     private void Awake()
     {
         triggerCollidernear = this.gameObject.GetComponent<BoxCollider>();
-        triggerSphereCollider = this.gameObject.GetComponent<SphereCollider>();
+       
       
         playerShooting_Script_ = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerShooting_Script>();
       
@@ -57,7 +54,7 @@ public class GuidedLaserTrigger_Script : MonoBehaviour
     void Start()
     {
         triggerCollidernear.enabled = false;
-        triggerSphereCollider.enabled = false;
+        
     }
 
     // Update is called once per frame
@@ -123,13 +120,13 @@ public class GuidedLaserTrigger_Script : MonoBehaviour
     private void DeactivateColliders()
     {
         triggerCollidernear.enabled = false;
-        triggerSphereCollider.enabled = false;
+        
     }
 
     private void ActivateColliders()
     {
         triggerCollidernear.enabled = true;
-        triggerSphereCollider.enabled = true;
+       
     }
 
     private void OnTriggerEnter(Collider other)
