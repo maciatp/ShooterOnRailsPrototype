@@ -16343,6 +16343,7 @@ MonoBehaviour:
   leftTrail: {fileID: 3851918089725574659}
   rightTrail: {fileID: 4015676508168831769}
   isTrailsActive: 1
+  trailMaterial: {fileID: 2100000, guid: b3f09af02ef841d4e8ef3ae18bd4ce8e, type: 2}
   trail: {fileID: 3173809264617881426}
   circle: {fileID: 3173809263438771414}
   barrel: {fileID: 3173809264096279855}
@@ -26711,7 +26712,6 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6a95397a430ee5e47847ccebbc0be225, type: 2}
   - {fileID: 2100000, guid: 6a95397a430ee5e47847ccebbc0be225, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -39226,10 +39226,10 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 10.92, y: 8, z: 130}
-  m_Center: {x: 0, y: 1.7, z: 65}
+  m_Size: {x: 5, y: 4, z: 130}
+  m_Center: {x: 0, y: 1.22, z: 65}
 --- !u!114 &6512077160006584355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39242,12 +39242,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1498e0643261b54090971b89f6d520b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerCollidernear: {fileID: 0}
-  triggerSphereCollider: {fileID: 0}
+  triggerCollidernear: {fileID: 6512077160006584352}
   mirilla_Externa_GO: {fileID: 7678797509135023784, guid: c6ef93b7d74eb264387aae436f32d6cc,
     type: 3}
   mirilla_Externa_Script_INSCENE: {fileID: 0}
-  playerShooting_Script_: {fileID: 0}
+  playerShooting_Script_: {fileID: 6512077160715364459}
   mirillas_Script_: {fileID: 0}
   objectLocked: {fileID: 0}
   billboardLocked: {fileID: 0}
