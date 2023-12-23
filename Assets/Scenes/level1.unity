@@ -2139,6 +2139,31 @@ PrefabInstance:
       propertyPath: touchJoystick
       value: 
       objectReference: {fileID: 1112071260}
+    - target: {fileID: 3173809263980193737, guid: d08b0d07e6ecb44d1a734cb6aa5b54d4,
+        type: 3}
+      propertyPath: trailMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: b3f09af02ef841d4e8ef3ae18bd4ce8e, type: 2}
+    - target: {fileID: 3173809264097764642, guid: d08b0d07e6ecb44d1a734cb6aa5b54d4,
+        type: 3}
+      propertyPath: TrailModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3173809264097764643, guid: d08b0d07e6ecb44d1a734cb6aa5b54d4,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3173809264097764643, guid: d08b0d07e6ecb44d1a734cb6aa5b54d4,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3173809264097764644, guid: d08b0d07e6ecb44d1a734cb6aa5b54d4,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3173809264343331445, guid: d08b0d07e6ecb44d1a734cb6aa5b54d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3106,7 +3131,7 @@ Transform:
   m_GameObject: {fileID: 119157610}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -2, y: 0, z: 0}
+  m_LocalPosition: {x: -3, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -54916,7 +54941,7 @@ PrefabInstance:
     - target: {fileID: 7597130590640023095, guid: 31aa4b6180799dc4ab416f631efc496c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7597130590640023095, guid: 31aa4b6180799dc4ab416f631efc496c,
         type: 3}

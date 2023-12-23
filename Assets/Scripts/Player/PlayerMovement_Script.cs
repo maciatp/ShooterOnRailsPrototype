@@ -111,6 +111,7 @@ public class PlayerMovement_Script : MonoBehaviour
     public TrailRenderer rightTrail;
     [SerializeField]
     private bool isTrailsActive = true;
+    [SerializeField] Material trailMaterial;
 
 
     [Space]
@@ -148,9 +149,7 @@ public class PlayerMovement_Script : MonoBehaviour
         //    touchJoystick.enabled = false;
         //}
 
-        //NEW INPUT SYSTEM
-        // controls = this.GetComponent<PlayerShooting_Script>().controls;
-
+        //NEW INPUT SYSTEM        
         controls = new PlayerControls();
         //MOVERSE
         controls.Gameplay.Move.performed += ctx => moveInput.x = ctx.ReadValue<Vector2>().x;
@@ -165,12 +164,7 @@ public class PlayerMovement_Script : MonoBehaviour
             controls.Gameplay.Move.performed += ctx =>
             {
                 moveInput.y = ctx.ReadValue<Vector2>().y;
-               
-
             };
-
-         
-            
         }
        else if (isInvertedY == true) //PARA INVERTIR EJE Y
         {
@@ -263,11 +257,6 @@ public class PlayerMovement_Script : MonoBehaviour
                 xyLookSpeed = originalXYLookSpeed;
                 ySpeed = originalYSpeed;
             }
-
-
-
-
-
         };
 
 
@@ -968,6 +957,9 @@ public class PlayerMovement_Script : MonoBehaviour
 
         var trails = stars.trails;
         trails.enabled = state ? true : false;
+        var renderer = stars.GetComponent<ParticleSystemRenderer>();
+        renderer.trailMaterial = trailMaterial;
+        
 
         DOVirtual.Float(origChrom, endChrom, .5f, Chromatic);
         DOVirtual.Float(origFov, endFov, .5f, FieldOfView);
