@@ -46,6 +46,7 @@ public class EnemyHealth_Script : MonoBehaviour
     public GameObject vehicleExplosion_WaterFX;
     public GameObject waterSplash;
     [SerializeField] GameObject smokeTrailFX;
+    GameObject smokeTrailFXInScene;
     public GameObject smokeFXAfterImpact;
     GameObject smokeFXAfterImpact_InScene;
     public GameObject tinyFlames;
@@ -150,9 +151,9 @@ public class EnemyHealth_Script : MonoBehaviour
             enemyRB.velocity = transform.forward * cinemachineDollyCart_.m_Speed/2; //  para que caiga al ser derribado
             cinemachineDollyCart_.enabled = false;
         }
-        smokeTrailFX = Instantiate(smokeTrailFX, transform) as GameObject;
+        smokeTrailFXInScene = Instantiate(smokeTrailFX, transform) as GameObject;
        
-        GameObject flames_GO = Instantiate(tinyFlames, transform, false) as GameObject;
+        GameObject flames_InScene = Instantiate(tinyFlames, transform, false) as GameObject;
 
         isInvulnerable = true;
 
@@ -171,7 +172,10 @@ public class EnemyHealth_Script : MonoBehaviour
 
     public void ExplodeShipModel()
     {
-        smokeTrailFX.transform.SetParent(null);
+        if(smokeTrailFXInScene != null)
+        {
+            smokeTrailFXInScene.transform.SetParent(null);
+        }
       
         smokeFXAfterImpact_InScene = Instantiate(smokeFXAfterImpact, transform) as GameObject; //TODO CHECK ROTATION
         smokeFXAfterImpact_InScene.transform.SetParent(null);

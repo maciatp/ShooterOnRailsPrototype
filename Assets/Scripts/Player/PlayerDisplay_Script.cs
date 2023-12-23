@@ -43,16 +43,13 @@ public class PlayerDisplay_Script : MonoBehaviour
     {
         playerInScene = GameObject.FindGameObjectWithTag("Player");
         playerHealth_Script_ = playerInScene.gameObject.GetComponent<PlayerHealth_Script>();
-       
+
         playerMovement_Script_ = playerInScene.gameObject.GetComponent<PlayerMovement_Script>();
         playerShooting_Script_ = playerInScene.gameObject.GetComponent<PlayerShooting_Script>();
 
         scoreManager_GO = GameObject.Find("ScoreManager");
-        scoreManager_Script_ = scoreManager_GO.GetComponent <ScoreManager_Script>();
+        scoreManager_Script_ = scoreManager_GO.GetComponent<ScoreManager_Script>();
 
-        
-
-      
         if (this.gameObject.name == "HitsText")
         {
             playerHits_Text = this.gameObject.GetComponent<TMPro.TextMeshProUGUI>();
@@ -81,8 +78,6 @@ public class PlayerDisplay_Script : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
-       
         if (this.gameObject.name == "HitsText")
         {
             playerHits_Text.text = (scoreManager_Script_.actualHits.ToString("000"));

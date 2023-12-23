@@ -366,7 +366,7 @@ TextureImporter:
       213: 6819279005882808593
     second: starwolf_chat_120
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -383,9 +383,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -394,12 +397,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -417,10 +420,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -432,6 +440,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -444,6 +453,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -456,6 +466,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -3012,9 +3036,130 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      starwolf_chat_0: 4406128380173051715
+      starwolf_chat_1: 1787140261502418454
+      starwolf_chat_10: 5300346955274684384
+      starwolf_chat_100: 7848253171920861944
+      starwolf_chat_101: 2945816983303084108
+      starwolf_chat_102: 1826837701556837372
+      starwolf_chat_103: -1161917069638668231
+      starwolf_chat_104: 3694879144466504650
+      starwolf_chat_105: 7859205783760764368
+      starwolf_chat_106: 8427696429497056356
+      starwolf_chat_107: 1895392785088166060
+      starwolf_chat_108: -471620811599228752
+      starwolf_chat_109: -475705200988166583
+      starwolf_chat_11: -8745985727011872937
+      starwolf_chat_110: -3112785644964780082
+      starwolf_chat_111: 9154149268906022669
+      starwolf_chat_112: 9099904772667799422
+      starwolf_chat_113: -8069384149411742721
+      starwolf_chat_114: 5408640135243371220
+      starwolf_chat_115: -6822064955429106770
+      starwolf_chat_116: 6656262091299129707
+      starwolf_chat_117: 7744395130048343291
+      starwolf_chat_118: -7523704645739137066
+      starwolf_chat_119: 6175253320497982356
+      starwolf_chat_12: -3538307491060273799
+      starwolf_chat_120: 6819279005882808593
+      starwolf_chat_13: 5664068509969858157
+      starwolf_chat_14: -9221251366369907542
+      starwolf_chat_15: -3920193116042932707
+      starwolf_chat_16: -2725126259730646574
+      starwolf_chat_17: -4663771067312251137
+      starwolf_chat_18: 1340196450738045415
+      starwolf_chat_19: -429381641459700139
+      starwolf_chat_2: 2814892272088690272
+      starwolf_chat_20: -3495820007878038394
+      starwolf_chat_21: 7707604613387731466
+      starwolf_chat_22: -6126576071326657694
+      starwolf_chat_23: -2225856943182632757
+      starwolf_chat_24: 3562146562596939167
+      starwolf_chat_25: -8067785251390592277
+      starwolf_chat_26: -1536153834970508227
+      starwolf_chat_27: 6591148212396123223
+      starwolf_chat_28: -1297756746627945568
+      starwolf_chat_29: -8439848715114734650
+      starwolf_chat_3: 2258455588775614104
+      starwolf_chat_30: 1393720501324079129
+      starwolf_chat_31: 828476006319498009
+      starwolf_chat_32: 5985471678540946902
+      starwolf_chat_33: 4149660037886724232
+      starwolf_chat_34: 3276841608822409514
+      starwolf_chat_35: 1234520549543433234
+      starwolf_chat_36: 5165517178806227209
+      starwolf_chat_37: -3151718170887981682
+      starwolf_chat_38: 7776529314539765244
+      starwolf_chat_39: -1207087359577339105
+      starwolf_chat_4: -8703624893961862021
+      starwolf_chat_40: -5853873902621294284
+      starwolf_chat_41: 4131260411340214427
+      starwolf_chat_42: 4392584626493292374
+      starwolf_chat_43: 1588260403502144530
+      starwolf_chat_44: 2468380231911187668
+      starwolf_chat_45: -4493666681950088013
+      starwolf_chat_46: -6657586206215776096
+      starwolf_chat_47: -2289697628173484265
+      starwolf_chat_48: 5246756955972260332
+      starwolf_chat_49: 1351271027148074023
+      starwolf_chat_5: -2106153951867116740
+      starwolf_chat_50: 6392162021333478562
+      starwolf_chat_51: -256129457325517214
+      starwolf_chat_52: -5695681797895768295
+      starwolf_chat_53: -7606195615453081853
+      starwolf_chat_54: 1045903009774178062
+      starwolf_chat_55: -2500754190208246504
+      starwolf_chat_56: 1366659914992550428
+      starwolf_chat_57: -3364383455133875862
+      starwolf_chat_58: -7443542748009186054
+      starwolf_chat_59: 1145611159277089672
+      starwolf_chat_6: -506177132114985796
+      starwolf_chat_60: -1204736042407202785
+      starwolf_chat_61: -7654593038974914104
+      starwolf_chat_62: 5906048902287398128
+      starwolf_chat_63: -5703620696418596665
+      starwolf_chat_64: 9208327386413703047
+      starwolf_chat_65: -4223404686927450996
+      starwolf_chat_66: 5436322436294751324
+      starwolf_chat_67: 7717572834499853583
+      starwolf_chat_68: 913809246290638320
+      starwolf_chat_69: 2379407889013008104
+      starwolf_chat_7: 4908194429543731626
+      starwolf_chat_70: 1195689335192263780
+      starwolf_chat_71: 826774263298845718
+      starwolf_chat_72: -8962527349142951406
+      starwolf_chat_73: -1135068759913940528
+      starwolf_chat_74: -4265719269821712159
+      starwolf_chat_75: 6208384651718946070
+      starwolf_chat_76: 1971837373387099600
+      starwolf_chat_77: -865736737156006124
+      starwolf_chat_78: -8988760698979661654
+      starwolf_chat_79: -986108407289558905
+      starwolf_chat_8: -3820360366471861729
+      starwolf_chat_80: 330180762591757352
+      starwolf_chat_81: -1507460320353292694
+      starwolf_chat_82: -8341178006807479977
+      starwolf_chat_83: -1631796339959468454
+      starwolf_chat_84: 300884553675673413
+      starwolf_chat_85: -6037150701043158211
+      starwolf_chat_86: 1803281819210257652
+      starwolf_chat_87: -7356426801528021802
+      starwolf_chat_88: 4533165093646336020
+      starwolf_chat_89: 64978104524989426
+      starwolf_chat_9: 7966699218026977539
+      starwolf_chat_90: 25921138878354061
+      starwolf_chat_91: 8075103777566268065
+      starwolf_chat_92: 2386175034997175142
+      starwolf_chat_93: -127324584433351351
+      starwolf_chat_94: 5104203546844832356
+      starwolf_chat_95: -5257612564740412198
+      starwolf_chat_96: 2786423005734605759
+      starwolf_chat_97: 4986430634732346714
+      starwolf_chat_98: 3112142650904110023
+      starwolf_chat_99: -5868345116941687005
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

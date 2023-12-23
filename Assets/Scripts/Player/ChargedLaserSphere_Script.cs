@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
+using UnityEditor.SceneManagement;
 
 public class ChargedLaserSphere_Script : MonoBehaviour
 {
@@ -59,7 +60,7 @@ public class ChargedLaserSphere_Script : MonoBehaviour
         parent = this.transform.parent;
         trailRenderer_GameObject = this.transform.GetChild(0).gameObject;
         trailSlowMo = this.transform.GetChild(1).gameObject;
-        rb_sphere = GetComponent<Rigidbody>();
+        //rb_sphere = GetComponent<Rigidbody>();
         playerShooting_Script_ = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerShooting_Script>();
         guidedLaserTrigger_Script_ = GameObject.Find("GuidedChargedLaserTrigger").GetComponent<GuidedLaserTrigger_Script>();
         sphereCollider = this.GetComponent<SphereCollider>();
@@ -161,6 +162,8 @@ public class ChargedLaserSphere_Script : MonoBehaviour
         this.transform.parent = null;
         this.gameObject.layer = 11; //cambio de layer a la que toca para que no moleste antes de lanzarla
         sphereCollider.enabled = true;
+        rb_sphere = gameObject.AddComponent<Rigidbody>();
+        rb_sphere.useGravity = false;
 
         if (objectLocked != null)
         {

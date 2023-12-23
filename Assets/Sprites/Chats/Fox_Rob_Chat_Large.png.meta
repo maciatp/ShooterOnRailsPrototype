@@ -210,7 +210,7 @@ TextureImporter:
       213: -1837066698475765087
     second: Fox_Rob_Chat_Large_68
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -227,9 +227,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -238,12 +241,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -261,10 +264,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -276,6 +284,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -288,6 +297,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -300,6 +310,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -1008,9 +1032,42 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Fox_Rob_Chat_Large_0: -4203743422557977213
+      Fox_Rob_Chat_Large_1: -2628060437747649220
+      Fox_Rob_Chat_Large_10: 919231881055506329
+      Fox_Rob_Chat_Large_11: 5003943996612194724
+      Fox_Rob_Chat_Large_12: -4354853726314120446
+      Fox_Rob_Chat_Large_13: 2508445226755398494
+      Fox_Rob_Chat_Large_14: 5111151858154807471
+      Fox_Rob_Chat_Large_15: 4268300969383310992
+      Fox_Rob_Chat_Large_16: 3385514615995293059
+      Fox_Rob_Chat_Large_17: -1600326378513824676
+      Fox_Rob_Chat_Large_18: -8377696450234473195
+      Fox_Rob_Chat_Large_19: -7173671992436673313
+      Fox_Rob_Chat_Large_2: -3396503893986259379
+      Fox_Rob_Chat_Large_20: 2683875026844992276
+      Fox_Rob_Chat_Large_21: -3745724022784587764
+      Fox_Rob_Chat_Large_22: 3109278913360067475
+      Fox_Rob_Chat_Large_23: -1678179374997147410
+      Fox_Rob_Chat_Large_24: 575196661537549167
+      Fox_Rob_Chat_Large_25: -3023380536609111437
+      Fox_Rob_Chat_Large_26: 8442945001147192646
+      Fox_Rob_Chat_Large_27: -5907211298584481295
+      Fox_Rob_Chat_Large_28: 3388855404009414676
+      Fox_Rob_Chat_Large_29: -2506600089860172612
+      Fox_Rob_Chat_Large_3: -4423864611576391466
+      Fox_Rob_Chat_Large_30: -486110838438164386
+      Fox_Rob_Chat_Large_31: 5557578221200802588
+      Fox_Rob_Chat_Large_32: 154362864955155712
+      Fox_Rob_Chat_Large_4: 740425319930914034
+      Fox_Rob_Chat_Large_5: 1341527302996708226
+      Fox_Rob_Chat_Large_6: -1955198327275399574
+      Fox_Rob_Chat_Large_7: 3284836619506810139
+      Fox_Rob_Chat_Large_8: -410392807317874064
+      Fox_Rob_Chat_Large_9: -6955586399734092640
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -9,8 +9,7 @@ public class Bomb_Script : MonoBehaviour
     //public float colliderIncreasingRate = 1.05f;
     public bool canExplode = false;
     public bool isExploded = false;
-    public float conteoToDestroy = 0;
-    public float destroyTimeSpan = 2;
+   
 
     
     
@@ -72,7 +71,10 @@ public class Bomb_Script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        conteoBomb += Time.unscaledDeltaTime;
+        if(canExplode)
+        {
+            conteoBomb += Time.unscaledDeltaTime;
+        }
 
         if ((isExploded != true) && (canExplode == true))
         {
@@ -89,19 +91,8 @@ public class Bomb_Script : MonoBehaviour
         {
             Explode();
            
-        }
-
-
+        } 
        
-        if(canExplode == true)
-        {
-            conteoToDestroy += Time.unscaledDeltaTime;
-        }
-        if((isExploded == true) &&( conteoToDestroy > destroyTimeSpan))
-        {
-            Destroy(gameObject);
-
-        }
 
     }
 
@@ -120,7 +111,7 @@ public class Bomb_Script : MonoBehaviour
         Instantiate(bombExplosion_GO, this.gameObject.transform.position, this.gameObject.transform.rotation, null);
         uIBombEffect_Script_.PlayUIBombAnimation();
         //bombSound.transform.parent = null;
-        Destroy(this.gameObject);
+        Destroy(gameObject);
        
     }
 

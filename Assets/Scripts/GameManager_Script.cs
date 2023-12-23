@@ -5,9 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager_Script : MonoBehaviour
-{//Pause_Script
-   public PlayerControls controls;
-
+{
     public static bool isGamePaused = false;
 
     public GameObject pauseUI;
@@ -33,24 +31,22 @@ public class GameManager_Script : MonoBehaviour
         menuButton = pauseUI.transform.GetChild(2).gameObject.GetComponent<Button>();
         quitButton = pauseUI.transform.GetChild(3).gameObject.GetComponent<Button>();
 
-        //controls = playerMovement_Script_.gameObject.GetComponent<PlayerShooting_Script>().controls;
-
-        controls = new PlayerControls();
-
-        controls.Gameplay.Pause.performed += ctx =>
-        {
-            Debug.Log("He pulsado Start");
-            if (isGamePaused == true)
-            {
-                ResumeGame();
-                Debug.Log("he pausado el juego");
-            }
-            else
-            {
-                PauseGame();
-                Debug.Log("he reanudado el juego");
-            }
-        };
+        
+        //CONTROLS
+        //controls.Gameplay.Pause.performed += ctx =>
+        //{
+        //    Debug.Log("He pulsado Start");
+        //    if (isGamePaused == true)
+        //    {
+        //        ResumeGame();
+        //        Debug.Log("he pausado el juego");
+        //    }
+        //    else
+        //    {
+        //        PauseGame();
+        //        Debug.Log("he reanudado el juego");
+        //    }
+        //};
 
     }
 

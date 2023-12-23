@@ -234,7 +234,7 @@ TextureImporter:
       213: -130044541499998913
     second: friendly_chat_76
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -251,9 +251,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -262,12 +265,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -285,10 +288,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -300,6 +308,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -312,6 +321,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -324,6 +334,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -1956,9 +1980,86 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      friendly_chat_0: 6877709732282224288
+      friendly_chat_1: 3909847322995849357
+      friendly_chat_10: -2285812019386795766
+      friendly_chat_11: 3387272039260456769
+      friendly_chat_12: -595204533634118562
+      friendly_chat_13: 4483962207870149991
+      friendly_chat_14: 6209042394588653422
+      friendly_chat_15: -8642249593902959154
+      friendly_chat_16: -8846989310601183137
+      friendly_chat_17: -3258575910124166176
+      friendly_chat_18: 6383368139532351416
+      friendly_chat_19: 5956909210815895664
+      friendly_chat_2: -9193201942881291941
+      friendly_chat_20: -7199088391202311503
+      friendly_chat_21: -5411125558442711867
+      friendly_chat_22: -6290214964700654638
+      friendly_chat_23: 2081255740653176885
+      friendly_chat_24: 979115654137452171
+      friendly_chat_25: 540041989823989902
+      friendly_chat_26: 5973086463729118208
+      friendly_chat_27: -6763776039525777514
+      friendly_chat_28: 5649380369490803857
+      friendly_chat_29: 2829974370141482208
+      friendly_chat_3: 5238402332548008373
+      friendly_chat_30: -4436604971097906626
+      friendly_chat_31: -7457974695659441902
+      friendly_chat_32: 7220471280018581719
+      friendly_chat_33: -1233329555361332609
+      friendly_chat_34: -8734943534395401613
+      friendly_chat_35: -296191111509367181
+      friendly_chat_36: -6750058712597254266
+      friendly_chat_37: -2809097429022327711
+      friendly_chat_38: -1952780687599894322
+      friendly_chat_39: -5674376832354689113
+      friendly_chat_4: 6208983580278371687
+      friendly_chat_40: 5423409007120245367
+      friendly_chat_41: -1432211386309162274
+      friendly_chat_42: -2466385966440441574
+      friendly_chat_43: 5634929278292964611
+      friendly_chat_44: -2312183589042858011
+      friendly_chat_45: 820086530989958073
+      friendly_chat_46: 6873888060314055415
+      friendly_chat_47: 7908663121594555091
+      friendly_chat_48: -8207573700190098765
+      friendly_chat_49: -5686267424314061825
+      friendly_chat_5: 4296804753106837985
+      friendly_chat_50: -2943560589774347059
+      friendly_chat_51: 8274003765484412399
+      friendly_chat_52: -8191859545575674623
+      friendly_chat_53: -5438265610522458816
+      friendly_chat_54: 7393190154425084302
+      friendly_chat_55: 9108784864886001640
+      friendly_chat_56: 6349551288713162637
+      friendly_chat_57: 7874091379604763811
+      friendly_chat_58: 8186778522196479676
+      friendly_chat_59: 5634117407210369134
+      friendly_chat_6: 8645402566733827923
+      friendly_chat_60: 2145767193923152502
+      friendly_chat_61: -2557541398575594584
+      friendly_chat_62: 1423327703920618065
+      friendly_chat_63: 5927068681043413516
+      friendly_chat_64: -5484301882321088315
+      friendly_chat_65: 2604295467390065080
+      friendly_chat_66: -1154549134539272624
+      friendly_chat_67: 5296274446812629076
+      friendly_chat_68: -3523699840309315763
+      friendly_chat_69: -972306978891345487
+      friendly_chat_7: 7503152118996407534
+      friendly_chat_70: -1644429921740390943
+      friendly_chat_71: -5055330239237166285
+      friendly_chat_72: -5495160024395966159
+      friendly_chat_73: -9061808194856111075
+      friendly_chat_74: -8818185952128035605
+      friendly_chat_75: -8292858344958774501
+      friendly_chat_76: -130044541499998913
+      friendly_chat_8: -6137474926437641818
+      friendly_chat_9: -1232930669727458698
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

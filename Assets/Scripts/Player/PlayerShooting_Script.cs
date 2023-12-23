@@ -37,7 +37,7 @@ public class PlayerShooting_Script : MonoBehaviour
 
 
    
-    public ChargedLaserSphere_Script chargedLaser_Script_;
+    ChargedLaserSphere_Script chargedLaser_Script_;
     public PlayerDisplay_Script playerDisplay_Script_;
     public Bomb_Script bomb_Script_;
     public Mirillas_Script mirillas_Script_;
@@ -89,21 +89,21 @@ public class PlayerShooting_Script : MonoBehaviour
     public int laserUpgradesCaught = 0;
     public int actualBombs = 3;
 
-    public float ablingExplodeBombTimeSpan = 0.1f;
-    public float explodeBombTimeSpan = 3f;
     public float conteoBomb = 0;
+    public float ablingExplodeBombTimeSpan = 0.1f;
+   
     //public ParticleSystem LaserLeft;
     //public ParticleSystem LaserRight;
 
     void Awake()
     {
-       // controls = this.GetComponent<InputMaster>();
+       
         playerShootingAudioSource = this.gameObject.transform.GetChild(5).GetChild(3).GetComponent<AudioSource>();
         mirillas_Script_ = GameObject.Find("Mirilla_Lejos").GetComponent<Mirillas_Script>();
         CheckLaserPowerUpSound();
 
         controls = new PlayerControls();
-        // controls = GameObject.Find("UI").transform.GetChild(0).GetComponent<Pause_Script>().controls;
+        
 
 
         //BOTÓN DE DISPARO PULSADO
@@ -160,66 +160,7 @@ public class PlayerShooting_Script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //TODO LO SIGUIENTE COMENTADO YA ESTÁ ACTUALIZADO AL NUEVO INPUT
-        /*
-        //LASER & CHARGED LASER
-        //Input.GetButtonDown("FireLaser")
-        if ((Input.GetButtonDown("FireLaser")) && (isLaserCharged == false))
-        {
-            BeginShootProcess();
-
-        }
-
-
-
-        if (Input.GetButtonDown("FireLaser") && (isLaserCharged == true))
-        {
-      
-            /*                  MODO EXPLOTAR AL PULSAR
- * 
-            if ((chargedLaser_Script.isSphereExploded == false) &&(chargedLaser_Script.canExplode == true) && (chargedLaser_Script.isSphereShot == true))
-            {
-                
-                chargedLaser_Script.Explode();
-                isLaserCharged = false;
-                conteoUseBeforeDeactivateChargedLaser = 0;
-                isLaserChargedAndButtonUp = false;
-
-
-            }
- ///
-            if ((isLaserChargedAndButtonUp == true)&&(chargedLaser_Script_.isSphereShot == false)) //DISPARO
-            {
-                //HAY QUE ACCEDER AL OBJETO EN EL NIVEL, no al que está referenciado
-                ShootChargedLaser();
-                BeginChargeLaser();
-
-            }
-
-            
-
-        }
-
-        
-
-
-
-        if (Input.GetButtonUp("FireLaser") && (isLaserCharged == false))
-        {
-            isShootButtonPressed = false;
-            DeactivateConteoChargeLaser();
-            Destroy(chargingLaserFX_INSCENE.gameObject);
-        }
-
-        if (Input.GetButtonUp("FireLaser") && (isLaserCharged == true))
-        {
-            isShootButtonPressed = false;
-            BeginChargedLaserConteoDeactivation();
-            Destroy(chargingLaserFX_INSCENE.gameObject);
-        }
-        */
-
-       if (isLaserCharging == true)
+        if (isLaserCharging == true)
         {
             conteoChargingLaser += Time.unscaledDeltaTime;
         }
@@ -243,36 +184,13 @@ public class PlayerShooting_Script : MonoBehaviour
             conteoUseBeforeDeactivateChargedLaser = 0;
         }
 
-        //BOMBS
-        /* //TODO LO SIGUIENTE COMENTADO YA ESTÁ ACTUALIZADO AL NUEVO INPUT
-        if (Input.GetButtonDown("FireBomb"))
-        {
-           
-
-            if ((isBombShot == false) && (actualBombs >= 1))
-			{
-			FireBomb ();
-
-			}
-
-
-	        if ((isBombShot == true)&&(conteoBomb > ablingExplodeBombTimeSpan))
-            {
-
-                ExplodeBomb();
-                
-            }
-
-           
-            
-        }
-        */
 
         if (isBombShot == true)
         {
             conteoBomb += Time.deltaTime;
         }
-        
+
+
 
     }
 
@@ -285,7 +203,7 @@ public class PlayerShooting_Script : MonoBehaviour
 
     public void FireBomb()
 	{
-		bombINSCENE = (GameObject)Instantiate (bomb_GO, singleLaser_Spawn.position, singleLaser_Spawn.rotation) as GameObject;
+		bombINSCENE = (GameObject)Instantiate (bomb_GO, chargedLaser_Spawn.position, chargedLaser_Spawn.rotation) as GameObject;
 		bomb_Script_ = bombINSCENE.GetComponent<Bomb_Script> ();
 		DecreaseOneBomb ();
 
@@ -295,8 +213,7 @@ public class PlayerShooting_Script : MonoBehaviour
 	public void ExplodeBomb()
     {
         bomb_Script_.Explode();
-        isBombShot = false;
-        conteoBomb = 0;
+        isBombShot = false;        
         //Debug.Log("Llamo a explode desde playershooting");
 
     }
@@ -386,7 +303,7 @@ public class PlayerShooting_Script : MonoBehaviour
     { 
 
         
-       chargedLaserInShip = (GameObject)Instantiate(chargedLaser_GO, chargedLaser_Spawn.position, chargedLaser_Spawn.rotation, this.transform.GetChild(0).GetChild(0)) as GameObject;
+       chargedLaserInShip = (GameObject)Instantiate(chargedLaser_GO, chargedLaser_Spawn.position, chargedLaser_Spawn.rotation, chargedLaser_Spawn) as GameObject;
         chargedLaser_Script_ = chargedLaserInShip.GetComponent<ChargedLaserSphere_Script>();
         
         isChargedLaserInstanced = true;
@@ -405,12 +322,12 @@ public class PlayerShooting_Script : MonoBehaviour
         isChargedLaserInstanced = false;
         isLaserChargedAndButtonUp = false;
         mirillas_Script_.ReturnToDefaultFar();
-        if(mirilla_Externa_Script_INSCENE != null)
+        if (mirilla_Externa_Script_INSCENE != null)
         {
             mirilla_Externa_Script_INSCENE.DestroyMirilla_Externa();
         }
-        
-        
+
+
     }
 
     void ShootChargedLaser()

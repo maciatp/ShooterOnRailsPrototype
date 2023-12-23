@@ -148,10 +148,10 @@ public class PlayerMovement_Script : MonoBehaviour
         //    touchJoystick.enabled = false;
         //}
 
-            //NEW INPUT SYSTEM
-            // controls = this.GetComponent<PlayerShooting_Script>().controls;
-            controls = GameObject.Find("UI").transform.GetChild(0).GetComponent<GameManager_Script>().controls;
+        //NEW INPUT SYSTEM
+        // controls = this.GetComponent<PlayerShooting_Script>().controls;
 
+        controls = new PlayerControls();
         //MOVERSE
         controls.Gameplay.Move.performed += ctx => moveInput.x = ctx.ReadValue<Vector2>().x;
 

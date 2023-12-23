@@ -300,7 +300,7 @@ TextureImporter:
       213: -9205394669253446967
     second: bosses_98
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -317,9 +317,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -328,12 +331,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -351,10 +354,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -366,6 +374,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -378,6 +387,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -390,6 +400,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -2484,9 +2508,108 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      bosses_0: -7593777287308456034
+      bosses_1: -8050505381868735831
+      bosses_10: -4556899741528890791
+      bosses_11: 2764767178426016382
+      bosses_12: 6105738643464739629
+      bosses_13: -5421599474841123167
+      bosses_14: 2064433155502169310
+      bosses_15: 8796537411668001247
+      bosses_16: -4093085320923484961
+      bosses_17: -5173363477203909298
+      bosses_18: -765296428086621284
+      bosses_19: 8516660908276426063
+      bosses_2: 4246582678940652525
+      bosses_20: 4008449916828762133
+      bosses_21: -521403183828226010
+      bosses_22: -1585361144359886926
+      bosses_23: -1669125294780471889
+      bosses_24: -3948276405869350730
+      bosses_25: -8859655405251010893
+      bosses_26: 4360379764738506870
+      bosses_27: -2320524321075896262
+      bosses_28: 309338623184929361
+      bosses_29: -2410000185150096866
+      bosses_3: 6232865802514645271
+      bosses_30: -7123484847485939441
+      bosses_31: -3927680372460468211
+      bosses_32: -871959816945802432
+      bosses_33: -2349548215765263666
+      bosses_34: 3895467382594329204
+      bosses_35: 180437529711045322
+      bosses_36: -9066361492974771114
+      bosses_37: -577954158761651032
+      bosses_38: 1595117752517305954
+      bosses_39: 8251144952510254385
+      bosses_4: 7090703288174320326
+      bosses_40: 3213018405724157112
+      bosses_41: 3495366805327665622
+      bosses_42: -7145520778489453487
+      bosses_43: 5410969864187538442
+      bosses_44: 3166690293335779682
+      bosses_45: 6947155645052117052
+      bosses_46: 447957217150679854
+      bosses_47: -2226534019134032359
+      bosses_48: -447695437470004435
+      bosses_49: -6147682794847314380
+      bosses_5: -6306598192752602289
+      bosses_50: 4700113224682058695
+      bosses_51: -2996767656989867865
+      bosses_52: -1245093218990706483
+      bosses_53: -7285216882985631334
+      bosses_54: -8839098342761418118
+      bosses_55: 3664271616263302216
+      bosses_56: -5681876435324643791
+      bosses_57: 6032609180534333008
+      bosses_58: 5068177111274062500
+      bosses_59: 7403276703900467889
+      bosses_6: 3568442513025048780
+      bosses_60: 4195642441725766518
+      bosses_61: -6924774527726743268
+      bosses_62: -1925862229742489769
+      bosses_63: -7717935773647895911
+      bosses_64: 897438281960836873
+      bosses_65: -9046857151649270719
+      bosses_66: 9091011396564020576
+      bosses_67: 8714284362591504530
+      bosses_68: -5849046405374803391
+      bosses_69: -5513556818041343996
+      bosses_7: 6113965770452055580
+      bosses_70: 8641344868121987054
+      bosses_71: -7597934700950700442
+      bosses_72: 1146175893953685062
+      bosses_73: -526091205513115944
+      bosses_74: 6803869843150767572
+      bosses_75: 9088794116074822774
+      bosses_76: 2746466192913607238
+      bosses_77: 1281959718640533743
+      bosses_78: 4014754921235225441
+      bosses_79: 1686584379938730790
+      bosses_8: -5710202363144185006
+      bosses_80: -3744079897654722330
+      bosses_81: 4667451045046587270
+      bosses_82: -2063169294821523809
+      bosses_83: -7560854924838183833
+      bosses_84: -9017745047561112776
+      bosses_85: -1391614090861376355
+      bosses_86: 6626661802274465299
+      bosses_87: -4376946240147163215
+      bosses_88: 1260517075467157400
+      bosses_89: 3787457191789528705
+      bosses_9: -4960432042422834291
+      bosses_90: 9158892627087553666
+      bosses_91: -5419159496831962664
+      bosses_92: 256995548766578289
+      bosses_93: -176151862434452630
+      bosses_94: 4632307138499198753
+      bosses_95: -4447415774209397417
+      bosses_96: 8281546540035810116
+      bosses_97: -7937123054571906801
+      bosses_98: -9205394669253446967
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

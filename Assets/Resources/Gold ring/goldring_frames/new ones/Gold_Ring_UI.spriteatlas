@@ -31,6 +31,7 @@ SpriteAtlas:
       m_CrunchedCompression: 0
       m_AllowsAlphaSplitting: 0
       m_Overridden: 0
+      m_IgnorePlatformSupport: 0
       m_AndroidETC2FallbackOverride: 0
       m_ForceMaximumCompressionQuality_BC6H_BC7: 0
     packingSettings:
@@ -40,6 +41,8 @@ SpriteAtlas:
       allowAlphaSplitting: 0
       enableRotation: 0
       enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
     - {fileID: 2800000, guid: 47eb03dd3a1d3de4593e2672a76c562e, type: 3}
@@ -58,6 +61,20 @@ SpriteAtlas:
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - 8e7ab1607b1a96a4881919f3eac6c7f5: 21300000
+    - 6d82faa08191365478fe6d5dbf66779f: 21300000
+    - 8f1cbcb0e1d08394fb37fa07ee2346ff: 21300000
+    - 842b1522bd6bd3a4f9064cb4ed61b6a2: 21300000
+    - 144e9c532d93e604e982288cd759969d: 21300000
+    - 87ccdaf389b8a3d469a33f16527c8a45: 21300000
+    - 1641a5049ace4e54388e984b00756e6d: 21300000
+    - d14ebf88b731da141a11328b01ae0e2a: 21300000
+    - 5e4bfbd88eb65a343889f8125e2f25b6: 21300000
+    - 8ffed4da6f354354fb683c24343bb9aa: 21300000
+    - 5fa1cbcd2d716344d87d6d5be187bc76: 21300000
+    - 47eb03dd3a1d3de4593e2672a76c562e: 21300000
+    - 2c87a49e703d6614391a947a77106ff5: 21300000
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: 8e7ab1607b1a96a4881919f3eac6c7f5, type: 3}
@@ -87,5 +104,6 @@ SpriteAtlas:
   - goldring_0002
   - goldring_0000
   - goldring_0004
+  m_RenderDataMap: {}
   m_Tag: Gold_Ring_UI
   m_IsVariant: 0

@@ -43,20 +43,11 @@ public class UIHealthBar_Script : MonoBehaviour
 
     private void Awake()
     {
-        childHealthBar = transform.Find("ChildHealthBar");
-        healthBarImage = childHealthBar.GetComponent<Image>();
-        deltaBar = transform.Find("DeltaBar");
-        deltaBarImage = deltaBar.gameObject.GetComponent<Image>();
         playerHealth_Script_ = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth_Script>();
-        barExtraSize = new Vector2(playerHealth_Script_.maxPlayerHealth, 1);
-        
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
         deltaBar.localScale = new Vector2(childHealthBar.localScale.x, 1);
-        
+        barExtraSize = new Vector2(playerHealth_Script_.maxPlayerHealth, 1);
     }
+    
 
     // Update is called once per frame
     void Update()
