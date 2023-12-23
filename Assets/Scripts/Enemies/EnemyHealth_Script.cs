@@ -176,10 +176,6 @@ public class EnemyHealth_Script : MonoBehaviour
         {
             smokeTrailFXInScene.transform.SetParent(null);
         }
-      
-        smokeFXAfterImpact_InScene = Instantiate(smokeFXAfterImpact, transform) as GameObject; //TODO CHECK ROTATION
-        smokeFXAfterImpact_InScene.transform.SetParent(null);
-        smokeFXAfterImpact_InScene.transform.rotation = Quaternion.identity;
         
        
         if(surfaceCollided != null)
@@ -193,6 +189,9 @@ public class EnemyHealth_Script : MonoBehaviour
             else if (surfaceCollided.gameObject.layer == 14)  //EXPLOSION ON GROUND
             {
                 Instantiate(vehicleExplosionFX, this.transform.position, this.transform.rotation);
+                smokeFXAfterImpact_InScene = Instantiate(smokeFXAfterImpact, transform) as GameObject; //TODO CHECK ROTATION
+                smokeFXAfterImpact_InScene.transform.SetParent(null);
+                smokeFXAfterImpact_InScene.transform.rotation = Quaternion.identity;
             }
 
 
