@@ -143,11 +143,11 @@ public class EnemyHealth_Script : MonoBehaviour
     {
         isShotDown = true;
         enemyRB.useGravity = true;
-        enemyRB.velocity = transform.forward * cinemachineDollyCart_.m_Speed/2; //  para que caiga al ser derribado
         enemyAnimator.enabled = false;
 
         if(cinemachineDollyCart_ != null)
         {
+            enemyRB.velocity = transform.forward * cinemachineDollyCart_.m_Speed/2; //  para que caiga al ser derribado
             cinemachineDollyCart_.enabled = false;
         }
         smokeTrailFX = Instantiate(smokeTrailFX, transform) as GameObject;
