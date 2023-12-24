@@ -28,7 +28,7 @@ public class VirtualCameraRotation_Script : MonoBehaviour
 
         //ROTATE CAMERA WHEN NOT TILTING
     {
-        if (playerMovement_Script_.isTilting == false)
+        if (playerMovement_Script_.IsTilting == false)
         {
             vCamera_Animator.SetFloat("cameraFloat_Dutch", playerMovement_Script_.moveDirection.x);
             vCamera_Animator.SetFloat("cameraVerticalFloat", playerMovement_Script_.moveDirection.y);

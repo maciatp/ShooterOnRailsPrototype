@@ -69,12 +69,7 @@ public class PlayerHealth_Script : MonoBehaviour
         uIHealthBar_Script_ = GameObject.Find("UIHealthBar").GetComponent<UIHealthBar_Script>();
         uIGoldRings_Script_ = GameObject.Find("UIGoldRings").GetComponent<UIGoldRings_Script>();
         uILivesText_Script_ = GameObject.Find("UILives").GetComponent<UILivesText_Script>();
-        playerHealthBarAudioSource = this.gameObject.transform.GetChild(5).GetChild(0).GetComponent<AudioSource>();
-        playerHitAudioSource = this.gameObject.transform.GetChild(5).GetChild(2).GetComponent<AudioSource>();
-        smokeFX = this.transform.GetChild(0).GetChild(4).gameObject;
-        lightningFX = this.transform.GetChild(0).GetChild(5).gameObject;
-        smokeParticleSystem = smokeFX.gameObject.GetComponent<ParticleSystem>();// para tener acceso a smokeFX sin tener que poner getComponent en cada if
-        lightningParticleSystem = lightningFX.gameObject.GetComponent<ParticleSystem>();// para tener acceso a smokeFX sin tener que poner getComponent en cada if
+        
         cinemachineImpulse_ = this.GetComponent<CinemachineImpulseSource>();
         //cameraParent = GameObject.Find("CameraHolder").transform;
     }

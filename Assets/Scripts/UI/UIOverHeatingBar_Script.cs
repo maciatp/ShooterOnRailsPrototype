@@ -53,7 +53,7 @@ public class UIOverHeatingBar_Script : MonoBehaviour
         {
             PaintWhite();
         }
-        if(playerMovement_Script_.canUseOverHeating == false)
+        if(playerMovement_Script_.CanUseOverHeating == false)
         {
             PaintRed();
         }

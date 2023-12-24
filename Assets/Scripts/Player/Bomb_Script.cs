@@ -107,7 +107,7 @@ public class Bomb_Script : MonoBehaviour
         playerShooting_.isBombShot = false;
         
         conteoBomb = 0;
-        playerShooting_.conteoBomb = 0;
+        playerShooting_.ConteoBomb = 0;
         Instantiate(bombExplosion_GO, this.gameObject.transform.position, this.gameObject.transform.rotation, null);
         uIBombEffect_Script_.PlayUIBombAnimation();
         //bombSound.transform.parent = null;

@@ -7,34 +7,33 @@ using UnityEngine.Rendering.PostProcessing;
 
 public class PlayerMovement_Script : MonoBehaviour
 {
-    private float originalChasingDistance;
 
     public PlayerControls controls;
     public Joystick touchJoystick;
 
     [Header("Bools")]
 
-    public bool isInvertedY = false;
-    public bool isConteoBarrelRollLeftActive = false ;
-    public bool isConteoBarrelRollRightActive = false;
-    public float conteoBarrelRollLeft = 0;
-    public float conteoBarrelRollRight = 0;
+    [SerializeField] bool isInvertedY = false;
+    bool isConteoBarrelRollLeftActive = false ;
+    bool isConteoBarrelRollRightActive = false;
+    float conteoBarrelRollLeft = 0;
+    float conteoBarrelRollRight = 0;
     public bool canCounterEnemyLasers = false;
-    public bool isTilting = false;
-    public bool isTiltingLeft = false;
-    public bool isTiltingRight = false;
+    bool isTilting = false;
+    bool isTiltingLeft = false;
+    bool isTiltingRight = false;
    
-    public bool isTiltButtonPressed = false;
-    public bool isBoosting = false;
-    public bool isBoostingGamePad = false;
-    public bool isBraking = false;
-    public bool isBrakingGamePad = false;
-    public bool canUseOverHeating = true;
-    public bool isLooping = false;
-    public bool isTankModeActivated = false;
+    bool isTiltButtonPressed = false;
+    bool isBoosting = false;
+    bool isBoostingGamePad = false;
+    bool isBraking = false;
+    bool isBrakingGamePad = false;
+    bool canUseOverHeating = true;
+    bool isLooping = false;
+    bool isTankModeActivated = false;
 
-    public bool isBossMode = false;
-    public bool isAllRangeMode = false;
+    bool isBossMode = false;
+    bool isAllRangeMode = false;
 
     [Space]
     public AudioClip boost_Sound;
@@ -61,10 +60,11 @@ public class PlayerMovement_Script : MonoBehaviour
  
     //public float yLookSpeed = 8500;
     public float chasingDistance = 2f; //afecta al grado de giro cuando la nave vira (cuanto más lejos esté el objetivo de la persecución, más pequeño será el ángulo de giro)
+    float originalChasingDistance;
     public float forwardSpeed = 12f; //velocidad frontal lineal que tiene GameplayPlane
-    public float originalXYLookSpeed;
-    public float originalYSpeed;
-    public float originalXSpeed;
+    float originalXYLookSpeed;
+    float originalYSpeed;
+    float originalXSpeed;
     public float lerpTimeToHorizontalLean = 0.1f; //lo que tarda en girar el modelo sobre la Z cuando vira (tiene que ser 0,1 para que sea smooth)
     public float leanLimit = 60f; //lo máximo que va a alabear
     public float quickspinTimeSpan = 0.5f;
@@ -80,11 +80,13 @@ public class PlayerMovement_Script : MonoBehaviour
     
     public float cameraFOVSpeed = 10;
     public float cameraTransformZ;
-    public float conteoJoystickUp = 0;
+    float conteoJoystickUp = 0;
     public float joystickUpTimeSpan = 0.12f;
     public float joystickVerticalMinimumToLooping = 0.45f;
-    public float counterConteo = 0;
+    float counterConteo = 0;
     public float counterDuration = 1f;
+
+    [SerializeField] Vector3 mirillaLejosOriginalLocalPos;
 
 
 
@@ -101,10 +103,10 @@ public class PlayerMovement_Script : MonoBehaviour
     public GameObject playerInScene;
     private UIOverHeatingBar_Script uIOverHeatingBar_Script_;
     private Transform childOverHeatingBar;
-    private Rigidbody player_RB;
+    
     public CinemachineVirtualCamera cineMachineVirtualCamera_script_;
     public GameObject mirilla_Lejos;
-    public ChargedLaserSphere_Script chargedLaserSphere_Script_;
+    
     private Transform playerModel; //el segundo nivel del G.O. player
     public GameObject playerArwing;
     public TrailRenderer leftTrail;
@@ -121,22 +123,31 @@ public class PlayerMovement_Script : MonoBehaviour
     public ParticleSystem circle;
     public ParticleSystem barrel;
     public ParticleSystem stars;
-    
+
+    public bool IsTilting
+    {
+        get { return isTilting; }
+    }
+    public bool CanUseOverHeating
+    {
+        get { return canUseOverHeating; }
+    }
 
     private void Awake()
     {
         originalXYLookSpeed = xyLookSpeed;
         originalYSpeed = ySpeed;
         originalXSpeed = xSpeed;
-        cineMachineVirtualCamera_script_ = GameObject.Find("CM vcam1").GetComponent<CinemachineVirtualCamera>();
-        playerInScene = GameObject.Find("Player");
-        player_RB = playerInScene.GetComponent<Rigidbody>();
+        originalChasingDistance = chasingDistance;
         uIOverHeatingBar_Script_ = GameObject.Find("UIOverHeatingBar").GetComponent<UIOverHeatingBar_Script>();
         childOverHeatingBar = uIOverHeatingBar_Script_.transform.Find("ChildOverHeatingBar");
-        playerAudioSource = this.transform.GetChild(5).GetChild(1).GetComponent<AudioSource>();
-        playerArwing = playerInScene.transform.GetChild(0).GetChild(0).gameObject;
-        mirilla_Lejos = playerInScene.transform.GetChild(2).gameObject;
-        originalChasingDistance = chasingDistance;
+        //cineMachineVirtualCamera_script_ = GameObject.Find("CM vcam1").GetComponent<CinemachineVirtualCamera>();
+        //playerInScene = GameObject.Find("Player");
+        //player_RB = playerInScene.GetComponent<Rigidbody>();
+        //playerAudioSource = this.transform.GetChild(5).GetChild(1).GetComponent<AudioSource>();
+        //playerArwing = playerInScene.transform.GetChild(0).GetChild(0).gameObject;
+        mirillaLejosOriginalLocalPos = mirilla_Lejos.transform.localPosition;
+        //mirilla_Lejos = playerInScene.transform.GetChild(2).gameObject;
 
 
         //TOUCH CONTROLS
@@ -749,8 +760,8 @@ public class PlayerMovement_Script : MonoBehaviour
             
             
             
-            mirilla_Lejos.transform.localPosition = new Vector3(0, -0.09999996f, 27.375f); //PROBAR SI COMENTANDO ESTO FUNCIONA IGUAL, y borrar
-            mirilla_Lejos.transform.localRotation = new Quaternion(0, 0, 0, 0);
+            mirilla_Lejos.transform.localPosition = mirillaLejosOriginalLocalPos; 
+            mirilla_Lejos.transform.localRotation = Quaternion.identity;
             DOVirtual.Float(origFov, endFov, .5f, FieldOfView);
             Debug.Log("Ha terminado la animacion");
             trail.Stop();

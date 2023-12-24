@@ -89,8 +89,14 @@ public class PlayerShooting_Script : MonoBehaviour
     public int laserUpgradesCaught = 0;
     public int actualBombs = 3;
 
-    public float conteoBomb = 0;
+    float conteoBomb = 0;
     public float ablingExplodeBombTimeSpan = 0.1f;
+
+    public float ConteoBomb
+    {
+        get { return conteoBomb; }
+        set { conteoBomb = value;}
+    }
    
     //public ParticleSystem LaserLeft;
     //public ParticleSystem LaserRight;
@@ -98,8 +104,7 @@ public class PlayerShooting_Script : MonoBehaviour
     void Awake()
     {
        
-        playerShootingAudioSource = this.gameObject.transform.GetChild(5).GetChild(3).GetComponent<AudioSource>();
-        mirillas_Script_ = GameObject.Find("Mirilla_Lejos").GetComponent<Mirillas_Script>();
+        
         CheckLaserPowerUpSound();
 
         controls = new PlayerControls();
