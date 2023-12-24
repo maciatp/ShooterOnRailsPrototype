@@ -747,10 +747,8 @@ public class PlayerMovement_Script : MonoBehaviour
             player_Animator.SetBool("isLooping_Anim", false);
             dolly.m_Speed = forwardSpeed;
             
-            playerArwing.transform.localPosition = new Vector3(0, 0, 0);
-            playerInScene.transform.localPosition = new Vector3(playerInScene.transform.localPosition.x, playerInScene.transform.localPosition.y, 0);
             
-            //playerInScene.transform.localRotation = new Quaternion(0, 0, 0,0);
+            
             mirilla_Lejos.transform.localPosition = new Vector3(0, -0.09999996f, 27.375f); //PROBAR SI COMENTANDO ESTO FUNCIONA IGUAL, y borrar
             mirilla_Lejos.transform.localRotation = new Quaternion(0, 0, 0, 0);
             DOVirtual.Float(origFov, endFov, .5f, FieldOfView);
@@ -758,11 +756,7 @@ public class PlayerMovement_Script : MonoBehaviour
             trail.Stop();
             trail.GetComponent<TrailRenderer>().emitting = false;
             playerAudioSource.Stop();
-            if ((GameObject.FindGameObjectWithTag("ChargedLaserSphere")) == true)
-            {
-                chargedLaserSphere_Script_ = GameObject.FindGameObjectWithTag("ChargedLaserSphere").GetComponent<ChargedLaserSphere_Script>();
-                chargedLaserSphere_Script_.transform.localPosition = chargedLaserSphere_Script_.initialPosition;
-            }
+            
 
 
         }
