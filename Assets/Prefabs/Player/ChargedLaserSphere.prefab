@@ -5082,6 +5082,7 @@ GameObject:
   - component: {fileID: 3607286771821805748}
   - component: {fileID: 2591528756254843604}
   - component: {fileID: 4316821389289989003}
+  - component: {fileID: 5563473689928460893}
   m_Layer: 11
   m_Name: ChargedLaserSphere
   m_TagString: ChargedLaserSphere
@@ -5102,6 +5103,7 @@ Transform:
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 1
   m_Children:
+  - {fileID: 1799330591439258247}
   - {fileID: 2917979592588392067}
   - {fileID: 8480708322443529124}
   - {fileID: 5931173536140243832}
@@ -5208,7 +5210,6 @@ MonoBehaviour:
   chargedLaserAudio: {fileID: 0}
   chargedReady: {fileID: 8300000, guid: 68e13a8b6f7746745afcbb09bb88b3bd, type: 3}
   chargedShot: {fileID: 8300000, guid: 7de58964d1a6b6c4cbd3538f63e41fe4, type: 3}
-  initialPosition: {x: 0, y: 0, z: 0}
   surfaceCollided: {fileID: 0}
   chargedLaserExplosionFX: {fileID: 6253891871589744810, guid: 4dfb31059e3c5bf43a823d4386b76478,
     type: 3}
@@ -5219,6 +5220,7 @@ MonoBehaviour:
   billBoardLocked: {fileID: 0}
   cinemachineImpulse_: {fileID: 0}
   timeManager_Script_: {fileID: 0}
+  absorberScript: {fileID: 5563473689928460893}
   conteoExplode: 0
   conteoExplodeTimeSpan: 1
 --- !u!82 &409833069036247386
@@ -10199,6 +10201,91 @@ MonoBehaviour:
     type: 3}
   conteoInstantiate: 0
   instantiateTimeSpan: 0.05
+--- !u!114 &5563473689928460893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3710393362686753893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11f1c4183ce5c6b4ebb7be7caa2d1986, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attractorForce: 7
+  conteoToBeginAttraction: 0
+  beginAttractionTimeSpan: 0.3
+  rB_ObsAbsorbing: []
+  triggerCollider: {fileID: 5431073741968334124}
+--- !u!1 &4334408095804616635
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1799330591439258247}
+  - component: {fileID: 5431073741968334124}
+  - component: {fileID: 5643066723170463550}
+  m_Layer: 9
+  m_Name: AttractorTrigger
+  m_TagString: ChargingLaser
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1799330591439258247
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4334408095804616635}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.6666667, y: 0.6666667, z: 0.6666667}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 183211758031826990}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &5431073741968334124
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4334408095804616635}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.92, y: 8, z: 11.72}
+  m_Center: {x: 0, y: 1.7, z: 5.13}
+--- !u!114 &5643066723170463550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4334408095804616635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d481d1efbb12cb8469b98371f06b5547, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attractorCollider: {fileID: 0}
+  chargingLaserAbsorb_Script_: {fileID: 0}
 --- !u!1 &5347300239781563214
 GameObject:
   m_ObjectHideFlags: 0
@@ -25118,7 +25205,7 @@ ParticleSystem:
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
   emitterVelocityMode: 0
-  looping: 0
+  looping: 1
   prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 1
@@ -26108,7 +26195,7 @@ ParticleSystem:
     curve:
       serializedVersion: 2
       minMaxState: 1
-      scalar: 2
+      scalar: 1.5
       minScalar: 1
       maxCurve:
         serializedVersion: 2

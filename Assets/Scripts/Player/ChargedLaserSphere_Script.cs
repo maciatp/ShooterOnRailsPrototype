@@ -31,7 +31,8 @@ public class ChargedLaserSphere_Script : MonoBehaviour
     public AudioClip chargedReady;
     public AudioClip chargedShot;
 
-    public Vector3 initialPosition;
+
+   
 
 
     public Transform surfaceCollided = null;
@@ -46,6 +47,7 @@ public class ChargedLaserSphere_Script : MonoBehaviour
     public Billboard_Script billBoardLocked;
     public CinemachineImpulseSource cinemachineImpulse_;
     public TimeManager_Script timeManager_Script_;
+    [SerializeField] ChargingLaserAbsorb_Script absorberScript;
 
     [Header("Parameters")]
     public float conteoExplode = 0;
@@ -67,7 +69,7 @@ public class ChargedLaserSphere_Script : MonoBehaviour
         sphereCollider.enabled = false;
         chargedLaserAudio = this.GetComponent<AudioSource>();
         chargedLaserSphereParticleSystem = this.GetComponent<ParticleSystem>();
-        initialPosition = this.transform.localPosition;
+        
         cinemachineImpulse_ = this.GetComponent<CinemachineImpulseSource>();
         //timeManager_Script_ = GameObject.FindGameObjectWithTag("TimeManager").GetComponent<TimeManager_Script>();
         timeManager_Script_ = GameObject.Find("Player").gameObject.GetComponent<TimeManager_Script>();
@@ -159,6 +161,10 @@ public class ChargedLaserSphere_Script : MonoBehaviour
 
     public void ShootChargedLaser()
     {
+        //APAGO EL TRIGGER ATTRACTOR
+        absorberScript.triggerCollider.gameObject.SetActive(false);
+        absorberScript.enabled = false;
+
         this.transform.parent = null;
         this.gameObject.layer = 11; //cambio de layer a la que toca para que no moleste antes de lanzarla
         sphereCollider.enabled = true;
