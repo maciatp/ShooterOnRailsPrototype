@@ -94,13 +94,6 @@ public class GuidedLaserTrigger_Script : MonoBehaviour
                     Debug.Log("He estado aquí");
                 }
             }
-            //rb_Mirilla_Externa.transform.position = objectLocked.transform.position;
-            //rb_Mirilla_Externa.transform.parent = null;
-            //IR PROBANDO
-            //rb_MirillaLejos.transform.localRotation = Quaternion.FromToRotation(rb_MirillaLejos.transform.position, Camera.main.transform.position); // new Quaternion(0,0,0,0); //QUEDA HACER QUE MIREN A CÁMARA SIEMPRE
-            //Instantiate(mirilla_Externa_GO, objectLocked.transform.position, new Quaternion(0, 0, 0, 0));
-
-
         }
         if ((objectLocked == null) && (playerShooting_Script_.IsLaserCharged == true))
         {
@@ -150,13 +143,7 @@ public class GuidedLaserTrigger_Script : MonoBehaviour
 
     public void SetMirillaToDefault()
     {
-        // rb_Mirilla_Externa.transform.parent = GameObject.FindGameObjectWithTag("Player").transform;
-        //rb_Mirilla_Externa.transform.localPosition = originalMirillaLejosLocalPosition;
-        //rb_Mirilla_Externa.transform.localScale = new Vector3(originalLocalScale.x, originalLocalScale.y);
-
-        mirillas_Script_.ReturnToDefaultFar();
-
-       // mirilla_Externa_Script_INSCENE.DestroyMirilla_Externa();
+        mirillas_Script_.ReturnToDefaultFar();      
 
         objectLocked = null;
         isObjectLocked = false;

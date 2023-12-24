@@ -39,8 +39,7 @@ public class PlayerHealth_Script : MonoBehaviour
     
 
 
-    [Space]
-    //EnemyHealth_Script enemyHealth_Script_;
+    
     [Space]
     [Header("Audio References")]
     [SerializeField] AudioSource playerHealthBarAudioSource;

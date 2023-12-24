@@ -72,7 +72,7 @@ public class PlayerMovement_Script : MonoBehaviour
     public float velocityMultiplierWhenTiltingAndTurning = 1.40f;
     public float boostingSpeedMultiplier = 2;
    
-    public float actualPlayerOverHeating = 0;
+    public float currentPlayerOverHeating = 0;
     public float totalOverHeating = 100f;
     public int overHeatingDecreasingRate = 20;
     public int overHeatingIncreasingRate = 40;
@@ -86,7 +86,8 @@ public class PlayerMovement_Script : MonoBehaviour
     float counterConteo = 0;
     public float counterDuration = 1f;
 
-    [SerializeField] Vector3 mirillaLejosOriginalLocalPos;
+    Vector3 mirillaLejosOriginalLocalPos;
+    bool isTrailsActive = true;
 
 
 
@@ -95,12 +96,12 @@ public class PlayerMovement_Script : MonoBehaviour
     [Space]
 
     [Header("Public References")]
-    public Transform aimTarget;
-    public CinemachineDollyCart dolly;
-    public Transform cameraParent;
-    public Animator arwing_Animator;
-    public Animator player_Animator;
-    public GameObject playerInScene;
+    [SerializeField] Transform aimTarget;
+    [SerializeField] CinemachineDollyCart dolly;
+    [SerializeField] Transform cameraParent;
+    [SerializeField] Animator arwing_Animator;
+    Animator player_Animator;
+    GameObject playerInScene;
     private UIOverHeatingBar_Script uIOverHeatingBar_Script_;
     private Transform childOverHeatingBar;
     
@@ -108,11 +109,10 @@ public class PlayerMovement_Script : MonoBehaviour
     public GameObject mirilla_Lejos;
     
     private Transform playerModel; //el segundo nivel del G.O. player
-    public GameObject playerArwing;
+    
     public TrailRenderer leftTrail;
     public TrailRenderer rightTrail;
-    [SerializeField]
-    private bool isTrailsActive = true;
+    
     [SerializeField] Material trailMaterial;
 
 
@@ -141,13 +141,9 @@ public class PlayerMovement_Script : MonoBehaviour
         originalChasingDistance = chasingDistance;
         uIOverHeatingBar_Script_ = GameObject.Find("UIOverHeatingBar").GetComponent<UIOverHeatingBar_Script>();
         childOverHeatingBar = uIOverHeatingBar_Script_.transform.Find("ChildOverHeatingBar");
-        //cineMachineVirtualCamera_script_ = GameObject.Find("CM vcam1").GetComponent<CinemachineVirtualCamera>();
-        //playerInScene = GameObject.Find("Player");
-        //player_RB = playerInScene.GetComponent<Rigidbody>();
-        //playerAudioSource = this.transform.GetChild(5).GetChild(1).GetComponent<AudioSource>();
-        //playerArwing = playerInScene.transform.GetChild(0).GetChild(0).gameObject;
+        
         mirillaLejosOriginalLocalPos = mirilla_Lejos.transform.localPosition;
-        //mirilla_Lejos = playerInScene.transform.GetChild(2).gameObject;
+        
 
 
         //TOUCH CONTROLS
@@ -332,7 +328,7 @@ public class PlayerMovement_Script : MonoBehaviour
         controls.Gameplay.Boost.started += ctx =>
         {
 
-            if ((isLooping == false) && ((conteoJoystickUp < joystickUpTimeSpan) && (conteoJoystickUp >= 0)) && ((actualPlayerOverHeating + (totalOverHeating / 5) < totalOverHeating)) && (canUseOverHeating == true))
+            if ((isLooping == false) && ((conteoJoystickUp < joystickUpTimeSpan) && (conteoJoystickUp >= 0)) && ((currentPlayerOverHeating + (totalOverHeating / 5) < totalOverHeating)) && (canUseOverHeating == true))
             {
                 Looping(true);
             }
@@ -388,11 +384,11 @@ public class PlayerMovement_Script : MonoBehaviour
     void Start()
     {
         playerModel = transform.GetChild(0);
-        actualPlayerOverHeating = 0;
+        currentPlayerOverHeating = 0;
         SetSpeed(forwardSpeed); //HACE QUE LA VELOCIDAD SEA SIEMPRE 24 al empezar
-        arwing_Animator = playerArwing.GetComponent<Animator>();
-        player_Animator = playerInScene.GetComponent<Animator>();
-        childOverHeatingBar.localScale = new Vector3(actualPlayerOverHeating,1);
+        
+        player_Animator = GetComponent<Animator>();
+        childOverHeatingBar.localScale = new Vector3(currentPlayerOverHeating,1);
         if(isTrailsActive == true)
         {
             DeactivateTrails();
@@ -567,15 +563,15 @@ public class PlayerMovement_Script : MonoBehaviour
 
             //STAMINA (OVERHEATING)
            
-            if ((actualPlayerOverHeating <= totalOverHeating) && (canUseOverHeating==true))
+            if ((currentPlayerOverHeating <= totalOverHeating) && (canUseOverHeating==true))
             {
-                actualPlayerOverHeating += Time.deltaTime * overHeatingIncreasingRate;
-                childOverHeatingBar.localScale = new Vector3(actualPlayerOverHeating,1);
+                currentPlayerOverHeating += Time.deltaTime * overHeatingIncreasingRate;
+                childOverHeatingBar.localScale = new Vector3(currentPlayerOverHeating,1);
                
             }
 
             
-            if((actualPlayerOverHeating >= totalOverHeating) || ((actualPlayerOverHeating < totalOverHeating) && (actualPlayerOverHeating > totalOverHeating / 2) && (canUseOverHeating == false))) //SIN STAMINA NO HAY PARTY!! AKA BOOST/BRAKE
+            if((currentPlayerOverHeating >= totalOverHeating) || ((currentPlayerOverHeating < totalOverHeating) && (currentPlayerOverHeating > totalOverHeating / 2) && (canUseOverHeating == false))) //SIN STAMINA NO HAY PARTY!! AKA BOOST/BRAKE
             {
                 arwing_Animator.SetBool("isBraking_Anim", false);
                 arwing_Animator.SetBool("isBoosting_Anim", false);
@@ -608,18 +604,18 @@ public class PlayerMovement_Script : MonoBehaviour
             }
         }
         //STAMINA (OVERHEATING)
-        if((actualPlayerOverHeating > 0) && (((isBoosting==false)&& (isBraking==false))||((isBoostingGamePad==false)&&(isBrakingGamePad==false))))
+        if((currentPlayerOverHeating > 0) && (((isBoosting==false)&& (isBraking==false))||((isBoostingGamePad==false)&&(isBrakingGamePad==false))))
         {
-            actualPlayerOverHeating -= Time.deltaTime * overHeatingDecreasingRate;
-            childOverHeatingBar.localScale = new Vector3(actualPlayerOverHeating, 1);
+            currentPlayerOverHeating -= Time.deltaTime * overHeatingDecreasingRate;
+            childOverHeatingBar.localScale = new Vector3(currentPlayerOverHeating, 1);
 
-            if (actualPlayerOverHeating < 0)
+            if (currentPlayerOverHeating < 0)
             {
-                actualPlayerOverHeating = 0;
+                currentPlayerOverHeating = 0;
                 childOverHeatingBar.localScale = new Vector3(0, 1);
             }
         }
-        if(( actualPlayerOverHeating < (totalOverHeating/2))&&(canUseOverHeating == false))
+        if(( currentPlayerOverHeating < (totalOverHeating/2))&&(canUseOverHeating == false))
         {
             canUseOverHeating = true;
         }
