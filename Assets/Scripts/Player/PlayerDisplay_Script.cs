@@ -87,7 +87,7 @@ public class PlayerDisplay_Script : MonoBehaviour
        
         if(this.gameObject.name == "UIBombs")
         {
-            SetUIBombs(playerShooting_Script_.actualBombs);
+            SetUIBombs(playerShooting_Script_.Bombs);
         }
         
 
@@ -109,12 +109,12 @@ public class PlayerDisplay_Script : MonoBehaviour
         //ESTO NO DEBERÍA FUNCIONAR. COMPROBAR LUEGO
         if (this.gameObject.name == "BombsText")
         {
-            playerBombs_Text.text = (playerShooting_Script_.actualBombs.ToString("x 0"));
-            if (playerShooting_Script_.actualBombs < 1)
+            playerBombs_Text.text = (playerShooting_Script_.Bombs.ToString("x 0"));
+            if (playerShooting_Script_.Bombs < 1)
             {
                 playerBombs_Text.color = Color.red;
             }
-            else if ((playerShooting_Script_.actualBombs > 0) && (playerBombs_Text.color == Color.red))
+            else if ((playerShooting_Script_.Bombs > 0) && (playerBombs_Text.color == Color.red))
             {
                 playerBombs_Text.color = Color.white;
             }
@@ -123,7 +123,7 @@ public class PlayerDisplay_Script : MonoBehaviour
         if(this.gameObject.name == "UIBombs")
         {
 
-            if(playerShooting_Script_.isBombShot == true)
+            if(playerShooting_Script_.IsBombShot == true)
             {
                 bombImage1.color = new Color(1,1,1, 0.5f);
                 bombImage2.color = new Color(1,1,1, 0.5f);
@@ -139,7 +139,7 @@ public class PlayerDisplay_Script : MonoBehaviour
             }
 
 
-            if(playerShooting_Script_.actualBombs <= 4)
+            if(playerShooting_Script_.Bombs <= 4)
             {
                 
 
@@ -222,11 +222,11 @@ public class PlayerDisplay_Script : MonoBehaviour
             
         }
     }
-    public void SetUIBombs(int actualBombs)
+    public void SetUIBombs(int _currentBombs)
     {
 
 
-        if (actualBombs == 0)
+        if (_currentBombs == 0)
         {
             bombImage1.gameObject.SetActive(false);
             bombImage2.gameObject.SetActive(false);
@@ -236,7 +236,7 @@ public class PlayerDisplay_Script : MonoBehaviour
 
         }
 
-        else if (actualBombs == 1)
+        else if (_currentBombs == 1)
         {
             bombImage1.gameObject.SetActive(true);
             bombImage2.gameObject.SetActive(false);
@@ -247,7 +247,7 @@ public class PlayerDisplay_Script : MonoBehaviour
             //MoveUIBomb(bombImage1, uIBombSpawnLocation.transform, bombImage1OriginalLocalPosition);
             
         }
-       else if (actualBombs == 2)
+       else if (_currentBombs == 2)
         {
             bombImage1.gameObject.SetActive(true);
             bombImage2.gameObject.SetActive(true);
@@ -256,7 +256,7 @@ public class PlayerDisplay_Script : MonoBehaviour
             bombTextGameObject.gameObject.SetActive(false);
 
         }
-       else if (actualBombs == 3)
+       else if (_currentBombs == 3)
         {
             bombImage1.gameObject.SetActive(true);
             bombImage2.gameObject.SetActive(true);
@@ -265,7 +265,7 @@ public class PlayerDisplay_Script : MonoBehaviour
             bombTextGameObject.gameObject.SetActive(false);
 
         }
-       else if (actualBombs == 4)
+       else if (_currentBombs == 4)
         {
             bombImage1.gameObject.SetActive(true);
             bombImage2.gameObject.SetActive(true);
@@ -274,24 +274,24 @@ public class PlayerDisplay_Script : MonoBehaviour
             bombTextGameObject.gameObject.SetActive(false);
 
         }
-       else if(actualBombs > 4)
+       else if(_currentBombs > 4)
         {
             bombImage1.gameObject.SetActive(false);
             bombImage2.gameObject.SetActive(false);
             bombImage3.gameObject.SetActive(true);
             bombImage4.gameObject.SetActive(false);
             bombTextGameObject.gameObject.SetActive(true);
-            playerBombs_Text.text = (actualBombs.ToString());
+            playerBombs_Text.text = (_currentBombs.ToString());
 
 
         }
     }
 
-    public void AddUIBomb(int _actualBombs, int addedOrRemoved)
+    public void AddUIBomb(int _currentBombs, int addedOrRemoved)
     {
         if(addedOrRemoved > 0) // falta preparar lanzar bomba
         {
-            if (_actualBombs == 1)
+            if (_currentBombs == 1)
             {
                 bombImage1.gameObject.SetActive(true);
                 bombImage2.gameObject.SetActive(false);
@@ -308,7 +308,7 @@ public class PlayerDisplay_Script : MonoBehaviour
                 //MoveUIBomb(bombImage1, uIBombSpawnLocation.transform, bombImage1OriginalLocalPosition);
 
             }
-            else if (_actualBombs == 2)
+            else if (_currentBombs == 2)
             {
                 bombImage1.gameObject.SetActive(true);
                 bombImage2.gameObject.SetActive(true);
@@ -325,7 +325,7 @@ public class PlayerDisplay_Script : MonoBehaviour
                 uIBomb4HasToMove = true;
 
             }
-            else if (_actualBombs == 3)
+            else if (_currentBombs == 3)
             {
                 bombImage1.gameObject.SetActive(true);
                 bombImage2.gameObject.SetActive(true);
@@ -342,7 +342,7 @@ public class PlayerDisplay_Script : MonoBehaviour
                 uIBomb4HasToMove = true;
 
             }
-            else if (_actualBombs == 4)
+            else if (_currentBombs == 4)
             {
                 bombImage1.gameObject.SetActive(true);
                 bombImage2.gameObject.SetActive(true);
@@ -358,21 +358,21 @@ public class PlayerDisplay_Script : MonoBehaviour
                 uIBomb4HasToMove = false;
 
             }
-            else if (_actualBombs > 4)
+            else if (_currentBombs > 4)
             {
                 //bombImage1.gameObject.SetActive(false);
                 //bombImage2.gameObject.SetActive(false);
                 bombImage3.gameObject.SetActive(true);
                 //bombImage4.gameObject.SetActive(false);
                 bombTextGameObject.gameObject.SetActive(true);
-                playerBombs_Text.text = (_actualBombs.ToString());
+                playerBombs_Text.text = (_currentBombs.ToString());
 
 
             }
         }
         else
         {
-            if(_actualBombs == 0)
+            if(_currentBombs == 0)
             {
                 uIBomb1HasToMove = true;
                 bombImage1.gameObject.SetActive(true);
@@ -382,7 +382,7 @@ public class PlayerDisplay_Script : MonoBehaviour
                 bombTextGameObject.gameObject.SetActive(false);
 
             }
-            else if(_actualBombs == 1)
+            else if(_currentBombs == 1)
             {
                 uIBomb2HasToMove = true;
                 bombImage1.gameObject.SetActive(true);
@@ -391,7 +391,7 @@ public class PlayerDisplay_Script : MonoBehaviour
                 bombImage4.gameObject.SetActive(false);
                 bombTextGameObject.gameObject.SetActive(false);
             }
-            else if (_actualBombs == 2)
+            else if (_currentBombs == 2)
             {
                 uIBomb3HasToMove = true;
                 bombImage1.gameObject.SetActive(true);
@@ -400,7 +400,7 @@ public class PlayerDisplay_Script : MonoBehaviour
                 bombImage4.gameObject.SetActive(false);
                 bombTextGameObject.gameObject.SetActive(false);
             }
-            else if (_actualBombs == 3)
+            else if (_currentBombs == 3)
             {
                 uIBomb4HasToMove = true;
                 bombImage1.gameObject.SetActive(true);
@@ -409,7 +409,7 @@ public class PlayerDisplay_Script : MonoBehaviour
                 bombImage4.gameObject.SetActive(true);
                 bombTextGameObject.gameObject.SetActive(false);
             }
-            else if (_actualBombs == 4)
+            else if (_currentBombs == 4)
             {
                 bombImage1.gameObject.SetActive(true);
                 bombImage2.gameObject.SetActive(true);
@@ -419,14 +419,14 @@ public class PlayerDisplay_Script : MonoBehaviour
                 //bombTextGameObject.gameObject.SetActive(true);
                 //playerBombs_Text.text = (_actualBombs.ToString());
             }
-            else if( _actualBombs > 4)
+            else if( _currentBombs > 4)
             {
                 bombImage1.gameObject.SetActive(false);
                 bombImage2.gameObject.SetActive(false);
                 bombImage3.gameObject.SetActive(true);
                 bombImage4.gameObject.SetActive(false);
                 bombTextGameObject.gameObject.SetActive(true);
-                playerBombs_Text.text = (_actualBombs.ToString());
+                playerBombs_Text.text = (_currentBombs.ToString());
             }
         }
       

@@ -10,39 +10,50 @@ public class PlayerShooting_Script : MonoBehaviour
     public PlayerControls controls;
 
 
-    public bool isLaserCharging = false;
+    bool isLaserCharging = false;
 
-    public bool isLaserCharged = false;
+    bool isLaserCharged = false;
 
-    public bool isLaserChargedAndButtonUp = false;
+    bool isLaserChargedAndButtonUp = false;
 
-    public bool isChargedLaserInstanced = false;
+    bool isChargedLaserInstanced = false;
+   
 
-    public bool isShootButtonPressed = false;
+    bool isShootButtonPressed = false;
 
-    public bool isBombShot = false;
+    bool isBombShot = false;
     
 
 
 
 
    [Header("Public References")]
-    public Transform singleLaser_Spawn;
-    public Transform twinLasersSpawnLocation;
-    //public Transform rightLaserSpawn;
-    public Transform chargedLaser_Spawn;
-    public Transform greenSingleLaserMuzzle;
-    public Transform greenDoubleLaserMuzzle;
-    public Transform blueDoubleLaserMuzzle;
+    [SerializeField] Transform singleLaser_Spawn;
+    [SerializeField] Transform twinLasersSpawnLocation;   
+    [SerializeField] Transform chargedLaser_Spawn;
+    [SerializeField] Transform greenSingleLaserMuzzle;
+    [SerializeField] Transform greenDoubleLaserMuzzle;
+    [SerializeField] Transform blueDoubleLaserMuzzle;
 
 
    
-    ChargedLaserSphere_Script chargedLaser_Script_;
-    public PlayerDisplay_Script playerDisplay_Script_;
-    public Bomb_Script bomb_Script_;
-    public Mirillas_Script mirillas_Script_;
-    public Mirilla_Externa_Script mirilla_Externa_Script_INSCENE;
-    //public InputMaster controls;
+   
+    Bomb_Script bomb_Script_InScene; 
+    [SerializeField] Mirillas_Script mirillas_Script_;
+    ChargedLaserSphere_Script chargedLaser_Script_InScene;
+    Mirilla_Externa_Script mirilla_Externa_Script_InScene;
+
+    public Mirilla_Externa_Script MirillaExterna
+    {
+        get { return mirilla_Externa_Script_InScene; }
+        set { mirilla_Externa_Script_InScene = value; }
+    }
+    public int Bombs
+    {
+        get { return currentBombs; }
+        set { currentBombs = value; }
+    }
+    
    
 
     [Space]
@@ -59,57 +70,61 @@ public class PlayerShooting_Script : MonoBehaviour
     public GameObject twinLasers_GO;
     public GameObject hyperLasers_GO;
     public GameObject chargedLaser_GO;
-    public GameObject chargedLaserInShip;
     public GameObject chargingLaserFX;
-    public GameObject chargingLaserFX_INSCENE;
-
-
-    
-    
+    GameObject chargedLaserInShip;
+    GameObject chargingLaserFX_INSCENE;
 
     [Space]
     public GameObject bomb_GO;
-    public GameObject bombINSCENE;
+    GameObject bombINSCENE;
     
 
 
     [Header("Parameters")]
-    public float conteoChargingLaser = 0;
-    public float chargeLaserTimeSpan = 1f;
+    float conteoChargingLaser = 0;
+    [SerializeField] float chargeLaserTimeSpan = 1f;
     
-    public float conteoUseBeforeDeactivateChargedLaser = 0; //conteo que hace para cuando sueltas disparo con el láser cargado
-    public float UseBeforeDeactivateChargedLaserTimeSpan = 2.5f; //tiempo que tienes para volver a pulsar disparo antes de que se desactive disp cargado
+    float conteoUseBeforeDeactivateChargedLaser = 0; //conteo que hace para cuando sueltas disparo con el láser cargado
+    [SerializeField] float UseBeforeDeactivateChargedLaserTimeSpan = 2.5f; //tiempo que tienes para volver a pulsar disparo antes de que se desactive disp cargado
+    [SerializeField] float laserRafagaIntervalBetweenShots = 0.1f;    
 
-
-    
-
-    public float laserRafagaIntervalBetweenShots = 0.1f;
-    
-
-    public int laserUpgradesCaught = 0;
-    public int actualBombs = 3;
+    [SerializeField] int laserUpgradesCaught = 0;
+    [SerializeField] int currentBombs = 3;
 
     float conteoBomb = 0;
-    public float ablingExplodeBombTimeSpan = 0.1f;
+    [SerializeField] float ablingExplodeBombTimeSpan = 0.1f; //tiempo que pasa antes de que puedas explotar la bomba que acabas de lanzar
 
     public float ConteoBomb
     {
         get { return conteoBomb; }
         set { conteoBomb = value;}
     }
-   
-    //public ParticleSystem LaserLeft;
-    //public ParticleSystem LaserRight;
-
+    public bool IsLaserCharged
+    {
+        get { return isLaserCharged; }
+        set { isBombShot = value; }
+    }
+    public bool IsLaserCharging
+    {
+        get { return isLaserCharging; }
+        set { isBombShot = value; }
+    }
+    public bool IsBombShot
+    {
+        get { return isBombShot; }
+        set { isBombShot = value;}
+    }
+    public bool IsChargedLaserInstanced
+    {
+        get { return isChargedLaserInstanced; }
+        set { isBombShot = value; }
+    }
+    
     void Awake()
     {
-       
-        
         CheckLaserPowerUpSound();
 
         controls = new PlayerControls();
-        
-
 
         //BOTÓN DE DISPARO PULSADO
         controls.Gameplay.Fire.started += context =>
@@ -126,7 +141,7 @@ public class PlayerShooting_Script : MonoBehaviour
 
         controls.Gameplay.FireBomb.performed += ctx =>
         {
-            if ((isBombShot == false) && (actualBombs >= 1))
+            if ((isBombShot == false) && (currentBombs >= 1))
             {
                 FireBomb();
             }
@@ -146,12 +161,7 @@ public class PlayerShooting_Script : MonoBehaviour
 
     
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        playerDisplay_Script_ = GameObject.Find("UIBombs").GetComponent<PlayerDisplay_Script>();
-        
-    }
+    
 
     private void OnEnable()
     {
@@ -194,9 +204,6 @@ public class PlayerShooting_Script : MonoBehaviour
         {
             conteoBomb += Time.deltaTime;
         }
-
-
-
     }
 
     private void BeginShootProcess()
@@ -209,7 +216,7 @@ public class PlayerShooting_Script : MonoBehaviour
     public void FireBomb()
 	{
 		bombINSCENE = (GameObject)Instantiate (bomb_GO, chargedLaser_Spawn.position, chargedLaser_Spawn.rotation) as GameObject;
-		bomb_Script_ = bombINSCENE.GetComponent<Bomb_Script> ();
+		bomb_Script_InScene = bombINSCENE.GetComponent<Bomb_Script> ();
 		DecreaseOneBomb ();
 
 		isBombShot = true;
@@ -217,18 +224,15 @@ public class PlayerShooting_Script : MonoBehaviour
 
 	public void ExplodeBomb()
     {
-        bomb_Script_.Explode();
+        bomb_Script_InScene.Explode();
         isBombShot = false;        
-        //Debug.Log("Llamo a explode desde playershooting");
-
+       
     }
 
     void DeactivateConteoChargeLaser()
     {
         isLaserCharging = false;
-        conteoChargingLaser = 0;
-        
-
+        conteoChargingLaser = 0;        
     }
 
    
@@ -309,7 +313,7 @@ public class PlayerShooting_Script : MonoBehaviour
 
         
        chargedLaserInShip = (GameObject)Instantiate(chargedLaser_GO, chargedLaser_Spawn.position, chargedLaser_Spawn.rotation, chargedLaser_Spawn) as GameObject;
-        chargedLaser_Script_ = chargedLaserInShip.GetComponent<ChargedLaserSphere_Script>();
+        chargedLaser_Script_InScene = chargedLaserInShip.GetComponent<ChargedLaserSphere_Script>();
         
         isChargedLaserInstanced = true;
     }
@@ -320,16 +324,16 @@ public class PlayerShooting_Script : MonoBehaviour
     
     void DeactivateChargedLaser()
     {
-        chargedLaser_Script_.Deactivate();
+        chargedLaser_Script_InScene.Deactivate();
 
 
         isLaserCharged = false;
         isChargedLaserInstanced = false;
         isLaserChargedAndButtonUp = false;
         mirillas_Script_.ReturnToDefaultFar();
-        if (mirilla_Externa_Script_INSCENE != null)
+        if (mirilla_Externa_Script_InScene != null)
         {
-            mirilla_Externa_Script_INSCENE.DestroyMirilla_Externa();
+            mirilla_Externa_Script_InScene.DestroyMirilla_Externa();
         }
 
 
@@ -338,15 +342,15 @@ public class PlayerShooting_Script : MonoBehaviour
     void ShootChargedLaser()
     {
         
-        chargedLaser_Script_.ShootChargedLaser();
+        chargedLaser_Script_InScene.ShootChargedLaser();
         isLaserChargedAndButtonUp = false;
         isLaserCharged = false;
         conteoUseBeforeDeactivateChargedLaser = 0;
 
         mirillas_Script_.ReturnToDefaultFar();
-        if (mirilla_Externa_Script_INSCENE != null)
+        if (mirilla_Externa_Script_InScene != null)
         {
-            mirilla_Externa_Script_INSCENE.DestroyMirilla_Externa();
+            mirilla_Externa_Script_InScene.DestroyMirilla_Externa();
         }
 
 
@@ -379,7 +383,7 @@ public class PlayerShooting_Script : MonoBehaviour
         }
         if (isLaserCharged == true)
         {
-            if ((isLaserChargedAndButtonUp == true) && (chargedLaser_Script_.isSphereShot == false)) //DISPARO
+            if ((isLaserChargedAndButtonUp == true) && (chargedLaser_Script_InScene.isSphereShot == false)) //DISPARO
             {
 
                 ShootChargedLaser();
@@ -423,16 +427,14 @@ public class PlayerShooting_Script : MonoBehaviour
 
     public void AddOneBomb()
     {
-        actualBombs += 1;
-        //playerDisplay_Script_.SetUIBombs(actualBombs);
-        playerDisplay_Script_.AddUIBomb(actualBombs, +1); //+1 porque se añaden bombas
+        currentBombs += 1;
+        GameObject.Find("UIBombs").GetComponent<PlayerDisplay_Script>().AddUIBomb(currentBombs, +1); //+1 porque se añaden bombas
         
     }
     public void DecreaseOneBomb()
     {
-        actualBombs -= 1;
-        //playerDisplay_Script_.SetUIBombs(actualBombs);
-        playerDisplay_Script_.AddUIBomb(actualBombs, -1); //-1 porque se quitan bombas
+        currentBombs -= 1;
+        GameObject.Find("UIBombs").GetComponent<PlayerDisplay_Script>().AddUIBomb(currentBombs, -1); //-1 porque se quitan bombas
     }
 
 }

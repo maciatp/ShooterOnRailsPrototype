@@ -216,7 +216,7 @@ public class ChargedLaserSphere_Script : MonoBehaviour
             }
             
             isSphereExploded = true;
-            playerShooting_Script_.isChargedLaserInstanced = false;
+            playerShooting_Script_.IsChargedLaserInstanced = false;
             ExplosionFXSelect();
 
             cinemachineImpulse_.GenerateImpulse();//CAMERA SHAKE

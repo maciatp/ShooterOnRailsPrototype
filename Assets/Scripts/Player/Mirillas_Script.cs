@@ -47,7 +47,7 @@ public class Mirillas_Script : MonoBehaviour
     {
 
         
-        if((this.gameObject.name == "Mirilla_Cerca") && (playerShooting_Script_.isLaserCharging == true))
+        if((this.gameObject.name == "Mirilla_Cerca") && (playerShooting_Script_.IsLaserCharging == true))
         {
             conteoToPaintMirilla += Time.deltaTime;
 
@@ -58,12 +58,12 @@ public class Mirillas_Script : MonoBehaviour
             }
             
         }
-        if ((this.gameObject.name == "Mirilla_Cerca") && (playerShooting_Script_.isLaserCharging == false) && (playerShooting_Script_.isLaserCharged == false))
+        if ((this.gameObject.name == "Mirilla_Cerca") && (playerShooting_Script_.IsLaserCharging == false) && (playerShooting_Script_.IsLaserCharged == false))
         {
             ReturnToWhiteNear();
             conteoToPaintMirilla = 0;
         }
-        if ((this.gameObject.name == "Mirilla_Lejos") && (playerShooting_Script_.isLaserCharged == true))
+        if ((this.gameObject.name == "Mirilla_Lejos") && (playerShooting_Script_.IsLaserCharging == true))
         {
             MakeREDOnceCharged();
             

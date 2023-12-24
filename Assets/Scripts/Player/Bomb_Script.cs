@@ -56,7 +56,7 @@ public class Bomb_Script : MonoBehaviour
             canExplode = false;
             enemyLocked = guidedLaserTrigger_Script_.objectLocked;
             guidedLaserTrigger_Script_.SetMirillaToDefault();
-            guidedLaserTrigger_Script_.mirilla_Externa_Script_INSCENE.DestroyMirilla_Externa();
+            guidedLaserTrigger_Script_.MirillaExterna.DestroyMirilla_Externa();
         }
         
     }
@@ -96,7 +96,7 @@ public class Bomb_Script : MonoBehaviour
         cinemachineImpulse_.GenerateImpulse();
         isExploded = true;
         canExplode = false;
-        playerShooting_.isBombShot = false;
+        playerShooting_.IsBombShot = false;
         conteoBomb = 0;
         playerShooting_.ConteoBomb = 0;
         Instantiate(bombExplosion_GO, this.gameObject.transform.position, this.gameObject.transform.rotation, null);

@@ -5,7 +5,7 @@ using UnityEngine;
 public class GuidedLaserTrigger_Script : MonoBehaviour
 {
     [Header("Colliders")]
-    public BoxCollider triggerCollidernear;
+    public BoxCollider triggerColliderAttractor;
     
     [Space]
     
@@ -14,8 +14,12 @@ public class GuidedLaserTrigger_Script : MonoBehaviour
     [Header("Mirilla_Externa")]
     public GameObject mirilla_Externa_GO;
    
-    public Mirilla_Externa_Script mirilla_Externa_Script_INSCENE;
-
+    Mirilla_Externa_Script mirilla_Externa_Script_INSCENE;
+    public Mirilla_Externa_Script MirillaExterna
+    {
+        get { return mirilla_Externa_Script_INSCENE; }
+        set { mirilla_Externa_Script_INSCENE = value; }
+    }
 
     [Space]
     [Header("Public References")]
@@ -40,7 +44,7 @@ public class GuidedLaserTrigger_Script : MonoBehaviour
 
     private void Awake()
     {
-        triggerCollidernear = this.gameObject.GetComponent<BoxCollider>();
+        triggerColliderAttractor = this.gameObject.GetComponent<BoxCollider>();
        
       
         playerShooting_Script_ = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerShooting_Script>();
@@ -53,7 +57,7 @@ public class GuidedLaserTrigger_Script : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        triggerCollidernear.enabled = false;
+        triggerColliderAttractor.enabled = false;
         
     }
 
@@ -63,12 +67,12 @@ public class GuidedLaserTrigger_Script : MonoBehaviour
 
         //ARREGLAR ROTACION DE LA MIRILLA
 
-        if(playerShooting_Script_.isLaserCharged == true)
+        if(playerShooting_Script_.IsLaserCharged == true)
         {
             ActivateColliders();
 
         }
-        if ((playerShooting_Script_.isLaserCharged == false))
+        if ((playerShooting_Script_.IsLaserCharged == false))
         {
             DeactivateColliders();
 
@@ -98,12 +102,12 @@ public class GuidedLaserTrigger_Script : MonoBehaviour
 
 
         }
-        if ((objectLocked == null) && (playerShooting_Script_.isLaserCharged == true))
+        if ((objectLocked == null) && (playerShooting_Script_.IsLaserCharged == true))
         {
             mirillas_Script_.mirilla_Animator.SetBool("mirillaLejosIsBumping", true);
         }
 
-        if ((objectLocked == null) && (playerShooting_Script_.isLaserCharged == false))
+        if ((objectLocked == null) && (playerShooting_Script_.IsLaserCharged == false))
         {
             isObjectLocked = false;
             SetMirillaToDefault();
@@ -119,13 +123,13 @@ public class GuidedLaserTrigger_Script : MonoBehaviour
 
     private void DeactivateColliders()
     {
-        triggerCollidernear.enabled = false;
+        triggerColliderAttractor.enabled = false;
         
     }
 
     private void ActivateColliders()
     {
-        triggerCollidernear.enabled = true;
+        triggerColliderAttractor.enabled = true;
        
     }
 
@@ -171,7 +175,7 @@ public class GuidedLaserTrigger_Script : MonoBehaviour
         
        Instantiate(mirilla_Externa_GO, objectLocked.transform.position, new Quaternion(0, 0, 0, 0));
         mirilla_Externa_Script_INSCENE = GameObject.FindGameObjectWithTag("Mirilla_Externa").gameObject.GetComponent<Mirilla_Externa_Script>();
-        playerShooting_Script_.mirilla_Externa_Script_INSCENE = GameObject.FindGameObjectWithTag("Mirilla_Externa").gameObject.GetComponent<Mirilla_Externa_Script>();
+        playerShooting_Script_.MirillaExterna = GameObject.FindGameObjectWithTag("Mirilla_Externa").gameObject.GetComponent<Mirilla_Externa_Script>();
 
        
     }
