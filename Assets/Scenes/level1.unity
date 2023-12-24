@@ -3318,6 +3318,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemySpawnerTrigger (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597130590694027920, guid: 31aa4b6180799dc4ab416f631efc496c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7597130590694027921, guid: 31aa4b6180799dc4ab416f631efc496c,
         type: 3}
       propertyPath: m_Center.y
@@ -22630,7 +22635,7 @@ Transform:
   m_GameObject: {fileID: 802016229}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 8, y: 0, z: 0}
+  m_LocalPosition: {x: 6, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -24269,6 +24274,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Appearance.inactivePathColor.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2970271592820222545, guid: 31aa4b6180799dc4ab416f631efc496c,
+        type: 3}
+      propertyPath: m_Waypoints.Array.data[0].position.z
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 2970271592820222545, guid: 31aa4b6180799dc4ab416f631efc496c,
         type: 3}
@@ -30061,6 +30071,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Appearance.inactivePathColor.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2970271592820222545, guid: 31aa4b6180799dc4ab416f631efc496c,
+        type: 3}
+      propertyPath: m_Waypoints.Array.data[0].position.z
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 2970271592820222545, guid: 31aa4b6180799dc4ab416f631efc496c,
         type: 3}
@@ -56575,7 +56590,7 @@ Transform:
   m_GameObject: {fileID: 2060193920}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -8, y: 0, z: 0}
+  m_LocalPosition: {x: -6, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
