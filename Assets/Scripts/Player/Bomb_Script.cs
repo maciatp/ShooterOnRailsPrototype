@@ -4,14 +4,10 @@ using UnityEngine;
 using Cinemachine;
 
 public class Bomb_Script : MonoBehaviour
-{
-    //public int increasedColliderSize = 5;
-    //public float colliderIncreasingRate = 1.05f;
+{    
     public bool canExplode = false;
     public bool isExploded = false;
    
-
-    
     
     public Rigidbody rb_Bomb;
     public ParticleSystem bombExplosionFX;
@@ -33,20 +29,17 @@ public class Bomb_Script : MonoBehaviour
 
     public GameObject enemyLocked;
 
-   // public AudioSource bombSound; AL FINAL NO LO USO
+   
 
 
 
     private void Awake()
     {
-       // bombSound = this.transform.GetChild(1).GetComponent<AudioSource>();
-       
-       
         
         playerInScene = GameObject.FindGameObjectWithTag("Player");
         playerShooting_ = playerInScene.GetComponent<PlayerShooting_Script>();
 
-        guidedLaserTrigger_Script_ = GameObject.Find("GuidedChargedLaserTrigger").GetComponent<GuidedLaserTrigger_Script>();
+        guidedLaserTrigger_Script_ = playerInScene.transform.Find("GuidedChargedLaserTrigger").GetComponent<GuidedLaserTrigger_Script>();
         uIBombEffect_Script_ = GameObject.Find("UIBombEffectPanel").GetComponent<UIBombEffect_Script>();
         cinemachineImpulse_ = this.GetComponent<CinemachineImpulseSource>();
         
@@ -78,7 +71,7 @@ public class Bomb_Script : MonoBehaviour
 
         if ((isExploded != true) && (canExplode == true))
         {
-            //rb_Bomb.velocity = transform.forward * bombSpeed;
+            //UNSCALED PARA EL TIEMPO BALA
             transform.position += transform.forward.normalized * bombSpeed * Time.unscaledDeltaTime;
         }
 
@@ -98,21 +91,17 @@ public class Bomb_Script : MonoBehaviour
 
     
 
-    public void Explode() //ARREGLAR EL EXPLODE DE LA BOMBA
+    public void Explode()
     {
         cinemachineImpulse_.GenerateImpulse();
-        //Debug.Log("He Explotado");
         isExploded = true;
         canExplode = false;
         playerShooting_.isBombShot = false;
-        
         conteoBomb = 0;
         playerShooting_.ConteoBomb = 0;
         Instantiate(bombExplosion_GO, this.gameObject.transform.position, this.gameObject.transform.rotation, null);
         uIBombEffect_Script_.PlayUIBombAnimation();
-        //bombSound.transform.parent = null;
-        Destroy(gameObject);
-       
+        Destroy(gameObject);       
     }
 
     private void OnCollisionEnter(Collision collision)

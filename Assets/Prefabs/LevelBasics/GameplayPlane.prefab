@@ -16064,7 +16064,7 @@ MonoBehaviour:
   canCounterEnemyLasers: 0
   boost_Sound: {fileID: 8300000, guid: 4bdc427678b6be3498ba54538f50584e, type: 3}
   brake_Sound: {fileID: 8300000, guid: 63205ba10a55b2c4fa03bc1950f5e828, type: 3}
-  playerAudioSource: {fileID: 0}
+  playerAudioSource: {fileID: 413347935670459823}
   usesJoystick: 1
   moveInput: {x: 0, y: 0}
   moveDirection: {x: 0, y: 0}
@@ -26427,8 +26427,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3173809264343331446}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.010964971, y: -0.0000004991889, z: 0.000000059293882, w: 0.9999399}
-  m_LocalPosition: {x: 0, y: 1.87, z: -10}
+  m_LocalRotation: {x: 0.010964971, y: -0.0000004991889, z: 0.000000059257502, w: 0.9999399}
+  m_LocalPosition: {x: 0, y: 1.8700002, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -44017,7 +44017,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 36d41dbaaf8d0334fb2b05cf98712a85, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 
