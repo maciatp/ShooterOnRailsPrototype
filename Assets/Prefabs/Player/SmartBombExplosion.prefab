@@ -5045,8 +5045,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 6259924497322431050}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
@@ -5304,7 +5304,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5.77
+      scalar: 17.31
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -19791,7 +19791,7 @@ MonoBehaviour:
   billboard_Script_: {fileID: 0}
   button_Script_: {fileID: 0}
   doorHouse_Script_: {fileID: 0}
-  explosionDuration: 3
+  explosionDuration: 1.5
   maxSize: 18
   colliderIncreasingRate: 15
   hitCounter: 0
