@@ -40,8 +40,8 @@ public class Bomb_Script : MonoBehaviour
     private void Awake()
     {
        // bombSound = this.transform.GetChild(1).GetComponent<AudioSource>();
-        rb_Bomb = this.gameObject.GetComponent<Rigidbody>();
-        bombCollider = this.gameObject.GetComponent<BoxCollider>();
+       
+       
         
         playerInScene = GameObject.FindGameObjectWithTag("Player");
         playerShooting_ = playerInScene.GetComponent<PlayerShooting_Script>();
@@ -79,12 +79,12 @@ public class Bomb_Script : MonoBehaviour
         if ((isExploded != true) && (canExplode == true))
         {
             //rb_Bomb.velocity = transform.forward * bombSpeed;
-            rb_Bomb.transform.position += transform.forward.normalized * bombSpeed * Time.unscaledDeltaTime;
+            transform.position += transform.forward.normalized * bombSpeed * Time.unscaledDeltaTime;
         }
 
         if(enemyLocked != null)
         {
-            rb_Bomb.transform.position  += new Vector3(enemyLocked.transform.position.x - this.transform.position.x, enemyLocked.transform.position.y - this.transform.position.y, enemyLocked.transform.position.z - this.transform.position.z).normalized * bombSpeed * Time.unscaledDeltaTime;
+            transform.position  += new Vector3(enemyLocked.transform.position.x - this.transform.position.x, enemyLocked.transform.position.y - this.transform.position.y, enemyLocked.transform.position.z - this.transform.position.z).normalized * bombSpeed * Time.unscaledDeltaTime;
         }
        
         if((conteoBomb > bombTimeToExplode) &&(isExploded==false) && (canExplode = true))
@@ -105,7 +105,7 @@ public class Bomb_Script : MonoBehaviour
         isExploded = true;
         canExplode = false;
         playerShooting_.isBombShot = false;
-        rb_Bomb.velocity = new Vector3(0, 0, 0);
+        
         conteoBomb = 0;
         playerShooting_.conteoBomb = 0;
         Instantiate(bombExplosion_GO, this.gameObject.transform.position, this.gameObject.transform.rotation, null);

@@ -4,31 +4,12 @@ using UnityEngine;
 using DG.Tweening;
 
 public class Bomb_PowerUp_Script : MonoBehaviour
-{
-    public GameObject playerInScene;
-    public Rigidbody rb_Bomb_PowerUp;
-    public PlayerShooting_Script playerShooting_;
+{   
+    bool isPickedUp = false;
 
-    public AudioSource bombPickUpAudioSource;
+    [SerializeField] float rotationSpeed = 50;
 
-    public bool isPickedUp = false;
-
-    public float rotationSpeed = 50;
-
-    private void Awake()
-    {
-        rb_Bomb_PowerUp = this.gameObject.GetComponent<Rigidbody>();
-        playerInScene = GameObject.FindGameObjectWithTag("Player");
-        playerShooting_ = playerInScene.GetComponent<PlayerShooting_Script>();
-        bombPickUpAudioSource = this.GetComponent<AudioSource>();
-       
-
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-       
-    }
+    [SerializeField] float verticalOffsetWhenPicked = 0.5f;
 
     // Update is called once per frame
     void Update()
@@ -39,15 +20,17 @@ public class Bomb_PowerUp_Script : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(((other.gameObject.name == "ArwingHD") && (other.gameObject.tag == "Player")) && (isPickedUp == false))
-        {
+        if(((other.gameObject.tag == "Player")) && (isPickedUp == false))
+        {            
+            PlayerShooting_Script playerShooting_ = other.GetComponent<PlayerShooting_Script>();
+
             isPickedUp = true;
 
             playerShooting_.AddOneBomb();
-            bombPickUpAudioSource.Play();
+            gameObject.GetComponent<AudioSource>().Play();
+            
 
-
-            transform.position = other.transform.position + new Vector3(0,0.5f,0);
+            transform.position = other.transform.position + new Vector3(0,verticalOffsetWhenPicked,0);
             transform.parent = other.transform;
             transform.localRotation = other.transform.localRotation;
 
@@ -57,8 +40,6 @@ public class Bomb_PowerUp_Script : MonoBehaviour
             s.Append(transform.DORotate(new Vector3(0, 720, 0), 1, RotateMode.LocalAxisAdd));
             s.Join(transform.DOScale(0, .5f).SetDelay(0.75f));
             s.AppendCallback(() => Destroy(gameObject));
-
-
             
 ;        }
     }
