@@ -6,72 +6,80 @@ using Cinemachine;
 public class PlayerHealth_Script : MonoBehaviour
 {
     [Header("Bools")]
-    public bool totalHealthAtStart = false;
-    public bool isPlayerInvincible = false;
-    public bool isExtraHealthActivated = false;
+    [SerializeField] bool totalHealthAtStart = false;
+    bool isPlayerInvincible = false;
+    bool isExtraHealthActivated = false;
     [Space]
     [Header("Player Health")]
-    public float actualPlayerHealth;
-    public float totalPlayerHealth;
-    public float maxPlayerHealth;
-    public int currentLives = 3;
-    public float conteoCoolDownDamage = 0;
-    public float coolDownDamageTimeSpan = 1;
-    public int actualGoldRings = 0;
+    [SerializeField] float currentPlayerHealth;
+    [SerializeField] float totalPlayerHealth;
+    [SerializeField] float maxPlayerHealth;
+    [SerializeField] int currentLives = 3;
+    float conteoCoolDownDamage = 0;
+    float coolDownDamageTimeSpan = 1;
     [Space]
     [Header("Parameters")]
-    public int movedWhenDamagedDistance = 7;
+    [SerializeField] int currentGoldRings = 0;
+    [SerializeField] int movedWhenDamagedDistance = 7;
     [Space]
     [Header("Public References")]
-    public GameObject lightningFX;
-    public GameObject smokeFX;
-    public ParticleSystem smokeParticleSystem;
-    public ParticleSystem lightningParticleSystem;
-    
-    //public Transform cameraParent;
+    [SerializeField] GameObject lightningFX;
+    [SerializeField] GameObject smokeFX;
+    [SerializeField] ParticleSystem smokeParticleSystem;
+    [SerializeField] ParticleSystem lightningParticleSystem;
 
-    [Header("Public Script References")]
+
     
-    public UIHealthBar_Script uIHealthBar_Script_;
-    public UIGoldRings_Script uIGoldRings_Script_;
-    public UILivesText_Script uILivesText_Script_;
-   
-    public Rigidbody rB_playerInScene;
-    public PlayerMovement_Script playerMovement_Script_;
-    public UIDamage_Script uIDamage_Script_;
-    public CinemachineImpulseSource cinemachineImpulse_;
-    [Space]
-    [Header("Damage Animation")]
-    public Animator playerAnimator;
-    public Animation damageAnimation;
+    UIHealthBar_Script uIHealthBar_Script_;
+    UIGoldRings_Script uIGoldRings_Script_;
+    UILivesText_Script uILivesText_Script_;
+    PlayerMovement_Script playerMovement_Script_;
+    UIDamage_Script uIDamage_Script_;
+    Animator playerAnimator;
+    
 
 
     [Space]
-    public EnemyHealth_Script enemyHealth_Script_;
+    //EnemyHealth_Script enemyHealth_Script_;
     [Space]
     [Header("Audio References")]
-    public AudioSource playerHealthBarAudioSource;
-    public AudioSource playerHitAudioSource;
+    [SerializeField] AudioSource playerHealthBarAudioSource;
+    [SerializeField] AudioSource playerHitAudioSource;
 
-    public AudioClip healthAlertLight;
-    public AudioClip healthAlertModerate;
-    public AudioClip healthAlertExtreme;
-    public AudioClip arwingHit_Sound;
-    public AudioClip arwingObstacleHit_Sound;
-    public AudioClip laserCountered_Sound;
+    [SerializeField] AudioClip healthAlertLight;
+    [SerializeField] AudioClip healthAlertModerate;
+    [SerializeField] AudioClip healthAlertExtreme;
+    [SerializeField] AudioClip arwingHit_Sound;
+    [SerializeField] AudioClip arwingObstacleHit_Sound;
+    [SerializeField] AudioClip laserCountered_Sound;
+
+    public float CurrentHealth
+    {
+        get { return currentPlayerHealth; }
+        set { currentPlayerHealth = value; }
+    }
+    public float MaxHealth
+    {
+        get { return maxPlayerHealth; }
+        set { maxPlayerHealth = value; }
+    }
+    public int CurrentLives
+    {
+        get { return currentLives; }
+        set { currentLives = value; }
+    }
+
 
     private void Awake()
     {
+        playerMovement_Script_ = gameObject.GetComponent<PlayerMovement_Script>();
+        playerAnimator = gameObject.GetComponent<Animator>();
+              
         uIDamage_Script_ = GameObject.Find("UIDamagePanel").GetComponent<UIDamage_Script>();
-        playerMovement_Script_ = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement_Script>();
-        playerAnimator = GameObject.FindGameObjectWithTag("Player").gameObject.transform.GetChild(0).GetChild(0).GetComponent<Animator>();
-        rB_playerInScene = GameObject.FindGameObjectWithTag("Player").gameObject.GetComponent<Rigidbody>();
         uIHealthBar_Script_ = GameObject.Find("UIHealthBar").GetComponent<UIHealthBar_Script>();
         uIGoldRings_Script_ = GameObject.Find("UIGoldRings").GetComponent<UIGoldRings_Script>();
         uILivesText_Script_ = GameObject.Find("UILives").GetComponent<UILivesText_Script>();
-        
-        cinemachineImpulse_ = this.GetComponent<CinemachineImpulseSource>();
-        //cameraParent = GameObject.Find("CameraHolder").transform;
+       
     }
     // Start is called before the first frame update
     void Start()
@@ -81,11 +89,11 @@ public class PlayerHealth_Script : MonoBehaviour
         
         if(totalHealthAtStart == true)
         {
-             actualPlayerHealth = totalPlayerHealth;
+             currentPlayerHealth = totalPlayerHealth;
         }
         CheckHealth();
 
-        uIHealthBar_Script_.childHealthBar.localScale = new Vector3(actualPlayerHealth , uIHealthBar_Script_.transform.localScale.y);
+        uIHealthBar_Script_.childHealthBar.localScale = new Vector3(currentPlayerHealth , uIHealthBar_Script_.transform.localScale.y);
     }
 
     // Update is called once per frame
@@ -113,7 +121,7 @@ public class PlayerHealth_Script : MonoBehaviour
 
     private void CheckHealth()
     {
-        if (actualPlayerHealth <= 10)
+        if (currentPlayerHealth <= 10)
         {
             //Ésto sirve para setear la duración del SistPartíc. a 3. NO PUEDES CAMBIAR DURATION DIRECTAMENTE
             smokeParticleSystem.Stop();
@@ -133,7 +141,7 @@ public class PlayerHealth_Script : MonoBehaviour
             playerHealthBarAudioSource.clip = healthAlertExtreme;
             playerHealthBarAudioSource.Play();
         }
-        if ((actualPlayerHealth <= 20) && (actualPlayerHealth > 10))
+        if ((currentPlayerHealth <= 20) && (currentPlayerHealth > 10))
         {
 
             //Ésto sirve para setear la duración del SistPartíc. a 3. NO PUEDES CAMBIAR DURATION DIRECTAMENTE
@@ -155,7 +163,7 @@ public class PlayerHealth_Script : MonoBehaviour
             playerHealthBarAudioSource.Play();
         }
 
-        if ((actualPlayerHealth <= 30) && (actualPlayerHealth > 20))
+        if ((currentPlayerHealth <= 30) && (currentPlayerHealth > 20))
         {
             //Ésto sirve para setear la duración del SistPartíc. a 3. NO PUEDES CAMBIAR DURATION DIRECTAMENTE
             smokeParticleSystem.Stop();
@@ -176,7 +184,7 @@ public class PlayerHealth_Script : MonoBehaviour
             playerHealthBarAudioSource.Play();
 
         }
-        if (actualPlayerHealth > 30)
+        if (currentPlayerHealth > 30)
         {
             smokeFX.SetActive(false);
             lightningFX.SetActive(false);
@@ -187,17 +195,17 @@ public class PlayerHealth_Script : MonoBehaviour
 
     public void AddGoldRing()
     {
-        actualGoldRings += 1;
-        uIGoldRings_Script_.CheckGoldRings(actualGoldRings);
-        if((actualGoldRings >= 3) && (isExtraHealthActivated == false))
+        currentGoldRings += 1;
+        uIGoldRings_Script_.CheckGoldRings(currentGoldRings);
+        if((currentGoldRings >= 3) && (isExtraHealthActivated == false))
         {
             ActivateExtraHealth();
-            actualGoldRings = 0;
+            currentGoldRings = 0;
         }
-        else if ((actualGoldRings >= 3) && (isExtraHealthActivated == true))
+        else if ((currentGoldRings >= 3) && (isExtraHealthActivated == true))
         {
                 //AÑADIR UNA VIDA
-                actualGoldRings = 0;
+                currentGoldRings = 0;
                 AddExtraLife();
         }
     }
@@ -211,22 +219,22 @@ public class PlayerHealth_Script : MonoBehaviour
     public void ActivateExtraHealth()
     {
         isExtraHealthActivated = true;
-        actualPlayerHealth *= maxPlayerHealth/100;
+        currentPlayerHealth *= maxPlayerHealth/100;
         totalPlayerHealth = maxPlayerHealth;
         uIHealthBar_Script_.StartCoroutine("ActivateExtraHealthUI"); //TODO: crear método que inicie la corrutina
     }
 
     public void IncreaseHealth(float healthwillIncrease)
     {
-        if (actualPlayerHealth < totalPlayerHealth)
+        if (currentPlayerHealth < totalPlayerHealth)
         {
-            actualPlayerHealth += healthwillIncrease;
+            currentPlayerHealth += healthwillIncrease;
 
             uIHealthBar_Script_.StartCoroutine("IncreaseBarSize", (healthwillIncrease)); //SE LO PASO A LA BARRA DE SALUD PARA QUE CREZCA //TODO: crear método que inicie la corrutina
 
-            if (actualPlayerHealth > totalPlayerHealth)
+            if (currentPlayerHealth > totalPlayerHealth)
             {
-                actualPlayerHealth = totalPlayerHealth;
+                currentPlayerHealth = totalPlayerHealth;
             }
             CheckHealth();
         }
@@ -234,12 +242,12 @@ public class PlayerHealth_Script : MonoBehaviour
 
     public void DecreaseHealth(float healthWillDecrease)
     {
-        if(actualPlayerHealth > 0)
+        if(currentPlayerHealth > 0)
         {
-            actualPlayerHealth -= healthWillDecrease;
+            currentPlayerHealth -= healthWillDecrease;
 
            
-           cinemachineImpulse_.GenerateImpulse(); //CAMERA SHAKE!!
+           gameObject.GetComponent<CinemachineImpulseSource>().GenerateImpulse(); //CAMERA SHAKE!!
 
             uIHealthBar_Script_.StartCoroutine("DecreaseBarSize", (-healthWillDecrease)); // SE LO PASO A LA BARRA PARA QUE DECREZCA  //TODO: crear método que inicie la corrutina
             ActivateCoolDownDamage();
@@ -262,9 +270,9 @@ public class PlayerHealth_Script : MonoBehaviour
             uIDamage_Script_.PlayDamageUI();
         }
         
-       else if (actualPlayerHealth <= 0)
+       else if (currentPlayerHealth <= 0)
        {
-            actualPlayerHealth = 0;
+            currentPlayerHealth = 0;
             //DIE
           
        }
@@ -283,7 +291,8 @@ public class PlayerHealth_Script : MonoBehaviour
         {
             if (collision.gameObject.tag == "Enemy")
             {
-                enemyHealth_Script_ = collision.gameObject.GetComponent<EnemyHealth_Script>();
+
+                EnemyHealth_Script enemyHealth_Script_ = collision.gameObject.GetComponent<EnemyHealth_Script>();
                 if( enemyHealth_Script_.isShotDown == false)
                 {
                     DecreaseHealth(12);

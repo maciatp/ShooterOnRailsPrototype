@@ -15,6 +15,6 @@ public class UILivesText_Script : MonoBehaviour
 
     public void UpdateLivesText()
     {
-        livesText.text = GameObject.FindGameObjectWithTag("Player").gameObject.GetComponent<PlayerHealth_Script>().currentLives.ToString("x 00");
+        livesText.text = GameObject.FindGameObjectWithTag("Player").gameObject.GetComponent<PlayerHealth_Script>().CurrentLives.ToString("x 00");
     }
 }

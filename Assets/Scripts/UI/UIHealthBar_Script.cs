@@ -45,7 +45,7 @@ public class UIHealthBar_Script : MonoBehaviour
     {
         playerHealth_Script_ = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth_Script>();
         deltaBar.localScale = new Vector2(childHealthBar.localScale.x, 1);
-        barExtraSize = new Vector2(playerHealth_Script_.maxPlayerHealth, 1);
+        barExtraSize = new Vector2(playerHealth_Script_.MaxHealth, 1);
     }
     
 
@@ -108,7 +108,7 @@ public class UIHealthBar_Script : MonoBehaviour
             if ((healthDecreasing == true && healthIncreasing == false) && (((childHealthBar.localScale.x < barNormalSize.x) && (isBarExtraSize == false)) || ((childHealthBar.localScale.x < barExtraSize.x) && (isBarExtraSize == true))))
             {
                 //ScaleDeltaBarWhenDecreasing
-                deltaBar.localScale = new Vector3(Mathf.Lerp(deltaBar.localScale.x, playerHealth_Script_.actualPlayerHealth, Time.unscaledDeltaTime * lerpVelocity), 1, 0);
+                deltaBar.localScale = new Vector3(Mathf.Lerp(deltaBar.localScale.x, playerHealth_Script_.CurrentHealth, Time.unscaledDeltaTime * lerpVelocity), 1, 0);
                 
             }
             else if((healthIncreasing == true ) && (((childHealthBar.localScale.x >= 0) ))) //else if((healthDecreasing == false && healthIncreasing == true ) && (((childHealthBar.localScale.x >= 0) )))
@@ -163,8 +163,8 @@ public class UIHealthBar_Script : MonoBehaviour
 
             this.gameObject.transform.GetChild(0).transform.localScale = new Vector3(Mathf.Lerp(this.gameObject.transform.GetChild(0).transform.localScale.x, barExtraSize.x +4, Time.unscaledDeltaTime * barGrowVelocity), 1,1);
             this.gameObject.transform.GetChild(1).transform.localScale = new Vector3(Mathf.Lerp(this.gameObject.transform.GetChild(1).transform.localScale.x, barExtraSize.x +2 , Time.unscaledDeltaTime * barGrowVelocity),1,1);
-            this.gameObject.transform.GetChild(2).transform.localScale = new Vector3(Mathf.Lerp(this.gameObject.transform.GetChild(2).transform.localScale.x, playerHealth_Script_.actualPlayerHealth + 2, Time.unscaledDeltaTime * barGrowVelocity),1,1);
-            this.gameObject.transform.GetChild(3).transform.localScale = new Vector3(Mathf.Lerp(this.gameObject.transform.GetChild(3).transform.localScale.x, playerHealth_Script_.actualPlayerHealth +2, Time.unscaledDeltaTime * barGrowVelocity),1,1);
+            this.gameObject.transform.GetChild(2).transform.localScale = new Vector3(Mathf.Lerp(this.gameObject.transform.GetChild(2).transform.localScale.x, playerHealth_Script_.CurrentHealth + 2, Time.unscaledDeltaTime * barGrowVelocity),1,1);
+            this.gameObject.transform.GetChild(3).transform.localScale = new Vector3(Mathf.Lerp(this.gameObject.transform.GetChild(3).transform.localScale.x, playerHealth_Script_.CurrentHealth + 2, Time.unscaledDeltaTime * barGrowVelocity),1,1);
             //Debug.Log("Estoy creciendo");
             if(this.gameObject.transform.GetChild(1).transform.localScale.x >= barExtraSize.x)
             {
@@ -206,7 +206,7 @@ public class UIHealthBar_Script : MonoBehaviour
                 //deltaBar.localScale += new Vector3(healthPointsRestored * ((100/ childHealthBar.localScale.x)), 0); // todo el rollo para que mantenga la escal aunque childbar sea pequeña
                 if (((childHealthBar.localScale.x + healthPointsRestored < barNormalSize.x) && (isBarExtraSize == false)) || ((childHealthBar.localScale.x + healthPointsRestored < barExtraSize.x) && (isBarExtraSize == true)))
                 {
-                    deltaBar.localScale = new Vector3(playerHealth_Script_.actualPlayerHealth, 1);
+                    deltaBar.localScale = new Vector3(playerHealth_Script_.CurrentHealth, 1);
                 }
                 else if (((childHealthBar.localScale.x + healthPointsRestored > barNormalSize.x) && (isBarExtraSize == false)))
                 {
@@ -287,11 +287,11 @@ public class UIHealthBar_Script : MonoBehaviour
                 //deltaBar.localScale -= new Vector3((healthPointsDepleted * ((100 / childHealthBar.localScale.x) )), 0); //en realidad se suman
 
                 healthIncreasing = false;
-                deltaBar.localScale = new Vector3(playerHealth_Script_.actualPlayerHealth + (-healthPointsDepleted), 1);
+                deltaBar.localScale = new Vector3(playerHealth_Script_.CurrentHealth + (-healthPointsDepleted), 1);
                 deltaBarImage.color = Color.red;
                
 
-                childHealthBar.localScale = new Vector3(playerHealth_Script_.actualPlayerHealth, 1); // En realidad se restan, pero viene negativo
+                childHealthBar.localScale = new Vector3(playerHealth_Script_.CurrentHealth, 1); // En realidad se restan, pero viene negativo
 
                 
 
