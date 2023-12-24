@@ -4993,7 +4993,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 0.6
+  m_Time: 2
   m_PreviewTimeScale: 1
   m_Parameters:
     serializedVersion: 3
@@ -5203,10 +5203,10 @@ MonoBehaviour:
   isSphereExploded: 0
   canExplode: 0
   objectLocked: {fileID: 0}
-  trailRenderer_GameObject: {fileID: 0}
-  trailSlowMo: {fileID: 0}
-  sphereCollider: {fileID: 0}
-  chargedLaserSphereParticleSystem: {fileID: 0}
+  trailRenderer_GameObject: {fileID: 2578875287590882650}
+  trailSlowMo: {fileID: 5598057215382149749}
+  sphereCollider: {fileID: 3493640406134239643}
+  chargedLaserSphereParticleSystem: {fileID: 3607286771821805748}
   chargedLaserAudio: {fileID: 0}
   chargedReady: {fileID: 8300000, guid: 68e13a8b6f7746745afcbb09bb88b3bd, type: 3}
   chargedShot: {fileID: 8300000, guid: 7de58964d1a6b6c4cbd3538f63e41fe4, type: 3}
@@ -10284,8 +10284,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d481d1efbb12cb8469b98371f06b5547, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attractorCollider: {fileID: 0}
-  chargingLaserAbsorb_Script_: {fileID: 0}
+  attractorCollider: {fileID: 5431073741968334124}
+  chargingLaserAbsorb_Script_: {fileID: 5563473689928460893}
 --- !u!1 &5347300239781563214
 GameObject:
   m_ObjectHideFlags: 0
@@ -25444,7 +25444,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1.37
+      scalar: 1.25
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -26202,7 +26202,7 @@ ParticleSystem:
         m_Curve:
         - serializedVersion: 3
           time: 0
-          value: 0.02419281
+          value: 0.6693497
           inSlope: 6.552995
           outSlope: 6.552995
           tangentMode: 0
@@ -26210,8 +26210,8 @@ ParticleSystem:
           inWeight: 0
           outWeight: 0.18959047
         - serializedVersion: 3
-          time: 0.020936169
-          value: 0.34677812
+          time: 0.07398716
+          value: 0.48387834
           inSlope: 1.731395
           outSlope: 1.731395
           tangentMode: 0
@@ -26219,8 +26219,8 @@ ParticleSystem:
           inWeight: 0.33333334
           outWeight: 0.07792784
         - serializedVersion: 3
-          time: 0.15610015
-          value: 0.43718702
+          time: 0.15079772
+          value: 0.50976545
           inSlope: -0.013839269
           outSlope: -0.013839269
           tangentMode: 0
@@ -26559,16 +26559,16 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 1, g: 1, b: 1, a: 0.8235294}
-        key1: {r: 1, g: 1, b: 1, a: 0.8235294}
-        key2: {r: 1, g: 1, b: 1, a: 0.8235294}
+        key0: {r: 0.4550102, g: 0.8867924, b: 0.43921322, a: 0.7254902}
+        key1: {r: 0.32402056, g: 0.8207547, b: 0.30584726, a: 1}
+        key2: {r: 0.034243345, g: 1, b: 0, a: 0.8235294}
         key3: {r: 0, g: 0, b: 0, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
         key5: {r: 0, g: 0, b: 0, a: 0}
         key6: {r: 0, g: 0, b: 0, a: 0}
         key7: {r: 0, g: 0, b: 0, a: 0}
-        ctime0: 0
-        ctime1: 26985
+        ctime0: 10023
+        ctime1: 65535
         ctime2: 65535
         ctime3: 0
         ctime4: 0
@@ -26576,7 +26576,7 @@ ParticleSystem:
         ctime6: 0
         ctime7: 0
         atime0: 0
-        atime1: 65535
+        atime1: 27371
         atime2: 65535
         atime3: 0
         atime4: 0
@@ -26584,9 +26584,9 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
-        m_ColorSpace: -1
-        m_NumColorKeys: 3
-        m_NumAlphaKeys: 2
+        m_ColorSpace: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 3
       minGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
