@@ -5,37 +5,37 @@ using UnityEngine;
 public class Mirillas_Script : MonoBehaviour
 {
     [Header("Public References")]
-    public SpriteRenderer mirillaCerca;
-    public SpriteRenderer mirillaLejos;
-    public PlayerShooting_Script playerShooting_Script_;
-    //public PlayerMovement_Script playerMovement_Script_; NO LO USO
+    [SerializeField] SpriteRenderer mirillaCerca;
+    [SerializeField] SpriteRenderer mirillaLejos;
+    [SerializeField] PlayerShooting_Script playerShooting_Script_;
+    
     
     [Space]
     [Header("Parameters")]
-    public float conteoToPaintMirilla = 0;
-    public float PaintMirillaTimeSpan = 0.2f;
+    float conteoToPaintMirilla = 0;
+    [SerializeField] float PaintMirillaTimeSpan = 0.2f;
     [Space]
     [Header("Animation")]
-    public Animator mirilla_Animator;
+    Animator mirilla_Animator;
 
-
-    private void Awake()
+    public Animator MirillasAnimator
     {
-        playerShooting_Script_ = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerShooting_Script>();
-        //playerMovement_Script_ = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement_Script>();
+        get { return mirilla_Animator; }
+        set { mirilla_Animator = value; }
     }
+   
     // Start is called before the first frame update
     void Start()
     {
         if(this.gameObject.name == "Mirilla_Cerca")
         {
-            mirillaCerca = this.gameObject.GetComponent<SpriteRenderer>();
+            mirillaCerca = GetComponent<SpriteRenderer>();
             mirillaLejos = null;
         }
        if(this.gameObject.name == "Mirilla_Lejos")
         {
-            mirillaLejos = this.gameObject.GetComponent<SpriteRenderer>();
-            mirilla_Animator = this.GetComponent<Animator>();
+            mirillaLejos = GetComponent<SpriteRenderer>();
+            mirilla_Animator = GetComponent<Animator>();
             mirillaCerca = null;
         }
 

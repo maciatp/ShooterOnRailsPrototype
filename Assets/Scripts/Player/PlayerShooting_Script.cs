@@ -38,10 +38,10 @@ public class PlayerShooting_Script : MonoBehaviour
 
    
    
-    Bomb_Script bomb_Script_InScene; 
     [SerializeField] Mirillas_Script mirillas_Script_;
     ChargedLaserSphere_Script chargedLaser_Script_InScene;
     Mirilla_Externa_Script mirilla_Externa_Script_InScene;
+    Bomb_Script bomb_Script_InScene; 
 
     public Mirilla_Externa_Script MirillaExterna
     {
@@ -58,31 +58,29 @@ public class PlayerShooting_Script : MonoBehaviour
 
     [Space]
     [Header("Audio")]
-    public AudioSource playerShootingAudioSource;
-    public AudioClip singleLaserFired_Sound;
-    public AudioClip twinLaserFired_Sound;
-    public AudioClip hyperLaserFired_Sound;
+    [SerializeField] AudioSource playerShootingAudioSource;
+    [SerializeField] AudioClip singleLaserFired_Sound;
+    [SerializeField] AudioClip twinLaserFired_Sound;
+    [SerializeField] AudioClip hyperLaserFired_Sound;
 
 
     [Space]
     [Header("Instantiables")]
-    public GameObject laserBeam_GO;
-    public GameObject twinLasers_GO;
-    public GameObject hyperLasers_GO;
-    public GameObject chargedLaser_GO;
-    public GameObject chargingLaserFX;
+    [SerializeField] GameObject laserBeam_GO;
+    [SerializeField] GameObject twinLasers_GO;
+    [SerializeField] GameObject hyperLasers_GO;
+    [SerializeField] GameObject chargedLaser_GO;
+    [SerializeField] GameObject chargingLaserFX;
     GameObject chargedLaserInShip;
     GameObject chargingLaserFX_INSCENE;
+    [SerializeField] GameObject bomb_GO;
+    GameObject bombINSCENE;
 
     [Space]
-    public GameObject bomb_GO;
-    GameObject bombINSCENE;
-    
-
-
     [Header("Parameters")]
-    float conteoChargingLaser = 0;
+
     [SerializeField] float chargeLaserTimeSpan = 1f;
+    float conteoChargingLaser = 0;
     
     float conteoUseBeforeDeactivateChargedLaser = 0; //conteo que hace para cuando sueltas disparo con el láser cargado
     [SerializeField] float UseBeforeDeactivateChargedLaserTimeSpan = 2.5f; //tiempo que tienes para volver a pulsar disparo antes de que se desactive disp cargado

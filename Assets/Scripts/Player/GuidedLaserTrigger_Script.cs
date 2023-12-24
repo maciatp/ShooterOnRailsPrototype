@@ -104,7 +104,7 @@ public class GuidedLaserTrigger_Script : MonoBehaviour
         }
         if ((objectLocked == null) && (playerShooting_Script_.IsLaserCharged == true))
         {
-            mirillas_Script_.mirilla_Animator.SetBool("mirillaLejosIsBumping", true);
+            mirillas_Script_.MirillasAnimator.SetBool("mirillaLejosIsBumping", true);
         }
 
         if ((objectLocked == null) && (playerShooting_Script_.IsLaserCharged == false))
@@ -166,7 +166,7 @@ public class GuidedLaserTrigger_Script : MonoBehaviour
 
     private void LockObject(Collider other)
     {
-        mirillas_Script_.mirilla_Animator.SetBool("mirillaLejosIsBumping", false);
+        mirillas_Script_.MirillasAnimator.SetBool("mirillaLejosIsBumping", false);
         
         mirillas_Script_.DeactivateFarWhileObjectLocked();
 
