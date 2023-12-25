@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class TriggerToActivateExtraPath_Script : MonoBehaviour
 {
-    [SerializeField] bool isActivated = false;
-    BoxCollider triggerCollider;
+    bool isActivated = false;
+    
     TrackChanger_Trigger_Script trackChanger_Trigger_Script_;
 
 
     private void Awake()
     {
-        triggerCollider = this.gameObject.GetComponent<BoxCollider>();
+        
         trackChanger_Trigger_Script_ = this.gameObject.transform.parent.GetChild(0).GetComponent<TrackChanger_Trigger_Script>();
     }
 
@@ -20,20 +20,17 @@ public class TriggerToActivateExtraPath_Script : MonoBehaviour
         if(other.gameObject.tag == "Player")
         {
             isActivated = true;
-            trackChanger_Trigger_Script_.currentTriggersActivated++;
-            //if(trackChanger_Trigger_Script_.currentTriggersActivated >= 3)
-            //{
-              //TEST PARA CUANDO PUEDA METER DIÁLOGOS A LOS CAMBIOS DE CARRIL.
-            //}
-            if (trackChanger_Trigger_Script_.currentTriggersActivated >= (trackChanger_Trigger_Script_.triggersToActivate.Count))
+            trackChanger_Trigger_Script_.CurrentTriggersActivated++;
+            
+            if (trackChanger_Trigger_Script_.CurrentTriggersActivated >= (trackChanger_Trigger_Script_.triggersToActivate.Count))
             {
                 trackChanger_Trigger_Script_.EnableTrigger();
                 Debug.Log("He activado el trigger de cambio carril");
 
                 //ACTIVA EL TRIGGER DEL CHAT CUANDO COMPLETAS EL REQUISITO
-                if (trackChanger_Trigger_Script_.hasToActivateChat_WhenCompleted)
+                if (trackChanger_Trigger_Script_.ActivatesChatWhenCompleted)
                 {
-                    foreach (GameObject chatTriggerWhenEnded in trackChanger_Trigger_Script_.chatFinishTriggersToActivate)
+                    foreach (GameObject chatTriggerWhenEnded in trackChanger_Trigger_Script_.ChatFinishTriggersList)
                     {
                         chatTriggerWhenEnded.SetActive(true);
                     }
@@ -42,20 +39,20 @@ public class TriggerToActivateExtraPath_Script : MonoBehaviour
 
             }
 
-            //ACTIVA EL TRIGGER DE PISTA (SE ACTIVA CUANDO LLEVAS X TRIGGERS) -> LUEGO HAY QUE PASAR POR EL TRIGGER! (O LO ACTIVO directamente DESDE AQUÍ? por ahora hay que pasar por el trigger))
-            if ((trackChanger_Trigger_Script_.hasToActivateMIDdleChat) && (trackChanger_Trigger_Script_.currentTriggersActivated >= trackChanger_Trigger_Script_.midChat))
+            //ACTIVA EL TRIGGER DE PISTA (SE ACTIVA CUANDO LLEVAS X TRIGGERS) -> LUEGO HAY QUE PASAR POR EL TRIGGER! 
+            if ((trackChanger_Trigger_Script_.ActivatesChatOnCertainTrigger) && (trackChanger_Trigger_Script_.CurrentTriggersActivated >= trackChanger_Trigger_Script_.MidChat))
             {
 
-                foreach (GameObject chatTriggerMIDDLE in trackChanger_Trigger_Script_.chatTriggersToActivate_During)
+                foreach (GameObject chatTriggerMIDDLE in trackChanger_Trigger_Script_.ChatMiddleTriggersList)
                 {
                     chatTriggerMIDDLE.SetActive(true);
                 }
                 
-                Debug.Log("He activado el trigger intermedio");
+                Debug.Log("He activado el trigger de chat MId extra-sequence");
             }
 
 
-            this.gameObject.SetActive(false);
+            gameObject.SetActive(false);
         }
     }
 

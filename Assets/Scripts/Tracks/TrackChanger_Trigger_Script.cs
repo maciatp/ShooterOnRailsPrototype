@@ -5,24 +5,58 @@ using Cinemachine;
 
 public class TrackChanger_Trigger_Script : MonoBehaviour
 {
+    BoxCollider changerTrigger;
     
-    public int currentTriggersActivated = 0;
+    [Header("Triggers To activate rail change")]
+    int currentTriggersActivated = 0;
+    [SerializeField] public List<BoxCollider> triggersToActivate = new List<BoxCollider>();
    
-    public BoxCollider changerTrigger;
+    [Header("Chat when completed")]
+    [SerializeField] bool hasToActivateChat_WhenCompleted = false;
+    [SerializeField] List<GameObject> chatFinishTriggersToActivate = new List<GameObject>();
 
-    public bool hasToActivateChat_WhenCompleted = false;
-    public List<GameObject> chatFinishTriggersToActivate = new List<GameObject>();
-   // public GameObject chatTriggerToActivate_WhenCompleted;
+    [Space]
+    [Header("Chat During Sequence")]
+    [SerializeField] bool hasToActivateMidChat = false; //activa chat cuando has pasado por un mínimo de triggers
+    [Tooltip("Número de Triggers (de la lista de Triggers to activate) por los que hay que pasar para activar el mid chat.")] 
+    [SerializeField] int activateChatTriggerAfterTheseTriggersCrossed = 0;
+    [Tooltip("El trigger de chat en la escena que se va a activar DURANTE la secuencia")]
+    [SerializeField] List<GameObject> chatTriggersToActivate_During = new List<GameObject>();
+    
+    //para cambiar de rail con botones //TODO
+    Button_Script button_Script_;
 
-    public bool hasToActivateMIDdleChat = false;
-    public int midChat = 0;
-    public List<GameObject> chatTriggersToActivate_During = new List<GameObject>();
-    //public GameObject chatTriggerToActivate_During;
 
-    public Button_Script button_Script_;
-
-    public List<BoxCollider> triggersToActivate = new List<BoxCollider>();
-
+    public int MidChat
+    {
+        get { return activateChatTriggerAfterTheseTriggersCrossed; }
+        set { activateChatTriggerAfterTheseTriggersCrossed = value; }
+    }
+    public int CurrentTriggersActivated
+    {
+        get { return currentTriggersActivated; }    
+        set { currentTriggersActivated = value; }
+    }
+    public bool ActivatesChatWhenCompleted
+    {
+        get { return hasToActivateChat_WhenCompleted; }
+        set { hasToActivateChat_WhenCompleted = value; }
+    }
+    public List<GameObject> ChatFinishTriggersList
+    {
+        get { return chatFinishTriggersToActivate; }
+        set { chatFinishTriggersToActivate = value;}
+    }
+    public bool ActivatesChatOnCertainTrigger
+    {
+        get { return hasToActivateMidChat; }
+        set { hasToActivateMidChat = value; }
+    }
+    public List<GameObject> ChatMiddleTriggersList
+    {
+        get { return chatTriggersToActivate_During; }
+        set { chatTriggersToActivate_During = value; }
+    }
 
     private void Awake()
     {
@@ -50,15 +84,15 @@ public class TrackChanger_Trigger_Script : MonoBehaviour
                 {
                     chatTriggerWhenEnded.SetActive(false);
                 }
-               // chatTriggerToActivate_WhenCompleted.gameObject.SetActive(false);
+               
             }
-            if(hasToActivateMIDdleChat)
+            if(hasToActivateMidChat)
             {
                 foreach (GameObject chatTriggerMIDDLE in chatTriggersToActivate_During)
                 {
                     chatTriggerMIDDLE.SetActive(false);
                 }
-                //chatTriggerToActivate_During.SetActive(false);
+               
             }
 
         }
@@ -81,25 +115,11 @@ public class TrackChanger_Trigger_Script : MonoBehaviour
         {
             if (this.gameObject.transform.parent.name == "DollyTrack_Changer_Button")
             {
-                //Debug.Log("HE sido activado!" +  other.name);
-
-                //DESACTIVADO MIENTRAS TESTEO RAILCHANGER. AÑADIR NEXT TRACK DEL ARRAY
-                //GameObject.Find("GameplayPlane").gameObject.GetComponent<RailChanger_Script>().ChangeTrack(this.gameObject.transform.parent.gameObject.GetComponent<CinemachineSmoothPath>());
                 GameObject.Find("GameplayPlane").gameObject.GetComponent<TrackManager>().ChangeExtraTrack();
                 DisableTrigger();
             }
             else if (this.gameObject.transform.parent.name == "DollyTrack_Changer_Trigger")
             {
-                ////ACTIVA EL TRIGGER DEL CHAT CUANDO COMPLETAS EL REQUISITO
-                //if(hasToActivateChat_WhenCompleted)
-                //{
-                //    foreach(GameObject chatTriggerWhenEnded in chatFinishTriggersToActivate)
-                //    {
-                //        chatTriggerWhenEnded.SetActive(true);
-                //    }
-                //    //chatTriggerToActivate_WhenCompleted.SetActive(true);
-                //}
-                
                 Debug.Log("Casi he cambiado de carril");
                 if(currentTriggersActivated == triggersToActivate.Count)
                 {
@@ -107,9 +127,6 @@ public class TrackChanger_Trigger_Script : MonoBehaviour
                     DisableTrigger();
                     Debug.Log("He Cambiado de carril");
 
-                    //chatTriggerToActivate_WhenCompleted.gameObject.SetActive(true);
-
-                    
 
                 }
             }
