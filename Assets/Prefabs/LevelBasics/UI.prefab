@@ -2115,9 +2115,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170e4b4a08098bf4881a3084d18b5446, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goldring1: {fileID: 0}
-  goldring2: {fileID: 0}
-  goldring3: {fileID: 0}
 --- !u!1 &2029842162268931479
 GameObject:
   m_ObjectHideFlags: 0
@@ -2949,12 +2946,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d379e2e13f5237040ac87ec4adf153fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isBarExtraSize: 0
-  childOverHeatingBar: {fileID: 0}
-  overHeatingBarBarNormalSize: {x: 100, y: 1, z: 0}
-  overHeatingBarBarExtraSize: {x: 150, y: 1, z: 0}
-  overHeatingBarImage: {fileID: 0}
-  playerMovement_Script_: {fileID: 0}
+  childOverHeatingBar: {fileID: 2920517491809347243}
 --- !u!1 &2920517491711220252
 GameObject:
   m_ObjectHideFlags: 0
@@ -3007,17 +2999,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e241a416fb91f4c4fad7c6ec7c27db7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isBarExtraSize: 0
   healthBar: {fileID: 2920517490578942990}
   deltaBar: {fileID: 3616813212582273956}
-  healthBarImage: {fileID: 2920517490578942989}
-  deltaBarImage: {fileID: 3616813212582273957}
-  barNormalSize: {x: 100, y: 1, z: 0}
   secondsWaitingToGrow: 1.35
   barGrowVelocity: 1.35
+  waitForScalingChildHealthBar: 0.4
   changingColorSpeed: 0.85
   lerpVelocity: 5
-  waitForScalingChildHealthBar: 0.4
   lowHealthColor: {r: 1, g: 0.040268946, b: 0, a: 1}
   lowHealthColor2: {r: 1, g: 0.4135275, b: 0, a: 1}
 --- !u!1 &2920517491809347244
@@ -3047,7 +3035,7 @@ RectTransform:
   m_GameObject: {fileID: 2920517491809347244}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 1, z: 1}
+  m_LocalScale: {x: 100, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2920517491703182441}
@@ -5447,7 +5435,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeManager_Script_: {fileID: 0}
-  slowMoImage: {fileID: 0}
+  slowMoImage: {fileID: 6416981422137738990}
   originalPosition: {x: 0, y: 0}
   offset: {x: 0, y: -0.07}
   red: {r: 1, g: 0.24056602, b: 0.24056602, a: 0.69803923}
@@ -7187,7 +7175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d12d7732a880af348b4b72a6504ccbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  livesText: {fileID: 0}
+  livesText: {fileID: 1838810550557262068}
 --- !u!1 &8019108500866484331
 GameObject:
   m_ObjectHideFlags: 0
