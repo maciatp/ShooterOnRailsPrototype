@@ -6,45 +6,52 @@ using UnityEngine.UI;
 public class UIHealthBar_Script : MonoBehaviour
 {
     [Header("Bools")]
-    public bool isBarExtraSize = false;
-    public bool healthbarMustGrow = false;
-    public bool mustDeltaBarMove = false;
-    public bool healthIncreasing = false;
-    public bool healthDecreasing = false;
-    //public bool mustDeltaBarMoveRight_Decreasing = false;
+    [SerializeField] bool isBarExtraSize = false;
+    bool healthbarMustGrow = false;
+    bool mustDeltaBarMove = false;
+    bool healthIncreasing = false;
+    bool healthDecreasing = false;
+    
 
     [Space]
     [Header("Public references")]
-    public Transform childHealthBar;
-    public Transform deltaBar;
-    public PlayerHealth_Script playerHealth_Script_;
+    [SerializeField] Transform healthBar;
+    [SerializeField] Transform deltaBar;
+    PlayerHealth_Script playerHealth_Script_;
 
-    public Image healthBarImage;
-    public Image deltaBarImage;
+    [SerializeField] Image healthBarImage;
+    [SerializeField] Image deltaBarImage;
 
     [Space]
     [Header("Parameters")]
-    public Vector3 barNormalSize = new Vector3(100 , 1 );
-    public Vector3 barExtraSize = new Vector3(150, 1);
-    public float secondsWaitingToGrow = 2;
-    public float barGrowVelocity = 2;
+    [SerializeField] Vector3 barNormalSize;
+    Vector3 barExtraSize;
+    [SerializeField] float secondsWaitingToGrow = 2;
+    [SerializeField] float barGrowVelocity = 2;
 
 
-    public float changingColorSpeed = 2;
-    public float floatLerpDeltaBar = 0;
-    public float lerpVelocity = 1;
-    public float waitForScalingChildHealthBar = 0.5f;
-    public Color lowHealthColor;
-    public Color lowHealthColor2;
+    [SerializeField] float changingColorSpeed = 2;
+    float floatLerpDeltaBar = 0;
+    [SerializeField] float lerpVelocity = 1;
+    [SerializeField] float waitForScalingChildHealthBar = 0.5f;
     [Space]
-    public float healthbarX;
-    public float deltaBarX;
-    //public float deltaChange;
+    [SerializeField] Color lowHealthColor;
+    [SerializeField] Color lowHealthColor2;
+    [Space]
+    float healthbarX;
+    float deltaBarX;
+
 
     private void Awake()
     {
         playerHealth_Script_ = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth_Script>();
-        deltaBar.localScale = new Vector2(childHealthBar.localScale.x, 1);
+    }
+    void Start()
+    {
+        barNormalSize = new Vector2(healthBar.localScale.x, 1);
+        healthBar.localScale = new Vector3(playerHealth_Script_.CurrentHealth, healthBar.transform.localScale.y);
+
+        deltaBar.localScale = new Vector2(healthBar.localScale.x, 1);
         barExtraSize = new Vector2(playerHealth_Script_.MaxHealth, 1);
     }
     
@@ -52,27 +59,27 @@ public class UIHealthBar_Script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        healthbarX = childHealthBar.localScale.x;
+        healthbarX = healthBar.localScale.x;
         
         deltaBarX = deltaBar.localScale.x;
         
-        if((childHealthBar.localScale.x > 75) && (healthBarImage.color != Color.cyan))
+        if((healthBar.localScale.x > 75) && (healthBarImage.color != Color.cyan))
         {
             healthBarImage.color = Color.Lerp(healthBarImage.color, Color.cyan, Time.unscaledDeltaTime*3);
 
         }
        
-        else if ((childHealthBar.localScale.x > 60) && (childHealthBar.localScale.x < 75) && (healthBarImage.color != Color.green))
+        else if ((healthBar.localScale.x > 60) && (healthBar.localScale.x < 75) && (healthBarImage.color != Color.green))
         {
             healthBarImage.color = Color.Lerp(healthBarImage.color, Color.green, Time.unscaledDeltaTime*3);
 
         }
-        else if ((childHealthBar.localScale.x > 35) && (childHealthBar.localScale.x < 60) && (healthBarImage.color != Color.yellow))
+        else if ((healthBar.localScale.x > 35) && (healthBar.localScale.x < 60) && (healthBarImage.color != Color.yellow))
         {
             healthBarImage.color = Color.Lerp(healthBarImage.color, Color.yellow, Time.unscaledDeltaTime*3);
 
         }
-       else if ((childHealthBar.localScale.x > 0) && (childHealthBar.localScale.x < 35) && (healthBarImage.color != lowHealthColor))
+       else if ((healthBar.localScale.x > 0) && (healthBar.localScale.x < 35) && (healthBarImage.color != lowHealthColor))
         {
             healthBarImage.color = Color.Lerp(healthBarImage.color, lowHealthColor, Time.unscaledDeltaTime*3);
             //healthBarImage.color = lowHealthColor;
@@ -105,17 +112,17 @@ public class UIHealthBar_Script : MonoBehaviour
         {
             //floatLerpDeltaBar += Time.unscaledDeltaTime *  lerpVelocity;
             //MIRAR ESCALA
-            if ((healthDecreasing == true && healthIncreasing == false) && (((childHealthBar.localScale.x < barNormalSize.x) && (isBarExtraSize == false)) || ((childHealthBar.localScale.x < barExtraSize.x) && (isBarExtraSize == true))))
+            if ((healthDecreasing == true && healthIncreasing == false) && (((healthBar.localScale.x < barNormalSize.x) && (isBarExtraSize == false)) || ((healthBar.localScale.x < barExtraSize.x) && (isBarExtraSize == true))))
             {
                 //ScaleDeltaBarWhenDecreasing
                 deltaBar.localScale = new Vector3(Mathf.Lerp(deltaBar.localScale.x, playerHealth_Script_.CurrentHealth, Time.unscaledDeltaTime * lerpVelocity), 1, 0);
                 
             }
-            else if((healthIncreasing == true ) && (((childHealthBar.localScale.x >= 0) ))) //else if((healthDecreasing == false && healthIncreasing == true ) && (((childHealthBar.localScale.x >= 0) )))
+            else if((healthIncreasing == true ) && (((healthBar.localScale.x >= 0) ))) //else if((healthDecreasing == false && healthIncreasing == true ) && (((childHealthBar.localScale.x >= 0) )))
             {
                 //ScaleHEALTHBARWhenIncreasing
                 healthDecreasing = false;
-                childHealthBar.localScale = new Vector3(Mathf.Lerp(childHealthBar.localScale.x, deltaBar.localScale.x , Time.unscaledDeltaTime * lerpVelocity), 1, 0);
+                healthBar.localScale = new Vector3(Mathf.Lerp(healthBar.localScale.x, deltaBar.localScale.x , Time.unscaledDeltaTime * lerpVelocity), 1, 0);
                 
                 
             }
@@ -124,11 +131,11 @@ public class UIHealthBar_Script : MonoBehaviour
 
            
         }
-         if((deltaBar.localScale.x < childHealthBar.localScale.x +0.1f) ) //RESTANDO VIDA        /* && (deltaBar.localScale.x <= childHealthBar.localScale.x))*/
+         if((deltaBar.localScale.x < healthBar.localScale.x +0.1f) ) //RESTANDO VIDA        /* && (deltaBar.localScale.x <= childHealthBar.localScale.x))*/
         {
             //floatLerpDeltaBar = 0;
             
-            deltaBar.localScale = new Vector3(childHealthBar.localScale.x, 1);
+            deltaBar.localScale = new Vector3(healthBar.localScale.x, 1);
             if (healthIncreasing == true)
             {
                 healthIncreasing = false;
@@ -139,12 +146,12 @@ public class UIHealthBar_Script : MonoBehaviour
             }
             
         }
-        if((childHealthBar.localScale.x > deltaBar.localScale.x - 0.1f)) //AÑADIENDO VIDA
+        if((healthBar.localScale.x > deltaBar.localScale.x - 0.1f)) //AÑADIENDO VIDA
         {
 
             //floatLerpDeltaBar = 0;
            
-            childHealthBar.localScale = new Vector3(deltaBar.localScale.x, 1);
+            healthBar.localScale = new Vector3(deltaBar.localScale.x, 1);
             if (healthIncreasing == true)
             {
                 healthIncreasing = false;
@@ -182,15 +189,12 @@ public class UIHealthBar_Script : MonoBehaviour
 
         healthbarMustGrow = true;
         isBarExtraSize = true;
-        //this.gameObject.transform.GetChild(0).transform.localScale = new Vector3(147,1,0);
-        //this.gameObject.transform.GetChild(1).transform.localScale = barExtraSize;
-        //this.gameObject.transform.GetChild(2).transform.localScale = new Vector3(playerHealth_Script_.actualPlayerHealth, 1, 0);
-        //this.gameObject.transform.GetChild(3).transform.localScale = new Vector3(playerHealth_Script_.actualPlayerHealth,1,0);
+        
     }
     public void DeactivateExtraHealthUI()
     {
         isBarExtraSize = false;
-        this.gameObject.transform.GetChild(0).transform.localScale = new Vector3(102, 1, 0);
+        this.gameObject.transform.GetChild(0).transform.localScale = new Vector3(barNormalSize.x+2, 1, 0);//BORDER es más grande aposta
         this.gameObject.transform.GetChild(1).transform.localScale = barNormalSize;
         this.gameObject.transform.GetChild(2).transform.localScale = barNormalSize;
         this.gameObject.transform.GetChild(3).transform.localScale = barNormalSize;
@@ -199,20 +203,20 @@ public class UIHealthBar_Script : MonoBehaviour
 
     public IEnumerator IncreaseBarSize(float healthPointsRestored)
     {
-         if (((childHealthBar.localScale.x < barNormalSize.x) && (isBarExtraSize == false)) || ((childHealthBar.localScale.x < barExtraSize.x) && (isBarExtraSize == true)))
+         if (((healthBar.localScale.x < barNormalSize.x) && (isBarExtraSize == false)) || ((healthBar.localScale.x < barExtraSize.x) && (isBarExtraSize == true)))
             {
                 healthDecreasing = false;
                 // para saber si mover o no childhealth o si esperar o no. Cuando positivo espera, cuando negativo, no.
                 //deltaBar.localScale += new Vector3(healthPointsRestored * ((100/ childHealthBar.localScale.x)), 0); // todo el rollo para que mantenga la escal aunque childbar sea pequeña
-                if (((childHealthBar.localScale.x + healthPointsRestored < barNormalSize.x) && (isBarExtraSize == false)) || ((childHealthBar.localScale.x + healthPointsRestored < barExtraSize.x) && (isBarExtraSize == true)))
+                if (((healthBar.localScale.x + healthPointsRestored < barNormalSize.x) && (isBarExtraSize == false)) || ((healthBar.localScale.x + healthPointsRestored < barExtraSize.x) && (isBarExtraSize == true)))
                 {
                     deltaBar.localScale = new Vector3(playerHealth_Script_.CurrentHealth, 1);
                 }
-                else if (((childHealthBar.localScale.x + healthPointsRestored > barNormalSize.x) && (isBarExtraSize == false)))
+                else if (((healthBar.localScale.x + healthPointsRestored > barNormalSize.x) && (isBarExtraSize == false)))
                 {
                     deltaBar.localScale = new Vector3(barNormalSize.x, 1);
                 }
-                else if (((childHealthBar.localScale.x + healthPointsRestored > barExtraSize.x) && (isBarExtraSize == true)))
+                else if (((healthBar.localScale.x + healthPointsRestored > barExtraSize.x) && (isBarExtraSize == true)))
                 {
                     deltaBar.localScale = new Vector3(barExtraSize.x, 1);
                 }
@@ -259,17 +263,17 @@ public class UIHealthBar_Script : MonoBehaviour
             }
         }*/
 
-        if ((childHealthBar.localScale.x > barNormalSize.x) && (isBarExtraSize == false))
+        if ((healthBar.localScale.x > barNormalSize.x) && (isBarExtraSize == false))
         {
 
-            childHealthBar.localScale = barNormalSize;
+            healthBar.localScale = barNormalSize;
             deltaBar.localScale = barNormalSize;
             //Debug.Log("he petado barra salud");
         }
-        else if ((childHealthBar.localScale.x > barExtraSize.x) && (isBarExtraSize == true))
+        else if ((healthBar.localScale.x > barExtraSize.x) && (isBarExtraSize == true))
         {
 
-            childHealthBar.localScale = barExtraSize;
+            healthBar.localScale = barExtraSize;
             deltaBar.localScale = barExtraSize;
             //Debug.Log("he petado barra salud");
         }
@@ -278,7 +282,7 @@ public class UIHealthBar_Script : MonoBehaviour
 
     public IEnumerator DecreaseBarSize(float healthPointsDepleted) //EL VALOR QUE LE ENVÍAN YA ES NEGATIVO 
     {
-        if((childHealthBar.localScale.x +( healthPointsDepleted)) >= 0)
+        if((healthBar.localScale.x +( healthPointsDepleted)) >= 0)
         {
             //if(childHealthBar.localScale.x - deltaBar.localScale.x > 0)
             {
@@ -291,7 +295,7 @@ public class UIHealthBar_Script : MonoBehaviour
                 deltaBarImage.color = Color.red;
                
 
-                childHealthBar.localScale = new Vector3(playerHealth_Script_.CurrentHealth, 1); // En realidad se restan, pero viene negativo
+                healthBar.localScale = new Vector3(playerHealth_Script_.CurrentHealth, 1); // En realidad se restan, pero viene negativo
 
                 
 
@@ -305,9 +309,9 @@ public class UIHealthBar_Script : MonoBehaviour
                 //deltaBar.localScale += new Vector3(healthPointsDepleted, 0);
             }
         }
-        else if((childHealthBar.localScale.x +( healthPointsDepleted)) < 0)
+        else if((healthBar.localScale.x +( healthPointsDepleted)) < 0)
         {
-            childHealthBar.localScale = new Vector3(0,1);
+            healthBar.localScale = new Vector3(0,1);
             deltaBar.localScale = new Vector3(0, 1);
         }
 

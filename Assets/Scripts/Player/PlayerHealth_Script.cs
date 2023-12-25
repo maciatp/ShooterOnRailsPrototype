@@ -92,7 +92,6 @@ public class PlayerHealth_Script : MonoBehaviour
         }
         CheckHealth();
 
-        uIHealthBar_Script_.childHealthBar.localScale = new Vector3(currentPlayerHealth , uIHealthBar_Script_.transform.localScale.y);
     }
 
     // Update is called once per frame
