@@ -16079,7 +16079,7 @@ MonoBehaviour:
   timeTiltingToComplete: 0.35
   velocityMultiplierWhenTiltingAndTurning: 1.2
   boostingSpeedMultiplier: 2
-  actualPlayerOverHeating: 0
+  currentPlayerOverHeating: 0
   totalOverHeating: 100
   overHeatingDecreasingRate: 20
   overHeatingIncreasingRate: 60
@@ -16088,19 +16088,14 @@ MonoBehaviour:
   joystickUpTimeSpan: 0.12
   joystickVerticalMinimumToLooping: 0.1
   counterDuration: 0.7
-  mirillaLejosOriginalLocalPos: {x: 0, y: 0, z: 0}
   aimTarget: {fileID: 3173809264742986840}
   dolly: {fileID: 3173809264590528393}
   cameraParent: {fileID: 3173809264498424893}
   arwing_Animator: {fileID: 449781716894446396}
-  player_Animator: {fileID: 5324376001234827800}
-  playerInScene: {fileID: 3173809263980193739}
   cineMachineVirtualCamera_script_: {fileID: 3173809264343331443}
   mirilla_Lejos: {fileID: 8672205779671727611}
-  playerArwing: {fileID: 6840026720279931989}
   leftTrail: {fileID: 3851918089725574659}
   rightTrail: {fileID: 4015676508168831769}
-  isTrailsActive: 1
   trailMaterial: {fileID: 2100000, guid: b3f09af02ef841d4e8ef3ae18bd4ce8e, type: 2}
   trail: {fileID: 3173809264617881426}
   circle: {fileID: 3173809263438771414}
@@ -16189,30 +16184,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalHealthAtStart: 1
-  isPlayerInvincible: 0
-  isExtraHealthActivated: 0
-  actualPlayerHealth: 100
+  currentPlayerHealth: 100
   totalPlayerHealth: 100
   maxPlayerHealth: 125
   currentLives: 3
-  conteoCoolDownDamage: 0
-  coolDownDamageTimeSpan: 1
-  actualGoldRings: 0
+  currentGoldRings: 0
   movedWhenDamagedDistance: 7
   lightningFX: {fileID: 4400926182872204408}
   smokeFX: {fileID: 4763725770324471206}
   smokeParticleSystem: {fileID: 4673221396467719406}
   lightningParticleSystem: {fileID: 1545920603990606795}
-  uIHealthBar_Script_: {fileID: 0}
-  uIGoldRings_Script_: {fileID: 0}
-  uILivesText_Script_: {fileID: 0}
-  rB_playerInScene: {fileID: 3173809263980193735}
-  playerMovement_Script_: {fileID: 3173809263980193737}
-  uIDamage_Script_: {fileID: 0}
-  cinemachineImpulse_: {fileID: 192264896}
-  playerAnimator: {fileID: 5324376001234827800}
-  damageAnimation: {fileID: 0}
-  enemyHealth_Script_: {fileID: 0}
   playerHealthBarAudioSource: {fileID: 8978928759158573109}
   playerHitAudioSource: {fileID: 1132675143749918474}
   healthAlertLight: {fileID: 8300000, guid: 663b9d0a034487c49b0eddeeaa4e048b, type: 3}
@@ -31479,8 +31460,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13bbea2269441db4aa7c098c6dc715a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraHolder: {fileID: 3173809264498424894}
-  cameraHolder_Animator: {fileID: 3173809264498424891}
   playerMovement_Script_: {fileID: 3173809263980193737}
 --- !u!95 &3173809264498424891
 Animator:
@@ -31572,12 +31551,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 676b0b0b6acd34a4ab171be08acf75c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentTrack: 0
   tracks:
   - {fileID: 0}
   extraTracks: []
-  dolly: {fileID: 3173809264590528393}
-  playerMovement_Script_: {fileID: 3173809263980193737}
   bifurcationTrigger_GO: {fileID: 1529978064855425578, guid: 855aca55b0238f848a9bc152c8a920b8,
     type: 3}
 --- !u!1 &3173809264617881429
@@ -36977,9 +36953,7 @@ MonoBehaviour:
   mirillaCerca: {fileID: 0}
   mirillaLejos: {fileID: 0}
   playerShooting_Script_: {fileID: 6512077160715364459}
-  conteoToPaintMirilla: 0
   PaintMirillaTimeSpan: 0.2
-  mirilla_Animator: {fileID: 0}
 --- !u!1 &3932435486090103951
 GameObject:
   m_ObjectHideFlags: 0
@@ -43985,9 +43959,7 @@ MonoBehaviour:
   mirillaCerca: {fileID: 3594349055926274409}
   mirillaLejos: {fileID: 570923258348185045}
   playerShooting_Script_: {fileID: 6512077160715364459}
-  conteoToPaintMirilla: 0
   PaintMirillaTimeSpan: 0.2
-  mirilla_Animator: {fileID: 0}
 --- !u!95 &6512077159484451716
 Animator:
   serializedVersion: 5
