@@ -4,16 +4,22 @@ using Cinemachine;
 using UnityEngine;
 
 
-public class RailChanger_Script : MonoBehaviour
+public class TrackManager : MonoBehaviour
 {
    
-    public int currentTrack = 0;
-    public List<CinemachineSmoothPath> tracks = new List<CinemachineSmoothPath>();
-    public List<CinemachineSmoothPath> extraTracks = new List<CinemachineSmoothPath>();
+    int currentTrack = 0;
+    CinemachineDollyCart dolly;
+    [Header("Tracks References")]
+    [SerializeField] List<CinemachineSmoothPath> tracks = new List<CinemachineSmoothPath>();
+    [Space]
+    [Header("Extra Tracks References")]
+    [SerializeField] List<CinemachineSmoothPath> extraTracks = new List<CinemachineSmoothPath>();
 
-    public CinemachineDollyCart dolly;
-    public PlayerMovement_Script playerMovement_Script_;
-    public GameObject bifurcationTrigger_GO;
+    
+
+    [Space]
+    [Header("Instances References")]
+    [SerializeField] GameObject bifurcationTrigger_GO;
 
     
     //Primero hay que disparar al botón para activarlo (sirve como acción X que activa el cambio). El botón activa el trigger que está al inicio de la pista secundaria, y debe ramificarse DESDE la principal)
@@ -22,8 +28,7 @@ public class RailChanger_Script : MonoBehaviour
 
     private void Awake()
     {
-        //button_Script_ =;
-        playerMovement_Script_ = GameObject.Find("Player").gameObject.GetComponent<PlayerMovement_Script>();
+        dolly = GetComponent<CinemachineDollyCart>();
 
         foreach (CinemachineSmoothPath track in tracks)
         {
@@ -75,7 +80,7 @@ public class RailChanger_Script : MonoBehaviour
     //NEXT TRACK NORMAL
     public void ChangeTrack(CinemachineSmoothPath nextTrack)
     {
-        nextTrack.gameObject.GetComponent<CinemachineSmoothPath>().m_Waypoints[0].position.z = this.transform.position.z;
+        nextTrack.gameObject.GetComponent<CinemachineSmoothPath>().m_Waypoints[0].position.z = transform.position.z;
         dolly.m_Path = nextTrack;
         dolly.m_Position = 0;
         //currentTrack++; ya he cambiado antes de llamar a la función
@@ -87,7 +92,7 @@ public class RailChanger_Script : MonoBehaviour
     //CHANGE FROM NORMAL TO EXTRA
     public void ChangeExtraTrack()
     {
-        extraTracks[0].GetComponent<CinemachineSmoothPath>().m_Waypoints[0].position.z = this.transform.position.z;
+        extraTracks[0].GetComponent<CinemachineSmoothPath>().m_Waypoints[0].position.z = transform.position.z;
         dolly.m_Path = extraTracks[0];
         dolly.m_Position = 0;
         currentTrack = 0;
@@ -97,8 +102,10 @@ public class RailChanger_Script : MonoBehaviour
 
     public void ChooseWay()
     {
+
+        PlayerMovement_Script playerMovement_Script_ = GameObject.FindGameObjectWithTag("Player").gameObject.GetComponent<PlayerMovement_Script>();
         //He probado con WorldToViewport (va de 0 a 1), mirar en el futuro en caso de necesitarlo
-       
+
         //CHOOSE RIGHT PATH
         if (playerMovement_Script_.transform.localPosition.x >= 0)  
         {
