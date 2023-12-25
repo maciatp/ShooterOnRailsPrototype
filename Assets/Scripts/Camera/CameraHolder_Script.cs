@@ -4,60 +4,20 @@ using UnityEngine;
 
 public class CameraHolder_Script : MonoBehaviour
 {
-    
+    Animator cameraHolder_Animator;
+    [SerializeField] PlayerMovement_Script playerMovement_Script_;
 
-    public GameObject cameraHolder;
-
-    public Animator cameraHolder_Animator;
-    public PlayerMovement_Script playerMovement_Script_;
-
-
-    void Awake()
+    private void Start()
     {
-        cameraHolder_Animator = this.gameObject.GetComponent<Animator>();
-
-        //NEW INPUT SYSTEM
-
-        playerMovement_Script_ = GameObject.Find("Player").GetComponent<PlayerMovement_Script>();
-
-
-     }
-    // Start is called before the first frame update
-    void Start()
-    {
-
+        cameraHolder_Animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
-    {
-
-        
-            cameraHolder_Animator.SetFloat("cameraFloat",playerMovement_Script_.moveDirection.x);
+    {      
+        cameraHolder_Animator.SetFloat("cameraFloat",playerMovement_Script_.moveDirection.x);
         
         cameraHolder_Animator.SetFloat("cameraVerticalFloat",playerMovement_Script_.moveDirection.y);
 
-
-        /*
-                if (Input.GetAxis ("Horizontal") > 0)
-            {
-            // this.transform.Rotate(0, 10, 0);
-            }
-                if (Input.GetAxis("Horizontal") < 0.1f)
-                 {
-                   this.transform.Rotate(0, 0, 0);
-                 }
-
-                if (Input.GetAxis("Horizontal") < 0)
-                {
-                        this.transform.Rotate(0, -10, 0);
-                }
-                if ((Input.GetAxis("Horizontal") > -0.1f) && (Input.GetAxis("Horizontal") < 0))
-                {
-                        this.transform.Rotate(0, 0, 0);
-
-                }
-
-                }*/
     }
 }
