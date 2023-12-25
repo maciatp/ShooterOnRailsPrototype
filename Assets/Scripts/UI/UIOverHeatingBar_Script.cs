@@ -5,31 +5,26 @@ using UnityEngine.UI;
 
 public class UIOverHeatingBar_Script : MonoBehaviour
 {
-    public bool isBarExtraSize = false;
+    bool isBarExtraSize = false;
 
-    public Transform childOverHeatingBar;
-    public Vector3 overHeatingBarBarNormalSize = new Vector3(100, 1);
-    public Vector3 overHeatingBarBarExtraSize = new Vector3(150f, 1);
-
-    public Image overHeatingBarImage;
-
-    public PlayerMovement_Script playerMovement_Script_;
-
+    [SerializeField] Transform childOverHeatingBar;
+    Vector3 overHeatingBarBarNormalSize = new Vector3(100, 1);
+    Image overHeatingBarImage;
+    PlayerMovement_Script playerMovement_Script_;
 
     private void Awake()
     {
-        childOverHeatingBar = transform.Find("ChildOverHeatingBar");
+        overHeatingBarBarNormalSize = new Vector2(childOverHeatingBar.localScale.x, 1);      //TODO: Pasar del awake al start; debe de estar en playermovement script, en el awake  
+        
+    }
+
+    private void Start()
+    {        
         overHeatingBarImage = childOverHeatingBar.GetComponent<Image>();
         overHeatingBarImage.color = Color.white;
         playerMovement_Script_ = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement_Script>();
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-
-       
-    }
+    
 
     // Update is called once per frame
     void Update()
