@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Button_Script : MonoBehaviour
 {   
-    [SerializeField] bool isButtonActivated = false;
+    bool isButtonActivated = false;
     [SerializeField] bool isButtonLockableWhenActivated = false;
     
     public bool IsButtonActivated
