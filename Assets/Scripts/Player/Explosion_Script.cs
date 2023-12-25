@@ -88,11 +88,11 @@ public class Explosion_Script : MonoBehaviour
         }
         if (other.tag == "Button")
         {
-            button_Script_ = other.gameObject.GetComponent<Button_Script>();
+            other.gameObject.GetComponent<Button_Script>();
             
-            if(button_Script_.isButtonActivated == false)
+            if(button_Script_.IsButtonActivated == false)
             {
-                other.gameObject.GetComponent<Button_Script>().ActivateButton();
+                button_Script_.ActivateButton();
             }
             
         }
@@ -140,13 +140,14 @@ public class Explosion_Script : MonoBehaviour
         if (other.tag == "Wall_BrokenObj")
         {
             Debug.Log("He añadido fuerza a la pared");
-            other.gameObject.GetComponent<Rigidbody>().AddExplosionForce(explosionForce, this.transform.position, explosionRadius, 0, ForceMode.Impulse);
+            other.gameObject.GetComponent<Rigidbody>().AddExplosionForce(explosionForce, transform.position, explosionRadius, 0, ForceMode.Impulse);
         }
 
     }
     void OnTriggerStay(Collider other)
     {
-        if((this.gameObject.tag == "Explosion") && (((other.gameObject.name == "RightDoor") || (other.gameObject.name == "LeftDoor")) && (other.gameObject.transform.parent.parent.name == "DoorHouse")))
+        if((gameObject.tag == "Explosion") && (((other.gameObject.name == "RightDoor") 
+      || (other.gameObject.name == "LeftDoor")) && (other.gameObject.transform.parent.parent.name == "DoorHouse")))
         {
             //ABRO DOORHOUSE CON CHARGEDLASEREXPLOSION PERO NO CON SMARTBOMBEXPLOSION
             other.gameObject.transform.parent.parent.GetComponent<DoorHouse_Script>().ReceiveDamage();

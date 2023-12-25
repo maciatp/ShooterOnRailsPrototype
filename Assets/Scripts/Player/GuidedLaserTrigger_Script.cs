@@ -133,7 +133,10 @@ public class GuidedLaserTrigger_Script : MonoBehaviour
              billboardLocked = other.transform.parent.GetComponent<Billboard_Script>();
         }
 
-        if ((isObjectLocked == false) && (((other.tag == "Enemy") && (other.gameObject.GetComponent<EnemyHealth_Script>().isShotDown == false)) || (other.tag == "SpecialBox") || ((other.tag == "Button") && (other.gameObject.GetComponent<Button_Script>().isButtonActivated == false)) || ((other.tag == "Button") && (other.gameObject.GetComponent<Button_Script>().isButtonLockableWhenActivated == true)) || ((other.tag == "BillBoard") && (billboardLocked.isBillBoardActivated != true))))
+        if ((isObjectLocked == false) && (((other.tag == "Enemy") && (other.gameObject.GetComponent<EnemyHealth_Script>().isShotDown == false)) 
+            || (other.tag == "SpecialBox") || ((other.tag == "Button") && (other.gameObject.GetComponent<Button_Script>().IsButtonActivated == false)) 
+            || ((other.tag == "Button") && (other.gameObject.GetComponent<Button_Script>().IsButtonLockableWhenActivated == true)) 
+            || ((other.tag == "BillBoard") && (billboardLocked.isBillBoardActivated != true))))
         {
             LockObject(other);
             
