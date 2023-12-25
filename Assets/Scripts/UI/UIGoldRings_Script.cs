@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class UIGoldRings_Script : MonoBehaviour
 {
-    public Animator goldring1;
-    public Animator goldring2;
-    public Animator goldring3;
+    Animator goldring1;
+    Animator goldring2;
+    Animator goldring3;
 
     
 
@@ -15,9 +15,9 @@ public class UIGoldRings_Script : MonoBehaviour
 
     private void Awake()
     {
-        goldring1 = this.gameObject.transform.GetChild(0).gameObject.GetComponent<Animator>();
-        goldring2 = this.gameObject.transform.GetChild(1).gameObject.GetComponent<Animator>();
-        goldring3 = this.gameObject.transform.GetChild(2).gameObject.GetComponent<Animator>();
+        goldring1 = gameObject.transform.GetChild(0).gameObject.GetComponent<Animator>();
+        goldring2 = gameObject.transform.GetChild(1).gameObject.GetComponent<Animator>();
+        goldring3 = gameObject.transform.GetChild(2).gameObject.GetComponent<Animator>();
 
     }
    
