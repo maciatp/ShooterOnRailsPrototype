@@ -85,7 +85,7 @@ public class TrackChanger_Trigger_Script : MonoBehaviour
 
                 //DESACTIVADO MIENTRAS TESTEO RAILCHANGER. AÑADIR NEXT TRACK DEL ARRAY
                 //GameObject.Find("GameplayPlane").gameObject.GetComponent<RailChanger_Script>().ChangeTrack(this.gameObject.transform.parent.gameObject.GetComponent<CinemachineSmoothPath>());
-                GameObject.Find("GameplayPlane").gameObject.GetComponent<RailChanger_Script>().ChangeExtraTrack();
+                GameObject.Find("GameplayPlane").gameObject.GetComponent<TrackManager>().ChangeExtraTrack();
                 DisableTrigger();
             }
             else if (this.gameObject.transform.parent.name == "DollyTrack_Changer_Trigger")
@@ -103,7 +103,7 @@ public class TrackChanger_Trigger_Script : MonoBehaviour
                 Debug.Log("Casi he cambiado de carril");
                 if(currentTriggersActivated == triggersToActivate.Count)
                 {
-                    GameObject.Find("GameplayPlane").gameObject.GetComponent<RailChanger_Script>().ChangeExtraTrack();
+                    GameObject.Find("GameplayPlane").gameObject.GetComponent<TrackManager>().ChangeExtraTrack();
                     DisableTrigger();
                     Debug.Log("He Cambiado de carril");
 
