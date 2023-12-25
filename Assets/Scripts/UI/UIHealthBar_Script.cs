@@ -5,49 +5,45 @@ using UnityEngine.UI;
 
 public class UIHealthBar_Script : MonoBehaviour
 {
-    [Header("Bools")]
-    [SerializeField] bool isBarExtraSize = false;
+    
+    bool isBarExtraSize = false;
     bool healthbarMustGrow = false;
-    bool mustDeltaBarMove = false;
     bool healthIncreasing = false;
     bool healthDecreasing = false;
     
-
-    [Space]
-    [Header("Public references")]
-    [SerializeField] Transform healthBar;
-    [SerializeField] Transform deltaBar;
+    
+    Vector3 barNormalSize;
+    Vector3 barExtraSize;
     PlayerHealth_Script playerHealth_Script_;
 
-    [SerializeField] Image healthBarImage;
-    [SerializeField] Image deltaBarImage;
+    [Space]
+    [Header("Object references")]
+    [SerializeField] Transform healthBar;
+    [SerializeField] Transform deltaBar;
+    Image healthBarImage;
+    Image deltaBarImage;
 
     [Space]
-    [Header("Parameters")]
-    [SerializeField] Vector3 barNormalSize;
-    Vector3 barExtraSize;
+    [Header("Growth Parameters")]
     [SerializeField] float secondsWaitingToGrow = 2;
     [SerializeField] float barGrowVelocity = 2;
+    [SerializeField] float waitForScalingChildHealthBar = 0.5f; //wait to grow after event
 
-
-    [SerializeField] float changingColorSpeed = 2;
-    float floatLerpDeltaBar = 0;
+    [Space]
+    [Header("Color Parameters")]
+    [SerializeField] float changingColorSpeed = 2;    
     [SerializeField] float lerpVelocity = 1;
-    [SerializeField] float waitForScalingChildHealthBar = 0.5f;
+
     [Space]
     [SerializeField] Color lowHealthColor;
     [SerializeField] Color lowHealthColor2;
-    [Space]
-    float healthbarX;
-    float deltaBarX;
 
-
-    private void Awake()
-    {
-        playerHealth_Script_ = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth_Script>();
-    }
     void Start()
     {
+        playerHealth_Script_ = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth_Script>();
+        healthBarImage = healthBar.GetComponent<Image>();
+        deltaBarImage = deltaBar.GetComponent<Image>();
+
         barNormalSize = new Vector2(healthBar.localScale.x, 1);
         healthBar.localScale = new Vector3(playerHealth_Script_.CurrentHealth, healthBar.transform.localScale.y);
 
@@ -59,10 +55,6 @@ public class UIHealthBar_Script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        healthbarX = healthBar.localScale.x;
-        
-        deltaBarX = deltaBar.localScale.x;
-        
         if((healthBar.localScale.x > 75) && (healthBarImage.color != Color.cyan))
         {
             healthBarImage.color = Color.Lerp(healthBarImage.color, Color.cyan, Time.unscaledDeltaTime*3);
