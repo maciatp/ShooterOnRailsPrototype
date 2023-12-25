@@ -2182,13 +2182,13 @@ PrefabInstance:
     - target: {fileID: 3173809264590528392, guid: d08b0d07e6ecb44d1a734cb6aa5b54d4,
         type: 3}
       propertyPath: tracks.Array.size
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3173809264590528392, guid: d08b0d07e6ecb44d1a734cb6aa5b54d4,
         type: 3}
       propertyPath: tracks.Array.data[0]
       value: 
-      objectReference: {fileID: 1857561995}
+      objectReference: {fileID: 1255102379}
     - target: {fileID: 3173809264590528392, guid: d08b0d07e6ecb44d1a734cb6aa5b54d4,
         type: 3}
       propertyPath: tracks.Array.data[1]
@@ -17685,7 +17685,17 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2880898622547285061, guid: 392e1b93a53d7844d9bd0caa6c588fb0,
         type: 3}
+      propertyPath: hasToActivateMidChat
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2880898622547285061, guid: 392e1b93a53d7844d9bd0caa6c588fb0,
+        type: 3}
       propertyPath: chatFinishTriggersToActivate.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2880898622547285061, guid: 392e1b93a53d7844d9bd0caa6c588fb0,
+        type: 3}
+      propertyPath: activateChatTriggerAfterThisTriggerNumber
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2880898622547285061, guid: 392e1b93a53d7844d9bd0caa6c588fb0,
@@ -17708,6 +17718,11 @@ PrefabInstance:
       propertyPath: chatTriggersToActivate_During.Array.data[0]
       value: 
       objectReference: {fileID: 396363053}
+    - target: {fileID: 2880898622547285061, guid: 392e1b93a53d7844d9bd0caa6c588fb0,
+        type: 3}
+      propertyPath: activateChatTriggerAfterTheseTriggersCrossed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3595120318062334498, guid: 392e1b93a53d7844d9bd0caa6c588fb0,
         type: 3}
       propertyPath: m_RootOrder
