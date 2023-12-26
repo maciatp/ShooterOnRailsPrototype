@@ -70,6 +70,8 @@ public class UIOverHeatingBar_Script : MonoBehaviour
        
     }
 
+
+    //SIN USAR, por ahora
     public void IncreaseBarSize(float overHeatingAddedPoints)
     {
         if (childOverHeatingBar.localScale.x < overHeatingBarBarNormalSize.x)
@@ -89,11 +91,7 @@ public class UIOverHeatingBar_Script : MonoBehaviour
         {
             childOverHeatingBar.localScale -= new Vector3(overHeatingDepletedPoints, 0f);
         }
-       /* if (overHeatingBar.localScale.x < 0)
-        {
-            overHeatingBar.localScale = new Vector3(0, 1);
-        }
-        */
+      
 
     }
 }
