@@ -1,55 +1,50 @@
-﻿using System.Collections;
+﻿using Newtonsoft.Json.Serialization;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class DoorHouse_Script : MonoBehaviour
 {
     [Header("Paramaters")]
-    public bool isBombHouse = false;
+    [SerializeField] int damageToOpen = 3;
+    [SerializeField] bool isBombHouse = false;
+    [SerializeField] int objectSelector;
+    [Tooltip("-1:Random, -2:none")]
+    [SerializeField] List<GameObject> powerUpsList;
    
-    public bool isDoorClosed = true;
-    public int damageToOpen = 3;
-    public int currentDamage = 0;
+    bool isDoorClosed = true;
+    int currentDamage = 0;
 
     [Header("References")]
-    public Animator doorHouseAnimator;
-    public BoxCollider leftDoorCollider;
-    public BoxCollider rightDoorCollider;
-    public Transform objectSpawnLocation;
-    public int objectSelector;
-    public GameObject laserPowerUp;
-    public GameObject bombPowerUp;
-    public GameObject silverRing;
-    public GameObject goldRing;
+    
+    [SerializeField] BoxCollider leftDoorCollider;
+    [SerializeField] BoxCollider rightDoorCollider;
+    [SerializeField] Transform objectSpawnLocation;
+
+    
 
     [Header("Script References")]
-    public Button_Script button_Script_;
-    public SpriteRenderer bombSprite;
-    public ScoreManager_Script scoreManager_Script_;
+    Button_Script button_Script_;
+   
+    
+    
+    
 
    
 
-    private void Awake()
-    {
-        objectSpawnLocation = this.transform.GetChild(3).gameObject.transform;// donde va a spawnearse el objeto
-        scoreManager_Script_ = GameObject.Find("ScoreManager").GetComponent<ScoreManager_Script>();
-        leftDoorCollider = this.gameObject.transform.GetChild(1).GetChild(0).GetComponent<BoxCollider>();
-        rightDoorCollider = this.gameObject.transform.GetChild(2).GetChild(0).GetComponent<BoxCollider>();
-    }
+    
     // Start is called before the first frame update
     void Start()
     {
-        doorHouseAnimator = this.GetComponent<Animator>();
+        
+        
 
 
         if (this.gameObject.name == "DoorHouse_Button")
         {
             button_Script_ = this.transform.GetChild(3).GetComponent<Button_Script>();
         }
-       if(this.gameObject.name == "DoorHouse_Bomb")
-        {
-            bombSprite = this.gameObject.GetComponentInChildren<SpriteRenderer>();
-        }
+       
         
     }
 
@@ -58,7 +53,7 @@ public class DoorHouse_Script : MonoBehaviour
     public void ReceiveDamage()
     {
         currentDamage += 1;
-        doorHouseAnimator.Play("ReceiveDamageDoor");
+        GetComponent<Animator>().Play("ReceiveDamageDoor");
         if (currentDamage >= damageToOpen)
         {
             OpenDoor();
@@ -69,77 +64,42 @@ public class DoorHouse_Script : MonoBehaviour
 
     void SpawnObject()
     {
-        if (objectSelector == 0) // EN 0 ES ALEATORIO
+        if (objectSelector == -1) // EN -1 ES ALEATORIO
         {
             
-            int i = Random.Range(1, 4);
-            if (i == 1)
-            {
-                Instantiate(laserPowerUp, objectSpawnLocation.transform.position, new Quaternion(0, 0, 0, 0), null);
-            }
-            else if (i == 2)
-            {
-                Instantiate(bombPowerUp, objectSpawnLocation.transform.position, new Quaternion(0, 0, 0, 0), null);
-            }
-            else if (i == 3)
-            {
-                Instantiate(silverRing, objectSpawnLocation.transform.position, new Quaternion(0, 0, 0, 0), null);
-            }
-            else if (i == 4)
-            {
-                Instantiate(goldRing, objectSpawnLocation.transform.position, new Quaternion(0, 0, 0, 0), null);
-            }
+            int i = Random.Range(0, powerUpsList.Count-1);
+            Instantiate(powerUpsList[i], objectSpawnLocation.transform.position, new Quaternion(0, 0, 0, 0), null);
         }
-        else if(objectSelector == -1)
+        else if(objectSelector == -2) // -2 NO INSTANCIA NADA
         {
             //NO INSTANCIAR NINGÚN OBJETO
         }
-        else if (objectSelector == 1)
+        else
         {
-           
-                Instantiate(laserPowerUp, objectSpawnLocation.transform.position, new Quaternion(0, 0, 0, 0), null);
-            
-           
+            Instantiate(powerUpsList[objectSelector], objectSpawnLocation.transform.position, new Quaternion(0, 0, 0, 0), null);
         }
-        else if (objectSelector == 2)
-        {
-
-            Instantiate(bombPowerUp, objectSpawnLocation.transform.position, new Quaternion(0, 0, 0, 0), null);
-
-
-        }
-       else if (objectSelector == 3)
-        {
-
-            Instantiate(silverRing, objectSpawnLocation.transform.position, new Quaternion(0, 0, 0, 0), null);
-
-
-        }
-       else if (objectSelector == 4)
-        {
-
-            Instantiate(goldRing, objectSpawnLocation.transform.position, new Quaternion(0, 0, 0, 0), null);
-
-
-        }
-    }
+    }      
 
     public void OpenDoor()
     {
        if(isDoorClosed == true)
         {
-            Destroy(rightDoorCollider);
-            Destroy(leftDoorCollider);
-            SpawnObject();
-            if (this.gameObject.name == "DoorHouse_Bomb")
-            {
-                bombSprite.enabled = false;
-            }
+            Animator doorHouseAnimator = GetComponent<Animator>();
 
             isDoorClosed = false;
+            rightDoorCollider.enabled = false;
+            leftDoorCollider.enabled = false;
             doorHouseAnimator.SetBool("isDoorClosed", false);
             doorHouseAnimator.Play("Opening");
-            scoreManager_Script_.AddHits(1);
+            GameObject.Find("ScoreManager").GetComponent<ScoreManager_Script>().AddHits(1);
+            SpawnObject();
+
+            if (gameObject.name == "DoorHouse_Bomb")
+            {
+                //DESACTIVO SPRITE DE BOMBA
+                GetComponentInChildren<SpriteRenderer>().enabled = false;
+            }
+
         }
         
         
@@ -173,12 +133,12 @@ public class DoorHouse_Script : MonoBehaviour
              
         else if ((this.gameObject.name == "DoorHouse_Bomb") && (collision.gameObject.tag == "Bomb"))// SÓLO FUNCIONA SI SE LLAMA EXACTAMENTE IGUAL (CON CLONE INCLUIDO)
         {
-            bombSprite.enabled = false;
+            
             if (isDoorClosed == true)
             {
                 OpenDoor();
             }
-            // Debug.Log("la EXPLOSION DE LA BOMBA ha abierto la puerta");
+            
         }
     }
 
