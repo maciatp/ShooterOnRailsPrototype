@@ -5,45 +5,44 @@ using UnityEngine.UI;
 
 public class UIBossHealth_Script : MonoBehaviour
 {
-    public List<Image> bossIndicators = new List<Image>();
-    public Image currentDamageImage;
-    public TMPro.TextMeshProUGUI bossText;
+    bool isReady = false;
+    bool mustBeVisible = false;
+    [Header("Boss UI Parts")]
+    [SerializeField] List<Image> bossIndicators = new List<Image>();
+    [SerializeField] Image currentDamageImage;
+    [SerializeField] TMPro.TextMeshProUGUI bossText;
+    [Space]
+    [Header("Boss UI Parameters")]
+    [SerializeField] float timeToBeActive = 1f;
+    [SerializeField] float fillingSpeed = 1.2f;
+    [SerializeField] Color orange = new Color(1, 0.5927993f, 0, 1); //ORANGE
+    [SerializeField] Color fullHealthColor;
+    [SerializeField] float lerpMultiplier = 2;
 
-    public float timeToBeActive = 1f;
-    public float fillingSpeed = 1.2f;
-    public bool mustBeVisible = false;
-    public bool isReady = false;
-    public Color orange = new Color(1, 0.5927993f, 0, 1); //ORANGE
-    public Color fullHealthColor;
-    public float lerpMultiplier = 2;
+    
+    BossHealth_Script bossHealth_Script_;
 
-    public string coroutineName;
-    public BossHealth_Script bossHealth_Script_;
+    public BossHealth_Script BossHealthScript_
+    { 
+        get { return bossHealth_Script_; } 
+        set { bossHealth_Script_ = value; }
+    }
 
 
 
     private void Awake()
     {
-        bossText = this.transform.GetChild(3).gameObject.GetComponent<TMPro.TextMeshProUGUI>();
+        bossText = transform.GetChild(3).gameObject.GetComponent<TMPro.TextMeshProUGUI>();
         bossText.color = new Color(0, 0, 0, 0);
-
-        currentDamageImage = this.transform.GetChild(2).GetComponent<Image>();
+        currentDamageImage = transform.GetChild(2).GetComponent<Image>();
         foreach (Image bossIndicator_GO in bossIndicators)
         {
            Image _bossIndicator = bossIndicator_GO.gameObject.GetComponent<Image>();
             _bossIndicator.fillAmount = 0;
         }
-
         bossIndicators[1].color = fullHealthColor;
-
-      
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -85,18 +84,20 @@ public class UIBossHealth_Script : MonoBehaviour
         }
     }
 
-    //public void EnableBossUIHealth()
-    //{
+    public void EnableBossUIHealth()
+    {
 
-        IEnumerator EnableBossUIHealthCoroutine()
-        {
-            yield return new WaitForSecondsRealtime(timeToBeActive);
+        StartCoroutine(EnableBossUIHealthCoroutine());   
 
-            mustBeVisible = true;
-        }
 
-        
-   // }
+    }
+
+    IEnumerator EnableBossUIHealthCoroutine()
+    {
+        yield return new WaitForSecondsRealtime(timeToBeActive);
+
+        mustBeVisible = true;
+    }
 
 
     public void FillUIBossHealth()
