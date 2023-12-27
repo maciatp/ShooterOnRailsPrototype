@@ -1,32 +1,31 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.Remoting.Messaging;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class UIArrows_Script : MonoBehaviour
 {
-    public GameObject arrow_Right;
-    public GameObject arrow_Left;
-    public GameObject arrow_Up;
-    public GameObject arrow_Down;
-
-    [SerializeField]
+    [Header("UI Arrows")]
+    [SerializeField] GameObject arrow_Right;
+    [SerializeField] GameObject arrow_Left;
+    [SerializeField] GameObject arrow_Up;
+    [SerializeField] GameObject arrow_Down;
+    [SerializeField] GameObject UIChooseWayArrows;
+    [Tooltip("Zona de detección del player")]
+    [SerializeField] Vector2 arrowThreshold = new Vector2(25,12.2f); // Zona de detección 
+    
     private bool isArrowRightEnabled = false;
-    [SerializeField]
+    
     private bool isArrowLeftEnabled = false;
-    [SerializeField]
+    
     private bool isArrowUpEnabled = false;
-    [SerializeField]
+    
     private bool isArrowDownEnabled = false;
 
-    public PlayerMovement_Script playerMovement_Script_;
 
-    public GameObject UIChooseWayArrows;
 
-    //public Animator arrowsAnimator;
-
-    [SerializeField]
-    private Vector2 arrowThreshold = new Vector2(25,12.2f);
+    PlayerMovement_Script playerMovement_Script_;
 
     private void Awake()
     {
@@ -34,14 +33,11 @@ public class UIArrows_Script : MonoBehaviour
         playerMovement_Script_ = GameObject.Find("Player").gameObject.GetComponent<PlayerMovement_Script>();
        
 
-        arrow_Right = this.gameObject.transform.GetChild(0).gameObject;
-        arrow_Left = this.gameObject.transform.GetChild(1).gameObject;
-        arrow_Up = this.gameObject.transform.GetChild(2).gameObject;
-        arrow_Down = this.gameObject.transform.GetChild(3).gameObject;
+        
 
         //arrowsAnimator = arrow_Right.gameObject.GetComponent<Animator>();
 
-        UIChooseWayArrows = this.transform.parent.Find("UIChooseWayArrows").gameObject;
+        
 
     }
 
@@ -116,14 +112,11 @@ public class UIArrows_Script : MonoBehaviour
     {
         isArrowRightEnabled = true;
         arrow_Right.SetActive(true);
-        //arrowsAnimator.Play("Arrow_Idle_anim");
-        //Debug.Log("He activado la flecha derecha");
     }
 
     public void DisableRightArrow()
     {
         isArrowRightEnabled = false;
-        //arrowsAnimator.StopPlayback();
         arrow_Right.SetActive(false);
     }
     //LEFT ARROW
