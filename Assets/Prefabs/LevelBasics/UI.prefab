@@ -169,13 +169,9 @@ MonoBehaviour:
   bossText: {fileID: 4700289589642785990}
   timeToBeActive: 0.5
   fillingSpeed: 1.2
-  mustBeVisible: 0
-  isReady: 0
   orange: {r: 1, g: 0.205793, b: 0, a: 1}
   fullHealthColor: {r: 0.9254902, g: 0.4451259, b: 0.0745098, a: 1}
   lerpMultiplier: 2
-  coroutineName: EnableBossUIHealthCoroutine
-  bossHealth_Script_: {fileID: 0}
 --- !u!1 &814133559
 GameObject:
   m_ObjectHideFlags: 0
@@ -1824,10 +1820,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e451937262ebf074ab4078cb2d64411f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wingman: {fileID: 0}
-  uIWingmanIndicator_Animator: {fileID: 8210247783586614295}
   offset: {x: 0, y: 0.1}
-  player_GO: {fileID: 0}
 --- !u!1 &1504157346615457870
 GameObject:
   m_ObjectHideFlags: 0
@@ -2221,10 +2214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e451937262ebf074ab4078cb2d64411f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wingman: {fileID: 0}
-  uIWingmanIndicator_Animator: {fileID: 7100529523088990961}
   offset: {x: 0, y: 0.1}
-  player_GO: {fileID: 0}
 --- !u!1 &2325374317886560104
 GameObject:
   m_ObjectHideFlags: 0
@@ -5352,10 +5342,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e451937262ebf074ab4078cb2d64411f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wingman: {fileID: 0}
-  uIWingmanIndicator_Animator: {fileID: 6304016070525752076}
   offset: {x: 0, y: 0.1}
-  player_GO: {fileID: 0}
 --- !u!1 &3883286767703087624
 GameObject:
   m_ObjectHideFlags: 0
@@ -6690,9 +6677,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inDialogue: 0
   timeToDisableChat: 1.12
-  chatImageAnimator: {fileID: 6921272863488988464}
-  animatedChatText: {fileID: 0}
-  audioSource: {fileID: 0}
+  chatImageAnimator: {fileID: 2336883372111013606}
+  animatedChatText: {fileID: 4233313049417201140}
+  audioSource: {fileID: 7978642100713990330}
 --- !u!82 &7978642100713990330
 AudioSource:
   m_ObjectHideFlags: 0
