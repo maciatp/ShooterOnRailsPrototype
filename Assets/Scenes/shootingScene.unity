@@ -6901,6 +6901,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6512077159812604302, guid: d08b0d07e6ecb44d1a734cb6aa5b54d4,
+        type: 3}
+      propertyPath: PaintMirillaTimeSpan
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 6512077160715364459, guid: d08b0d07e6ecb44d1a734cb6aa5b54d4,
         type: 3}
       propertyPath: laserType
