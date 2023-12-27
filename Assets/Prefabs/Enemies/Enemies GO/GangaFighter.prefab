@@ -433,6 +433,7 @@ GameObject:
   - component: {fileID: 541856641209179249}
   - component: {fileID: 362370376600871975}
   - component: {fileID: 1113059695686805363}
+  - component: {fileID: 6944932965582852671}
   m_Layer: 12
   m_Name: GangaFighter
   m_TagString: Enemy
@@ -486,6 +487,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offset: {x: 0, y: 0, z: 0}
+--- !u!114 &6944932965582852671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6444105151026067458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62f76339073d9a14eb6a667811b62d0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mustFollowTrack: 1
+  speed: 30
 --- !u!1 &6810945656421125794
 GameObject:
   m_ObjectHideFlags: 0
