@@ -12,8 +12,7 @@ public class Mirillas_Script : MonoBehaviour
     
     [Space]
     [Header("Parameters")]
-    float conteoToPaintMirilla = 0;
-    [SerializeField] float PaintMirillaTimeSpan = 0.2f;
+    
     [Space]
     [Header("Animation")]
     Animator mirilla_Animator;
@@ -47,39 +46,34 @@ public class Mirillas_Script : MonoBehaviour
     {
 
         
-        if((this.gameObject.name == "Mirilla_Cerca") && (playerShooting_Script_.IsLaserCharging == true))
-        {
-            conteoToPaintMirilla += Time.deltaTime;
-
-            if ((conteoToPaintMirilla > PaintMirillaTimeSpan) && (mirillaCerca.material.color != Color.yellow))
+        if((this.gameObject.name == "Mirilla_Cerca") && (playerShooting_Script_.IsChargedLaserInstanced == true))
+        {            
+            if (mirillaCerca.material.color != Color.yellow)
             {
-                MakeNEARYellowWhileCharging();
-                conteoToPaintMirilla = 0;
+                MakeNEARYellowWhenCharged();
+                
             }
             
         }
         if ((this.gameObject.name == "Mirilla_Cerca") && (playerShooting_Script_.IsLaserCharging == false) && (playerShooting_Script_.IsLaserCharged == false))
         {
-            ReturnToWhiteNear();
-            conteoToPaintMirilla = 0;
+            ReturnToWhiteNear();            
         }
-        if ((this.gameObject.name == "Mirilla_Lejos") && (playerShooting_Script_.IsLaserCharging == true))
+        if ((this.gameObject.name == "Mirilla_Lejos") && (playerShooting_Script_.IsChargedLaserInstanced == true))
         {
             MakeREDOnceCharged();
-            
-
         }
-        /*
-        if ((this.gameObject.name == "Mirilla_Lejos") && (playerShooting_Script_. == false) )
+
+        if ((this.gameObject.name == "Mirilla_Lejos") && (playerShooting_Script_.IsLaserCharged == false))
         {
             ReturnToDefaultFar();
-            
+
         }
-        */
+
 
     }
 
-    public void MakeNEARYellowWhileCharging()
+    public void MakeNEARYellowWhenCharged()
     {
         mirillaCerca.material.color = Color.yellow;
     }
