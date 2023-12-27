@@ -4,12 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 public class UIWingmanIndicator_Script : MonoBehaviour
 {
-    public GameObject wingman;
-    public Animator uIWingmanIndicator_Animator;
-    //public Image wingmanIndicatorImage;
-    //public TMPro.TextMeshProUGUI wingmanIndicatorText;
-    public Vector2 offset;
-    public GameObject player_GO;
+    GameObject wingman;
+    Animator uIWingmanIndicator_Animator;
+    GameObject player_GO;
+
+    [SerializeField] Vector2 offset;
 
     private void Awake()
     {
@@ -27,7 +26,7 @@ public class UIWingmanIndicator_Script : MonoBehaviour
         }
 
         
-        uIWingmanIndicator_Animator = gameObject.GetComponent<Animator>();
+        uIWingmanIndicator_Animator = GetComponent<Animator>();
         player_GO = GameObject.FindGameObjectWithTag("Player").gameObject;
 
        
