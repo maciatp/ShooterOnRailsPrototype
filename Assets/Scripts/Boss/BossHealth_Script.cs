@@ -5,99 +5,137 @@ using UnityEngine;
 public class BossHealth_Script : MonoBehaviour
 {
 
-    public bool isBossDead = false;
-    public float bossHealth = 100;
-    public float maxBossHealth;
-    public int partsDestroyed = 0;
-    public int hitsWillAdd = 10;
-
-    public bool isRightPartDestroyed = false;
-    public bool isLeftUpPartDestroyed = false;
-    public bool isLeftDownPartDestroyed = false;
-
-    public GameObject waterExplosion;
-    public GameObject bigExplosion;
-
-
-    public BoxCollider bossCollider;
-    public BoxCollider colliderRight;
-    public BoxCollider colliderLeft_Up;
-    public BoxCollider colliderLeft_Down;
-
-
-    public Transform leftSpawn_UP;
-    public Transform leftSpawn_DOWN;
-    public Transform rightSpawn;
-
-    public GameObject ganga;
-    public GameObject dragon;
-    private GameObject enemyInstanced;
-
-    public List<Animator> animators = new List<Animator>();
-
+    bool isBossDead = false;
+    bool isRightPartDestroyed = false;
+    bool isLeftUpPartDestroyed = false;
+    bool isLeftDownPartDestroyed = false;
+    int partsDestroyed = 0;
+    float timeToExplodeCounter = 0;
     
-    public UIBossHealth_Script uIBossHealth_Script_;
-    public AudioSource bossAudioSource;
+    
+    UIBossHealth_Script uIBossHealth_Script_;
+
+
+    [Header("Boss Health Parameters")]
+    [SerializeField] float bossHealth = 100;
+    [SerializeField] int hitsWillAdd = 10;
+    [SerializeField] float timeToExplodeAfterDead = 5f;
+
+    [Space]
+    [Header("Boss Explosion Prefab References")]
+    [SerializeField] GameObject waterExplosion;
+    [SerializeField] GameObject bigExplosion;
+
+    [Space]
+    [Header("Boss Parts References")]
+    [SerializeField] BoxCollider bossMainBodyCollider;
+    [SerializeField] BoxCollider colliderPartRight;
+    [SerializeField] BoxCollider colliderPartLeft_Up;
+    [SerializeField] BoxCollider colliderPartLeft_Down;
+    [Tooltip("Para que se vuelva rojo al daño")]
+    [SerializeField] List<Animator> animators = new List<Animator>();
+
+
+    [Space]
+    [Header("Enemy Spawn Locations")]
+    [SerializeField] Transform leftSpawn_UP;
+    [SerializeField] Transform leftSpawn_DOWN;
+    [SerializeField] Transform rightSpawn;
+
+    [Space]
+    [Header("Enemy Prefab References")]
+    [SerializeField] List<GameObject> enemiesList = new List<GameObject>();
+    
+    
 
     [Header("Sound")]
-    public AudioClip bossExplosion_sound;
+    [SerializeField] AudioSource bossAudioSource;
+    [SerializeField] AudioClip bossExplosion_sound;
 
+
+    public int PartsDestroyed
+    {
+        get { return partsDestroyed; }
+        set { partsDestroyed = value; }
+    }
+
+    public bool RightPartDestroyed
+    {
+        get { return isRightPartDestroyed; }
+        set { isRightPartDestroyed = value; }
+    }
+    public bool LeftDownPartDestroyed
+    {
+        get { return isLeftDownPartDestroyed; }
+        set { isLeftDownPartDestroyed = value; }
+    }
+    public bool LeftUpPartDestroyed
+    {
+        get { return isLeftUpPartDestroyed; }
+        set { isLeftUpPartDestroyed = value; }
+    }
 
     private void Awake()
     {
-        maxBossHealth = bossHealth;
-        bossCollider = this.gameObject.GetComponent<BoxCollider>();
+        
+        bossMainBodyCollider = gameObject.GetComponent<BoxCollider>();
 
         foreach (Animator animator in animators)
         {
             Animator _animator = animator.gameObject.GetComponent<Animator>();
         }
 
-        uIBossHealth_Script_ = this.gameObject.transform.parent.GetComponent<BossMovement_Script>().uIBossHealth_Script_.GetComponent<UIBossHealth_Script>();
-        uIBossHealth_Script_.bossHealth_Script_ = this.gameObject.GetComponent<BossHealth_Script>();
-        bossAudioSource = this.gameObject.GetComponent<AudioSource>();
+        uIBossHealth_Script_ = gameObject.GetComponentInParent<BossMovement_Script>().UIBossHealthScript.GetComponent<UIBossHealth_Script>();
+        uIBossHealth_Script_.BossHealthScript_ = GetComponent<BossHealth_Script>();
+        bossAudioSource = gameObject.GetComponent<AudioSource>();
     }
 
-    // Start is called before the first frame update
-    void Start()
+    private void Update()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if(isBossDead)
+        {
+            timeToExplodeCounter += Time.deltaTime;
+            if(timeToExplodeCounter >= timeToExplodeAfterDead)
+            {
+                //Explode
+                ExplodeBoss();
+            }
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
 
-        //FALTA AÑADIR TODO EL ARMAMENTO PARA DAÑO
+        //TODO: FALTA AÑADIR TODO EL ARMAMENTO PARA DAÑO (Bombas, charged sphere, explosions...)
         if (other.tag == "LaserBeam")
         {
             DepleteBossHealth(other.gameObject.GetComponent<Beam_Script>().damagePoints);
             
-            Debug.Log(this.gameObject.name);
+            
         }
         if((other.tag == "Water") && (isBossDead == true))
         {
             Debug.Log("He tocado agua");
             Instantiate(waterExplosion, this.transform.position, new Quaternion(0, 0, 0, 0), null);
-            
-            GameObject bigExplosion_ = Instantiate(bigExplosion, this.transform.position, new Quaternion(0, 0, 0, 0), null) as GameObject;
-            bigExplosion_.transform.localScale *= 5;
-            var mainParticles = bigExplosion_.GetComponent<ParticleSystem>().main;
-            mainParticles.simulationSpeed = 0.5f;
-            bossAudioSource.clip = bossExplosion_sound;
-            bossAudioSource.Play();
-            Destroy(this.gameObject.transform.parent);
+
+            ExplodeBoss();
         }
 
     }
-    
 
-   public void DepleteBossHealth(float damage)
+    private void ExplodeBoss()
+    {
+        GameObject.Find("UIBombEffectPanel").GetComponent<UIBombEffect_Script>().PlayUIBombAnimation(); //TODO: CAMBIAR A SU PROPIO EFECTO
+        GameObject bigExplosion_ = Instantiate(bigExplosion, this.transform.position, new Quaternion(0, 0, 0, 0), null) as GameObject;
+        bigExplosion_.transform.localScale *= 5;
+        var mainParticles = bigExplosion_.GetComponent<ParticleSystem>().main;
+        mainParticles.simulationSpeed = 0.5f;
+        bossAudioSource.clip = bossExplosion_sound;
+        bossAudioSource.Play();
+        Destroy(this.gameObject.transform.parent.gameObject);
+    }
+
+    public void DepleteBossHealth(float damage)
     {
         if(bossHealth > 0 )
         {
@@ -128,10 +166,11 @@ public class BossHealth_Script : MonoBehaviour
     //MUERTE BOSS
     private void KillBoss()
     {
+        //Suelto el boss del player y que explote al impactar contra el suelo o tras un tiempo
         bossHealth = 0;
         isBossDead = true;
         GameObject.Find("ScoreManager").GetComponent<ScoreManager_Script>().AddHits(hitsWillAdd);
-        GameObject.Find("UIBombEffectPanel").GetComponent<UIBombEffect_Script>().PlayUIBombAnimation();
+        
         this.GetComponent<Animator>().StopPlayback();
         Camera.main.gameObject.GetComponent<MusicSelector_Script>().StopMusic();
         this.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
@@ -151,7 +190,7 @@ public class BossHealth_Script : MonoBehaviour
     public void ActivateBossCollider()
     {
         //this.GetComponent<BoxCollider>().enabled = true;
-        bossCollider.enabled = true;
+        bossMainBodyCollider.enabled = true;
     }
 
 
@@ -162,18 +201,14 @@ public class BossHealth_Script : MonoBehaviour
     void SpawnEnemiesLeft()
     {
         //SELECCIÓN DE ENEMIGOS
-        int e = Random.Range(0, 2);
+        int e = Random.Range(0, enemiesList.Count);
         // e = 0 = gangaFighter, e = 1 = dragonFighter
 
         if (e == 0)
         {
-
-            //Vector3 enemySpawnPos;
-
             int i = Random.Range(0, 2);
-
             // i = 0 = leftSpawnUP, i = 1 = leftSpawnDown,
-            Debug.Log(i);
+            
             
             if(isLeftUpPartDestroyed == true)
             {
@@ -184,33 +219,23 @@ public class BossHealth_Script : MonoBehaviour
             {
                 i = 0;
             }
-            Debug.Log(i);
+           
             if (i == 0)
             {
                 if (isLeftUpPartDestroyed == false)
                 {
-                    //PRUEBAS PARA ALIGERAR CÓDIGO
-                    //enemySpawnPos = leftSpawn_UP.transform.position;
-
-                    enemyInstanced = (GameObject)Instantiate(ganga, leftSpawn_UP.transform.position, leftSpawn_UP.transform.rotation, null);
-                    enemyInstanced.GetComponent<EnemyMovement_Script>().mustFollowRoute = false;
+                   GameObject enemyInstanced = (GameObject)Instantiate(enemiesList[e], leftSpawn_UP.transform.position, leftSpawn_UP.transform.rotation, null);
+                    enemyInstanced.GetComponent<EnemyMovementManager>().MustFollowTrack = false;
                 }
             }
             else //if (i == 1)
             {
                 if (isLeftDownPartDestroyed == false)
                 {
-                    //PRUEBAS PARA ALIGERAR CÓDIGO
-                    //enemySpawnPos = leftSpawn_DOWN.transform.position;
-
-                    enemyInstanced = (GameObject)Instantiate(ganga, leftSpawn_DOWN.transform.position, leftSpawn_DOWN.transform.rotation, null);
-                    enemyInstanced.GetComponent<EnemyMovement_Script>().mustFollowRoute = false;
+                    GameObject enemyInstanced = (GameObject)Instantiate(enemiesList[e], leftSpawn_DOWN.transform.position, leftSpawn_DOWN.transform.rotation, null);
+                    enemyInstanced.GetComponent<EnemyMovementManager>().MustFollowTrack = false;
                 }
             }
-
-            //PRUEBAS PARA ALIGERAR CÓDIGO
-            //enemyInstanced = (GameObject)Instantiate(ganga, enemySpawnPos, leftSpawn_UP.transform.rotation, null);
-            //enemyInstanced.GetComponent<EnemyMovement_Script>().mustFollowRoute = false;
 
         }
         else //if (e == 1)
@@ -224,22 +249,16 @@ public class BossHealth_Script : MonoBehaviour
             {
                 if (isLeftUpPartDestroyed == false)
                 {
-                    //PRUEBAS PARA ALIGERAR CÓDIGO
-                    //enemySpawnPos = leftSpawn_UP.transform.position;
-
-                    enemyInstanced = (GameObject)Instantiate(dragon, leftSpawn_UP.transform.position, leftSpawn_UP.transform.rotation, null);
-                    enemyInstanced.GetComponent<EnemyMovement_Script>().mustFollowRoute = false;
+                    GameObject enemyInstanced = (GameObject)Instantiate(enemiesList[e], leftSpawn_UP.transform.position, leftSpawn_UP.transform.rotation, null);
+                    enemyInstanced.GetComponent<EnemyMovementManager>().MustFollowTrack = false;
                 }
             }
             else //if (i == 1)
             {
                 if (isLeftDownPartDestroyed == false)
                 {
-                    //PRUEBAS PARA ALIGERAR CÓDIGO
-                    //enemySpawnPos = leftSpawn_DOWN.transform.position;
-
-                    enemyInstanced = (GameObject)Instantiate(dragon, leftSpawn_DOWN.transform.position, leftSpawn_DOWN.transform.rotation, null);
-                    enemyInstanced.GetComponent<EnemyMovement_Script>().mustFollowRoute = false;
+                    GameObject enemyInstanced = (GameObject)Instantiate(enemiesList[e], leftSpawn_DOWN.transform.position, leftSpawn_DOWN.transform.rotation, null);
+                    enemyInstanced.GetComponent<EnemyMovementManager>().MustFollowTrack = false;
                 }
             }
 
@@ -257,72 +276,47 @@ public class BossHealth_Script : MonoBehaviour
             //SELECCIÓN DE ENEMIGOS
             int e = Random.Range(0, 2);
             // e = 0 = gangaFighter, e = 1 = dragonFighter
-            if (e == 0)
-            {
-
-                enemyInstanced = (GameObject)Instantiate(ganga, rightSpawn.transform.position, rightSpawn.transform.rotation, null);
-                enemyInstanced.GetComponent<EnemyMovement_Script>().mustFollowRoute = false;
-
-            }
-            else if (e == 1)
-            {
-
-                enemyInstanced = (GameObject)Instantiate(dragon, rightSpawn.transform.position, rightSpawn.transform.rotation, null);
-                enemyInstanced.GetComponent<EnemyMovement_Script>().mustFollowRoute = false;
-
-            }
+            GameObject enemyInstanced = (GameObject)Instantiate(enemiesList[e], rightSpawn.transform.position, rightSpawn.transform.rotation, null);
+            enemyInstanced.GetComponent<EnemyMovementManager>().MustFollowTrack = false;
         }
-
-
-
-
     }
 
 
     public void EnableRightCollider()
     {
-        if(colliderRight != null)
+        if(colliderPartRight != null)
         {
-            colliderRight.enabled = true;
-        }
-        //Debug.Log("activo collider DERECha");
+            colliderPartRight.enabled = true;
+        }       
     }
     public void DisableRightCollider()
     {
-        if(colliderRight != null)
+        if(colliderPartRight != null)
         {
-            colliderRight.enabled = false;
-            
+            colliderPartRight.enabled = false;            
         }
-        //Debug.Log("desactivo collider DERECha");
     }
 
     public void EnableLeftCollider()
     {
-        if(colliderLeft_Up != null)
+        if(colliderPartLeft_Up != null)
         {
-            colliderLeft_Up.enabled = true;
-
+            colliderPartLeft_Up.enabled = true;
         }
-        if(colliderLeft_Down != null)
+        if(colliderPartLeft_Down != null)
         {
-            colliderLeft_Down.enabled = true;
-            
+            colliderPartLeft_Down.enabled = true;            
         }
-
     }
     public void DisableLeftCollider()
     {
-        if (colliderLeft_Up != null)
+        if (colliderPartLeft_Up != null)
         {
-            colliderLeft_Up.enabled = false;
-
+            colliderPartLeft_Up.enabled = false;
         }
-        if (colliderLeft_Down != null)
+        if (colliderPartLeft_Down != null)
         {
-            colliderLeft_Down.enabled = false;
-
+            colliderPartLeft_Down.enabled = false;
         }
-
     }
 }

@@ -4,45 +4,42 @@ using UnityEngine;
 
 public class BossPartHealth_Script : MonoBehaviour
 {
-    public bool isPartDestroyed = false;
-    public float partHealth = 30;
-    public int hitsWillAdd = 0;
-
-    public BossHealth_Script bossHealth_Script_;
-
-
-    public GameObject explosionFX;
-    public GameObject waterExplosion;
-
+    bool isPartDestroyed = false;
+    BossHealth_Script bossHealth_Script_;
     
+    [Space]
+    [Header("Boss Part Parameters")]
+    [SerializeField] float partHealth = 30;
+    [SerializeField] int hitsWillAdd = 0;
 
-    //public Animator right_Damage_Animator;
+    [Space]
+    [Header("Prefab References")]
+    [SerializeField] GameObject explosionFX;
+    [SerializeField] GameObject waterExplosion;
 
-    public List<Animator> animators = new List<Animator>();
+
+
+    //PARA QUE SE VUELVA ROJO AL DAÑO
+    [Tooltip("PARA QUE SE VUELVA ROJO AL DAÑO")]
+    [SerializeField] List<Animator> animators = new List<Animator>();
 
     private void Awake()
     {
 
-        foreach (Animator animator_GO in animators)
+        foreach (Animator animatorComponent in animators)
         {
-            //right_Damage_Animator = this.gameObject.transform.GetChild(1).gameObject.GetComponent<Animator>();
-           Animator _animator = animator_GO.gameObject.GetComponent<Animator>();
+            
+           Animator _animator = animatorComponent.gameObject.GetComponent<Animator>();
         }
-        //bossHealth_Script_ = this.transform.parent.GetComponent<BossHealth_Script>();
+        
     }
     // Start is called before the first frame update
     void Start()
     {
         GetComponent<Collider>().enabled = false;
+        bossHealth_Script_ = GetComponentInParent<BossHealth_Script>();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
         
-    }
-
-    
     private void OnCollisionEnter(Collision collision)
     {
         if ((collision.gameObject.tag == "Water") && (isPartDestroyed == true))
@@ -58,11 +55,10 @@ public class BossPartHealth_Script : MonoBehaviour
     {
         if(other.gameObject.tag == "LaserBeam")
         {
-            DepletePartHealth(other.gameObject.GetComponent<Beam_Script>().damagePoints);
-            //bossHealth_Script_.DepleteBossHealth(other.gameObject.GetComponent<Beam_Script>().damagePoints);
+            DepletePartHealth(other.gameObject.GetComponent<Beam_Script>().damagePoints);            
         }
 
-        //FALTA AÑADIR TODO EL ARMAMENTO PARA DAÑO
+        //TODO: FALTA AÑADIR TODO EL ARMAMENTO PARA DAÑO (Bombas, charged sphere, explosions...)
     }
 
     void DepletePartHealth(float damage)
@@ -72,8 +68,7 @@ public class BossPartHealth_Script : MonoBehaviour
             partHealth -= damage;
             int i = 0;
             foreach(Animator animator_GO in animators)
-            {
-                //int i = 0;
+            {                
                 animators[i].Play("Boss_Damage_Right_anim");
                 i++;
             }
@@ -82,41 +77,36 @@ public class BossPartHealth_Script : MonoBehaviour
             {
                 DestroyPart();
             }
-            //AHORA FALTA HACER LO MISMO PARA EL CUERPO PRINCIPAL (LISTA CON TODOS LOS ANIMATORS Y REPRODUCIR CUANDO DAÑO)
             
         }
-        //else if((partHealth <= 0) && (isPartDestroyed == false))
-        //{
-        //    DestroyPart();
-        //}
+        
     }
 
     private void DestroyPart()
     {
         partHealth = 0;
         isPartDestroyed = true;
-        //collider.enabled = true;
-        //this.gameObject.SetActive(false);
+        
         GameObject.Find("ScoreManager").GetComponent<ScoreManager_Script>().AddHits(hitsWillAdd);
-        this.gameObject.GetComponent<Rigidbody>().useGravity = true;
-        this.gameObject.transform.SetParent(null);
-        this.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
-        bossHealth_Script_.partsDestroyed += 1;
+        GetComponent<Rigidbody>().useGravity = true;
+        GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+        transform.SetParent(null);
+        bossHealth_Script_.PartsDestroyed += 1;
         
         if(this.gameObject.name == "BOSSPART_RIGHT")
         {
-            bossHealth_Script_.isRightPartDestroyed = true;
-        }
-        else if( this.gameObject.name == "BOSSPART_UP")
-        {
-            bossHealth_Script_.isLeftUpPartDestroyed = true;
+            bossHealth_Script_.RightPartDestroyed = true;
         }
         else if( this.gameObject.name == "BOSSPART_DOWN")
         {
-            bossHealth_Script_.isLeftDownPartDestroyed = true;
+            bossHealth_Script_.LeftDownPartDestroyed = true;
+        }
+        else if( this.gameObject.name == "BOSSPART_UP")
+        {
+            bossHealth_Script_.LeftUpPartDestroyed = true;
         }
 
-        if(bossHealth_Script_.partsDestroyed == 3)
+        if(bossHealth_Script_.PartsDestroyed == 3)
         {
             bossHealth_Script_.BossFinalForm();
         }
