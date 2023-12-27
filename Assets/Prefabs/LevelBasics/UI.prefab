@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 477465113}
   - component: {fileID: 477465112}
   m_Layer: 5
-  m_Name: actualDamage
+  m_Name: CurrentDamagePanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -892,11 +892,6 @@ MonoBehaviour:
   arrow_Left: {fileID: 1019980050}
   arrow_Up: {fileID: 1507111779}
   arrow_Down: {fileID: 2114259780}
-  isArrowRightEnabled: 0
-  isArrowLeftEnabled: 0
-  isArrowUpEnabled: 0
-  isArrowDownEnabled: 0
-  playerMovement_Script_: {fileID: 0}
   UIChooseWayArrows: {fileID: 1443631531}
   arrowThreshold: {x: 25, y: 6.8}
 --- !u!1 &1661188892
@@ -3083,121 +3078,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!1 &3616813211789569438
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3616813211789569439}
-  - component: {fileID: 3616813211789569437}
-  - component: {fileID: 3616813211789569436}
-  - component: {fileID: 3616813211789569434}
-  m_Layer: 5
-  m_Name: HealthText
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &3616813211789569439
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3616813211789569438}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 217391520673254298}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 28.89978, y: -12.248779}
-  m_SizeDelta: {x: 443.59, y: 86.9}
-  m_Pivot: {x: 0, y: 1}
---- !u!222 &3616813211789569437
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3616813211789569438}
-  m_CullTransparentMesh: 0
---- !u!114 &3616813211789569436
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3616813211789569438}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 61
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 61
-    m_Alignment: 3
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 'HEALTH: 100'
---- !u!114 &3616813211789569434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3616813211789569438}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bbe0c5fe62931347bcca7fe3d72660c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerInScene: {fileID: 0}
-  playerHealth_Script_: {fileID: 0}
-  playerMovement_Script_: {fileID: 0}
-  playerShooting_Script_: {fileID: 0}
-  scoreManager_GO: {fileID: 0}
-  scoreManager_Script_: {fileID: 0}
-  playerHits_Text: {fileID: 0}
-  playerBombs_Text: {fileID: 0}
-  bombImage1: {fileID: 0}
-  bombImage2: {fileID: 0}
-  bombImage3: {fileID: 0}
-  bombImage4: {fileID: 0}
-  bombTextGameObject: {fileID: 0}
-  uIBombSpawnLocation: {fileID: 0}
-  uIBombLerpMultiplier: 3
-  uIBomb1HasToMove: 0
-  uIBomb2HasToMove: 0
-  uIBomb3HasToMove: 0
-  uIBomb4HasToMove: 0
-  bombImage1OriginalLocalPosition: {x: 0, y: 0, z: 0}
-  bombImage2OriginalLocalPosition: {x: 0, y: 0, z: 0}
-  bombImage3OriginalLocalPosition: {x: 0, y: 0, z: 0}
-  bombImage4OriginalLocalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &3616813211869604581
 GameObject:
   m_ObjectHideFlags: 0
@@ -3352,121 +3232,6 @@ MonoBehaviour:
   scoreManager_GO: {fileID: 0}
   scoreManager_Script_: {fileID: 0}
   playerHits_Text: {fileID: 2408343491705056111}
-  playerBombs_Text: {fileID: 0}
-  bombImage1: {fileID: 0}
-  bombImage2: {fileID: 0}
-  bombImage3: {fileID: 0}
-  bombImage4: {fileID: 0}
-  bombTextGameObject: {fileID: 0}
-  uIBombSpawnLocation: {fileID: 0}
-  uIBombLerpMultiplier: 3
-  uIBomb1HasToMove: 0
-  uIBomb2HasToMove: 0
-  uIBomb3HasToMove: 0
-  uIBomb4HasToMove: 0
-  bombImage1OriginalLocalPosition: {x: 0, y: 0, z: 0}
-  bombImage2OriginalLocalPosition: {x: 0, y: 0, z: 0}
-  bombImage3OriginalLocalPosition: {x: 0, y: 0, z: 0}
-  bombImage4OriginalLocalPosition: {x: 0, y: 0, z: 0}
---- !u!1 &3616813211911282870
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3616813211911282871}
-  - component: {fileID: 3616813211911282866}
-  - component: {fileID: 3616813211911282869}
-  - component: {fileID: 3616813211911282868}
-  m_Layer: 5
-  m_Name: StaminaText
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &3616813211911282871
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3616813211911282870}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 217391520673254298}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -26.870178, y: -12.248779}
-  m_SizeDelta: {x: 443.58997, y: 86.9}
-  m_Pivot: {x: 1, y: 1}
---- !u!222 &3616813211911282866
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3616813211911282870}
-  m_CullTransparentMesh: 0
---- !u!114 &3616813211911282869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3616813211911282870}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 61
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 61
-    m_Alignment: 5
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 'STAMINA: 100'
---- !u!114 &3616813211911282868
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3616813211911282870}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bbe0c5fe62931347bcca7fe3d72660c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerInScene: {fileID: 0}
-  playerHealth_Script_: {fileID: 0}
-  playerMovement_Script_: {fileID: 0}
-  playerShooting_Script_: {fileID: 0}
-  scoreManager_GO: {fileID: 0}
-  scoreManager_Script_: {fileID: 0}
-  playerHits_Text: {fileID: 0}
   playerBombs_Text: {fileID: 0}
   bombImage1: {fileID: 0}
   bombImage2: {fileID: 0}
@@ -5172,13 +4937,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseUI: {fileID: 2681022816109656724}
   gameUI: {fileID: 5725879657751268844}
-  playerMovement_Script_: {fileID: 0}
   resumeButton: {fileID: 3616813212531130136}
   restartButton: {fileID: 3616813212572543178}
   menuButton: {fileID: 3616813211956455229}
   quitButton: {fileID: 3616813213307670955}
-  currentScene:
-    m_Handle: 0
 --- !u!1 &3616813213343884387
 GameObject:
   m_ObjectHideFlags: 0
@@ -6736,8 +6498,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3616813211789569439}
-  - {fileID: 3616813211911282871}
   - {fileID: 2920517491711220251}
   - {fileID: 3616813211869604578}
   - {fileID: 8907702764494579466}
