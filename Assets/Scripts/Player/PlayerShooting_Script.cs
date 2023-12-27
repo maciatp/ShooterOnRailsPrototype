@@ -86,8 +86,18 @@ public class PlayerShooting_Script : MonoBehaviour
     [SerializeField] float UseBeforeDeactivateChargedLaserTimeSpan = 2.5f; //tiempo que tienes para volver a pulsar disparo antes de que se desactive disp cargado
     [SerializeField] float laserRafagaIntervalBetweenShots = 0.1f;    
 
-    [SerializeField] int laserUpgradesCaught = 0;
+    enum LaserTypes
+    {
+        SingleLaser,
+        TwinLaser,
+        HyperLaser
+    }
+
+    [SerializeField] LaserTypes laserType;
+
+    int laserUpgradesCaught = 0;
     [SerializeField] int currentBombs = 3;
+    int maxBombs = 9;
 
     float conteoBomb = 0;
     [SerializeField] float ablingExplodeBombTimeSpan = 0.1f; //tiempo que pasa antes de que puedas explotar la bomba que acabas de lanzar
@@ -170,6 +180,14 @@ public class PlayerShooting_Script : MonoBehaviour
         controls.Gameplay.Disable();
     }
 
+    private void Start()
+    {
+        CheckLaserUpdates();
+
+    }
+
+   
+
     // Update is called once per frame
     void Update()
     {
@@ -236,7 +254,7 @@ public class PlayerShooting_Script : MonoBehaviour
    
    public IEnumerator Fire()
     {
-        if (laserUpgradesCaught == 0)
+        if (laserType == LaserTypes.SingleLaser)
         {
                for (int lasersShot = 0; lasersShot < 3; lasersShot += 1)// DESCOMENTAR CUANDO HAYAN TERMINADO PRUEBAS DE DISPARO
                 {
@@ -261,7 +279,7 @@ public class PlayerShooting_Script : MonoBehaviour
 
 
         }
-        if (laserUpgradesCaught == 1)
+        if (laserType == LaserTypes.TwinLaser)
         {
             for (int lasersShot = 0; lasersShot < 3; lasersShot += 1)
             {
@@ -278,7 +296,7 @@ public class PlayerShooting_Script : MonoBehaviour
                 yield return new WaitForSecondsRealtime(laserRafagaIntervalBetweenShots);
             }
         }
-        if (laserUpgradesCaught == 2)
+        if (laserType == LaserTypes.HyperLaser)
         {
             for (int lasersShot = 0; lasersShot < 3; lasersShot += 1)
             {
@@ -377,7 +395,7 @@ public class PlayerShooting_Script : MonoBehaviour
         {
             isShootButtonPressed = true;
             BeginChargeLaser();
-            StartCoroutine("Fire");
+            StartCoroutine(Fire());
         }
         if (isLaserCharged == true)
         {
@@ -391,6 +409,21 @@ public class PlayerShooting_Script : MonoBehaviour
         }
     }
 
+    private void CheckLaserUpdates()
+    {
+        switch (laserType)
+        {
+            case LaserTypes.SingleLaser:
+                laserUpgradesCaught = 0;
+                break;
+            case LaserTypes.TwinLaser:
+                laserUpgradesCaught = 1;
+                break;
+            case LaserTypes.HyperLaser:
+                laserUpgradesCaught = 2;
+                break;
+        }
+    }
 
     public void AddOneLaserPowerUp()
     {
@@ -399,25 +432,27 @@ public class PlayerShooting_Script : MonoBehaviour
         if (laserUpgradesCaught < 2)
         {
             laserUpgradesCaught += 1;
+            laserType = LaserTypes.TwinLaser;
 
         }
         else
         {
             laserUpgradesCaught = 2;
+            laserType = LaserTypes.HyperLaser;
         }
     }
 
     private void CheckLaserPowerUpSound()
     {
-        if ((laserUpgradesCaught == 0) && (playerShootingAudioSource.clip != singleLaserFired_Sound))
+        if ((laserType == LaserTypes.SingleLaser) && (playerShootingAudioSource.clip != singleLaserFired_Sound))
         {
             playerShootingAudioSource.clip = singleLaserFired_Sound;
         }
-        else if ((laserUpgradesCaught == 1) && (playerShootingAudioSource.clip != twinLaserFired_Sound))
+        else if ((laserType == LaserTypes.TwinLaser) && (playerShootingAudioSource.clip != twinLaserFired_Sound))
         {
             playerShootingAudioSource.clip = twinLaserFired_Sound;
         }
-        else if ((laserUpgradesCaught == 2) && (playerShootingAudioSource.clip != hyperLaserFired_Sound))
+        else if ((laserType == LaserTypes.HyperLaser) && (playerShootingAudioSource.clip != hyperLaserFired_Sound))
         {
             playerShootingAudioSource.clip = hyperLaserFired_Sound;
         }
@@ -425,8 +460,11 @@ public class PlayerShooting_Script : MonoBehaviour
 
     public void AddOneBomb()
     {
-        currentBombs += 1;
-        GameObject.Find("UIBombs").GetComponent<PlayerDisplay_Script>().AddUIBomb(currentBombs, +1); //+1 porque se añaden bombas
+        if(currentBombs < maxBombs)
+        {
+            currentBombs += 1;
+            GameObject.Find("UIBombs").GetComponent<PlayerDisplay_Script>().AddUIBomb(currentBombs, +1); //+1 porque se añaden bombas
+        }
         
     }
     public void DecreaseOneBomb()
