@@ -6,49 +6,20 @@ using UnityEngine.UI;
 
 public class GameManager_Script : MonoBehaviour
 {
-    public static bool isGamePaused = false;
+    static bool isGamePaused = false;
+    
+    [Header("UI GameObjects")]
+    [SerializeField] GameObject pauseUI;
+    [SerializeField] GameObject gameUI;
 
-    public GameObject pauseUI;
-    public GameObject gameUI;
-
-    public PlayerMovement_Script playerMovement_Script_;
-    public Button resumeButton;
-    public Button restartButton;
-    public Button menuButton;
-    public Button quitButton;
-    public Scene currentScene;
+    [Header("UI Buttons")]
+    [SerializeField] Button resumeButton;
+    [SerializeField] Button restartButton;
+    [SerializeField] Button menuButton;
+    [SerializeField] Button quitButton;
 
    
-    private void Awake()
-    {
-        
-        currentScene = SceneManager.GetActiveScene();
-        playerMovement_Script_ = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement_Script>();
-        gameUI = this.transform.GetChild(0).gameObject;
-        pauseUI = this.transform.GetChild(1).gameObject;
-        resumeButton = pauseUI.transform.GetChild(0).gameObject.GetComponent<Button>();
-        restartButton = pauseUI.transform.GetChild(1).gameObject.GetComponent<Button>();
-        menuButton = pauseUI.transform.GetChild(2).gameObject.GetComponent<Button>();
-        quitButton = pauseUI.transform.GetChild(3).gameObject.GetComponent<Button>();
-
-        
-        //CONTROLS
-        //controls.Gameplay.Pause.performed += ctx =>
-        //{
-        //    Debug.Log("He pulsado Start");
-        //    if (isGamePaused == true)
-        //    {
-        //        ResumeGame();
-        //        Debug.Log("he pausado el juego");
-        //    }
-        //    else
-        //    {
-        //        PauseGame();
-        //        Debug.Log("he reanudado el juego");
-        //    }
-        //};
-
-    }
+    
 
 
     private void Start()
@@ -60,19 +31,9 @@ public class GameManager_Script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (Input.GetButtonDown("Start"))
-        //{
-        //   if (isGamePaused == true)
-        //    {
-        //        ResumeGame();
-        //    }
-        //    else
-        //    {
-        //        PauseGame();
-        //    }
-        //}
+       
 
-        if((isGamePaused == true) && (playerMovement_Script_.usesJoystick == true))
+        if(isGamePaused == true)
         {
             //resumeButton.(); HIGHLIGHT BUTTON
         }
@@ -99,7 +60,7 @@ public class GameManager_Script : MonoBehaviour
 
     public void RestartGame()
     {
-        SceneManager.LoadScene(currentScene.ToString());
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1;
         pauseUI.SetActive(false);
         gameUI.SetActive(true);
