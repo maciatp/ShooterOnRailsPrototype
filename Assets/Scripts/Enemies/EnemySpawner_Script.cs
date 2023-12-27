@@ -53,6 +53,7 @@ public class EnemySpawner_Script : MonoBehaviour
         if(other.tag == "Player")
         {
             SpawnEnemies();
+            GetComponent<BoxCollider>().enabled = false;
         }
     }
 
