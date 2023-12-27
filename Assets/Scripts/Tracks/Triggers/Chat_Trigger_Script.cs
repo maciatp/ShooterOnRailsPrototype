@@ -28,7 +28,7 @@ public class Chat_Trigger_Script : MonoBehaviour
     private void Awake()
     {
         uIChat_Script_ = GameObject.Find("UIChat").gameObject.GetComponent<UIChat_Script>();
-        animatedText = uIChat_Script_.animatedChatText;
+        animatedText = uIChat_Script_.AnimatedChatText;
         audioDialogue = dialogue.audioBlock[intConversationBlock];
 
 
@@ -144,13 +144,13 @@ public class Chat_Trigger_Script : MonoBehaviour
         //uIChat_Script_.chatImageAnimator.ResetTrigger("CloseChatBox");
         uIChat_Script_.EnableChat();
         //uIChat_Script_.gameObject.GetComponent<Animator>().Play("UIChatBox_Opening");
-        animatedText = uIChat_Script_.animatedChatText;
+        animatedText = uIChat_Script_.AnimatedChatText;
         uIChat_Script_.gameObject.GetComponent<AudioSource>().clip = (dialogue.audioBlock[intConversationBlock]);
 
         //SE LO PASO AL BEHAVIOUR DE LA ANIMACIÓN DE UIchatImage para que se empiece a reproducir DESPUÉS de que termine la animación de transmisión.
-        uIChat_Script_.chatImageAnimator.GetBehaviour<ChatImageBehaviour>().dialogue = dialogue;
-        uIChat_Script_.chatImageAnimator.GetBehaviour<ChatImageBehaviour>().conversationBlockint = intConversationBlock;
-        uIChat_Script_.chatImageAnimator.Play("UIChatImage_Opening_Anim");
+        uIChat_Script_.ChatImageAnimator.GetBehaviour<ChatImageBehaviour>().dialogue = dialogue;
+        uIChat_Script_.ChatImageAnimator.GetBehaviour<ChatImageBehaviour>().conversationBlockint = intConversationBlock;
+        uIChat_Script_.ChatImageAnimator.Play("UIChatImage_Opening_Anim");
        
         //EStÁ COMENTADO PORQUE SE ACTIVA DESDE EL BEHAVIOUR DE LA ANIMACIÓN UNA VEZ TERMINA
         //uIChat_Script_.ReadDialogue(dialogue.conversationBlock[intConversationBlock]);
@@ -159,7 +159,7 @@ public class Chat_Trigger_Script : MonoBehaviour
         //animatedText.ReadText(dialogue.conversationBlock[conversationBlock]);
 
         //LE PASO EL TRIGGER PARA QUE SALGA LA CARA (DEL PJ CON EL NOMBRE DEL TRIGGER)
-        uIChat_Script_.chatImageAnimator.SetTrigger(animatorTrigger);
+        uIChat_Script_.ChatImageAnimator.SetTrigger(animatorTrigger);
         this.gameObject.SetActive(false);
     }
 }

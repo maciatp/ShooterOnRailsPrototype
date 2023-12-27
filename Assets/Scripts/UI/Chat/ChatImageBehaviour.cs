@@ -18,8 +18,8 @@ public class ChatImageBehaviour : StateMachineBehaviour
     //OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        uIChat_Script_.chatImageAnimator.gameObject.GetComponent<AudioSource>().clip = uIChatImageOpeningSound;
-        uIChat_Script_.chatImageAnimator.gameObject.GetComponent<AudioSource>().Play();
+        uIChat_Script_.ChatImageAnimator.gameObject.GetComponent<AudioSource>().clip = uIChatImageOpeningSound;
+        uIChat_Script_.ChatImageAnimator.gameObject.GetComponent<AudioSource>().Play();
         //uIChat_Script_.audioSource.Play();
     }
 
@@ -32,7 +32,7 @@ public class ChatImageBehaviour : StateMachineBehaviour
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        uIChat_Script_.audioSource.Play();
+        uIChat_Script_.GetComponent<AudioSource>().Play();
         uIChat_Script_.ReadDialogue(dialogue.conversationBlock[conversationBlockint]);
        // uIChat_Script_.gameObject.GetComponent<Animator>().Play("UIChatBox_Opening"); se puede borrar porq comentado aún funciona todo
     }

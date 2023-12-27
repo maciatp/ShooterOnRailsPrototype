@@ -15,8 +15,8 @@ public class ClosingChat_Behaviour : StateMachineBehaviour
 
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        uIChat_Script_.chatImageAnimator.gameObject.GetComponent<AudioSource>().clip = uIChatImageClosingSound;
-        uIChat_Script_.chatImageAnimator.gameObject.GetComponent<AudioSource>().Play();
+        uIChat_Script_.ChatImageAnimator.gameObject.GetComponent<AudioSource>().clip = uIChatImageClosingSound;
+        uIChat_Script_.ChatImageAnimator.gameObject.GetComponent<AudioSource>().Play();
         //uIChat_Script_.audioSource.Play();
     }
 

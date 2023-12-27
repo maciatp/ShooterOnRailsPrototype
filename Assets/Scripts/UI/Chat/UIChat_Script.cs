@@ -11,24 +11,26 @@ using Cinemachine;
 
 public class UIChat_Script : MonoBehaviour
 {
-    public bool inDialogue;
-    float characterSpawnEvery = 0.2f;
-    int visibleCharacters = 0;
-    int totalCharacters = 0;
+    bool inDialogue;
     [SerializeField] float timeToDisableChat = 1;
 
-    public Animator chatImageAnimator;
-    public TMP_Animated animatedChatText;
-    public AudioSource audioSource;
+    [SerializeField] Animator chatImageAnimator;
+    [SerializeField] TMP_Animated animatedChatText;
+
+    public TMP_Animated AnimatedChatText
+    {
+        get { return animatedChatText; }
+        set { animatedChatText = value; }
+    }
+    public Animator ChatImageAnimator
+    {
+        get { return chatImageAnimator; }
+        set { chatImageAnimator = value; }
+    }
+    
     private void Awake()
     {
-
-        chatImageAnimator = this.transform.GetChild(1).gameObject.GetComponent<Animator>();
-        animatedChatText = this.transform.GetChild(0).transform.GetChild(0).gameObject.GetComponent<TMP_Animated>();
-        audioSource = this.gameObject.GetComponent<AudioSource>();
-        totalCharacters = animatedChatText.text.Length;
-
-        this.gameObject.SetActive(false);
+        gameObject.SetActive(false);
     }
     // Start is called before the first frame update
     void Start()
@@ -39,14 +41,7 @@ public class UIChat_Script : MonoBehaviour
         animatedChatText.onDialogueFinish.AddListener(() => FinishDialogue());
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-
-    }
-
-
+    
 
 
     //EMOTION CHANGER PARA CONTROL DE ICONOS chatImageAnimator
@@ -159,7 +154,7 @@ public class UIChat_Script : MonoBehaviour
         chatImageAnimator.Play("UIChatImage_Closing_Anim");
         this.gameObject.GetComponent<Animator>().SetTrigger("CloseChatBox");
 
-        audioSource.Stop();
+        GetComponent<AudioSource>().Stop();
         ClearText();
         // DisableChat();
     }
