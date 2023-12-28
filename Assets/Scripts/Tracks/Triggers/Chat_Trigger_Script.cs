@@ -15,20 +15,22 @@ public class Chat_Trigger_Script : MonoBehaviour
     
     [Header("PREVIEW ONLY - DO NOT MODIFY HERE")]
     [TextArea(6, 6)]
-    public string dialogueString = null;
-    public AudioClip audioDialogue;
-    public UIChat_Script uIChat_Script_;
-    public TMP_Animated animatedText;
-    public bool isActive = false;
+    [SerializeField] string dialogueString = null;
+    [SerializeField] AudioClip audioDialogue;
+    UIChat_Script uIChat_Script_;
+    TMP_Animated animatedText;
+    bool isActive = false;
 
-    public string animatorTrigger = string.Empty;
-    
-    
+    string animatorTrigger = string.Empty;
 
-    private void Awake()
+
+
+
+
+    private void Start()    
     {
-        uIChat_Script_ = GameObject.Find("UIChat").gameObject.GetComponent<UIChat_Script>();
-        animatedText = uIChat_Script_.AnimatedChatText;
+        uIChat_Script_ = GameObject.Find("UI").transform.GetChild(0).GetChild(0).Find("UIChat").GetComponent<UIChat_Script>();        
+        
         audioDialogue = dialogue.audioBlock[intConversationBlock];
 
 
@@ -44,7 +46,7 @@ public class Chat_Trigger_Script : MonoBehaviour
         {
             //Debug.Log("CAMBIO A FALCO");
             animatorTrigger = "Falco";
-           
+
         }
         else if (dialogue.name.Contains("Slippy"))
         {
@@ -58,30 +60,6 @@ public class Chat_Trigger_Script : MonoBehaviour
             animatorTrigger = "Peppy";
 
         }
-
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        //if (Application.platform == RuntimePlatform.WindowsEditor) && (Application.isPlaying == false))
-        //{
-
-        //    dialogueString = dialogue.conversationBlock[intConversationBlock];
-        //    audioDialogue = dialogue.audioBlock[intConversationBlock];
-
-        //    if (dialogue.name.Contains("Fox"))
-        //    {
-        //        Debug.Log("CAMBIO A FOX");
-        //        animatorTrigger = "Fox";
-        //        Debug.Log(animatorTrigger);
-        //    }
-        //    else if (dialogue.name.Contains("Falco"))
-        //    {
-                
-        //        animatorTrigger = "Falco";
-        //        //animatorTrigger.Replace(animatorTrigger, "Falco");
-        //    }
-        //}
     }
 
     // Update is called once per frame
@@ -140,6 +118,7 @@ public class Chat_Trigger_Script : MonoBehaviour
     private void ActivateUIChat()
     {
         isActive = true;
+       
         uIChat_Script_.ClearText();
         //uIChat_Script_.chatImageAnimator.ResetTrigger("CloseChatBox");
         uIChat_Script_.EnableChat();
