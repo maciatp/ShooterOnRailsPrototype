@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
-using UnityEditor.SceneManagement;
+
 
 public class ChargedLaserSphere_Script : MonoBehaviour
 {
