@@ -317,7 +317,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageToOpen: 3
   isBombHouse: 1
-  objectSelector: 0
+  objectSelector: 1
   powerUpsList:
   - {fileID: 6668084681518276238, guid: f0a34c0d10431454d8e8b306fa1ca838, type: 3}
   - {fileID: 4023359822053111147, guid: fed7c46af92db034fb5690900bcc6758, type: 3}
