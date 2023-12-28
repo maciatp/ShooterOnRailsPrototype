@@ -4,21 +4,29 @@ using UnityEngine;
 using UnityEngine.UI;
 public class UIHitCombo_Script : MonoBehaviour
 {
+    //This Gameobject must be named UIHitFloatingText
+
     private RectTransform rect_father;
     private RectTransform rect_hits;
-    public TMPro.TextMeshProUGUI hitsText;
 
-    public bool isVisible = false;
-    public float timeVisibleLeft;
-    public float timeVisibleTimeSpan = 3;
-    public float lerpMultiplier = 3;
-    public Vector2 offset;
+    bool isVisible = false;
+    float timeVisibleLeft;
+    [Space]
+    [Header("Local References")]
+    [SerializeField] TMPro.TextMeshProUGUI hitsText;
+    [Space]
+    [Header("Parameters")]
+    [SerializeField] float timeVisibleTimeSpan = 3;
+    [SerializeField] float lerpMultiplier = 3;
+    [SerializeField] Vector2 offset;
 
-    public Color white;
-    public Color yellow;
-    public Color orange;
-    public Color red;
-    public Color faded;
+    [Space]
+    [Header("Colors")]
+    [SerializeField] Color white;
+    [SerializeField] Color yellow;
+    [SerializeField] Color orange;
+    [SerializeField] Color red;
+    [SerializeField] Color faded;
     
     
     // Start is called before the first frame update
