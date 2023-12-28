@@ -140,11 +140,7 @@ public class ChargedLaserSphere_Script : MonoBehaviour
             {
                 rb_sphere.position += new Vector3(objectLocked.transform.position.x - this.transform.position.x, objectLocked.transform.position.y - this.transform.position.y, objectLocked.transform.position.z - this.transform.position.z).normalized * sphereSpeed * Time.unscaledDeltaTime;
 
-                if (objectLocked.gameObject.tag == "BillBoard")
-                {
-                    CheckLockedBillboard();
-                    Debug.Log("Checkeo Billboard");
-                }
+                
 
             }
         }
@@ -278,11 +274,5 @@ public class ChargedLaserSphere_Script : MonoBehaviour
 
     
 
-    public void CheckLockedBillboard()
-    {
-        if(billBoardLocked.isBillBoardActivated == true)
-        {
-            canExplode = true;
-        }
-    }
+    
 }

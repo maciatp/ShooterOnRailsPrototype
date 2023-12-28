@@ -80,9 +80,9 @@ public class Explosion_Script : MonoBehaviour
     {
         if (other.tag == "BillBoard")
         {
-            if (other.gameObject.transform.GetComponent<BillboardTrigger_Script>().billboard_Script_.isBillBoardActivated == false)
+            if (other.gameObject.transform.GetComponentInParent<Billboard_Script>().IsBillboardActivated == false)
             {
-                other.gameObject.transform.GetComponent<BillboardTrigger_Script>().billboard_Script_.ActivateBillBoard();
+                other.gameObject.transform.GetComponentInParent<Billboard_Script>().ActivateBillBoard();
             }
            
         }

@@ -136,7 +136,7 @@ public class GuidedLaserTrigger_Script : MonoBehaviour
         if ((isObjectLocked == false) && (((other.tag == "Enemy") && (other.gameObject.GetComponent<EnemyHealth_Script>().isShotDown == false)) 
             || (other.tag == "SpecialBox") || ((other.tag == "Button") && (other.gameObject.GetComponent<Button_Script>().IsButtonActivated == false)) 
             || ((other.tag == "Button") && (other.gameObject.GetComponent<Button_Script>().IsButtonLockableWhenActivated == true)) 
-            || ((other.tag == "BillBoard") && (billboardLocked.isBillBoardActivated != true))))
+            || ((other.tag == "BillBoard") && (billboardLocked.IsBillboardActivated != true))))
         {
             LockObject(other);
             
