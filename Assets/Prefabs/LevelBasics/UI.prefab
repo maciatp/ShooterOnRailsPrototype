@@ -169,9 +169,10 @@ MonoBehaviour:
   bossText: {fileID: 4700289589642785990}
   timeToBeActive: 0.5
   fillingSpeed: 1.2
-  orange: {r: 1, g: 0.205793, b: 0, a: 1}
   fullHealthColor: {r: 0.9254902, g: 0.4451259, b: 0.0745098, a: 1}
-  lerpMultiplier: 2
+  midHealthColor: {r: 1, g: 0.5927993, b: 0, a: 1}
+  lowHealthColor: {r: 1, g: 0, b: 0, a: 1}
+  colorChaningLerpMultiplier: 2
 --- !u!1 &814133559
 GameObject:
   m_ObjectHideFlags: 0
@@ -3079,7 +3080,7 @@ GameObject:
   - component: {fileID: 3616813211869604578}
   - component: {fileID: 3616813211869604577}
   - component: {fileID: 2408343491705056111}
-  - component: {fileID: 3616813211869604579}
+  - component: {fileID: 4008673894362898208}
   m_Layer: 5
   m_Name: HitsText
   m_TagString: Untagged
@@ -3203,7 +3204,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &3616813211869604579
+--- !u!114 &4008673894362898208
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3212,32 +3213,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 3616813211869604581}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bbe0c5fe62931347bcca7fe3d72660c, type: 3}
+  m_Script: {fileID: 11500000, guid: eb0a2e4c529152a42bd93ad760c274ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInScene: {fileID: 0}
-  playerHealth_Script_: {fileID: 0}
-  playerMovement_Script_: {fileID: 0}
-  playerShooting_Script_: {fileID: 0}
-  scoreManager_GO: {fileID: 0}
-  scoreManager_Script_: {fileID: 0}
-  playerHits_Text: {fileID: 2408343491705056111}
-  playerBombs_Text: {fileID: 0}
-  bombImage1: {fileID: 0}
-  bombImage2: {fileID: 0}
-  bombImage3: {fileID: 0}
-  bombImage4: {fileID: 0}
-  bombTextGameObject: {fileID: 0}
-  uIBombSpawnLocation: {fileID: 0}
-  uIBombLerpMultiplier: 3
-  uIBomb1HasToMove: 0
-  uIBomb2HasToMove: 0
-  uIBomb3HasToMove: 0
-  uIBomb4HasToMove: 0
-  bombImage1OriginalLocalPosition: {x: 0, y: 0, z: 0}
-  bombImage2OriginalLocalPosition: {x: 0, y: 0, z: 0}
-  bombImage3OriginalLocalPosition: {x: 0, y: 0, z: 0}
-  bombImage4OriginalLocalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &3616813211956455231
 GameObject:
   m_ObjectHideFlags: 0
@@ -4998,8 +4976,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -13, y: -50}
-  m_SizeDelta: {x: 443.58997, y: 98.58}
+  m_AnchoredPosition: {x: 46.77793, y: -43.173912}
+  m_SizeDelta: {x: 378.3, y: 98.58}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!222 &3616813213365295400
 CanvasRenderer:
@@ -5029,7 +5007,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 5
+  m_text: x 5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5056,8 +5034,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 104.55
-  m_fontSizeBase: 104.55
+  m_fontSize: 90.9
+  m_fontSizeBase: 90.9
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5066,7 +5044,7 @@ MonoBehaviour:
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 0
+  m_characterSpacing: -7.3
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -5355,12 +5333,12 @@ GameObject:
   - component: {fileID: 7557360298193798449}
   - component: {fileID: 3718912828749190083}
   m_Layer: 5
-  m_Name: UIBomb3_ALLTIME
+  m_Name: UIBomb3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8389488512809537028
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6194,7 +6172,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5099056519189387413}
-  - component: {fileID: 7781742190193079947}
+  - component: {fileID: 565903890442080075}
   m_Layer: 5
   m_Name: UIBombs
   m_TagString: Untagged
@@ -6220,6 +6198,7 @@ RectTransform:
   - {fileID: 6221955539512113667}
   - {fileID: 3616813213365295405}
   - {fileID: 644238161}
+  - {fileID: 1212983219012982948}
   m_Father: {fileID: 217391520673254298}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
@@ -6227,7 +6206,7 @@ RectTransform:
   m_AnchoredPosition: {x: -30, y: -135}
   m_SizeDelta: {x: 387.7, y: 100}
   m_Pivot: {x: 1, y: 0.5}
---- !u!114 &7781742190193079947
+--- !u!114 &565903890442080075
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6236,32 +6215,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 5624380268784927973}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bbe0c5fe62931347bcca7fe3d72660c, type: 3}
+  m_Script: {fileID: 11500000, guid: be2027882ce97be49ad3458581e25f54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInScene: {fileID: 0}
-  playerHealth_Script_: {fileID: 0}
-  playerMovement_Script_: {fileID: 0}
-  playerShooting_Script_: {fileID: 0}
-  scoreManager_GO: {fileID: 0}
-  scoreManager_Script_: {fileID: 0}
-  playerHits_Text: {fileID: 0}
-  playerBombs_Text: {fileID: 2382711841139508409}
   bombImage1: {fileID: 7934478262049508253}
   bombImage2: {fileID: 4381599788092379864}
   bombImage3: {fileID: 3718912828749190083}
   bombImage4: {fileID: 4161860146663239616}
-  bombTextGameObject: {fileID: 3616813213365295404}
+  playerBombs_Text: {fileID: 2382711841139508409}
   uIBombSpawnLocation: {fileID: 644238160}
-  uIBombLerpMultiplier: 5
-  uIBomb1HasToMove: 0
-  uIBomb2HasToMove: 0
-  uIBomb3HasToMove: 0
-  uIBomb4HasToMove: 0
-  bombImage1OriginalLocalPosition: {x: 0, y: 0, z: 0}
-  bombImage2OriginalLocalPosition: {x: 0, y: 0, z: 0}
-  bombImage3OriginalLocalPosition: {x: 0, y: 0, z: 0}
-  bombImage4OriginalLocalPosition: {x: 0, y: 0, z: 0}
+  bombImage1NewLocation: {fileID: 1212983219012982948}
+  uIBombLerpMultiplier: 3
 --- !u!1 &5669920743128932564
 GameObject:
   m_ObjectHideFlags: 0
@@ -6675,11 +6639,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 301e464a18c87864ebf4445acfd89768, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inDialogue: 0
   timeToDisableChat: 1.12
   chatImageAnimator: {fileID: 2336883372111013606}
   animatedChatText: {fileID: 4233313049417201140}
-  audioSource: {fileID: 7978642100713990330}
 --- !u!82 &7978642100713990330
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6809,12 +6771,12 @@ GameObject:
   - component: {fileID: 3339062937748971910}
   - component: {fileID: 7934478262049508253}
   m_Layer: 5
-  m_Name: UIBomb1
+  m_Name: UIBomb1_AlwaysEnabled
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3481308954444832250
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7095,6 +7057,41 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &8492273532965320571
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1212983219012982948}
+  m_Layer: 5
+  m_Name: BombImageNewLocation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1212983219012982948
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8492273532965320571}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.6, y: 1.6, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5099056519189387413}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -262.95154, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &9101612521522621690
 GameObject:
   m_ObjectHideFlags: 0
@@ -7107,7 +7104,7 @@ GameObject:
   - component: {fileID: 2836786854951128880}
   - component: {fileID: 6302697708627346882}
   m_Layer: 5
-  m_Name: UIHitText
+  m_Name: UIHitFloatingText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
