@@ -48,9 +48,6 @@ public class UIChat_Script : MonoBehaviour
     //AL AÑADIR ESTADOS O EMOCIONES TAMBIÉN HAY QUE AÑADIRLOS EN TMP_Animated.cs, arriba.
     public void EmotionChanger(Emotion e)
     {
-        //if (this != InterfaceManager.instance.currentVillager)
-        //    return;
-
         //si los triggers del animator se llaman igual que los estados, se llaman desde aquí directamente, así SE REPRODUCE ESE ESTADO DESDE EL INICIO SI SE PONE DELANTE DEL TODO DEL TEXTO
         chatImageAnimator.SetTrigger(e.ToString());
         
@@ -63,12 +60,11 @@ public class UIChat_Script : MonoBehaviour
 
         if (e == Emotion.angry)
         {
-           // Debug.Log("Fox ANGRY");
-            chatImageAnimator.SetTrigger("angry");
-            //chatImageAnimator.Play("Fox_Angry_Anim");
+           
+            chatImageAnimator.SetTrigger("angry");          
 
             //chatanimator.settrigger("Angry") //y así pasándole quién habla y cómo ya diferencio entre caras enfadadas,etc.
-        } //eyesRenderer.material.SetTextureOffset("_BaseMap", new Vector2(.66f, 0));
+        }
         if(e == Emotion.lookaround)
         {
             //Debug.Log("Fox LOOKAROUND");
