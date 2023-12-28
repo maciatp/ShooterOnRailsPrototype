@@ -4,25 +4,17 @@ using UnityEngine;
 
 public class LaserBeamTrail_Script : MonoBehaviour
 {
-    public float distance = 3f;
-    public GameObject groundTrail;
-    public GameObject waterTrail;
+    float conteoInstantiate;
+    [Header("Parameters")]
+    [SerializeField] float distance = 3f;
+    [SerializeField] float instantiateTimeSpan = 0.35f;
+    
+    [Space]
+    [Header("External Prefab References")]
+    [SerializeField] GameObject groundTrail;
+    [SerializeField] GameObject waterTrail;
 
-    public float conteoInstantiate;
-    public float instantiateTimeSpan = 0.35f;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-
-    }
-
+    
     void FixedUpdate()
     {
         conteoInstantiate += Time.unscaledDeltaTime;
