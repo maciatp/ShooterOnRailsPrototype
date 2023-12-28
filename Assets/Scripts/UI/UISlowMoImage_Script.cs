@@ -30,7 +30,7 @@ public class UISlowMoImage_Script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        slowMoImage.fillAmount = timeManager_Script_.actualSlowMoPoints / 100;
+        slowMoImage.fillAmount = timeManager_Script_.CurrentSlowMoPoints / 100;
 
         if((slowMoImage.fillAmount >= 0.5)&& slowMoImage.color != blue)
         {
@@ -47,7 +47,7 @@ public class UISlowMoImage_Script : MonoBehaviour
 
 
 
-        if (timeManager_Script_.isSlowMotionActivated)
+        if (timeManager_Script_.IsSlowMoActivated)
         {
            //WORLD TO VIEWPORT transforma una posición del mundo a un rango de (0,0) a (1,1) 
             Vector2 pos = Camera.main.WorldToViewportPoint(GameObject.Find("Player").transform.position);

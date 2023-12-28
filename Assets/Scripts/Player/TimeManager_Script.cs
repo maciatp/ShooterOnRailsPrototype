@@ -9,42 +9,56 @@ public class TimeManager_Script : MonoBehaviour
 {
     PlayerControls controls;
 
+    static float player = 1;
+    static float global = 1;
+    float timescale_;
+
     [Header("Bools")]
-    public bool infiniteSlowMo = false;
-    public bool isSlowMotionActivated = false;
-    public bool isMovingSlowMotion = false;
-    public bool isSlowMoAble = false;
-    public bool activateSlowMoManually = false;
+    [SerializeField] bool infiniteSlowMo = false;
+    [SerializeField] bool activateSlowMoManually = false;
+    bool isSlowMotionActivated = false;
+    bool isMovingSlowMotion = false;
+    bool isSlowMoAble = false;
+
     [Space]
     [Header("Parameters")]
-    public static float player = 1;
-    public static float global = 1;
-    
-    public float slowMotionFactor = 0.05f;
-    public float returnToNormalTimeDuration = 2f;
-    public float slowMoDepletionRate = 10;
-
-    public float timescale_;
+    [SerializeField] float slowMotionFactor = 0.05f;
+    [SerializeField] float returnToNormalTimeDuration = 2f;
+    [SerializeField] float slowMoDepletionRate = 10;
 
 
 
-    public float actualSlowMoPoints = 0;
-    public float totalSlowmoPoints = 100;
-    public float slowMoMinimumToActivate = 0.5f;
 
-    [Header("Public References")]
-    public PlayerMovement_Script playerMovement_Script_;
-    public UISlowMoBar_Script uISlowMoBar_Script_;
-    public CinemachineImpulseManager cinemachineManager_;
+    [SerializeField] float currentSlowMoPoints = 0;
+    [SerializeField] float totalSlowmoPoints = 100;
+    [SerializeField] float slowMoMinimumToActivate = 0.5f;
 
-    
-   
+    //EXTERNAL REFERENCES
+    UISlowMoBar_Script uISlowMoBar_Script_;
+    PlayerMovement_Script playerMovement_Script_;
+    //CinemachineImpulseManager cinemachineManager_;
+
+    public bool IsSlowMoActivated
+    {
+        get { return isSlowMotionActivated; }
+        set { isSlowMotionActivated = value; }
+    }
+    public bool IsMovingSlowMo
+    {
+        get { return isMovingSlowMotion; }
+        set { isMovingSlowMotion = value; }
+    }
+    public float CurrentSlowMoPoints
+    {
+        get { return currentSlowMoPoints; }
+        set { currentSlowMoPoints = value; }
+    }
 
     private void Awake()
     {
-        //playerMovement_Script_ = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement_Script>();
+        
 
-        playerMovement_Script_ = this.GetComponent<PlayerMovement_Script>();
+        playerMovement_Script_ = GetComponent<PlayerMovement_Script>();
 
 
         uISlowMoBar_Script_ = GameObject.Find("UISlowMoBar").GetComponent<UISlowMoBar_Script>();
@@ -53,9 +67,6 @@ public class TimeManager_Script : MonoBehaviour
         //cinemachineManager_ = GameObject.Find("Camera").GetComponent<CinemachineImpulseManager>();
 
         //NEW INPUT SYSTEM
-
-        //controls = playerMovement_Script_.controls;
-
         controls = new PlayerControls();
 
         controls.Gameplay.TimeControl.performed += ctx =>
@@ -93,19 +104,7 @@ public class TimeManager_Script : MonoBehaviour
         }
         //Time.fixedDeltaTime = Time.timeScale * 0.02f;
 
-        //DEBERÍA COMENTAR TODOS LOS INPUT OLD SYSTEM
-        //if ((Input.GetButtonDown("SlowMotion")))
-        //{
-        //    if((isSlowMotionActivated == false) && (isMovingSlowMotion == false) && (isSlowMoAble == true))
-        //    {
-        //        DoSlowMotion();
-        //    }
-        //    else if(isSlowMotionActivated == true)
-        //    {
-        //        DeactivateSlowMotion();
-        //    }
-           
-        //}
+        
 
         timescale_ = Time.timeScale;
 
@@ -122,21 +121,21 @@ public class TimeManager_Script : MonoBehaviour
                 isMovingSlowMotion = false;
             }
         }
-        if(actualSlowMoPoints > 0)
+        if(currentSlowMoPoints > 0)
         {
             isSlowMoAble = true;
         }
         else { isSlowMoAble = false; }
 
-        if((isSlowMotionActivated == true) && (actualSlowMoPoints > 0))
+        if((isSlowMotionActivated == true) && (currentSlowMoPoints > 0))
         {
             DecreaseSlowMoPoints();
         }
 
-        if((actualSlowMoPoints <= 0) && (isSlowMotionActivated == true))
+        if((currentSlowMoPoints <= 0) && (isSlowMotionActivated == true))
         {
             DeactivateSlowMotion();
-            actualSlowMoPoints = 0;
+            currentSlowMoPoints = 0;
         }
     }
 
@@ -154,17 +153,17 @@ public class TimeManager_Script : MonoBehaviour
     public void AddSlowMoPoints(float slowMoPointsWillIncrease)
     {
        
-        actualSlowMoPoints += slowMoPointsWillIncrease;
+        currentSlowMoPoints += slowMoPointsWillIncrease;
         uISlowMoBar_Script_.IncreaseBarSize(slowMoPointsWillIncrease);
-        if (actualSlowMoPoints >= totalSlowmoPoints)
+        if (currentSlowMoPoints >= totalSlowmoPoints)
         {
-            actualSlowMoPoints = totalSlowmoPoints;
+            currentSlowMoPoints = totalSlowmoPoints;
         }
 
     }
     public void DecreaseSlowMoPoints()
     {
-        actualSlowMoPoints -= Time.unscaledDeltaTime * slowMoDepletionRate;
+        currentSlowMoPoints -= Time.unscaledDeltaTime * slowMoDepletionRate;
         uISlowMoBar_Script_.DecreaseBarSize(Time.unscaledDeltaTime * slowMoDepletionRate);
     }
 
@@ -177,7 +176,7 @@ public class TimeManager_Script : MonoBehaviour
         Time.fixedDeltaTime = Time.timeScale * 0.02f;
 
         //Para que los camera shake en slow mo sean en unscaled time
-        //CinemachineImpulseManager.Instance.IgnoreTimeScale = true;
+        CinemachineImpulseManager.Instance.IgnoreTimeScale = true;
         //cinemachineManager_.IgnoreTimeScale = true;
 
         float origFov =  40 ;
@@ -190,7 +189,7 @@ public class TimeManager_Script : MonoBehaviour
         Debug.Log("Hago Slowmo");
         //float zoom = 0;
 
-        DOVirtual.Float(origChrom, endChrom, .2f, playerMovement_Script_.Chromatic);
+        DOVirtual.Float(origChrom, endChrom, .5f, playerMovement_Script_.Chromatic);
         DOVirtual.Float(origFov, endFov, 0.2f, playerMovement_Script_.FieldOfView);
         DOVirtual.Float(origDistortion, endDistorton, .2f, playerMovement_Script_.DistortionAmount);
        

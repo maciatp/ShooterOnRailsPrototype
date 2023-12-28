@@ -31,7 +31,7 @@ public class UISlowMoBar_Script : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        slowMoImage.transform.localScale = new Vector2(timeManager_Script_.actualSlowMoPoints, 1);
+        slowMoImage.transform.localScale = new Vector2(timeManager_Script_.CurrentSlowMoPoints, 1);
     }
 
     // Update is called once per frame

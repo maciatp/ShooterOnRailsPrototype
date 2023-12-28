@@ -213,7 +213,7 @@ public class ChargedLaserSphere_Script : MonoBehaviour
 
         //this.transform.GetChild(3).gameObject.GetComponent<ParticleSystem>().simulationSpace = ParticleSystemSimulationSpace.World; //hago que lightning sea WorldSpace cuando disparo
         this.transform.GetChild(2).gameObject.SetActive(true); // SE activa el campo de fuerza cuando disparas
-        if (timeManager_Script_.isSlowMotionActivated == true)
+        if (timeManager_Script_.IsSlowMoActivated == true)
         {
             this.transform.GetChild(1).gameObject.SetActive(true); //Activación Shockwave_trail
 
