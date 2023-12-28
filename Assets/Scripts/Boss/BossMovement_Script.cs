@@ -21,7 +21,7 @@ public class BossMovement_Script : MonoBehaviour
     private void Awake()
     {
         uIBossHealth_Script_ = GameObject.Find("UIBossHealth").gameObject.GetComponent<UIBossHealth_Script>();
-        goalPosition = GameObject.Find("GameplayPlane").transform.GetChild(6);
+        goalPosition = GameObject.Find("GameplayPlane").transform.Find("BossGoalPosition");
         
         bossChildAnimator.enabled = false;
     }
