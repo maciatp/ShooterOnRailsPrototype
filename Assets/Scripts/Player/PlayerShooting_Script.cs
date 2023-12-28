@@ -399,7 +399,7 @@ public class PlayerShooting_Script : MonoBehaviour
         }
         if (isLaserCharged == true)
         {
-            if ((isLaserChargedAndButtonUp == true) && (chargedLaser_Script_InScene.isSphereShot == false)) //DISPARO
+            if ((isLaserChargedAndButtonUp == true) && (chargedLaser_Script_InScene.IsSphereShot == false)) //DISPARO
             {
 
                 ShootChargedLaser();

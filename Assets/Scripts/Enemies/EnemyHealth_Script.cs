@@ -245,7 +245,7 @@ public class EnemyHealth_Script : MonoBehaviour
             if(isShotDown == false)
             {
                 chargedLaserSphere_Script_ = collision.gameObject.GetComponent<ChargedLaserSphere_Script>();
-                healthPoints -= chargedLaserSphere_Script_.damagePoints;
+                healthPoints -= chargedLaserSphere_Script_.DamagePoints;
                 if (healthPoints <= 0) // así ChargedLaserSphere no destruye directamente, así puedes quitarle vida y no matarlo de golpe.( por si hay enemigos más resistentes)
                 {
                     ExplodeShipModel(); ;

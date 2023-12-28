@@ -9,7 +9,7 @@ public class ChargingLaserAbsorb_Script : MonoBehaviour
     public float conteoToBeginAttraction = 0;
     public float beginAttractionTimeSpan = 0.3f;
 
-    public List<Rigidbody> rB_ObsAbsorbing = new List<Rigidbody>();
+    List<Rigidbody> rB_ObsAbsorbing = new List<Rigidbody>();
 
 
     

@@ -6,73 +6,90 @@ using UnityEditor.SceneManagement;
 
 public class ChargedLaserSphere_Script : MonoBehaviour
 {
-    public Transform parent;
-    public float sphereSpeed;
+    Transform parent;
+    bool isSphereShot = false;
+    bool isSphereExploded = false;
+    bool canExplode = false;
+    Transform surfaceCollided = null;
+    float conteoExplode = 0;
 
-    public int damagePoints = 5;
+    [Header("Parameters")]
+    [SerializeField] float conteoExplodeTimeSpan = 1.5f;
+    [SerializeField] float sphereSpeed;
+    [SerializeField] int damagePoints = 5;
+    [Tooltip("Damage that will do")]
 
-    public bool isSphereShot = false;
 
 
-    public bool isSphereExploded = false;
 
-    public bool canExplode = false;
 
     
-   [Header("Public References")]
+   [Header("Local References")]
     private Rigidbody rb_sphere;
-    public GameObject objectLocked;
-    public GameObject trailRenderer_GameObject;
-    public GameObject trailSlowMo;
-    public SphereCollider sphereCollider;
-    public ParticleSystem chargedLaserSphereParticleSystem;
-
-    public AudioSource chargedLaserAudio;
-    public AudioClip chargedReady;
-    public AudioClip chargedShot;
+    GameObject objectLocked;
+    [SerializeField] GameObject trailRenderer_GameObject;
+    [SerializeField] GameObject trailSlowMo;
+    SphereCollider sphereCollider;
+    ParticleSystem chargedLaserSphereParticleSystem;
+    CinemachineImpulseSource cinemachineImpulse_;
+    
+    [Space]
+    [Header("Audio References")]
+    [SerializeField] AudioClip chargedReady;
+    [SerializeField] AudioClip chargedShot;
+    AudioSource chargedLaserAudioSource;
 
 
    
 
 
-    public Transform surfaceCollided = null;
 
     [Space]
-    public GameObject chargedLaserExplosionFX;
-    public GameObject waterSplash;
+    [Header("Explosion Prefab References")]
+    [SerializeField] GameObject chargedLaserExplosionFX;
+    [SerializeField] GameObject waterSplash;
 
-    [Header("Script References")]
-    public PlayerShooting_Script playerShooting_Script_;
-    public GuidedLaserTrigger_Script guidedLaserTrigger_Script_;
-    public Billboard_Script billBoardLocked;
-    public CinemachineImpulseSource cinemachineImpulse_;
-    public TimeManager_Script timeManager_Script_;
-    [SerializeField] ChargingLaserAbsorb_Script absorberScript;
+    [Space]
+    [Header("External References")]
+    PlayerShooting_Script playerShooting_Script_;
+    GuidedLaserTrigger_Script guidedLaserTrigger_Script_;
+    Billboard_Script billBoardLocked;
+    TimeManager_Script timeManager_Script_;
+    ChargingLaserAbsorb_Script absorberScript;
 
-    [Header("Parameters")]
-    public float conteoExplode = 0;
+    public bool IsSphereShot
+    {
+        get { return isSphereShot; }
+        set { isSphereShot = value; }
+    }
+    public int DamagePoints
+    {
+        get { return damagePoints; }
+    }
 
 
-    public float conteoExplodeTimeSpan = 1.5f;
 
     void Awake()
     {
         this.transform.GetChild(1).gameObject.SetActive(false); //desativo shockwavetrail por si me lo he dejado
         this.transform.GetChild(2).gameObject.SetActive(false); // desactivo campo de fuerza por si me lo he dejado activado
         parent = this.transform.parent;
-        trailRenderer_GameObject = this.transform.GetChild(0).gameObject;
-        trailSlowMo = this.transform.GetChild(1).gameObject;
-        //rb_sphere = GetComponent<Rigidbody>();
+        
+        
+        
+        //rb_sphere = GetComponent<Rigidbody>(); //YA ESTABA
         playerShooting_Script_ = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerShooting_Script>();
         guidedLaserTrigger_Script_ = GameObject.Find("GuidedChargedLaserTrigger").GetComponent<GuidedLaserTrigger_Script>();
-        sphereCollider = this.GetComponent<SphereCollider>();
+
+       //Local references
+        sphereCollider = GetComponent<SphereCollider>();
         sphereCollider.enabled = false;
-        chargedLaserAudio = this.GetComponent<AudioSource>();
-        chargedLaserSphereParticleSystem = this.GetComponent<ParticleSystem>();
+        chargedLaserAudioSource = GetComponent<AudioSource>();
+        chargedLaserSphereParticleSystem = GetComponent<ParticleSystem>();
+        cinemachineImpulse_ = GetComponent<CinemachineImpulseSource>();
+        absorberScript = GetComponent<ChargingLaserAbsorb_Script>();
         
-        cinemachineImpulse_ = this.GetComponent<CinemachineImpulseSource>();
-        //timeManager_Script_ = GameObject.FindGameObjectWithTag("TimeManager").GetComponent<TimeManager_Script>();
-        timeManager_Script_ = GameObject.Find("Player").gameObject.GetComponent<TimeManager_Script>();
+        timeManager_Script_ = GameObject.FindGameObjectWithTag("Player").gameObject.GetComponent<TimeManager_Script>();
     }
 
 
@@ -82,8 +99,8 @@ public class ChargedLaserSphere_Script : MonoBehaviour
     {
         
         isSphereShot = false;
-        chargedLaserAudio.clip = chargedReady;
-        chargedLaserAudio.Play();
+        chargedLaserAudioSource.clip = chargedReady;
+        chargedLaserAudioSource.Play();
         // trailRenderer_GameObject.SetActive(true); //ENCIENDO EL TRAILRENDERER CUANDO CARGA
 
 
@@ -185,8 +202,8 @@ public class ChargedLaserSphere_Script : MonoBehaviour
             canExplode = true;
         }
 
-        chargedLaserAudio.clip = chargedShot;
-        chargedLaserAudio.Play();
+        chargedLaserAudioSource.clip = chargedShot;
+        chargedLaserAudioSource.Play();
         isSphereShot = true;
 
         //Debug.Log("isSphereShot is " + isSphereShot);
