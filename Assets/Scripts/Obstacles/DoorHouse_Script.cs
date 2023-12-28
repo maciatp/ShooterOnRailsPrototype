@@ -8,8 +8,8 @@ public class DoorHouse_Script : MonoBehaviour
     [Header("Paramaters")]
     [SerializeField] int damageToOpen = 3;
     [SerializeField] bool isBombHouse = false;
+    [Tooltip("-1:Random, -2:none, range from below")]
     [SerializeField] int objectSelector;
-    [Tooltip("-1:Random, -2:none")]
     [SerializeField] List<GameObject> powerUpsList;
    
     bool isDoorClosed = true;
@@ -20,33 +20,6 @@ public class DoorHouse_Script : MonoBehaviour
     [SerializeField] BoxCollider leftDoorCollider;
     [SerializeField] BoxCollider rightDoorCollider;
     [SerializeField] Transform objectSpawnLocation;
-
-    
-
-    [Header("Script References")]
-    Button_Script button_Script_;
-   
-    
-    
-    
-
-   
-
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-        
-
-
-        if (this.gameObject.name == "DoorHouse_Button")
-        {
-            button_Script_ = this.transform.GetChild(3).GetComponent<Button_Script>();
-        }
-       
-        
-    }
 
     
 
@@ -67,7 +40,7 @@ public class DoorHouse_Script : MonoBehaviour
         if (objectSelector == -1) // EN -1 ES ALEATORIO
         {
             
-            int i = Random.Range(0, powerUpsList.Count-1);
+            int i = Random.Range(0, powerUpsList.Count);
             Instantiate(powerUpsList[i], objectSpawnLocation.transform.position, new Quaternion(0, 0, 0, 0), null);
         }
         else if(objectSelector == -2) // -2 NO INSTANCIA NADA
