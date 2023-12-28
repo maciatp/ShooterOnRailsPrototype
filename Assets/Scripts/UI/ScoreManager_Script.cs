@@ -4,10 +4,19 @@ using UnityEngine;
 
 public class ScoreManager_Script : MonoBehaviour
 {
-    public int actualHits = 0;
+    int currentHits = 0;
+    UIHits uiHIts;
 
 
-
+    public int GetCurrentHits
+    {
+        get { return currentHits; }
+    }
+    public UIHits UIHits 
+    { 
+        get { return uiHIts; } 
+        set { uiHIts = value; } 
+    } 
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +32,8 @@ public class ScoreManager_Script : MonoBehaviour
 
     public void AddHits(int numOfHitsToAdd)
     {
-        actualHits += numOfHitsToAdd;
+        currentHits += numOfHitsToAdd;
+        uiHIts.UpdateUIHits();
         if (numOfHitsToAdd > 1)
         {
             GameObject.Find("UIHitText").gameObject.GetComponent<UIHitCombo_Script>().ActivateUIHitText(numOfHitsToAdd, this.gameObject.transform.position);

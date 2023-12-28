@@ -463,14 +463,14 @@ public class PlayerShooting_Script : MonoBehaviour
         if(currentBombs < maxBombs)
         {
             currentBombs += 1;
-            GameObject.Find("UIBombs").GetComponent<PlayerDisplay_Script>().AddUIBomb(currentBombs, +1); //+1 porque se añaden bombas
+            GameObject.Find("UIBombs").GetComponent<UIBombs>().AddUIBomb(currentBombs, +1); //+1 porque se añaden bombas
         }
         
     }
     public void DecreaseOneBomb()
     {
         currentBombs -= 1;
-        GameObject.Find("UIBombs").GetComponent<PlayerDisplay_Script>().AddUIBomb(currentBombs, -1); //-1 porque se quitan bombas
+        GameObject.Find("UIBombs").GetComponent<UIBombs>().AddUIBomb(currentBombs, -1); //-1 porque se quitan bombas
     }
 
 }
