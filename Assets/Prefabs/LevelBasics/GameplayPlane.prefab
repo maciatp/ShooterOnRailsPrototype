@@ -10880,7 +10880,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed3646b91dc6d3a478accae8226dac06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actualHits: 0
 --- !u!1 &3173809263103777842
 GameObject:
   m_ObjectHideFlags: 0
@@ -15941,64 +15940,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &3173809263939442432
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3173809263939442495}
-  - component: {fileID: 3173809263939442494}
-  m_Layer: 0
-  m_Name: TimeManager
-  m_TagString: TimeManager
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &3173809263939442495
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3173809263939442432}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3173809264590528394}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3173809263939442494
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3173809263939442432}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e90e0c3671319f48890e784d905777a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  infiniteSlowMo: 1
-  isSlowMotionActivated: 0
-  isMovingSlowMotion: 0
-  isSlowMoAble: 0
-  activateSlowMoManually: 0
-  slowMotionFactor: 0.2
-  returnToNormalTimeDuration: 2
-  slowMoDepletionRate: 20
-  timescale_: 0
-  actualSlowMoPoints: 0
-  totalSlowmoPoints: 100
-  slowMoMinimumToActivate: 10
-  playerMovement_Script_: {fileID: 0}
-  uISlowMoBar_Script_: {fileID: 0}
 --- !u!1 &3173809263980193739
 GameObject:
   m_ObjectHideFlags: 0
@@ -16168,7 +16109,7 @@ MonoBehaviour:
   chargeLaserTimeSpan: 0.7
   UseBeforeDeactivateChargedLaserTimeSpan: 1
   laserRafagaIntervalBetweenShots: 0.08
-  laserUpgradesCaught: 0
+  laserType: 0
   currentBombs: 3
   ablingExplodeBombTimeSpan: 0.1
 --- !u!114 &5396910580433400211
@@ -26393,8 +26334,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3173809264343331446}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.010964971, y: -0.0000004991889, z: 0.00000005583962, w: 0.9999399}
-  m_LocalPosition: {x: 0, y: 1.87, z: -10}
+  m_LocalRotation: {x: 0.010964971, y: -0.0000004991889, z: 0.00000005582507, w: 0.9999399}
+  m_LocalPosition: {x: 0, y: 1.8700002, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -31518,7 +31459,6 @@ Transform:
   - {fileID: 3173809263295861260}
   - {fileID: 3173809264097764644}
   - {fileID: 3173809262960471183}
-  - {fileID: 3173809263939442495}
   - {fileID: 410933461089089050}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -36953,7 +36893,6 @@ MonoBehaviour:
   mirillaCerca: {fileID: 0}
   mirillaLejos: {fileID: 0}
   playerShooting_Script_: {fileID: 6512077160715364459}
-  PaintMirillaTimeSpan: 0.2
 --- !u!1 &3932435486090103951
 GameObject:
   m_ObjectHideFlags: 0
@@ -43959,7 +43898,6 @@ MonoBehaviour:
   mirillaCerca: {fileID: 3594349055926274409}
   mirillaLejos: {fileID: 570923258348185045}
   playerShooting_Script_: {fileID: 6512077160715364459}
-  PaintMirillaTimeSpan: 0.2
 --- !u!95 &6512077159484451716
 Animator:
   serializedVersion: 5
