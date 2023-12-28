@@ -5,11 +5,11 @@ using UnityEngine;
 public class PlayerFollow_Script : MonoBehaviour
 {
 
-    public PlayerMovement_Script playerMovement_Script_;
+    PlayerMovement_Script playerMovement_Script_;
 
     private void Awake()
     {
-        playerMovement_Script_ = GameObject.Find("Player").GetComponent<PlayerMovement_Script>();
+        playerMovement_Script_ = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement_Script>();
     }
     
 
