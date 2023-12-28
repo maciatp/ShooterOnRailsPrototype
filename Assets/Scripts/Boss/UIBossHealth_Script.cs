@@ -15,9 +15,10 @@ public class UIBossHealth_Script : MonoBehaviour
     [Header("Boss UI Parameters")]
     [SerializeField] float timeToBeActive = 1f;
     [SerializeField] float fillingSpeed = 1.2f;
-    [SerializeField] Color orange = new Color(1, 0.5927993f, 0, 1); //ORANGE
     [SerializeField] Color fullHealthColor;
-    [SerializeField] float lerpMultiplier = 2;
+    [SerializeField] Color midHealthColor = new Color(1, 0.5927993f, 0, 1); //ORANGE
+    [SerializeField] Color lowHealthColor = Color.red;
+    [SerializeField] float colorChaningLerpMultiplier = 2;
 
     
     BossHealth_Script bossHealth_Script_;
@@ -58,7 +59,7 @@ public class UIBossHealth_Script : MonoBehaviour
                 else
                 {
                     //BossText Appearing
-                    bossText.color = Color.Lerp(bossText.color, Color.black, Time.unscaledDeltaTime * lerpMultiplier * 2);
+                    bossText.color = Color.Lerp(bossText.color, Color.black, Time.unscaledDeltaTime * colorChaningLerpMultiplier * 2);
                     if(bossText.color == Color.black)
                     {
                         isReady = true;
@@ -70,15 +71,15 @@ public class UIBossHealth_Script : MonoBehaviour
             //UI HEALTH
             if ((currentDamageImage.fillAmount < 0.3) && (bossIndicators[1].color != fullHealthColor))
             {
-                bossIndicators[1].color = Color.Lerp(bossIndicators[1].color, fullHealthColor, Time.unscaledDeltaTime * lerpMultiplier);
+                bossIndicators[1].color = Color.Lerp(bossIndicators[1].color, fullHealthColor, Time.unscaledDeltaTime * colorChaningLerpMultiplier);
             }
-            else if ((currentDamageImage.fillAmount >= 0.3 && currentDamageImage.fillAmount < 0.6) && bossIndicators[1].color != orange)
+            else if ((currentDamageImage.fillAmount >= 0.3 && currentDamageImage.fillAmount < 0.6) && bossIndicators[1].color != midHealthColor)
             {
-                bossIndicators[1].color = Color.Lerp(bossIndicators[1].color, orange, Time.unscaledDeltaTime * lerpMultiplier); //ORANGE
+                bossIndicators[1].color = Color.Lerp(bossIndicators[1].color, midHealthColor, Time.unscaledDeltaTime * colorChaningLerpMultiplier); //ORANGE
             }
-            else if ((currentDamageImage.fillAmount >= 0.6) && (bossIndicators[1].color != Color.red))
+            else if ((currentDamageImage.fillAmount >= 0.6) && (bossIndicators[1].color != lowHealthColor))
             {
-                bossIndicators[1].color = Color.Lerp(bossIndicators[1].color, Color.red, Time.unscaledDeltaTime * lerpMultiplier) ;
+                bossIndicators[1].color = Color.Lerp(bossIndicators[1].color, lowHealthColor, Time.unscaledDeltaTime * colorChaningLerpMultiplier) ;
             }
 
         }
