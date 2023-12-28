@@ -107,7 +107,7 @@ public class Explosion_Script : MonoBehaviour
                 if (hitCounter > 0)
                 {
                     //ACTIVATE HIT TEXT
-                    GameObject.Find("UIHitText").gameObject.GetComponent<UIHitCombo_Script>().ActivateUIHitText(hitCounter, other.gameObject.transform.position);
+                    GameObject.Find("UIHitFloatingText").gameObject.GetComponent<UIHitCombo_Script>().ActivateUIHitText(hitCounter, other.gameObject.transform.position);
                 }
             }
             
