@@ -5200,6 +5200,7 @@ MonoBehaviour:
   damagePoints: 5
   trailRenderer_GameObject: {fileID: 2578875287590882650}
   trailSlowMo: {fileID: 5598057215382149749}
+  forceField: {fileID: 6354992162350958258}
   chargedReady: {fileID: 8300000, guid: 68e13a8b6f7746745afcbb09bb88b3bd, type: 3}
   chargedShot: {fileID: 8300000, guid: 7de58964d1a6b6c4cbd3538f63e41fe4, type: 3}
   chargedLaserExplosionFX: {fileID: 6253891871589744810, guid: 4dfb31059e3c5bf43a823d4386b76478,
@@ -15358,7 +15359,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8480708322443529124
 Transform:
   m_ObjectHideFlags: 0
@@ -15368,7 +15369,7 @@ Transform:
   m_GameObject: {fileID: 5598057215382149749}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.452}
+  m_LocalPosition: {x: 0, y: 0, z: 0.6666667}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15388,7 +15389,7 @@ ParticleSystem:
   cullingMode: 3
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
-  emitterVelocityMode: 1
+  emitterVelocityMode: 0
   looping: 0
   prewarm: 0
   playOnAwake: 1
@@ -20265,8 +20266,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1.3, z: 1.3}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 183211758031826990}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -20353,7 +20354,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.3
+      scalar: 0.35
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -21291,7 +21292,7 @@ ParticleSystem:
           outWeight: 0
         - serializedVersion: 3
           time: 1
-          value: 1
+          value: 0.8548402
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -21786,7 +21787,7 @@ ParticleSystem:
     flipU: 0
     flipV: 0
   VelocityModule:
-    enabled: 0
+    enabled: 1
     x:
       serializedVersion: 2
       minMaxState: 0
@@ -22319,7 +22320,7 @@ ParticleSystem:
         m_RotationOrder: 4
     speedModifier:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 1
       scalar: 1
       minScalar: 1
       maxCurve:
@@ -22332,17 +22333,17 @@ ParticleSystem:
           outSlope: 0
           tangentMode: 0
           weightedMode: 0
-          inWeight: 0.33333334
-          outWeight: 0.33333334
+          inWeight: 0
+          outWeight: 0
         - serializedVersion: 3
           time: 1
-          value: 1
-          inSlope: 0
-          outSlope: 0
+          value: 0
+          inSlope: -2
+          outSlope: -2
           tangentMode: 0
           weightedMode: 0
-          inWeight: 0.33333334
-          outWeight: 0.33333334
+          inWeight: 0
+          outWeight: 0
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
@@ -25149,7 +25150,7 @@ GameObject:
   - component: {fileID: 6415748747290848123}
   - component: {fileID: 8509967509903886868}
   m_Layer: 15
-  m_Name: Shockwave (1)
+  m_Name: ForceField
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25178,10 +25179,10 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6354992162350958258}
   serializedVersion: 8
-  lengthInSec: 1
+  lengthInSec: 0.5
   simulationSpeed: 1
   stopAction: 2
-  cullingMode: 1
+  cullingMode: 3
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
   emitterVelocityMode: 0
@@ -25193,7 +25194,7 @@ ParticleSystem:
   startDelay:
     serializedVersion: 2
     minMaxState: 0
-    scalar: 0
+    scalar: 0.35
     minScalar: 0
     maxCurve:
       serializedVersion: 2
@@ -26175,7 +26176,7 @@ ParticleSystem:
     curve:
       serializedVersion: 2
       minMaxState: 1
-      scalar: 1.5
+      scalar: 1.25
       minScalar: 1
       maxCurve:
         serializedVersion: 2
