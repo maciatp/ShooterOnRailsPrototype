@@ -4993,7 +4993,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 2
+  m_Time: 0.5
   m_PreviewTimeScale: 1
   m_Parameters:
     serializedVersion: 3
@@ -5196,33 +5196,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcc668189b9f5e0479bbd47bee402fa8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parent: {fileID: 0}
+  conteoExplodeTimeSpan: 1
   sphereSpeed: 80
   damagePoints: 5
-  isSphereShot: 0
-  isSphereExploded: 0
-  canExplode: 0
-  objectLocked: {fileID: 0}
   trailRenderer_GameObject: {fileID: 2578875287590882650}
   trailSlowMo: {fileID: 5598057215382149749}
-  sphereCollider: {fileID: 3493640406134239643}
-  chargedLaserSphereParticleSystem: {fileID: 3607286771821805748}
-  chargedLaserAudio: {fileID: 0}
   chargedReady: {fileID: 8300000, guid: 68e13a8b6f7746745afcbb09bb88b3bd, type: 3}
   chargedShot: {fileID: 8300000, guid: 7de58964d1a6b6c4cbd3538f63e41fe4, type: 3}
-  surfaceCollided: {fileID: 0}
   chargedLaserExplosionFX: {fileID: 6253891871589744810, guid: 4dfb31059e3c5bf43a823d4386b76478,
     type: 3}
   waterSplash: {fileID: 6438164031734600850, guid: 7813697dfa3576c439606901e59ea1e7,
     type: 3}
-  playerShooting_Script_: {fileID: 0}
-  guidedLaserTrigger_Script_: {fileID: 0}
-  billBoardLocked: {fileID: 0}
-  cinemachineImpulse_: {fileID: 0}
-  timeManager_Script_: {fileID: 0}
-  absorberScript: {fileID: 5563473689928460893}
-  conteoExplode: 0
-  conteoExplodeTimeSpan: 1
 --- !u!82 &409833069036247386
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10216,7 +10200,6 @@ MonoBehaviour:
   attractorForce: 7
   conteoToBeginAttraction: 0
   beginAttractionTimeSpan: 0.3
-  rB_ObsAbsorbing: []
   triggerCollider: {fileID: 5431073741968334124}
 --- !u!1 &4334408095804616635
 GameObject:
