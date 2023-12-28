@@ -29,6 +29,8 @@ public class ChargedLaserSphere_Script : MonoBehaviour
     GameObject objectLocked;
     [SerializeField] GameObject trailRenderer_GameObject;
     [SerializeField] GameObject trailSlowMo;
+    [SerializeField] GameObject forceField;
+
     SphereCollider sphereCollider;
     ParticleSystem chargedLaserSphereParticleSystem;
     CinemachineImpulseSource cinemachineImpulse_;
@@ -71,8 +73,8 @@ public class ChargedLaserSphere_Script : MonoBehaviour
 
     void Awake()
     {
-        this.transform.GetChild(1).gameObject.SetActive(false); //desativo shockwavetrail por si me lo he dejado
-        this.transform.GetChild(2).gameObject.SetActive(false); // desactivo campo de fuerza por si me lo he dejado activado
+        trailSlowMo.SetActive(false); //desativo shockwavetrail por si me lo he dejado
+        
         parent = this.transform.parent;
         
         
@@ -101,12 +103,7 @@ public class ChargedLaserSphere_Script : MonoBehaviour
         isSphereShot = false;
         chargedLaserAudioSource.clip = chargedReady;
         chargedLaserAudioSource.Play();
-        // trailRenderer_GameObject.SetActive(true); //ENCIENDO EL TRAILRENDERER CUANDO CARGA
-
-
-
-
-
+       
     }
 
     // Update is called once per frame
@@ -207,11 +204,11 @@ public class ChargedLaserSphere_Script : MonoBehaviour
 
         chargedLaserSphereParticleSystem.Play();
 
-        //this.transform.GetChild(3).gameObject.GetComponent<ParticleSystem>().simulationSpace = ParticleSystemSimulationSpace.World; //hago que lightning sea WorldSpace cuando disparo
-        this.transform.GetChild(2).gameObject.SetActive(true); // SE activa el campo de fuerza cuando disparas
+        
+        forceField.SetActive(true); // SE activa el campo de fuerza cuando disparas
         if (timeManager_Script_.IsSlowMoActivated == true)
         {
-            this.transform.GetChild(1).gameObject.SetActive(true); //Activación Shockwave_trail
+            trailSlowMo.SetActive(true); //Activación Shockwave_trail
 
         }
 
@@ -223,7 +220,7 @@ public class ChargedLaserSphere_Script : MonoBehaviour
         {
             trailRenderer_GameObject.transform.parent = null;
 
-            if(this.transform.GetChild(1).gameObject.activeInHierarchy == true)
+            if(trailSlowMo.activeInHierarchy == true)
             {
                 trailSlowMo.transform.parent = null; // seguir comprobando cómo hacer que el trail slowmo no desaparezca
             }
@@ -234,7 +231,7 @@ public class ChargedLaserSphere_Script : MonoBehaviour
 
             cinemachineImpulse_.GenerateImpulse();//CAMERA SHAKE
             
-            Destroy(this.gameObject);
+            Destroy(gameObject);
 
         }
     }
