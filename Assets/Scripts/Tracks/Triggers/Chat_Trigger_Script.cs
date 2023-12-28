@@ -7,11 +7,11 @@ using TMPro;
 public class Chat_Trigger_Script : MonoBehaviour
 {
     [Header("Dialogue")]
-    public DialogueData dialogue;
+    [SerializeField] DialogueData dialogue;
     //SUBIR RANGO PARA PODER ELEGIR!!!!
     [Range(0, 20)] 
     // [Range(0,dialogue.conversationBlock.Count - 1)]
-    public int intConversationBlock;
+    [SerializeField] int intConversationBlock;
     
     [Header("PREVIEW ONLY - DO NOT MODIFY HERE")]
     [TextArea(6, 6)]
