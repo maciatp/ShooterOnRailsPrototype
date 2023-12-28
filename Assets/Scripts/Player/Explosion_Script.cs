@@ -4,40 +4,34 @@ using UnityEngine;
 using DG.Tweening;
 using Cinemachine;
 using UnityEngine.Rendering.PostProcessing;
+using System.Configuration;
 
 public class Explosion_Script : MonoBehaviour
 {
-    private BoxCollider explosionCollider;
-    private ParticleSystem explosionParticles;
-
-   
-
-    public float explosionForce = 10;
-    public float explosionRadius = 3;
-    
-    [Header("Script References")]
-    public Billboard_Script billboard_Script_;
-    public Button_Script button_Script_;
-    public DoorHouse_Script doorHouse_Script_;
-
-    [SerializeField] float explosionDuration = 0.5f;
+    int hitCounter = 0;
     float explosionCounter = 0;
+    BoxCollider explosionCollider;
     
+    [Header("Collier Parameters")]
+    [SerializeField] float maxSize;
+    [SerializeField] float colliderIncreasingRate = 1.04f;
+    
+    [Space]
+    [Header("WallBroken Force Parameters")]
+    [Tooltip("Sólo afecta a romper la pared")]
+    [SerializeField] float explosionForce = 10;
+    
+    [Tooltip("Sólo afecta a romper la pared")]
+    [SerializeField] float explosionRadius = 3;
+    [SerializeField] float explosionDuration = 0.5f;
 
-    public float maxSize;
-    public float colliderIncreasingRate = 1.04f;
 
-    public int hitCounter = 0;
-
-    private void Awake()
-    {
-        explosionCollider = this.gameObject.GetComponent<BoxCollider>();
-        explosionParticles = this.gameObject.GetComponent<ParticleSystem>();
-        
-    }
     // Start is called before the first frame update
     void Start()
     {
+        explosionCollider = GetComponent<BoxCollider>();
+
+        //BOMB FX
        if(this.gameObject.tag == "SmartBombExplosion")
         {
             float origChrom = 3;
@@ -88,7 +82,7 @@ public class Explosion_Script : MonoBehaviour
         }
         if (other.tag == "Button")
         {
-            other.gameObject.GetComponent<Button_Script>();
+           Button_Script button_Script_ = other.gameObject.GetComponent<Button_Script>();
             
             if(button_Script_.IsButtonActivated == false)
             {
@@ -101,13 +95,12 @@ public class Explosion_Script : MonoBehaviour
         {
             if(other.gameObject.GetComponent<EnemyHealth_Script>().isShotDown == false)
             {
-                //TEXTO HIT +
+                //TEXTO HIT + //TODO: Añadir a todos los demás objetivos
                 hitCounter += other.gameObject.GetComponent<EnemyHealth_Script>().numOfHitsWillAdd;
 
                 if (hitCounter > 0)
                 {
-                    //ACTIVATE HIT TEXT
-                    GameObject.Find("UIHitFloatingText").gameObject.GetComponent<UIHitCombo_Script>().ActivateUIHitText(hitCounter, other.gameObject.transform.position);
+                    EnableUIHitFloatingText(other);
                 }
             }
             
@@ -144,6 +137,13 @@ public class Explosion_Script : MonoBehaviour
         }
 
     }
+
+    private void EnableUIHitFloatingText(Collider other)
+    {
+        //ACTIVATE HIT TEXT
+        GameObject.Find("UIHitFloatingText").gameObject.GetComponent<UIHitCombo_Script>().ActivateUIHitText(hitCounter, other.gameObject.transform.position);
+    }
+
     void OnTriggerStay(Collider other)
     {
         if((gameObject.tag == "Explosion") && (((other.gameObject.name == "RightDoor") 
