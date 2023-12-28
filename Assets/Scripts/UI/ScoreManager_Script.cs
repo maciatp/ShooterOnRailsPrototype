@@ -18,17 +18,7 @@ public class ScoreManager_Script : MonoBehaviour
         set { uiHIts = value; } 
     } 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 
     public void AddHits(int numOfHitsToAdd)
     {
@@ -36,7 +26,7 @@ public class ScoreManager_Script : MonoBehaviour
         uiHIts.UpdateUIHits();
         if (numOfHitsToAdd > 1)
         {
-            GameObject.Find("UIHitText").gameObject.GetComponent<UIHitCombo_Script>().ActivateUIHitText(numOfHitsToAdd, this.gameObject.transform.position);
+            GameObject.Find("UIHitFloatingText").gameObject.GetComponent<UIHitCombo_Script>().ActivateUIHitText(numOfHitsToAdd, this.gameObject.transform.position);
         }
     }
 }
